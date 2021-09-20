@@ -66,7 +66,7 @@ echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads" >> .env
 echo "" >> .env
 
 echo "Add config file for agency-auth"
-cat > config/agency-auth.php << EOF
+cat > config/agency-auth.php << PHP
 <?php
 
 return [
@@ -76,10 +76,10 @@ return [
     ]
 ];
 
-EOF
+PHP
 
 echo "Add modules files"
-cat > config/app.php << EOF
+cat > config/app.php << PHP
 <?php
 /**
  * Yii Application Config
@@ -111,10 +111,10 @@ return [
     ],
 ];
 
-EOF
+PHP
 
 echo "Add headless config for craft"
-cat > config/general.tmp << EOF
+cat > config/general.tmp << PHP
 <?php
 /**
  * General Configuration
@@ -203,6 +203,6 @@ return [
     ],
 ];
 
-EOF
+PHP
 
 echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
