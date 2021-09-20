@@ -23,6 +23,8 @@ cp web/.htaccess "../$PROJECT_CODE.htaccess"
 echo "Deleting files to make the pwd empty"
 for F in ".htaccess" "web" ".well-known"; do
 	if [[ -f "$F" ]]; then
+		rm -f "./$F"
+	elif [[ -d "$F" ]]; then
 		rm -rf "./$F"
 	fi
 done
