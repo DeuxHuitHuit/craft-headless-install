@@ -11,7 +11,7 @@ echo "Welcome to Deux Huit Huit craft installer"
 echo ""
 echo "We are installing projet $PROJECT_CODE in $(pwd)";
 
-read -p 'Continue? [Y/n] ' '-d ';
+read -p 'Continue? [Y/n] ';
 if [[ "$REPLY" != "Y" ]]; then
     echo "Abort."
     exit;
