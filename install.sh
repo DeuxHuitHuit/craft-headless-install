@@ -13,8 +13,8 @@ echo "We are installing projet $PROJECT_CODE in $(pwd)";
 
 read -r -p 'Continue? [Y/n] ';
 if [[ "$REPLY" != "Y" ]]; then
-    echo "Abort."
-    exit;
+	echo "Abort."
+	exit;
 fi;
 
 echo "Backup web/.htaccess"
