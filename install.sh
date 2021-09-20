@@ -114,7 +114,7 @@ return [
 PHP
 
 echo "Add headless config for craft"
-cat > config/general.tmp << PHP
+cat > config/general.php << PHP
 <?php
 /**
  * General Configuration
