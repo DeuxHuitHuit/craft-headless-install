@@ -65,7 +65,9 @@ echo "Delete IIS web.config file"
 rm -f "./web/web.config"
 
 echo "Install cp-field-inspect and redactor"
+composer require mmikkel/cp-field-inspect
 ea-php74 ./craft plugin/install cp-field-inspect
+composer require craftcms/redactor
 ea-php74 ./craft plugin/install redactor
 
 echo "Add /storage to .gitignore"
