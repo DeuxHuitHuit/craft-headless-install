@@ -26,7 +26,8 @@ ea-php74 ./craft plugin/install cp-field-inspect
 ea-php74 ./craft plugin/install redactor
 
 echo "Add /storage to .gitignore"
-echo "/storage" >> .gitignore 
+echo "/storage" >> .gitignore
+echo "/web/cpressources" >> .gitignore
 
 echo "Update .env file"
 echo "" >> .env
