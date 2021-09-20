@@ -35,8 +35,20 @@ echo "" >> web/.htaccess
 cat "../$PROJECT_CODE.htaccess" >> web/.htaccess
 rm -f "../$PROJECT_CODE.htaccess"
 
+echo "Add IP/path auth bypass"
+cat ../authbypass.htaccess >> web/.htaccess
+
 echo "Make the cli executable"
 chmod u+x ./craft
+
+echo "Create storage directory"
+mkdir -p "./storage"
+
+echo "Create upload directory"
+mkdir -p "./web/upload"
+
+echo "Delete IIS web.config file"
+rm -f "./web/web.config"
 
 echo "Install cp-field-inspect and redactor"
 ea-php74 ./craft plugin/install cp-field-inspect
