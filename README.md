@@ -6,4 +6,4 @@ In the project root, run
 
 ```sh
 $ /bin/bash -c "$(curl -fsSL https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/install.sh)"
-``
+```
