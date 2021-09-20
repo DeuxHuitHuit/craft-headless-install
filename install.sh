@@ -5,13 +5,13 @@
 
 set -e -o pipefail
 
-PROJECT_CODE=$(basename $(pwd));
+PROJECT_CODE=$(basename "$(pwd)");
 
 echo "Welcome to Deux Huit Huit craft installer"
 echo ""
 echo "We are installing projet $PROJECT_CODE in $(pwd)";
 
-read -p 'Continue? [Y/n] ';
+read -r -p 'Continue? [Y/n] ';
 if [[ "$REPLY" != "Y" ]]; then
     echo "Abort."
     exit;
@@ -72,11 +72,13 @@ echo "Add /web/cpressources to .gitignore"
 echo "/web/cpressources" >> .gitignore
 
 echo "Update .env file"
-echo "" >> .env
-echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads" >> .env 
-echo "" >> .env
-echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads" >> .env
-echo "" >> .env
+{
+echo ""
+echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads"
+echo ""
+echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
+echo ""
+} >> .env
 
 echo "Add config file for agency-auth"
 cat > config/agency-auth.php << PHP
