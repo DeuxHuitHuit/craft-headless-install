@@ -47,6 +47,18 @@ mkdir -p "./storage"
 echo "Create upload directory"
 mkdir -p "./web/upload"
 
+echo "Nuke and recreate the module folder"
+rm -rf ./modules
+mkdir ./modules
+
+echo "Install custom modules"
+cd ./modules
+git clone https://github.com/DeuxHuitHuit/craft-agency-auth.git
+mv ./craft-agency-auth ./agency-auth
+rm -rf ./agency-auth/.git
+rm -f ./agency-auth/.gitignore
+cd ..
+
 echo "Delete IIS web.config file"
 rm -f "./web/web.config"
 
