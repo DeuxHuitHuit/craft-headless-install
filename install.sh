@@ -56,6 +56,7 @@ ea-php74 ./craft plugin/install redactor
 
 echo "Add /storage to .gitignore"
 echo "/storage" >> .gitignore
+echo "Add /web/cpressources to .gitignore"
 echo "/web/cpressources" >> .gitignore
 
 echo "Update .env file"
