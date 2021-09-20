@@ -5,8 +5,20 @@
 
 set -e -o pipefail
 
+PROJECT_CODE=$(basename $(pwd));
+
 echo "Welcome to Deux Huit Huit craft installer"
 echo ""
+echo "We are installing projet $PROJECT_CODE in $(pwd)";
+
+read -p 'Continue? [Y/n] ' '-d ';
+if [[ "$REPLY" != "Y" ]]; then
+    echo "Abort."
+    exit;
+fi;
+
+echo "Backup web/.htaccess"
+cp web/.htaccess "../$PROJECT_CODE.htaccess"
 
 echo "Deleting files to make the pwd empty"
 for F in ".htaccess" "web" ".well-known"; do
@@ -17,6 +29,11 @@ done
 
 echo "Install craft"
 composer create-project craftcms/craft .
+
+echo "Restore htaccess infos"
+echo "" >> web/.htaccess
+cat "../$PROJECT_CODE.htaccess" >> web/.htaccess
+rm -f "../$PROJECT_CODE.htaccess"
 
 echo "Make the cli executable"
 chmod u+x ./craft
@@ -33,7 +50,7 @@ echo "Update .env file"
 echo "" >> .env
 echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads" >> .env 
 echo "" >> .env
-echo "UPLOADS_URL=https://$(basename $(pwd)).288dev.com/uploads" >> .env
+echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads" >> .env
 echo "" >> .env
 
 echo "Add config file for agency-auth"
@@ -141,4 +158,4 @@ return [
 
 EOF
 
-echo "We are done, please login at https://$(basename $(pwd)).288dev.com/craft"
+echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
