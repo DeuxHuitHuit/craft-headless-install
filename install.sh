@@ -37,8 +37,143 @@ echo "" >> web/.htaccess
 cat "../$PROJECT_CODE.htaccess" >> web/.htaccess
 rm -f "../$PROJECT_CODE.htaccess"
 
-echo "Add IP/path auth bypass"
-cat ../authbypass.htaccess >> web/.htaccess
+echo "Customize .htaccess file"
+{
+	cat << HTACCESS
+#### SECURE APACHE
+Options +SymLinksIfOwnerMatch -Indexes
+<IfModule mod_negotiation.c>
+    Options -MultiViews
+</IfModule>
+
+#### CUSTOM
+<IfModule mod_rewrite.c>
+    ## force TLS
+    RewriteCond %{SERVER_PORT} !^443$
+    RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=307,L]
+</IfModule>
+
+### CRAFT CMS
+HTACCESS
+	cat web/.htaccess
+	cat ../authbypass.htaccess
+	cat << HTACCESS
+
+### Content-Types
+
+AddType audio/mpeg mp3
+AddType audio/mp4 m4a
+AddType audio/ogg ogg
+AddType audio/ogg oga
+AddType audio/webm webma
+AddType audio/webm weba
+AddType audio/wav wav
+
+AddType video/mp4 mp4
+AddType video/mp4 m4v
+AddType video/ogg ogv
+AddType video/webm webm
+AddType video/webm webmv
+
+AddType image/vnd.microsoft.icon cur
+AddType image/vnd.microsoft.icon ico
+AddType application/x-navi-animation ani
+
+AddType application/x-font-ttf ttf
+AddType font/opentype otf
+AddType application/x-font-woff woff
+AddType application/font-woff2 woff2
+AddType image/svg+xml svg
+AddType application/vnd.ms-fontobject eot
+
+AddType text/plain srt
+AddType text/plain less
+
+# No transform images
+<IfModule mod_headers.c>
+    <FilesMatch "\.(png|jpg|jpeg|gif|ico)$">
+        Header append Cache-Control "public, no-transform"
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Expires headers (for better cache control)
+# ----------------------------------------------------------------------
+
+# These are pretty far-future expires headers.
+# They assume you control versioning with filename-based cache busting
+# Additionally, consider that outdated proxies may miscache
+#   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
+
+# If you don't use filenames to version, lower the CSS  and JS to something like
+#   "access plus 1 week" or so.
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+# Perhaps better to whitelist expires rules? Perhaps.
+  ExpiresDefault                          "access plus 1 month"
+
+# cache.appcache needs re-requests in FF 3.6 (thanks Remy ~Introducing HTML5)
+  ExpiresByType text/cache-manifest       "access plus 0 seconds"
+
+# Your document html
+  ExpiresByType text/html                 "access plus 0 seconds"
+
+# Data
+  ExpiresByType text/xml                  "access plus 0 seconds"
+  ExpiresByType application/xml           "access plus 0 seconds"
+  ExpiresByType application/json          "access plus 0 seconds"
+
+# Feed
+  ExpiresByType application/rss+xml       "access plus 1 hour"
+  ExpiresByType application/atom+xml      "access plus 1 hour"
+
+# Favicon (cannot be renamed)
+  ExpiresByType image/x-icon              "access plus 1 year"
+
+# Media: images, video, audio
+  ExpiresByType image/gif                 "access plus 1 year"
+  ExpiresByType image/png                 "access plus 1 year"
+  ExpiresByType image/jpeg                "access plus 1 year"
+  ExpiresByType video/ogg                 "access plus 1 year"
+  ExpiresByType audio/ogg                 "access plus 1 year"
+  ExpiresByType video/mp4                 "access plus 1 year"
+  ExpiresByType video/webm                "access plus 1 year"
+  ExpiresByType video/ogg                 "access plus 1 year"
+
+# HTC files  (css3pie)
+  ExpiresByType text/x-component          "access plus 1 month"
+
+# Webfonts
+  ExpiresByType application/x-font-ttf    "access plus 1 year"
+  ExpiresByType font/opentype             "access plus 1 year"
+  ExpiresByType application/x-font-woff   "access plus 1 year"
+  ExpiresByType application/font-woff2    "access plus 1 year"
+  ExpiresByType image/svg+xml             "access plus 1 year"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+
+# CSS and JavaScript
+  ExpiresByType text/css                  "access plus 1 year"
+  ExpiresByType application/javascript    "access plus 1 year"
+
+# Text
+  ExpiresByType text/plain                "access plus 0 seconds"
+
+</IfModule>
+
+# ----------------------------------------------------------------------
+# ETag removal
+# ----------------------------------------------------------------------
+
+# FileETag None is not enough for every server.
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+
+HTACCESS
+} > web/.htaccess.tmp
+mv -f web/.htaccess.tmp web/.htaccess
 
 echo "Make the cli executable"
 chmod u+x ./craft
