@@ -362,4 +362,9 @@ return [
 
 PHP
 
+echo "Delete .env.example if still lingering around"
+if [[ -f ".env.example" ]]; then
+	rm -f ".env.example"
+fi
+
 echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
