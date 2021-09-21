@@ -194,10 +194,10 @@ git clone https://github.com/DeuxHuitHuit/craft-agency-auth.git
 mv ./craft-agency-auth ./agency-auth
 rm -rf ./agency-auth/.git
 rm -f ./agency-auth/.gitignore
+cd ..
 sed 's/modules\\\\"\: "modules\/"/modules\\\\agencyauth\\\\"\: "modules\/agency-auth\/src\/"/g' composer.json > composer.tmp
 mv -f composer.tmp composer.json
 composer dump-autoload -a
-cd ..
 
 echo "Delete IIS web.config file"
 rm -f "./web/web.config"
