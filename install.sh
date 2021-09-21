@@ -197,9 +197,9 @@ return [
 
     // Staging environment settings
     'staging' => [
-        // Set this to `false` to prevent administrative changes from being made on staging
+        // Set this value only if really required. Should always be false.
         'allowAdminChanges' => false,
-        // Disable updates in prod
+        // Disable updates in staging
         'allowUpdates' => false,
         // No indexing
         'disallowRobots' => true,
@@ -211,7 +211,7 @@ return [
 
     // Production environment settings
     'production' => [
-        // Set this to `false` to prevent administrative changes from being made on production
+        // Set this value only if really required. Should always be false.
         'allowAdminChanges' => false,
         // Disable updates in prod
         'allowUpdates' => false,
