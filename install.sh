@@ -202,11 +202,13 @@ composer dump-autoload -a
 echo "Delete IIS web.config file"
 rm -f "./web/web.config"
 
-echo "Install cp-field-inspect and redactor"
+echo "Install cp-field-inspect, redactor, snitch, ..."
 composer require mmikkel/cp-field-inspect
 ea-php74 ./craft plugin/install cp-field-inspect
 composer require craftcms/redactor
 ea-php74 ./craft plugin/install redactor
+composer require marionnewlevant/snitch
+ea-php74 ./craft plugin/install snitch
 
 echo "Add /storage to .gitignore"
 echo "/storage" >> .gitignore
