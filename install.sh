@@ -396,4 +396,13 @@ if [[ -f ".env.example" ]]; then
 	rm -f ".env.example"
 fi
 
+echo "Install project files"
+rm -rf config/project
+wget https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz
+tar -xvf project.tar.gz -C config/
+rm -f project.tar.gz
+sed "s/__PROJECT__/${PROJECT_CODE}/g" config/project/project.yaml > config/project/project.yaml.tmp
+mv -f config/project/project.yaml.tmp config/project/project.yaml
+ea-php74 ./craft project-config/apply
+
 echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
