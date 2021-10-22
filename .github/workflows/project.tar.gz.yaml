@@ -1,0 +1,22 @@
+name: Recreates the project.tar.gz file
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  tarball:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Create tar file
+      run: tar zcvf project.tar.gz project
+
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: New projet tarball
+        file_pattern: project.tar.gz
