@@ -1,0 +1,78 @@
+dateModified: 1634852385
+email:
+  fromEmail: vincent@deuxhuithuit.co
+  fromName: __PROJECT__
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: ''
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0f0e5f88-9336-4032-bfa2-11083f5fa132: Identifier # Identifier
+    1a025b55-4141-4cc4-8c57-683723b236c7: Logo # Logo
+    3f07a8e2-b80b-4fe0-aca4-9c505738579d: Default # Default
+    4e822121-c86e-47c7-88db-c49c058e3b2f: Buttons # Buttons
+    4f2acaa1-189a-4e2d-ad0c-f313c4b00118: Socials # Socials
+    5e423c33-bf01-4613-b511-0c196a0f3421: 'Platform Url' # Platform Url
+    7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
+    7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
+    7ddb842a-f59e-40b2-a970-b9797c1027a9: Configuration # Configuration
+    8b5316ca-71f3-4b68-be3d-991a601fa490: 'External Url' # External Url
+    10a5c368-5d0b-47a4-9978-105511f5e998: SEO # SEO
+    20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
+    93b69e94-91ec-4548-9997-e8257e5f9c47: Alt # Alt
+    99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Share Image' # Share Image
+    216a4e0a-27ae-4b0b-963e-26dc9ffae251: 'Platform Logo' # Platform Logo
+    414b45c8-d274-4c58-b6e8-f0ce31130d34: Modules # Modules
+    506fb257-f530-4cda-b130-1af00a5bda55: Common # Common
+    3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Share Title' # Share Title
+    22947fe1-4c0e-437b-9997-de04319d78e3: Text # Text
+    78376c37-546a-4c5a-b132-d9d8c8acf806: 'Twitter Handle' # Twitter Handle
+    94179dde-ab52-4487-b729-d1503068b684: Phone # Phone
+    477958ed-8cd8-487c-9006-bf3805cf3fea: Button # Button
+    10512774-a66c-4106-bdbc-fcb47780e8eb: Label # Label
+    56586313-03c2-4ded-b0c3-d22dee297e67: Organization # Organization
+    af77db16-7383-4e3b-ae49-71b93d94b959: FR # FR
+    b2ec015d-a8f7-4da8-a82c-5db01312f38b: Email # Email
+    b7d20b42-135e-4d76-85cd-1e890b36c30a: Text # Text
+    b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
+    c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
+    cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
+    dbc05352-c8d9-4615-a1c6-79954bf4033b: __PROJECT__ # __PROJECT__
+    e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
+    e2cdaad1-42b3-4873-a763-caf3bf386e18: Name # Name
+    e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: Asset # Asset
+    e45d3444-dd43-44a0-9878-0fea045f468b: Media # Media
+    e485bfb8-5e08-45cf-a792-6d7a97f6844d: Default # Default
+    ec8f8144-4229-4395-adcd-105b11962c8a: Pages # Pages
+    edb579ae-b8c5-4bba-9665-5dce08886786: Organization # Organization
+    f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Share Description' # Share Description
+    fbafa02b-3df0-475b-a2c9-78afc19c299f: Platform # Platform
+    fc75545c-a4e6-482c-866c-64e270d6d9a7: Address # Address
+    fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Plateform Name' # Plateform Name
+plugins:
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  snitch:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.0
+system:
+  edition: pro
+  live: true
+  name: sveltekit
+  schemaVersion: 3.7.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

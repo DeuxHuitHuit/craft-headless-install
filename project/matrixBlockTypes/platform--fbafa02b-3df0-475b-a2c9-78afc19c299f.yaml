@@ -1,0 +1,113 @@
+field: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Socials
+fieldLayouts:
+  cad55635-b898-4dab-b7e6-b621c43bec90:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: fe7be7d2-aed9-4274-91c5-b1fc5432b42e # Plateform Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5e423c33-bf01-4613-b511-0c196a0f3421 # Platform Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 216a4e0a-27ae-4b0b-963e-26dc9ffae251 # Platform Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  5e423c33-bf01-4613-b511-0c196a0f3421: # Platform Url
+    columnSuffix: kcelfkir
+    contentColumnType: text
+    fieldGroup: null
+    handle: platformUrl
+    instructions: ''
+    name: 'Platform Url'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  216a4e0a-27ae-4b0b-963e-26dc9ffae251: # Platform Logo
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: platformLogo
+    instructions: ''
+    name: 'Platform Logo'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  fe7be7d2-aed9-4274-91c5-b1fc5432b42e: # Plateform Name
+    columnSuffix: wtfddxgb
+    contentColumnType: text
+    fieldGroup: null
+    handle: plateformName
+    instructions: ''
+    name: 'Plateform Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: platform
+name: Platform
+sortOrder: 1

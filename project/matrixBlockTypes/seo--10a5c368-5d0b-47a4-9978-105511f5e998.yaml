@@ -1,0 +1,113 @@
+field: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+fieldLayouts:
+  55ffc0f0-7836-48a1-970b-fe7e8152e13a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3549d929-b071-40e7-9ecd-b06f0f29fb04 # Share Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f24c97e8-b8f5-4799-bb8f-c062c6196c51 # Share Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 99a344a6-d5b9-4dfb-8ab7-9d6909dd6644 # Share Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: # Share Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: shareImage
+    instructions: ''
+    name: 'Share Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  3549d929-b071-40e7-9ecd-b06f0f29fb04: # Share Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: shareTitle
+    instructions: ''
+    name: 'Share Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  f24c97e8-b8f5-4799-bb8f-c062c6196c51: # Share Description
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: shareDescription
+    instructions: ''
+    name: 'Share Description'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: seo
+name: SEO
+sortOrder: 1

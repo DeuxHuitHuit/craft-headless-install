@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: seo
+instructions: ''
+name: SEO
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_seo}}'
+  maxBlocks: '1'
+  minBlocks: '1'
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,17 @@
+defaultPlacement: end
+enableVersioning: true
+handle: buttons
+name: Buttons
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

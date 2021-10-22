@@ -1,0 +1,19 @@
+columnSuffix: tltnribk
+contentColumnType: text
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: label
+instructions: ''
+name: Label
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

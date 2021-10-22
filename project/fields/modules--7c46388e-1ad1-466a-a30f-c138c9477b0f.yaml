@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: modules
+instructions: ''
+name: Modules
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

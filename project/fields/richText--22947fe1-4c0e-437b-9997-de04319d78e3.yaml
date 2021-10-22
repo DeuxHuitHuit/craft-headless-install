@@ -1,0 +1,28 @@
+columnSuffix: aygkrnor
+contentColumnType: text
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: richText
+instructions: ''
+name: Text
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: ''
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: language
+type: craft\redactor\Field

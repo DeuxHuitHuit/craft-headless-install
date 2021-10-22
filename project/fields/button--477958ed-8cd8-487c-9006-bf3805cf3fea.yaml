@@ -1,0 +1,21 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: button
+instructions: ''
+name: Button
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

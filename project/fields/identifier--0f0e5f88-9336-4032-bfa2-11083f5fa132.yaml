@@ -1,0 +1,19 @@
+columnSuffix: dblkmfwp
+contentColumnType: text
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: identifier
+instructions: ''
+name: Identifier
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
