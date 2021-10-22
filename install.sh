@@ -380,9 +380,9 @@ cat > config/routes.php << PHP
  *
  *     'blog/archive/<year:\d{4}>' => ['template' => 'blog/_archive'],
  *
- * That example would match URIs such as `/blog/archive/2012`, and pass the
- * request along to the `blog/_archive` template, providing it a `year` variable
- * set to the value `2012`.
+ * That example would match URIs such as '/blog/archive/2012', and pass the
+ * request along to the 'blog/_archive' template, providing it a 'year' variable
+ * set to the value '2012'.
  */
 
 return [
