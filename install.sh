@@ -210,6 +210,9 @@ ea-php74 ./craft plugin/install redactor
 composer require marionnewlevant/snitch
 ea-php74 ./craft plugin/install snitch
 
+echo "Remove .env from .gitignore"
+sed '/\/\.env/d' .gitignore >> .gitignore.tmp
+mv -f .gitignore.tmp .gitignore
 echo "Add /storage to .gitignore"
 echo "/storage" >> .gitignore
 echo "Add /web/cpressources to .gitignore"
