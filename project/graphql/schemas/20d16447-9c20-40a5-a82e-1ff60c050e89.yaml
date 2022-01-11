@@ -5,7 +5,11 @@ scope:
   - 'entrytypes.e485bfb8-5e08-45cf-a792-6d7a97f6844d:read' # Default
   - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' # Modules
   - 'entrytypes.b7d20b42-135e-4d76-85cd-1e890b36c30a:read' # Text
+  - 'entrytypes.4093afd2-c348-4b4b-9137-0e07daa80e57:read' # Text Image
+  - 'entrytypes.3f978fac-bf27-4982-9b50-975ce9969dca:read' # Video embed
   - 'sections.ec8f8144-4229-4395-adcd-105b11962c8a:read' # Pages
   - 'entrytypes.3f07a8e2-b80b-4fe0-aca4-9c505738579d:read' # Default
+  - 'sections.ad020a71-f10c-4c45-bba5-cc4bed9ae179:read' # Search
+  - 'entrytypes.c49023ba-7dd3-4520-954f-65a005e455f8:read' # Search
   - 'volumes.7c06f121-409c-4ebe-a6ce-aa78ea61ce4d:read' # Assets
   - 'globalsets.7ddb842a-f59e-40b2-a970-b9797c1027a9:read' # Configuration
