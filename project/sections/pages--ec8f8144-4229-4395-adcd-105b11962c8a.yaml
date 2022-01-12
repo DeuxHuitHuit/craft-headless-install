@@ -10,7 +10,7 @@ previewTargets:
         - Preview
       -
         - urlFormat
-        - '{{alias(''@previewBaseUrl'')}}?uid={sourceUid}&siteId={siteId}&lang={language}'
+        - '{{alias(''@previewBaseUrl'')}}?uid={sourceUid}'
       -
         - refresh
         - '1'
