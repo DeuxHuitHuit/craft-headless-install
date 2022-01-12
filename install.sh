@@ -432,6 +432,84 @@ echo ""
 
 BASH
 
+echo "Create deploy script"
+cat > deploy.sh << BASH
+#!/bin/bash
+### Deploy script run by github action
+###
+### To revert a broken deploy you can
+### 1) Restore the backup created by the previous run
+### 2) Get the old project files from config/project.$GITHUB_RUN_ID
+
+set -e -o pipefail
+
+CRAFT_HOME="${HOME}"
+PHP_EXEC="ea-php74"
+CMD="$1"
+GITHUB_RUN_ID="$2"
+
+echo "Hi from host $HOSTNAME for run $GITHUB_RUN_ID"
+cd "${CRAFT_HOME}"
+pwd
+
+if [ "$CMD" = "backup" ]; then
+
+    echo "Backup database"
+    "${PHP_EXEC}" ./craft db/backup
+
+    echo "Rename project folder"
+    mv ./config/project "./config/project.$GITHUB_RUN_ID"
+
+    echo "Backup done"
+
+elif [ "$CMD" = "apply" ]; then
+
+    echo "Apply changes"
+    "${PHP_EXEC}" ./craft project-config/apply
+
+    echo "Clear temp files"
+    "${PHP_EXEC}" ./craft clear-caches/temp-files
+
+    echo "Remove old project files"
+    rm -rf "./config/project.$GITHUB_RUN_ID"
+
+    echo "gg;wp 👍"
+
+else
+    echo "ERROR, $CMD is not a valid command";
+    exit 1;
+fi
+
+BASH
+
+echo "Create github actions"
+mkdir -p .github/workflows
+cat > .github/workflows/deploy.yaml << YAML
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: self-hosted
+    name: Deploy
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup
+        run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      - name: Backup
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
+
+      - name: Upload
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./config/project ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/config
+
+      - name: Apply
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
+
+YAML
+
 echo "Install project files"
 rm -rf config/project
 wget https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz
