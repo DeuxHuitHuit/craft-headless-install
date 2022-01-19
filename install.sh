@@ -410,7 +410,7 @@ if [[ -f ".env.example" ]]; then
 fi
 
 echo "Setup dev project downloader"
-cat > download-project.sh <<BASH
+cat > download-project.sh << BASH
 #!/bin/bash
 
 set -e -o pipefail
