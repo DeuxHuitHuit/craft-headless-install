@@ -494,7 +494,7 @@ BASH
 
 echo "Create github actions"
 mkdir -p .github/workflows
-cat > .github/workflows/deploy.yaml << YAML
+cat > .github/workflows/deploy.yaml << 'YAML'
 name: Deploy
 on:
   push:
