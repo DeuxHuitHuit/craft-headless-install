@@ -59,7 +59,7 @@ Options +SymLinksIfOwnerMatch -Indexes
     Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS"
     Header always set Access-Control-Allow-Credentials "true"
     # Adjust this line as needed
-    SetEnvIf Origin "^http(s)?://(.+\.)?(localhost:3000|.vercel.app|example.org)$" origin_is=$0
+    SetEnvIf Origin "^http(s)?://(.+\.)?(localhost:3000|$PROJECT_CODE.vercel.app|example.org)$" origin_is=$0
     Header always set Access-Control-Allow-Origin %{origin_is}e env=origin_is
 </IfModule>
 
