@@ -58,9 +58,13 @@ Options +SymLinksIfOwnerMatch -Indexes
     Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token"
     Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS"
     Header always set Access-Control-Allow-Credentials "true"
-    # Adjust this line as needed
-    SetEnvIf Origin "^http(s)?://(.+\.)?(localhost:3000|$PROJECT_CODE.vercel.app|example.org)$" origin_is=$0
-    Header always set Access-Control-Allow-Origin %{origin_is}e env=origin_is
+    Header always unset Access-Control-Allow-Origin
+    # List of allowed origins:
+    # 1. localhost - ports 3000 to 3009
+    # 2. Production domain
+    # 3. Vercel deploys ($PROJECT_CODE.vercel.app or $PROJECT_CODE-commit-deuxhuithuit.vercel.app)
+    SetEnvIf Origin "^http(s)?://(localhost(:300[0-9])?|$PROJECT_CODE\.com|$PROJECT_CODE(.+-deuxhuithuit)?\.vercel\.app)$" origin_is=$0
+    Header always set Access-Control-Allow-Origin "%{origin_is}e" env=origin_is
 </IfModule>
 
 ### CRAFT CMS
