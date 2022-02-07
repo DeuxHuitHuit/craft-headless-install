@@ -224,6 +224,9 @@ ea-php74 ./craft plugin/install redactor
 composer require marionnewlevant/snitch
 ea-php74 ./craft plugin/install snitch
 
+echo "Install dev packages"
+composer require friendsofphp/php-cs-fixer:3.4.0 --dev
+
 echo "Remove .env from .gitignore"
 sed '/\/\.env/d' .gitignore >> .gitignore.tmp
 mv -f .gitignore.tmp .gitignore
