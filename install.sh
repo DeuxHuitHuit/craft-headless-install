@@ -536,6 +536,41 @@ jobs:
 
 YAML
 
+cat > .github/workflows/format.yaml << 'YAML'
+name: Format code
+
+on:
+    pull_request:
+
+jobs:
+    format:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+              with:
+                  ref: ${{ github.head_ref }}
+
+            - name: Setup PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                php-version: '7.4'
+                coverage: none
+                tools: composer
+
+            - name: composer install
+              run: composer install --prefer-dist --no-suggest --no-progress
+
+            - name: format
+              run: ./vendor/bin/php-cs-fixer fix modules --rules=@PhpCsFixer,-yoda_style,-concat_space
+
+            - uses: stefanzweifel/git-auto-commit-action@v4
+              with:
+                  commit_message: Format code
+                  file_pattern: '*.php *.yaml'
+
+YAML
+
 echo "Install project files"
 rm -rf config/project
 wget https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz
