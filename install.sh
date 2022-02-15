@@ -439,9 +439,12 @@ ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php74 
 echo "2. Downloading project files"
 git rm -r config/project
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.lock" "./composer.lock"
 
 echo "3. Adding new files to git"
 git add "./config/project"
+git add "composer.*"
 
 echo "Done 👍"
 echo "Please commit the result"
@@ -481,6 +484,9 @@ if [ "$CMD" = "backup" ]; then
 
 elif [ "$CMD" = "apply" ]; then
 
+    echo "Install composer deps"
+    composer install
+
     echo "Apply changes"
     "${PHP_EXEC}" ./craft project-config/apply
 
@@ -519,10 +525,13 @@ jobs:
       - name: Backup
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
-      - name: Upload
+      - name: Upload Project
         run: scp -r -P ${{ secrets.SSH_PORT }} ./config/project ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/config
 
-      - name: Apply
+      - name: Upload composer files
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+
+      - name: Install and apply
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
 
 YAML
