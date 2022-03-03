@@ -352,6 +352,7 @@ return [
         // Aliases
         'aliases' => [
             '@previewBaseUrl' => 'https://.vercel.app/api/preview',
+            '@host' => 'https://-dev.vercel.app',
         ]
     ],
 
@@ -366,6 +367,7 @@ return [
         // Aliases
         'aliases' => [
             '@previewBaseUrl' => 'https://.vercel.app/api/preview',
+            '@host' => 'https://.vercel.app',
         ]
     ],
 
@@ -378,6 +380,7 @@ return [
         // Aliases
         'aliases' => [
             '@previewBaseUrl' => 'https://.vercel.app/api/preview',
+            '@host' => 'https://.vercel.app',
         ]
     ],
 ];

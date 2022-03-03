@@ -78,7 +78,7 @@ fields:
     contentColumnType: integer(10)
     fieldGroup: null
     handle: start
-    instructions: "Time at which the video should start (in seconds)\r\nNOTE: Setting start time will disable autoplay for Vimeo embeds"
+    instructions: 'Time at which the video should start (in seconds)'
     name: Start
     searchable: false
     settings:

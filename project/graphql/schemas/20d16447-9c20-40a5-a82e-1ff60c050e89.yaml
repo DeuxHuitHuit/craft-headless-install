@@ -1,6 +1,7 @@
 isPublic: true
 name: 'Public Schema'
 scope:
+  - 'elements.inactive:read'
   - 'sections.4e822121-c86e-47c7-88db-c49c058e3b2f:read' # Buttons
   - 'entrytypes.e485bfb8-5e08-45cf-a792-6d7a97f6844d:read' # Default
   - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' # Modules
@@ -13,3 +14,4 @@ scope:
   - 'entrytypes.c49023ba-7dd3-4520-954f-65a005e455f8:read' # Search
   - 'volumes.7c06f121-409c-4ebe-a6ce-aa78ea61ce4d:read' # Assets
   - 'globalsets.7ddb842a-f59e-40b2-a970-b9797c1027a9:read' # Configuration
+  - 'categorygroups.408df6af-a1c8-433f-862d-dac928da7cb3:read' # Misc

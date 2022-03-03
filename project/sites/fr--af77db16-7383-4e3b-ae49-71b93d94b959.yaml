@@ -1,4 +1,4 @@
-baseUrl: '@web/fr'
+baseUrl: '@host/fr'
 enabled: true
 handle: fr
 hasUrls: true
