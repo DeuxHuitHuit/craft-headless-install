@@ -377,6 +377,8 @@ return [
         'allowAdminChanges' => false,
         // Disable updates in prod
         'allowUpdates' => false,
+        // No indexing
+        'disallowRobots' => true,
         // Aliases
         'aliases' => [
             '@previewBaseUrl' => 'https://.vercel.app/api/preview',
