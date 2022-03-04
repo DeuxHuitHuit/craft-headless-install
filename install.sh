@@ -492,8 +492,8 @@ elif [ "$CMD" = "apply" ]; then
     echo "Install composer deps"
     composer install
 
-    echo "Apply changes"
-    "${PHP_EXEC}" ./craft project-config/apply
+    echo "Apply changes and run migrations"
+    "${PHP_EXEC}" ./craft up
 
     echo "Clear temp files"
     "${PHP_EXEC}" ./craft clear-caches/temp-files
