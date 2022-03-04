@@ -6,6 +6,7 @@
 set -e -o pipefail
 
 PROJECT_CODE=$(basename "$(pwd)");
+INSTALLER_PHP_EXEC="ea-php74"
 
 echo "Welcome to Deux Huit Huit craft installer"
 echo ""
@@ -31,6 +32,9 @@ done
 
 echo "Install craft"
 composer create-project craftcms/craft .
+
+echo "Download phar version of composer"
+wget https://getcomposer.org/download/latest-2.x/composer.phar
 
 echo "Restore htaccess infos"
 echo "" >> web/.htaccess
@@ -211,21 +215,21 @@ rm -f ./agency-auth/.gitignore
 cd ..
 sed 's/modules\\\\"\: "modules\/"/modules\\\\agencyauth\\\\"\: "modules\/agency-auth\/src\/"/g' composer.json > composer.tmp
 mv -f composer.tmp composer.json
-composer dump-autoload -a
+${INSTALLER_PHP_EXEC} composer.phar dump-autoload -a
 
 echo "Delete IIS web.config file"
 rm -f "./web/web.config"
 
 echo "Install cp-field-inspect, redactor, snitch, ..."
-composer require mmikkel/cp-field-inspect
-ea-php74 ./craft plugin/install cp-field-inspect
-composer require craftcms/redactor
-ea-php74 ./craft plugin/install redactor
-composer require marionnewlevant/snitch
-ea-php74 ./craft plugin/install snitch
+${INSTALLER_PHP_EXEC} composer.phar  require mmikkel/cp-field-inspect
+${INSTALLER_PHP_EXEC} ./craft plugin/install cp-field-inspect
+${INSTALLER_PHP_EXEC} composer.phar  require craftcms/redactor
+${INSTALLER_PHP_EXEC} ./craft plugin/install redactor
+${INSTALLER_PHP_EXEC} composer.phar  require marionnewlevant/snitch
+${INSTALLER_PHP_EXEC} ./craft plugin/install snitch
 
 echo "Install dev packages"
-composer require friendsofphp/php-cs-fixer:3.4.0 --dev
+${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer:3.4.0 --dev
 
 echo "Remove .env from .gitignore"
 sed '/\/\.env/d' .gitignore >> .gitignore.tmp
@@ -490,7 +494,7 @@ if [ "$CMD" = "backup" ]; then
 elif [ "$CMD" = "apply" ]; then
 
     echo "Install composer deps"
-    composer install
+    "${PHP_EXEC}" composer.phar install
 
     echo "Apply changes and run migrations"
     "${PHP_EXEC}" ./craft up
@@ -583,6 +587,6 @@ tar -xvf project.tar.gz -C config/
 rm -f project.tar.gz
 sed "s/__PROJECT__/${PROJECT_CODE}/g" config/project/project.yaml > config/project/project.yaml.tmp
 mv -f config/project/project.yaml.tmp config/project/project.yaml
-ea-php74 ./craft project-config/apply
+${INSTALLER_PHP_EXEC} ./craft up
 
 echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
