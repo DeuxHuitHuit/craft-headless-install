@@ -446,9 +446,12 @@ echo "1. Generating project files"
 ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php74 ./craft project-config/write"
 
 echo "2. Downloading project files"
-git rm -r config/project storage/rebrand
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage"
+# this is required to prevent git from deleting the empty folders
+mkdir -p storage/rebrand
+touch storage/rebrand/.gitkeep
+git rm -r config/project storage/rebrand/*
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config/"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.lock" "./composer.lock"
 
