@@ -530,6 +530,18 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@master
+
+      - name: Predeploy notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_USERNAME: POUUUUUUCHE
+          SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
+          SLACK_TITLE: Déploiement du CMS
+          SLACK_MESSAGE: Nouveau push du cms débuté
+
       - name: Setup
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
@@ -544,6 +556,17 @@ jobs:
 
       - name: Install and apply
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
+
+      - name: Postdeploy notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_USERNAME: POUUUUUUCHE
+          SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
+          SLACK_TITLE: Déploiement du CMS
+          SLACK_MESSAGE: Nouveau push du cms terminé
 
 YAML
 
