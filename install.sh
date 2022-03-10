@@ -542,8 +542,7 @@ jobs:
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
           SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
-          SLACK_TITLE: Déploiement du CMS
-          SLACK_MESSAGE: Nouveau push du cms débuté
+          SLACK_TITLE: ":rocket: Nouveau déploiement du CMS débuté"
 
       - name: Setup
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
@@ -568,8 +567,7 @@ jobs:
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
           SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
-          SLACK_TITLE: Déploiement du CMS
-          SLACK_MESSAGE: Nouveau push du cms terminé
+          SLACK_TITLE: ":moon: Le a CMS atterrit avec succès :sparkles:"
 
 YAML
 
