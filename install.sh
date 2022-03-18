@@ -446,19 +446,31 @@ echo "1. Generating project files"
 ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php74 ./craft project-config/write"
 
 echo "2. Downloading project files"
-# this is required to prevent git from deleting the empty folders
+# make sure it exists so git won't complain
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep
-git rm -r config/project storage/rebrand/*
+# remove files from git
+git rm -r config/project craft web/index.php bootstrap.php
+git rm storage/rebrand || true
+# make sure the folder exits, git will have deleted it
+mkdir -p storage/rebrand
+touch storage/rebrand/.gitkeep
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.lock" "./composer.lock"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.phar" "./composer.phar"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/craft" "./craft"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/web/index.php" "./web/index.php"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/bootstrap.php" "./bootstrap.php"
 
 echo "3. Adding new files to git"
-git add "./storage/rebrand" -f
+git add "./storage/rebrand" -f || true
 git add "./config/project"
 git add "composer.*"
+git add "./craft"
+git add "./web/index.php"
+git add "./bootstrap.php"
 
 echo "Done 👍"
 echo "Please commit the result"
@@ -550,8 +562,20 @@ jobs:
       - name: Backup
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
-      - name: Upload Project
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./config/project ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/config
+      - name: Upload config
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+
+      - name: Upload modules
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+
+      - name: Upload migrations
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+
+      - name: Upload Rebrand
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/
+
+      - name: Upload .htaccess
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
 
       - name: Upload composer files
         run: scp -r -P ${{ secrets.SSH_PORT }} ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
