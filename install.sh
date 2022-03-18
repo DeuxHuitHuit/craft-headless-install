@@ -522,6 +522,9 @@ elif [ "$CMD" = "apply" ]; then
     echo "Remove old project files"
     rm -rf "./config/project.$GITHUB_RUN_ID"
 
+    echo "Remove old backups"
+    find ./storage/backups -mtime +7 -name '*.sql' -exec rm -f {} \;
+
     echo "gg;wp 👍"
 
 else
