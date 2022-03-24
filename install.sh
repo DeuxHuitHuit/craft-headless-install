@@ -468,13 +468,14 @@ echo "1. Generating project files"
 ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php74 ./craft project-config/write"
 
 echo "2. Downloading project files"
-# make sure it exists so git won't complain
-mkdir -p storage/rebrand
-touch storage/rebrand/.gitkeep
-# remove files from git
-git rm -r config/project craft web/index.php bootstrap.php
-git rm -r storage/rebrand || true
-# make sure the folder exits, git will have deleted it
+# remove files from git, if they exists
+touch storage/rebrand/.gitkeep || true
+git rm -rf config/project || true
+git rm -f craft || true
+git rm -f web/index.php || true
+git rm -f bootstrap.php || true
+git rm -rf storage/rebrand || true
+# make sure the folder exits, git might have deleted it
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config/"
@@ -521,6 +522,13 @@ cd "${CRAFT_HOME}"
 pwd
 
 if [ "$CMD" = "backup" ]; then
+
+    echo "Make sure required folder exists"
+    mkdir -p ./config
+    mkdir -p ./config/project
+    mkdir -p ./storage
+    mkdir -p ./storage/rebrand
+    mkdir -p ./storage/backups
 
     echo "Backup database"
     "${PHP_EXEC}" ./craft db/backup
