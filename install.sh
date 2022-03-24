@@ -541,7 +541,7 @@ if [ "$CMD" = "backup" ]; then
 elif [ "$CMD" = "apply" ]; then
 
     echo "Install composer deps"
-    "${PHP_EXEC}" composer.phar install --prefer-dist --no-suggest --no-progress
+    "${PHP_EXEC}" composer.phar install --prefer-dist --no-progress
 
     echo "Apply changes and run migrations"
     "${PHP_EXEC}" ./craft up
