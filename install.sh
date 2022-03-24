@@ -602,10 +602,10 @@ jobs:
         run: scp -r -P ${{ secrets.SSH_PORT }} ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
 
       - name: Upload migrations
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: '[ -d "./migrations" ] && scp -r -P ${{ secrets.SSH_PORT }} ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/ || true'
 
       - name: Upload Rebrand
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/
+        run: '[ -d "./storage/rebrand" ] && scp -r -P ${{ secrets.SSH_PORT }} ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
 
       - name: Upload .htaccess
         run: scp -r -P ${{ secrets.SSH_PORT }} ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
