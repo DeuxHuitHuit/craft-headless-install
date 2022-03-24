@@ -240,6 +240,26 @@ echo "Add /storage to .gitignore"
 echo "/storage" >> .gitignore
 echo "Add /web/cpressources to .gitignore"
 echo "/web/cpressources" >> .gitignore
+echo "Add .php-cs-fixer.cache to .gitignore"
+echo ".php-cs-fixer.cache" >> .gitignore
+
+echo "Create .gitattributes file"
+cat > .gitattributes << GITATTR
+# Set fonts to be binary
+*.eot binary
+*.otf binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+# Set images to be binary
+*.png binary
+*.jpeg binary
+*.jpg binary
+*.gif binary
+# Set phar to be binary
+*.phar binary
+
+GITATTR
 
 echo "Update .env file"
 {
