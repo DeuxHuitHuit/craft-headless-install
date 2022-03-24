@@ -199,8 +199,8 @@ chmod u+x ./craft
 echo "Create storage directory"
 mkdir -p "./storage"
 
-echo "Create upload directory"
-mkdir -p "./web/upload"
+echo "Create uploads directory"
+mkdir -p "./web/uploads"
 
 echo "Nuke and recreate the module folder"
 rm -rf ./modules
