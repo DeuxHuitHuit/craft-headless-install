@@ -337,36 +337,24 @@ return [
     '*' => [
         // Default Week Start Day (0 = Sunday, 1 = Monday...)
         'defaultWeekStartDay' => 1,
-
         // Whether generated URLs should omit "index.php"
         'omitScriptNameInUrls' => true,
-
         // Control Panel trigger word
         'cpTrigger' => 'craft',
-
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => App::env('SECURITY_KEY'),
-
         // Enable headless mode: https://craftcms.com/docs/3.x/config/config-settings.html#headlessmode
         'headlessMode' => true,
-
         'addTrailingSlashesToUrls' => true,
-
         'limitAutoSlugsToAscii' => true,
-
         'useEmailAsUsername' => true,
-
         'errorTemplatePrefix' => '_pages/errors/',
-
         'upscaleImages' => false,
-
         'transformGifs' => false,
-
         'sendPoweredByHeader' => false,
-
         'cacheTTL' => 14400, // 12 hours
-
         'generateTransformsBeforePageLoad' => true,
+        'verificationCodeDuration' => 259200, // 72 hours
     ],
 
     // Dev environment settings
