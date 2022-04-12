@@ -370,21 +370,6 @@ return [
         ]
     ],
 
-    // Staging environment settings
-    'staging' => [
-        // Set this value only if really required. Should always be false.
-        'allowAdminChanges' => false,
-        // Disable updates in staging
-        'allowUpdates' => false,
-        // No indexing
-        'disallowRobots' => true,
-        // Aliases
-        'aliases' => [
-            '@previewBaseUrl' => 'https://.vercel.app/api/preview',
-            '@host' => 'https://.vercel.app',
-        ]
-    ],
-
     // Production environment settings
     'production' => [
         // Set this value only if really required. Should always be false.
