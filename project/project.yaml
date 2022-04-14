@@ -1,4 +1,4 @@
-dateModified: 1646340618
+dateModified: 1649966600
 email:
   fromEmail: vincent@deuxhuithuit.co
   fromName: __PROJECT__
@@ -11,12 +11,14 @@ meta:
   __names__:
     0f0e5f88-9336-4032-bfa2-11083f5fa132: Identifier # Identifier
     1a025b55-4141-4cc4-8c57-683723b236c7: Logo # Logo
+    3b201410-7c1b-4123-aa95-e7e742a06113: Scripts # Scripts
     3f07a8e2-b80b-4fe0-aca4-9c505738579d: Default # Default
     3f978fac-bf27-4982-9b50-975ce9969dca: 'Video embed' # Video embed
     4b8d5a84-3fab-441c-b90e-5439048b5ea9: Muted # Muted
     4e822121-c86e-47c7-88db-c49c058e3b2f: Buttons # Buttons
     4f2acaa1-189a-4e2d-ad0c-f313c4b00118: Socials # Socials
     5e423c33-bf01-4613-b511-0c196a0f3421: 'Platform Url' # Platform Url
+    6bb7eb36-b90f-451e-b921-1f377e3ff31e: Scripts # Scripts
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
     7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
     7ddb842a-f59e-40b2-a970-b9797c1027a9: Configuration # Configuration
@@ -33,6 +35,7 @@ meta:
     506fb257-f530-4cda-b130-1af00a5bda55: Common # Common
     3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Share Title' # Share Title
     4093afd2-c348-4b4b-9137-0e07daa80e57: 'Text Image' # Text Image
+    7660df84-3284-4698-a6b9-3c14ecc4dae2: Scripts # Scripts
     22947fe1-4c0e-437b-9997-de04319d78e3: Text # Text
     23284f12-4d7f-4e0c-96d0-ec4b36578576: Start # Start
     78376c37-546a-4c5a-b132-d9d8c8acf806: 'Twitter Handle' # Twitter Handle
@@ -51,13 +54,16 @@ meta:
     b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Video embed url' # Video embed url
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
     c49023ba-7dd3-4520-954f-65a005e455f8: Search # Search
+    cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
     cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
+    d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
     dbc05352-c8d9-4615-a1c6-79954bf4033b: __PROJECT__ # __PROJECT__
     e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
     e2cdaad1-42b3-4873-a763-caf3bf386e18: Name # Name
     e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: Asset # Asset
     e45d3444-dd43-44a0-9878-0fea045f468b: Media # Media
     e485bfb8-5e08-45cf-a792-6d7a97f6844d: Default # Default
+    eae04f61-8571-43a2-845c-063aa638db1e: 'Body Start' # Body Start
     ec8f8144-4229-4395-adcd-105b11962c8a: Pages # Pages
     edb579ae-b8c5-4bba-9665-5dce08886786: Organization # Organization
     eea7a6e3-c57b-4def-92df-fe22afc3903b: 'Video embed options' # Video embed options
