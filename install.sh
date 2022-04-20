@@ -365,7 +365,6 @@ return [
         'disallowRobots' => true,
         // Aliases
         'aliases' => [
-            '@previewBaseUrl' => 'https://.vercel.app/api/preview',
             '@host' => 'https://-dev.vercel.app',
         ]
     ],
@@ -380,7 +379,6 @@ return [
         'disallowRobots' => true,
         // Aliases
         'aliases' => [
-            '@previewBaseUrl' => 'https://.vercel.app/api/preview',
             '@host' => 'https://.vercel.app',
         ]
     ],
