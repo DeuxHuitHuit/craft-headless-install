@@ -10,7 +10,7 @@ previewTargets:
         - Preview
       -
         - urlFormat
-        - '{{alias(''@previewBaseUrl'')}}/{language}/{uri}'
+        - '{url}'
       -
         - refresh
         - '1'
