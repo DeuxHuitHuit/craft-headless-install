@@ -418,7 +418,7 @@ if [[ -f ".env.example" ]]; then
 fi
 
 echo "Setup dev project downloader"
-cat > download-project.sh << BASH
+cat > download-project.sh << 'BASH'
 #!/bin/bash
 
 set -e -o pipefail
@@ -438,16 +438,16 @@ echo "1. Generating project files"
 ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php81 ./craft project-config/write"
 
 echo "2. Downloading project files"
-# remove files from git, if they exists
+# make sure it exists so git won't complain
+mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep || true
-git rm -rf config/project || true
-git rm -f craft || true
-git rm -f web/index.php || true
-git rm -f bootstrap.php || true
-git rm -rf storage/rebrand || true
-# make sure the folder exits, git might have deleted it
+# remove files from git
+git rm -r config/project craft web/index.php bootstrap.php
+git rm -r storage/rebrand || true
+# make sure the folder exits, git will have deleted it
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep
+# download the files
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
