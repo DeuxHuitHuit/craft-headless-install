@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  tarball:
+  shellcheck:
     runs-on: ubuntu-latest
 
     steps:
