@@ -6,7 +6,7 @@
 set -e -o pipefail
 
 PROJECT_CODE=$(basename "$(pwd)");
-INSTALLER_PHP_EXEC="ea-php74"
+INSTALLER_PHP_EXEC="ea-php81"
 
 echo "Welcome to Deux Huit Huit craft installer"
 echo ""
@@ -436,7 +436,7 @@ if [[ -z "$PROJECT" ]]; then
 fi
 
 echo "1. Generating project files"
-ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php74 ./craft project-config/write"
+ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php81 ./craft project-config/write"
 
 echo "2. Downloading project files"
 # remove files from git, if they exists
@@ -484,7 +484,7 @@ cat > deploy.sh << BASH
 set -e -o pipefail
 
 CRAFT_HOME="${HOME}"
-PHP_EXEC="ea-php74"
+PHP_EXEC="ea-php81"
 CMD="$1"
 GITHUB_RUN_ID="$2"
 
