@@ -225,13 +225,13 @@ ${INSTALLER_PHP_EXEC} composer.phar require mmikkel/cp-field-inspect
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cp-field-inspect
 ${INSTALLER_PHP_EXEC} composer.phar require craftcms/redactor
 ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor
-${INSTALLER_PHP_EXEC} composer.phar require marionnewlevant/snitch
-${INSTALLER_PHP_EXEC} ./craft plugin/install snitch
+#${INSTALLER_PHP_EXEC} composer.phar require marionnewlevant/snitch
+#${INSTALLER_PHP_EXEC} ./craft plugin/install snitch
 ${INSTALLER_PHP_EXEC} composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
 
 echo "Install dev packages"
-${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer:3.4.0 --dev
+${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
 
 echo "Remove .env from .gitignore"
 sed '/\/\.env/d' .gitignore >> .gitignore.tmp
@@ -352,7 +352,6 @@ return [
         'upscaleImages' => false,
         'transformGifs' => false,
         'sendPoweredByHeader' => false,
-        'cacheTTL' => 14400, // 12 hours
         'generateTransformsBeforePageLoad' => true,
         'verificationCodeDuration' => 259200, // 72 hours
     ],
