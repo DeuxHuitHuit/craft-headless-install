@@ -442,8 +442,11 @@ echo "2. Downloading project files"
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep || true
 # remove files from git
-git rm -r config/project craft web/index.php bootstrap.php
-git rm -r storage/rebrand || true
+git rm -rf config/project || true
+git rm -f craft || true
+git rm -f web/index.php || true
+git rm -f bootstrap.php || true
+git rm -rf storage/rebrand || true
 # make sure the folder exits, git will have deleted it
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep
