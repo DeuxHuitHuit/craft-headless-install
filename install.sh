@@ -560,7 +560,7 @@ jobs:
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
           SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
-          SLACK_TITLE: ":rocket: Nouveau déploiement du CMS débuté"
+          SLACK_TITLE: ":rocket: Nouveau déploiement du CMS en cours"
 
       - name: Setup
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
@@ -589,8 +589,20 @@ jobs:
       - name: Install and apply
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
 
-      - name: Postdeploy notification
+      - name: Postdeploy failure notification
         uses: rtCamp/action-slack-notify@v2
+        if: failure()
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_USERNAME: POUUUUUUCHE
+          SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
+          SLACK_TITLE: ":alert::alert::alert: Échec du déploiement :alert::alert::alert:"
+
+      - name: Postdeploy success notification
+        uses: rtCamp/action-slack-notify@v2
+        if: success()
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
