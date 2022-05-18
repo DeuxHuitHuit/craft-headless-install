@@ -345,7 +345,7 @@ return [
         'securityKey' => App::env('SECURITY_KEY'),
         // Enable headless mode: https://craftcms.com/docs/3.x/config/config-settings.html#headlessmode
         'headlessMode' => true,
-        'addTrailingSlashesToUrls' => true,
+        'addTrailingSlashesToUrls' => false,
         'limitAutoSlugsToAscii' => true,
         'useEmailAsUsername' => true,
         'errorTemplatePrefix' => '_pages/errors/',
