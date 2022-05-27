@@ -1,4 +1,35 @@
-dateModified: 1650415528
+dateModified: 1653662697
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Pages
+      type: heading
+    -
+      key: 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
+      type: native
+    -
+      heading: Components
+      type: heading
+    -
+      key: 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+        - type
+      type: native
+    -
+      key: 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Buttons
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
 email:
   fromEmail: vincent@deuxhuithuit.co
   fromName: __PROJECT__
@@ -7,6 +38,14 @@ email:
   transportSettings:
     command: ''
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  assets:
+    hasUrls: true
+    name: Assets
+    settings:
+      path: $ASSETS_FILE_SYSTEM_PATH
+    type: craft\fs\Local
+    url: $UPLOADS_URL
 meta:
   __names__:
     0f0e5f88-9336-4032-bfa2-11083f5fa132: Identifier # Identifier
@@ -80,18 +119,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
-  snitch:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.1.0
 system:
   edition: pro
   live: true
   name: sveltekit
-  schemaVersion: 3.7.8
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
+  deactivateByDefault: false
   defaultGroup: null
   photoSubpath: null
   photoVolumeUid: null

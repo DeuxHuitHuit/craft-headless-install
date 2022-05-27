@@ -23,7 +23,7 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
           -
@@ -37,13 +37,11 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
+fs: assets
 handle: assets
 hasUrls: true
 name: Assets
-settings:
-  path: $ASSETS_FILE_SYSTEM_PATH
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: craft\volumes\Local
 url: $UPLOADS_URL

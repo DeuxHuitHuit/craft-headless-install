@@ -14,7 +14,7 @@ if [[ -z "$PROJECT" ]]; then
 fi
 
 echo "1. Generating project files"
-ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php74 ./craft project-config/write"
+ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php81 ./craft project-config/write"
 
 echo "2. Downloading project files"
 git rm -r ./project

@@ -17,3 +17,5 @@ scope:
   - 'volumes.7c06f121-409c-4ebe-a6ce-aa78ea61ce4d:read' # Assets
   - 'globalsets.7ddb842a-f59e-40b2-a970-b9797c1027a9:read' # Configuration
   - 'categorygroups.408df6af-a1c8-433f-862d-dac928da7cb3:read' # Misc
+  - 'sites.af77db16-7383-4e3b-ae49-71b93d94b959:read' # FR
+  - 'sites.c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da:read' # EN
