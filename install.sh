@@ -657,4 +657,12 @@ sed "s/__PROJECT__/${PROJECT_CODE}/g" config/project/project.yaml > config/proje
 mv -f config/project/project.yaml.tmp config/project/project.yaml
 ${INSTALLER_PHP_EXEC} ./craft up
 
+echo "Creating symlinks for .env and .htaccess files"
+cd web
+mv .htaccess .htaccess.dev
+ln -s .htaccess.dev .htaccess
+cd -
+mv .env .env.dev
+ln -s .env.dev .env
+
 echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
