@@ -583,6 +583,9 @@ jobs:
       - name: Upload .htaccess
         run: scp -r -P ${{ secrets.SSH_PORT }} ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
 
+      - name: Upload .env.prod
+        run: scp -r -P ${{ secrets.SSH_PORT }} ./.env.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+
       - name: Upload composer files
         run: scp -r -P ${{ secrets.SSH_PORT }} ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
 
