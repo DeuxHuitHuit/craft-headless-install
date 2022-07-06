@@ -475,7 +475,7 @@ echo ""
 BASH
 
 echo "Create deploy script"
-cat > deploy.sh << BASH
+cat > deploy.sh << 'BASH'
 #!/bin/bash
 ### Deploy script run by github action
 ###
