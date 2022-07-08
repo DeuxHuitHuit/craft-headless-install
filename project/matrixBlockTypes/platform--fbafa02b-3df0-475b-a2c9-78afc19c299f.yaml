@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f31050d5-c274-4e15-a4e2-e43354dbc223
             warning: null
             width: 100
           -
@@ -20,6 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9085b051-821f-41e8-817c-e6365efcf707
             warning: null
             width: 100
           -
@@ -29,26 +31,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 60e96c22-d58a-479d-9377-ef059858b47e
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 6906d9f3-c621-4c92-a016-0d133ed79641
 fields:
   5e423c33-bf01-4613-b511-0c196a0f3421: # Platform Url
     columnSuffix: kcelfkir
     contentColumnType: text
     fieldGroup: null
     handle: platformUrl
-    instructions: ''
+    instructions: null
     name: 'Platform Url'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -59,30 +62,44 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: platformLogo
-    instructions: ''
+    instructions: null
     name: 'Platform Logo'
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      defaultUploadLocationSubpath: ''
-      limit: ''
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: null
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      singleUploadLocationSubpath: ''
       source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -92,17 +109,17 @@ fields:
     columnSuffix: wtfddxgb
     contentColumnType: text
     fieldGroup: null
-    handle: plateformName
-    instructions: ''
+    handle: platformName
+    instructions: null
     name: 'Plateform Name'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
