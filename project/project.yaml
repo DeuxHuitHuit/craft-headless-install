@@ -1,4 +1,4 @@
-dateModified: 1657315739
+dateModified: 1659378251
 elementSources:
   craft\elements\Entry:
     -
@@ -119,6 +119,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   sendgrid:
     edition: standard
     enabled: true
