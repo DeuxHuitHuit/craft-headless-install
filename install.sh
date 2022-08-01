@@ -229,6 +229,8 @@ ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor
 #${INSTALLER_PHP_EXEC} ./craft plugin/install snitch
 ${INSTALLER_PHP_EXEC} composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
+${INSTALLER_PHP_EXEC} composer.phar require carlcs/craft-redactorcustomstyles
+${INSTALLER_PHP_EXEC} ./craft plugin/install redactor-custom-styles
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
