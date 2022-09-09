@@ -416,10 +416,10 @@ return [
 
 PHP
 
-echo "Delete .env.example if still lingering around"
-if [[ -f ".env.example" ]]; then
-	rm -f ".env.example"
-fi
+echo "Delete .env.example files if they're still lingering around"
+for E in .env.example*; do
+	rm -f "${E}";
+done
 
 echo "Setup dev project downloader"
 cat > download-project.sh << 'BASH'
