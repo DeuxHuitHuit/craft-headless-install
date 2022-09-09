@@ -270,6 +270,8 @@ echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads"
 echo ""
 echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
 echo ""
+echo "SITE_NAME=$PROJECT_CODE"
+echo ""
 } >> .env
 
 echo "Add config file for agency-auth"
