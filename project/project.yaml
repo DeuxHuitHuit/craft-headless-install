@@ -1,4 +1,4 @@
-dateModified: 1659378251
+dateModified: 1662731625
 elementSources:
   craft\elements\Entry:
     -
@@ -96,7 +96,7 @@ meta:
     cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
     cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
     d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
-    dbc05352-c8d9-4615-a1c6-79954bf4033b: __PROJECT__ # __PROJECT__
+    dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
     e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
     e2cdaad1-42b3-4873-a763-caf3bf386e18: Name # Name
     e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: Asset # Asset
@@ -130,9 +130,10 @@ plugins:
 system:
   edition: pro
   live: true
-  name: sveltekit
+  name: $SITE_NAME
+  retryDuration: 60
   schemaVersion: 4.0.0.9
-  timeZone: America/Los_Angeles
+  timeZone: America/Toronto
 users:
   allowPublicRegistration: false
   deactivateByDefault: false
