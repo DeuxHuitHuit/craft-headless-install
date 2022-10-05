@@ -369,6 +369,7 @@ return [
         // Aliases
         'aliases' => [
             '@host' => 'https://-dev.vercel.app',
+            '@web' => 'https://$PROJECT_CODE.288dev.com',
         ]
     ],
 
@@ -383,6 +384,7 @@ return [
         // Aliases
         'aliases' => [
             '@host' => 'https://.vercel.app',
+            '@web' => '',
         ]
     ],
 ];
