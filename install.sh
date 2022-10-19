@@ -358,6 +358,7 @@ return [
         'sendPoweredByHeader' => false,
         'generateTransformsBeforePageLoad' => true,
         'verificationCodeDuration' => 259200, // 72 hours
+        'userSessionDuration' => 604800, // 1 week
     ],
 
     // Dev environment settings
