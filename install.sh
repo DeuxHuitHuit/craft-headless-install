@@ -66,8 +66,8 @@ Options +SymLinksIfOwnerMatch -Indexes
     # List of allowed origins:
     # 1. localhost - ports 3000 to 3009
     # 2. Production domain
-    # 3. Vercel deploys ($PROJECT_CODE.vercel.app or $PROJECT_CODE-commit-deuxhuithuit.vercel.app)
-    SetEnvIf Origin "^http(s)?://(localhost(:300[0-9])?|$PROJECT_CODE\.com|$PROJECT_CODE(.+-deuxhuithuit)?\.vercel\.app)$" origin_is=\$0
+    # 3. Vercel deploys ($PROJECT_CODE-sveltekit.vercel.app or $PROJECT_CODE-sveltekit-commitish-deuxhuithuit.vercel.app)
+    SetEnvIf Origin "^http(s)?://(localhost(:[345][\d][\d][\d])?|$PROJECT_CODE\.com|$PROJECT_CODE-sveltekit(.+-deuxhuithuit)?\.vercel\.app)$" origin_is=\$0
     Header always set Access-Control-Allow-Origin "%{origin_is}e" env=origin_is
 </IfModule>
 
