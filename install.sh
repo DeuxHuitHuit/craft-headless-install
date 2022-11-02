@@ -359,6 +359,11 @@ return [
         'generateTransformsBeforePageLoad' => true,
         'verificationCodeDuration' => 259200, // 72 hours
         'userSessionDuration' => 604800, // 1 week
+        // Disable re-encoding of files:
+        // This can be dangerous and should be disabled with caution
+        // but since it makes images enormous, we can not use it.
+        'sanitizeCpImageUploads' => false,
+        'sanitizeSvgUploads' => false,
     ],
 
     // Dev environment settings
