@@ -2,13 +2,27 @@ fieldLayouts:
   ad8e7b86-4dcc-41c1-9449-b3b0eec13184:
     tabs:
       -
+        elementCondition: null
         elements:
+          -
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifier
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f625e8c-2e69-407f-aa20-a27e9c65e754
+            userCondition: null
+            warning: null
+            width: 100
           -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,32 +38,43 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 07494787-7237-46f7-9bc9-32c4f49c5b54
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b8ac2245-4303-413e-bbc8-85f8c94a30b0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: e28b2f85-ca4b-4fe8-8e3c-96267b721341
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 873f6a0e-a4bb-4728-b0db-825bbced5380
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: cc1a1735-c338-4810-9ca0-4b2287c4e2cf
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default

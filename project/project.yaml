@@ -1,4 +1,4 @@
-dateModified: 1662731625
+dateModified: 1667249374
 elementSources:
   craft\elements\Entry:
     -
@@ -8,7 +8,20 @@ elementSources:
       heading: Pages
       type: heading
     -
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      disabled: false
       key: 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
+      tableAttributes:
+        - postDate
+        - uri
       type: native
     -
       heading: Components
@@ -30,14 +43,18 @@ elementSources:
         - author
         - link
       type: native
+    -
+      heading: ''
+      type: heading
 email:
-  fromEmail: vincent@deuxhuithuit.co
+  fromEmail: no-reply@deuxhuithuit.co
   fromName: __PROJECT__
   replyToEmail: null
   template: ''
   transportSettings:
-    command: ''
-  transportType: craft\mail\transportadapters\Sendmail
+    apiKey: $SENDGRID_API
+    categories: ''
+  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
 fs:
   assets:
     hasUrls: true
@@ -87,6 +104,7 @@ meta:
     57658648-a27b-42d0-9da8-27b4e63facf9: Loop # Loop
     ad020a71-f10c-4c45-bba5-cc4bed9ae179: Search # Search
     af77db16-7383-4e3b-ae49-71b93d94b959: FR # FR
+    b09fcabc-7f1c-40b8-b8d3-f085835a0c24: Home # Home
     b2ec015d-a8f7-4da8-a82c-5db01312f38b: Email # Email
     b7d20b42-135e-4d76-85cd-1e890b36c30a: Text # Text
     b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
@@ -96,6 +114,7 @@ meta:
     cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
     cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
     d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
+    da1b5819-b168-4dd9-aa35-505a833ee367: Home # Home
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
     e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
     e2cdaad1-42b3-4873-a763-caf3bf386e18: Name # Name
