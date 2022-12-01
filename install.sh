@@ -463,7 +463,7 @@ git rm -rf storage/rebrand || true
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep
 # download the files
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./config/"
+scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/*" "./config/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage/"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
 scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.lock" "./composer.lock"
@@ -474,7 +474,7 @@ scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/bootstrap.php" "./bootstrap.php"
 
 echo "3. Adding new files to git"
 git add "./storage/rebrand" -f || true
-git add "./config/project"
+git add "./config"
 git add "composer.*"
 git add "./craft"
 git add "./web/index.php"
