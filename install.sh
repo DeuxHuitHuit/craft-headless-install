@@ -235,6 +235,22 @@ ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor-custom-styles
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
 
+echo "Create custom htmlpurifier config (overwrites default)"
+cat > ./config/htmlpurifier/Default.json << HTMLPURIFIER
+{
+  "Attr.AllowedFrameTargets": [
+    "_blank"
+  ],
+  "Attr.EnableID": true,
+  "HTML.AllowedComments": [
+    "pagebreak"
+  ],
+  "HTML.SafeIframe": true,
+  "URI.SafeIframeRegexp": "%^(https?:)?//(www.youtube.com/embed/|player.vimeo.com/video/|www.loom.com/embed/)%"
+}
+
+HTMLPURIFIER
+
 echo "Remove .env from .gitignore"
 sed '/\/\.env/d' .gitignore >> .gitignore.tmp
 mv -f .gitignore.tmp .gitignore
