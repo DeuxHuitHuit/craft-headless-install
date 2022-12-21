@@ -8,6 +8,8 @@ scope:
   - 'elements.inactive:read'
   - 'sections.4e822121-c86e-47c7-88db-c49c058e3b2f:read' # Buttons
   - 'entrytypes.e485bfb8-5e08-45cf-a792-6d7a97f6844d:read' # Default
+  - 'sections.da1b5819-b168-4dd9-aa35-505a833ee367:read' # Home
+  - 'entrytypes.b09fcabc-7f1c-40b8-b8d3-f085835a0c24:read' # Home
   - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' # Modules
   - 'entrytypes.b7d20b42-135e-4d76-85cd-1e890b36c30a:read' # Text
   - 'entrytypes.4093afd2-c348-4b4b-9137-0e07daa80e57:read' # Text Image

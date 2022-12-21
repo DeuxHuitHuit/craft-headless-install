@@ -3,96 +3,107 @@ fieldLayouts:
   7eab1a53-1256-416c-996f-5530b5ed7e56:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: cb8bd9eb-3ad5-44d0-8c11-52f215b0e027 # Head
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: de7d0ced-3dbf-4c92-8b0a-9caa5f7ee70a
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: eae04f61-8571-43a2-845c-063aa638db1e # Body Start
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 976d0209-d7bc-4cec-b0a4-3d61e4396ae4
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d4f4b051-1f67-458c-8641-162f89f47e59 # Body End
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ed97c5e2-5937-4799-85c8-cf9341bc2c43
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 8c3821a3-1b87-49bf-90d1-4b79ad6c9fce
+        userCondition: null
 fields:
   cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: # Head
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: head
-    instructions: ''
+    instructions: null
     name: Head
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: '1'
+      initialRows: 4
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   d4f4b051-1f67-458c-8641-162f89f47e59: # Body End
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: bodyEnd
-    instructions: ''
+    instructions: null
     name: 'Body End'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: '1'
+      initialRows: 4
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
   eae04f61-8571-43a2-845c-063aa638db1e: # Body Start
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: bodyStart
-    instructions: ''
+    instructions: null
     name: 'Body Start'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: '1'
+      initialRows: 4
+      multiline: true
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: none
     type: craft\fields\PlainText
 handle: scripts
 name: Scripts

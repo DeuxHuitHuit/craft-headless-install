@@ -3,66 +3,103 @@ fieldLayouts:
   55ffc0f0-7836-48a1-970b-fe7e8152e13a:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 3549d929-b071-40e7-9ecd-b06f0f29fb04 # Share Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c0bcf4ad-1b58-426e-bde8-ccce4a2f8b23
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f24c97e8-b8f5-4799-bb8f-c062c6196c51 # Share Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7b716857-f767-4ac5-91d6-76c3b53f6b01
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 99a344a6-d5b9-4dfb-8ab7-9d6909dd6644 # Share Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 86e0ad97-70da-442e-a3ea-f7f216753fc9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: caa63442-86cb-4489-baad-9aba2dc43dba # Prevent Indexation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d93df4c-e526-4ad3-8f4f-c40ca926af98
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: a6686838-72be-49c1-8f5b-9014af8540d0
+        userCondition: null
 fields:
   99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: # Share Image
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: shareImage
-    instructions: ''
+    instructions: null
     name: 'Share Image'
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      singleUploadLocationSubpath: ''
       source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -73,36 +110,51 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: shareTitle
-    instructions: ''
+    instructions: null
     name: 'Share Title'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
+  caa63442-86cb-4489-baad-9aba2dc43dba: # Prevent Indexation
+    columnSuffix: ubepuvqs
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: noIndex
+    instructions: null
+    name: 'Prevent Indexation'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
   f24c97e8-b8f5-4799-bb8f-c062c6196c51: # Share Description
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: shareDescription
-    instructions: ''
+    instructions: null
     name: 'Share Description'
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
