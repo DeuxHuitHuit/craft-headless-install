@@ -59,16 +59,17 @@ Options +SymLinksIfOwnerMatch -Indexes
 
 #### CORS
 <IfModule mod_headers.c>
-    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token"
+    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token, Origin"
     Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS"
     Header always set Access-Control-Allow-Credentials "true"
     Header always unset Access-Control-Allow-Origin
     # List of allowed origins:
-    # 1. localhost - ports 3000 to 3009
+    # 1. localhost - ports 3000 to 5999
     # 2. Production domain
     # 3. Vercel deploys ($PROJECT_CODE-sveltekit.vercel.app or $PROJECT_CODE-sveltekit-commitish-deuxhuithuit.vercel.app)
     SetEnvIf Origin "^http(s)?://(localhost(:[345][\d][\d][\d])?|$PROJECT_CODE\.com|$PROJECT_CODE-sveltekit(.+-deuxhuithuit)?\.vercel\.app)$" origin_is=\$0
     Header always set Access-Control-Allow-Origin "%{origin_is}e" env=origin_is
+    Header always set vary "Accept-Encoding, Origin" env=origin_is
 </IfModule>
 
 ### CRAFT CMS
@@ -608,7 +609,7 @@ jobs:
       - name: Upload Rebrand
         run: '[ -d "./storage/rebrand" ] && scp -r -P ${{ secrets.SSH_PORT }} ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
 
-      - name: Upload .htaccess
+      - name: Upload .htaccess.prod
         run: scp -r -P ${{ secrets.SSH_PORT }} ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
 
       - name: Upload .env.prod
