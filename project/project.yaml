@@ -1,4 +1,4 @@
-dateModified: 1671635541
+dateModified: 1672858761
 elementSources:
   craft\elements\Entry:
     -
@@ -79,10 +79,12 @@ meta:
     7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
     7ddb842a-f59e-40b2-a970-b9797c1027a9: Configuration # Configuration
     8b5316ca-71f3-4b68-be3d-991a601fa490: 'External Url' # External Url
+    8e521985-7684-4e3d-9718-e32537067b77: 'Enable cookie banner' # Enable cookie banner
     9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c: Surtitle # Surtitle
     10a5c368-5d0b-47a4-9978-105511f5e998: SEO # SEO
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
     26ac95b7-5d49-4702-94f5-91f13becdd1a: Autoplay # Autoplay
+    80faeb96-cf17-464b-aae2-cbf334c38969: Text # Text
     93b69e94-91ec-4548-9997-e8257e5f9c47: Alt # Alt
     99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Share Image' # Share Image
     216a4e0a-27ae-4b0b-963e-26dc9ffae251: 'Platform Logo' # Platform Logo
@@ -92,6 +94,7 @@ meta:
     3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Share Title' # Share Title
     4093afd2-c348-4b4b-9137-0e07daa80e57: 'Text Image' # Text Image
     7660df84-3284-4698-a6b9-3c14ecc4dae2: Scripts # Scripts
+    8659c777-3feb-4edf-88ee-c5e4cee8aa6a: 'Cookie Banner' # Cookie Banner
     22947fe1-4c0e-437b-9997-de04319d78e3: Text # Text
     23284f12-4d7f-4e0c-96d0-ec4b36578576: Start # Start
     78376c37-546a-4c5a-b132-d9d8c8acf806: 'Twitter Handle' # Twitter Handle
@@ -115,6 +118,7 @@ meta:
     cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
     cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
     d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
+    d53f096e-9e71-40ca-89b6-2df0130b4582: 'GTM Consent Event' # GTM Consent Event
     da1b5819-b168-4dd9-aa35-505a833ee367: Home # Home
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
     e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
