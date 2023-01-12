@@ -656,7 +656,7 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@master
               with:
                   ref: ${{ github.head_ref }}
 
