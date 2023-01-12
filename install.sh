@@ -232,6 +232,10 @@ ${INSTALLER_PHP_EXEC} composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
 ${INSTALLER_PHP_EXEC} composer.phar require carlcs/craft-redactorcustomstyles
 ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor-custom-styles
+${INSTALLER_PHP_EXEC} composer.phar require spicyweb/craft-neo -w
+${INSTALLER_PHP_EXEC} ./craft plugin/install neo
+${INSTALLER_PHP_EXEC} composer.phar require dodecastudio/craft-blurhash -w
+${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
