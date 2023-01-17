@@ -1,4 +1,4 @@
-dateModified: 1672858761
+dateModified: 1673889340
 elementSources:
   craft\elements\Entry:
     -
@@ -135,10 +135,19 @@ meta:
     fc75545c-a4e6-482c-866c-64e270d6d9a7: Address # Address
     fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Plateform Name' # Plateform Name
 plugins:
+  blur-hash:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   cp-field-inspect:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: HWTQW4WCYH85IWQF519AIL1T
+    schemaVersion: 3.5.2
   redactor:
     edition: standard
     enabled: true
