@@ -1,6 +1,6 @@
 columnSuffix: cowpktiv
 contentColumnType: text
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+fieldGroup: 1f225daf-1e85-461d-a339-b01dbf7b1e03 # Cookie Banner
 handle: gtmConsentEvent
 instructions: null
 name: 'GTM Consent Event'
@@ -8,7 +8,7 @@ searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: false
+  code: true
   columnType: null
   initialRows: 4
   multiline: false

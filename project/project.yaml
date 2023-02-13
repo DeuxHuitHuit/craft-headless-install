@@ -1,4 +1,4 @@
-dateModified: 1673889340
+dateModified: 1675174499
 elementSources:
   craft\elements\Entry:
     -
@@ -67,6 +67,7 @@ meta:
   __names__:
     0f0e5f88-9336-4032-bfa2-11083f5fa132: Identifier # Identifier
     1a025b55-4141-4cc4-8c57-683723b236c7: Logo # Logo
+    1f225daf-1e85-461d-a339-b01dbf7b1e03: 'Cookie Banner' # Cookie Banner
     3b201410-7c1b-4123-aa95-e7e742a06113: Scripts # Scripts
     3f07a8e2-b80b-4fe0-aca4-9c505738579d: Default # Default
     3f978fac-bf27-4982-9b50-975ce9969dca: 'Video embed' # Video embed
