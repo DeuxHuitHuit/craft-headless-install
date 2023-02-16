@@ -484,14 +484,14 @@ git rm -rf storage/rebrand || true
 mkdir -p storage/rebrand
 touch storage/rebrand/.gitkeep
 # download the files
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/*" "./config/"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage/"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.lock" "./composer.lock"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/composer.phar" "./composer.phar"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/craft" "./craft"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/web/index.php" "./web/index.php"
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/bootstrap.php" "./bootstrap.php"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/config/*" "./config/"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/storage/rebrand" "./storage/"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/composer.json" "./composer.json"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/composer.lock" "./composer.lock"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/composer.phar" "./composer.phar"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/craft" "./craft"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/web/index.php" "./web/index.php"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/bootstrap.php" "./bootstrap.php"
 
 echo "3. Adding new files to git"
 git add "./storage/rebrand" -f || true
@@ -602,25 +602,25 @@ jobs:
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
       - name: Upload config
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
 
       - name: Upload modules
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
 
       - name: Upload migrations
-        run: '[ -d "./migrations" ] && scp -r -P ${{ secrets.SSH_PORT }} ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/ || true'
+        run: '[ -d "./migrations" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/ || true'
 
       - name: Upload Rebrand
-        run: '[ -d "./storage/rebrand" ] && scp -r -P ${{ secrets.SSH_PORT }} ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
+        run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
 
       - name: Upload .htaccess.prod
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
 
       - name: Upload .env.prod
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./.env.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
 
       - name: Upload composer files
-        run: scp -r -P ${{ secrets.SSH_PORT }} ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
 
       - name: Install and apply
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh

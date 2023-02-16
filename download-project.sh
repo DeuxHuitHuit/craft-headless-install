@@ -18,7 +18,7 @@ ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php81 
 
 echo "2. Downloading project files"
 git rm -r ./project
-scp -r -P "$PORT" "$HOST":"~/www/$PROJECT/config/project" "./"
+rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/config/project" "./"
 
 echo "3. Adding new files to git"
 git add "./project"
