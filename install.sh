@@ -236,6 +236,8 @@ ${INSTALLER_PHP_EXEC} composer.phar require spicyweb/craft-neo -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install neo
 ${INSTALLER_PHP_EXEC} composer.phar require dodecastudio/craft-blurhash -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
+${INSTALLER_PHP_EXEC} composer.phar require verbb/field-manager -w
+${INSTALLER_PHP_EXEC} ./craft plugin/install field-manager
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
