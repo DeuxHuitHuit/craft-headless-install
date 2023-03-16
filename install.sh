@@ -647,7 +647,7 @@ jobs:
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
           SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
-          SLACK_TITLE: ":moon: Le a CMS atterrit avec succès :sparkles:"
+          SLACK_TITLE: ":moon: Le CMS a atterrit avec succès :sparkles:"
 
 YAML
 
