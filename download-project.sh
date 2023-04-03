@@ -5,6 +5,7 @@ set -e -o pipefail
 HOST="dev@hg2.288dev.com"
 PORT="1023"
 PROJECT="$1"
+PHP_EXEC="ea-php82"
 
 if [[ -z "$PROJECT" ]]; then
 	echo "ERROR! Please specify a project name.";
@@ -14,7 +15,7 @@ if [[ -z "$PROJECT" ]]; then
 fi
 
 echo "1. Generating project files"
-ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php81 ./craft project-config/write"
+ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && $PHP_EXEC ./craft project-config/write"
 
 echo "2. Downloading project files"
 git rm -r ./project

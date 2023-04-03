@@ -6,7 +6,7 @@
 set -e -o pipefail
 
 PROJECT_CODE=$(basename "$(pwd)");
-INSTALLER_PHP_EXEC="ea-php81"
+INSTALLER_PHP_EXEC="ea-php82"
 
 echo "Welcome to Deux Huit Huit craft installer"
 echo ""
@@ -461,6 +461,7 @@ set -e -o pipefail
 HOST="dev@hg2.288dev.com"
 PORT="1023"
 PROJECT="$1"
+PHP_EXEC="ea-php82"
 
 if [[ -z "$PROJECT" ]]; then
 	echo "ERROR! Please specify a project name.";
@@ -470,7 +471,7 @@ if [[ -z "$PROJECT" ]]; then
 fi
 
 echo "1. Generating project files"
-ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && ea-php81 ./craft project-config/write"
+ssh -p "$PORT" "$HOST" "cd ~/www/$PROJECT/ && rm -rf config/project && $PHP_EXEC ./craft project-config/write"
 
 echo "2. Downloading project files"
 # make sure it exists so git won't complain
@@ -521,7 +522,7 @@ cat > deploy.sh << 'BASH'
 set -e -o pipefail
 
 CRAFT_HOME="${HOME}"
-PHP_EXEC="ea-php81"
+PHP_EXEC="ea-php82"
 CMD="$1"
 GITHUB_RUN_ID="$2"
 
