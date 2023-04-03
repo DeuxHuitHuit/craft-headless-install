@@ -1,4 +1,4 @@
-dateModified: 1677856454
+dateModified: 1680536100
 elementSources:
   craft\elements\Entry:
     -
@@ -106,7 +106,6 @@ meta:
     45369444-3ab9-46b3-8f73-77d8240582d0: 'Video embed options' # Video embed options
     56586313-03c2-4ded-b0c3-d22dee297e67: Organization # Organization
     57658648-a27b-42d0-9da8-27b4e63facf9: Loop # Loop
-    ad020a71-f10c-4c45-bba5-cc4bed9ae179: Search # Search
     af77db16-7383-4e3b-ae49-71b93d94b959: FR # FR
     b09fcabc-7f1c-40b8-b8d3-f085835a0c24: Home # Home
     b2ec015d-a8f7-4da8-a82c-5db01312f38b: Email # Email
@@ -114,7 +113,6 @@ meta:
     b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
     b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Video embed url' # Video embed url
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
-    c49023ba-7dd3-4520-954f-65a005e455f8: Search # Search
     caa63442-86cb-4489-baad-9aba2dc43dba: 'Prevent Indexation' # Prevent Indexation
     cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
     cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
@@ -170,7 +168,7 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: 60
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.4.0.4
   timeZone: America/Toronto
 users:
   allowPublicRegistration: false

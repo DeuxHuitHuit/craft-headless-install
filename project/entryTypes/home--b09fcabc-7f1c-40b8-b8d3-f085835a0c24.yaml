@@ -33,6 +33,24 @@ fieldLayouts:
         name: Content
         uid: 49575285-e5d8-43fa-aa49-38409a53c90b
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae95c3ab-a03b-4069-b60a-2ec4fe82b437
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 3c7c9c8f-c5e1-4f38-85b8-3960b7aefe72
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home

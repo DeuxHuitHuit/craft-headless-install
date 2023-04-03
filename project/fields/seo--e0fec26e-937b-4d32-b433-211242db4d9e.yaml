@@ -8,7 +8,7 @@ searchable: false
 settings:
   contentTable: '{{%matrixcontent_seo}}'
   maxBlocks: 1
-  minBlocks: 1
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
