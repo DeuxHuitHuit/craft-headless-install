@@ -387,6 +387,8 @@ return [
         // but since it makes images enormous, we can not use it.
         'sanitizeCpImageUploads' => false,
         'sanitizeSvgUploads' => false,
+        // If the project has the queue server on, we need to disable this
+        'runQueueAutomatically' => true,
     ],
 
     // Dev environment settings
