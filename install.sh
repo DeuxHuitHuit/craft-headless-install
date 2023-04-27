@@ -295,6 +295,9 @@ echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
 echo ""
 echo "SITE_NAME=$PROJECT_CODE"
 echo ""
+echo "SENDGRID_API=XXX"
+echo "EMAIL_FROM=noreply@$PROJECT_CODE.288dev.com"
+echo ""
 } >> .env
 
 echo "Add config file for agency-auth"
