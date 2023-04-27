@@ -2,26 +2,26 @@ columnSuffix: aygkrnor
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: richText
-instructions: ''
-name: Text
+instructions: null
+name: 'Texte / Text'
 searchable: false
 settings:
-  availableTransforms: '*'
+  availableTransforms: ''
   availableVolumes: '*'
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
   manualConfig: ''
-  purifierConfig: ''
-  purifyHtml: '1'
-  redactorConfig: ''
-  removeEmptyTags: '1'
-  removeInlineStyles: '1'
-  removeNbsp: ''
-  showHtmlButtonForNonAdmins: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: true
+  removeInlineStyles: true
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   uiMode: enlarged
 translationKeyFormat: null
-translationMethod: language
+translationMethod: site
 type: craft\redactor\Field

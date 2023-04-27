@@ -2,49 +2,65 @@ fieldLayouts:
   f0242c77-2436-442e-b705-e289bd9c48f2:
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: 56586313-03c2-4ded-b0c3-d22dee297e67 # Organization
+            elementCondition: null
+            fieldUid: 56586313-03c2-4ded-b0c3-d22dee297e67 # Organisation / Organization
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: deacce31-153f-4046-b098-f9a6227a7718
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Socials
+            elementCondition: null
+            fieldUid: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Médias sociaux / Socials
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 671db2cb-ec9d-4b15-b75e-bd19afdddc7d
+            userCondition: null
             warning: null
             width: 100
-        name: Organization
-        sortOrder: 1
+        name: 'Information générale sur l''entreprise / Company General Info'
+        uid: 6717f0b5-e30a-43ae-af90-5dfc7a310a59
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            elementCondition: null
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données / SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4e0c27ba-a3b2-4e45-81e2-0ea9332e8d25
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 78376c37-546a-4c5a-b132-d9d8c8acf806 # Twitter Handle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1ef0a7a7-b0ad-46a5-8e57-9fc27853d994
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 755a4652-c6d8-4a0f-b6d5-8ba92dd1d9bb
+        userCondition: null
 handle: configuration
 name: Configuration
 sortOrder: 1

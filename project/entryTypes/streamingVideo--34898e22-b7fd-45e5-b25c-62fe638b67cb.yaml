@@ -1,0 +1,123 @@
+fieldLayouts:
+  e34bb3e1-5548-4da4-95e6-cc51fbace012:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence visuelle du module / *Module reference*]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: db6acf27-a98d-4f23-811f-87f8eada34b1
+            userCondition: null
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c7080121-acb8-4329-9bc1-a7ee0059eba3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 487a9e39-243a-48ca-a96a-ba7288dd6546
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2 # DASH Video Streaming URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3be9f975-5ec5-4f38-84f5-fa87c9108169
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # HLS Video Streaming URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ea9003d-f62e-437d-8a92-17c3fa3d1fd1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # MP4 Video Streaming URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6197f2e3-d6cb-40f9-aa62-ad8a44e6dbf7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c469170d-3b13-4c3f-a6e4-2c2a97fbaeff
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            instructions: "La vignette est le visuel de couverture de la vidéo. Elle est seulement visible avant que l'utilisateur.trice ne fasse jouer la vidéo. La vignette peut être une image statique **OU** une courte vidéo d'ambiance de quelques secondes Si la vignette est une courte vidéo, il faut fournir les urls des 3 types de fichiers de streaming (DASH, HLS, MP4). \r\n\r\n*The thumbnail is the video's visual cover only displayed before the user plays the video. The thumbnail can either be a static image **OR** a short mood video. If the thumbnail is a short video, the url for each 3 streaming files is required (DASH, HLS, MP4).*"
+            label: 'Vignette / Thumbnail'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3061d38a-6bc9-4df1-ac61-39396d9d67ac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f1a26dd1-8bc9-4290-9e64-f621af5db988
+        userCondition: null
+handle: streamingVideo
+hasTitleField: false
+name: 'Vidéo diffusée / Streaming Video'
+section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
+sortOrder: 6
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

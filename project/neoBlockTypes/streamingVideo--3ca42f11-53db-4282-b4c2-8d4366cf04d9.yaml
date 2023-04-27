@@ -1,0 +1,76 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+fieldLayouts:
+  59522338-42ab-4ec1-acea-444c90fe2b53:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2 # DASH Video Streaming URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 246956d5-d18c-41bb-8e35-600ed2e8fd60
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # HLS Video Streaming URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 101e6b5a-ae71-432a-88e7-b9c68d3bb124
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # MP4 Video Streaming URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 091ffbda-1eb1-466c-9409-7992d9c1c0c4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f31fe940-d343-4dfa-b676-43b185d8ae04
+            userCondition: null
+            warning: null
+            width: 50
+        name: Contenu
+        uid: 570ce6cb-af7a-4e2a-8d6d-d606cea4d84f
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: streamingVideo
+icon: null
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Vidéo d''ambiance / Mood video'
+sortOrder: 2
+topLevel: true

@@ -1,4 +1,4 @@
-field: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+field: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données / SEO
 fieldLayouts:
   55ffc0f0-7836-48a1-970b-fe7e8152e13a:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 3549d929-b071-40e7-9ecd-b06f0f29fb04 # Share Title
+            fieldUid: 3549d929-b071-40e7-9ecd-b06f0f29fb04 # Titre de partage / Share Title
             instructions: null
             label: null
             required: false
@@ -16,10 +16,10 @@ fieldLayouts:
             uid: c0bcf4ad-1b58-426e-bde8-ccce4a2f8b23
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: f24c97e8-b8f5-4799-bb8f-c062c6196c51 # Share Description
+            fieldUid: f24c97e8-b8f5-4799-bb8f-c062c6196c51 # Description de partage  / Share Description
             instructions: null
             label: null
             required: false
@@ -28,10 +28,10 @@ fieldLayouts:
             uid: 7b716857-f767-4ac5-91d6-76c3b53f6b01
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: 99a344a6-d5b9-4dfb-8ab7-9d6909dd6644 # Share Image
+            fieldUid: 99a344a6-d5b9-4dfb-8ab7-9d6909dd6644 # Image de partage / Share Image
             instructions: null
             label: null
             required: false
@@ -40,10 +40,10 @@ fieldLayouts:
             uid: 86e0ad97-70da-442e-a3ea-f7f216753fc9
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: caa63442-86cb-4489-baad-9aba2dc43dba # Prevent Indexation
+            fieldUid: caa63442-86cb-4489-baad-9aba2dc43dba # Empêcher l'indexation / Prevent Indexation
             instructions: null
             label: null
             required: false
@@ -52,18 +52,18 @@ fieldLayouts:
             uid: 4d93df4c-e526-4ad3-8f4f-c40ca926af98
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Content
         uid: a6686838-72be-49c1-8f5b-9014af8540d0
         userCondition: null
 fields:
-  99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: # Share Image
+  99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: # Image de partage / Share Image
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: shareImage
-    instructions: null
-    name: 'Share Image'
+    instructions: "* Taille / *Size* : **1200 x 630**.    \r\n* Poids maximal / *Maximum weight*: 500Ko.    \r\n* Types de fichiers acceptés / *Accepted file types*: JPG, PNG.       \r\n* Mode colorimétrique / *Color mode*: RGB.    \r\n* Résolution / *Resolution*: 72 ou 96 ppi."
+    name: 'Image de partage / Share Image'
     searchable: false
     settings:
       allowSelfRelations: false
@@ -71,12 +71,14 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
       defaultUploadLocationSubpath: null
-      localizeRelations: false
+      localizeRelations: true
+      maintainHierarchy: false
       maxRelations: 1
       minRelations: null
-      previewMode: full
+      previewMode: thumbs
       restrictFiles: true
       restrictLocation: false
       restrictedDefaultUploadSubpath: null
@@ -97,21 +99,20 @@ fields:
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      source: null
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false
-      viewMode: list
+      viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  3549d929-b071-40e7-9ecd-b06f0f29fb04: # Share Title
+  3549d929-b071-40e7-9ecd-b06f0f29fb04: # Titre de partage / Share Title
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: shareTitle
-    instructions: null
-    name: 'Share Title'
+    instructions: 'Longueur / *Length* : entre 50 et 60 caractères / *between 50-60 caracters*'
+    name: 'Titre de partage / Share Title'
     searchable: false
     settings:
       byteLimit: null
@@ -123,15 +124,15 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: site
     type: craft\fields\PlainText
-  caa63442-86cb-4489-baad-9aba2dc43dba: # Prevent Indexation
+  caa63442-86cb-4489-baad-9aba2dc43dba: # Empêcher l'indexation / Prevent Indexation
     columnSuffix: ubepuvqs
     contentColumnType: boolean
     fieldGroup: null
     handle: noIndex
-    instructions: null
-    name: 'Prevent Indexation'
+    instructions: "Si coché, la page n'apparaîtra pas dans les résultats de recherche d'aucun navigateur.\r\n\r\n*If checked, the page will not appear in any browser search results.*"
+    name: 'Empêcher l''indexation / Prevent Indexation'
     searchable: false
     settings:
       default: false
@@ -140,13 +141,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  f24c97e8-b8f5-4799-bb8f-c062c6196c51: # Share Description
+  f24c97e8-b8f5-4799-bb8f-c062c6196c51: # Description de partage  / Share Description
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: shareDescription
-    instructions: null
-    name: 'Share Description'
+    instructions: 'Longueur / *Length* : Maximum 250 caractères / *Maximum 250 caracters*'
+    name: 'Description de partage  / Share Description'
     searchable: false
     settings:
       byteLimit: null
@@ -158,8 +159,8 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: site
     type: craft\fields\PlainText
 handle: seo
-name: SEO
+name: 'Méta-données / SEO'
 sortOrder: 1

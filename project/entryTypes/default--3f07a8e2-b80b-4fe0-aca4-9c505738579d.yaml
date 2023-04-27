@@ -6,7 +6,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifier
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
             instructions: null
             label: null
             required: false
@@ -62,7 +62,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données / SEO
             instructions: null
             label: null
             required: false

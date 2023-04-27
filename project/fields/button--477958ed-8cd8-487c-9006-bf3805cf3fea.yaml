@@ -2,17 +2,31 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: button
-instructions: ''
-name: Button
+instructions: 'Max 1'
+name: 'Bouton / Button'
 searchable: false
 settings:
   allowSelfRelations: false
-  limit: '1'
+  branchLimit: null
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+  selectionLabel: null
   showSiteMenu: false
-  source: null
-  sources: '*'
+  sources:
+    - 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Boutons / Buttons
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

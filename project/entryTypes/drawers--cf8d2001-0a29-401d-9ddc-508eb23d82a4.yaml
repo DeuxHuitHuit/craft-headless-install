@@ -1,0 +1,99 @@
+fieldLayouts:
+  a80b9e58-30cb-42cf-bda0-2475a47a602e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence visuelle du module / *Module reference*]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: 81351c6a-d4cc-4328-b2ef-6d90f329b900
+            userCondition: null
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 367414a2-3369-4ce8-8f61-ce4669456056
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e79d6794-4979-4433-bb3a-9c1568de5f46
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61eee852-0996-47be-abc0-08fa85739159
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4c7789fa-f3d9-40ea-9167-84213c277b5b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 08b1c06e-f7b7-4b32-a8db-fa57b5cd828c # Tiroirs / Drawers
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fde27097-0a09-4e5f-bff4-b31a91a1b8c2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a1360870-ba74-4ca1-91cb-b5edac2d4e08
+        userCondition: null
+handle: drawers
+hasTitleField: false
+name: 'Tiroirs / Drawers'
+section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
+sortOrder: 11
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

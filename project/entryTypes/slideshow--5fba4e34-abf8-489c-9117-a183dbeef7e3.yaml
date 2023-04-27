@@ -1,14 +1,24 @@
 fieldLayouts:
-  25442303-493f-4d95-8991-24b33381f3ee:
+  a543f511-f97d-46f6-add1-c76c01d35916:
     tabs:
       -
+        elementCondition: null
         elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence visuelle du module / *Module reference*]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: 33d8cdc4-8ebc-491e-9139-dd9f2ade3d0c
+            userCondition: null
           -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,69 +34,66 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a7869730-52ae-4937-9e4c-936091242073
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifier
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3b713fcb-67e7-4a6e-8408-f72cae92b89e
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitle
+            elementCondition: null
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a8c63a3b-afa0-4572-a4c0-07593b554ef0
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Display title
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3f798b93-3876-41c8-971d-2cccce7ef4cb
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Text
+            elementCondition: null
+            fieldUid: abf1f7b7-9865-4919-abd6-3b87e6816e4a # Médias / Medias
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Button
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
+            uid: 5345b696-917f-4324-a105-a5f46500fe8b
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
-handle: textImage
-hasTitleField: true
-name: 'Text Image'
+        uid: 4ec23c87-8015-4a50-a4fc-3fe6fac4acaa
+        userCondition: null
+handle: slideshow
+hasTitleField: false
+name: 'Diaporama / Slideshow'
 section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
-sortOrder: 2
-titleFormat: null
+sortOrder: 12
+titleFormat: '{type.name} - {identifier}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

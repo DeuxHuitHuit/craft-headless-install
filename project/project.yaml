@@ -1,4 +1,4 @@
-dateModified: 1680536100
+dateModified: 1682607219
 elementSources:
   craft\elements\Entry:
     -
@@ -36,7 +36,7 @@ elementSources:
         - type
       type: native
     -
-      key: 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Buttons
+      key: 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Boutons / Buttons
       tableAttributes:
         - postDate
         - expiryDate
@@ -47,8 +47,8 @@ elementSources:
       heading: ''
       type: heading
 email:
-  fromEmail: no-reply@deuxhuithuit.co
-  fromName: __PROJECT__
+  fromEmail: $EMAIL_FROM
+  fromName: $SITE_NAME
   replyToEmail: null
   template: ''
   transportSettings:
@@ -65,74 +65,139 @@ fs:
     url: $UPLOADS_URL
 meta:
   __names__:
-    0f0e5f88-9336-4032-bfa2-11083f5fa132: Identifier # Identifier
+    0e50c9f4-5bcc-4d0a-969d-85902af71827: 'Emphase / Emphasis' # Emphase / Emphasis
+    0f0e5f88-9336-4032-bfa2-11083f5fa132: 'Identifiant CMS / CMS Identifier' # Identifiant CMS / CMS Identifier
+    1a006606-855e-4926-8e9f-dd3c0064e826: 'Inverser / Invert' # Inverser / Invert
     1a025b55-4141-4cc4-8c57-683723b236c7: Logo # Logo
     1f225daf-1e85-461d-a339-b01dbf7b1e03: 'Cookie Banner' # Cookie Banner
+    2c4dbaeb-7819-40e2-92e7-5a8825c3d2c3: Image # Image
+    2f4cc73e-1fcb-41c0-a892-a938426d92cf: Images # Images
+    3ace2ccf-b4ee-4079-870f-0ea874d7eabf: 'HLS Video Streaming URL' # HLS Video Streaming URL
     3b201410-7c1b-4123-aa95-e7e742a06113: Scripts # Scripts
+    3ca42f11-53db-4282-b4c2-8d4366cf04d9: 'Vidéo d''ambiance / Mood video' # Vidéo d'ambiance / Mood video
     3f07a8e2-b80b-4fe0-aca4-9c505738579d: Default # Default
-    3f978fac-bf27-4982-9b50-975ce9969dca: 'Video embed' # Video embed
+    3f73ea2b-d2df-40e1-b481-33427f5052b2: 'DASH Video Streaming URL' # DASH Video Streaming URL
+    3f978fac-bf27-4982-9b50-975ce9969dca: '[TO BE DEPRECATED] Video embed' # [TO BE DEPRECATED] Video embed
     4b8d5a84-3fab-441c-b90e-5439048b5ea9: Muted # Muted
-    4e822121-c86e-47c7-88db-c49c058e3b2f: Buttons # Buttons
-    4f2acaa1-189a-4e2d-ad0c-f313c4b00118: Socials # Socials
-    5e423c33-bf01-4613-b511-0c196a0f3421: 'Platform Url' # Platform Url
+    4cbb8576-1f85-4aa0-ac8c-638580d36c9b: Prose # Prose
+    4e7d9e35-e595-483d-b711-4acfd6173b33: 'DASH Video Streaming URL' # DASH Video Streaming URL
+    4e822121-c86e-47c7-88db-c49c058e3b2f: 'Boutons / Buttons' # Boutons / Buttons
+    4f2acaa1-189a-4e2d-ad0c-f313c4b00118: 'Médias sociaux / Socials' # Médias sociaux / Socials
+    5a2f8d95-a235-41c5-8a55-11325fe64a0f: 'MP4 Video Streaming URL' # MP4 Video Streaming URL
+    5c74d01f-4a95-459c-a9bc-72c7f064839f: 'URL HLS' # URL HLS
+    5e423c33-bf01-4613-b511-0c196a0f3421: 'URL du compte / Account URL' # URL du compte / Account URL
+    5fba4e34-abf8-489c-9117-a183dbeef7e3: 'Diaporama / Slideshow' # Diaporama / Slideshow
+    6afd3883-59ac-4615-99c2-7a89cfd5d1c2: 'URL DASH' # URL DASH
     6bb7eb36-b90f-451e-b921-1f377e3ff31e: Scripts # Scripts
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
     7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
     7ddb842a-f59e-40b2-a970-b9797c1027a9: Configuration # Configuration
-    8b5316ca-71f3-4b68-be3d-991a601fa490: 'External Url' # External Url
-    8e521985-7684-4e3d-9718-e32537067b77: 'Enable cookie banner' # Enable cookie banner
-    9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c: Surtitle # Surtitle
-    10a5c368-5d0b-47a4-9978-105511f5e998: SEO # SEO
+    8a2d5af3-151b-4ea4-9882-c0579fbe91f9: 'Super Citation / SuperQuote' # Super Citation / SuperQuote
+    08b1c06e-f7b7-4b32-a8db-fa57b5cd828c: 'Tiroirs / Drawers' # Tiroirs / Drawers
+    8b5316ca-71f3-4b68-be3d-991a601fa490: 'URL Externe / External URL' # URL Externe / External URL
+    8c9f6394-80d2-416d-8e8f-a5fce958cae8: '[TO BE DEPRECATED] Video' # [TO BE DEPRECATED] Video
+    8e521985-7684-4e3d-9718-e32537067b77: 'Activer la bannière / Enable banner' # Activer la bannière / Enable banner
+    9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c: 'Surtitre / Surtitle' # Surtitre / Surtitle
+    10a5c368-5d0b-47a4-9978-105511f5e998: 'Méta-données / SEO' # Méta-données / SEO
+    18de3190-6735-47a7-aed9-d9e29745c07c: 'Video MP4' # Video MP4
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
     26ac95b7-5d49-4702-94f5-91f13becdd1a: Autoplay # Autoplay
-    80faeb96-cf17-464b-aae2-cbf334c38969: Text # Text
-    93b69e94-91ec-4548-9997-e8257e5f9c47: Alt # Alt
-    99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Share Image' # Share Image
-    216a4e0a-27ae-4b0b-963e-26dc9ffae251: 'Platform Logo' # Platform Logo
+    40ae4b06-dda4-4f6a-918a-ff01d9149953: 'Citation / Quote' # Citation / Quote
+    63a8cb64-067e-4061-adfa-2d615a0d9e63: 'Appel à l''action / Call to action' # Appel à l'action / Call to action
+    80faeb96-cf17-464b-aae2-cbf334c38969: 'Texte / Text' # Texte / Text
+    84f84d17-d6f1-4647-944c-cec29e6cea05: Image # Image
+    93b69e94-91ec-4548-9997-e8257e5f9c47: 'Texte alternatif / Alternative Text' # Texte alternatif / Alternative Text
+    99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Image de partage / Share Image' # Image de partage / Share Image
+    121b43a1-8f3e-47f0-9827-2679be863bd6: 'Tiroir / Drawer' # Tiroir / Drawer
+    148fb449-e797-4b40-a8f8-d45d858683dd: 'Texte / Text' # Texte / Text
+    150be634-eec1-4c4c-b913-9bb014431adf: '[TO BE DEPRECATED] Video Neo' # [TO BE DEPRECATED] Video Neo
+    216a4e0a-27ae-4b0b-963e-26dc9ffae251: Logo # Logo
+    251f2d61-fa61-49fb-8eed-dda09b6aaaea: 'Courte vidéo d''ambiance / Short mood video' # Courte vidéo d'ambiance / Short mood video
     408df6af-a1c8-433f-862d-dac928da7cb3: Misc # Misc
     414b45c8-d274-4c58-b6e8-f0ce31130d34: Modules # Modules
+    455e6766-9c22-44eb-94f3-72b38807a490: 'Courriel / Email' # Courriel / Email
+    458ea4b0-4f7d-4f55-b1c2-e4f9fecfb393: 'Video Stream (loop) - URL HLS' # Video Stream (loop) - URL HLS
     506fb257-f530-4cda-b130-1af00a5bda55: Common # Common
-    3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Share Title' # Share Title
-    4093afd2-c348-4b4b-9137-0e07daa80e57: 'Text Image' # Text Image
+    526cd691-29bd-44d4-bcbe-0e0f4b678c5a: 'Video MP4' # Video MP4
+    615c8eda-5043-4fdd-a90c-3c77212764e6: 'Texte / Texte' # Texte / Texte
+    638f89a9-12c5-4e17-a56d-83a3111f2db3: 'Citation simple / BlockQuote' # Citation simple / BlockQuote
+    688ea377-fdec-4e4e-9edf-3f178733d899: 'Video MP4' # Video MP4
+    0722bd97-8702-44de-bdab-f8c8f63b7716: 'Video Stream' # Video Stream
+    749c7d4d-cae1-4f65-93b7-b546870551a7: Image # Image
+    2731acb9-f3b8-46c4-8804-e4e1765f5291: 'Vidéo encastrée / Embed Video' # Vidéo encastrée / Embed Video
+    3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Titre de partage / Share Title' # Titre de partage / Share Title
+    4093afd2-c348-4b4b-9137-0e07daa80e57: 'Texte-Média / Text-Media' # Texte-Média / Text-Media
     7660df84-3284-4698-a6b9-3c14ecc4dae2: Scripts # Scripts
-    8659c777-3feb-4edf-88ee-c5e4cee8aa6a: 'Cookie Banner' # Cookie Banner
-    22947fe1-4c0e-437b-9997-de04319d78e3: Text # Text
+    8659c777-3feb-4edf-88ee-c5e4cee8aa6a: 'Bannière de cookies / Cookie Banner' # Bannière de cookies / Cookie Banner
+    12987e3b-91fd-42f2-9a85-ba87f7272020: '[TO BE DEPRECATED]Video' # [TO BE DEPRECATED]Video
+    22947fe1-4c0e-437b-9997-de04319d78e3: 'Texte / Text' # Texte / Text
     23284f12-4d7f-4e0c-96d0-ec4b36578576: Start # Start
+    34898e22-b7fd-45e5-b25c-62fe638b67cb: 'Vidéo diffusée / Streaming Video' # Vidéo diffusée / Streaming Video
+    59206fc8-efb7-49ee-8359-30c3cdb3a62e: 'MP4 Video Streaming URL' # MP4 Video Streaming URL
     78376c37-546a-4c5a-b132-d9d8c8acf806: 'Twitter Handle' # Twitter Handle
-    94179dde-ab52-4487-b729-d1503068b684: Phone # Phone
-    477958ed-8cd8-487c-9006-bf3805cf3fea: Button # Button
-    9570135e-221e-4a53-bcf3-e704bea37a6f: 'Display title' # Display title
-    10512774-a66c-4106-bdbc-fcb47780e8eb: Label # Label
-    45369444-3ab9-46b3-8f73-77d8240582d0: 'Video embed options' # Video embed options
-    56586313-03c2-4ded-b0c3-d22dee297e67: Organization # Organization
+    82932fdc-2730-4352-a49f-21abd4e96f05: 'Boutons / Buttons' # Boutons / Buttons
+    91375a23-42c5-4d08-abe7-bb657195f65f: Default # Default
+    94179dde-ab52-4487-b729-d1503068b684: 'Téléphone / Phone' # Téléphone / Phone
+    312799c9-ad1d-4b5d-a676-89aa94ae2ee1: Prose # Prose
+    477958ed-8cd8-487c-9006-bf3805cf3fea: 'Bouton / Button' # Bouton / Button
+    638127e0-1136-4087-986c-21cc704b186a: Poster # Poster
+    8153532a-883b-43fa-bedd-a9798455e701: '[TO BE DEPRECATED]Vignette / Thumbnail' # [TO BE DEPRECATED]Vignette / Thumbnail
+    9570135e-221e-4a53-bcf3-e704bea37a6f: 'Titre / Title' # Titre / Title
+    10512774-a66c-4106-bdbc-fcb47780e8eb: 'Libellé / Label' # Libellé / Label
+    34274651-438c-45ff-ad23-a0063ca9b005: 'Video Embed' # Video Embed
+    45369444-3ab9-46b3-8f73-77d8240582d0: '[TO BE DEPRECATED] Video embed options' # [TO BE DEPRECATED] Video embed options
+    56586313-03c2-4ded-b0c3-d22dee297e67: 'Organisation / Organization' # Organisation / Organization
     57658648-a27b-42d0-9da8-27b4e63facf9: Loop # Loop
+    63103729-f35f-4655-80f6-26ba068fcbe2: 'Video Stream (loop) - URL DASH' # Video Stream (loop) - URL DASH
+    a91b6297-0bb5-4772-8a0a-53ed92c65d2a: 'URL MP4' # URL MP4
+    a6746c3e-bd21-4113-87e7-0d0469f24d0e: Image # Image
+    ab2be9ca-175d-4955-bce6-e814c09f8361: Source # Source
+    abf1f7b7-9865-4919-abd6-3b87e6816e4a: 'Médias / Medias' # Médias / Medias
+    ae5f7c10-69b6-4c22-ba2a-e58338a90395: 'Titre / Title' # Titre / Title
     af77db16-7383-4e3b-ae49-71b93d94b959: FR # FR
+    b0504f25-28ad-4539-8917-b0d159386d5c: 'Vidéo d''ambiance / Mood video' # Vidéo d'ambiance / Mood video
     b09fcabc-7f1c-40b8-b8d3-f085835a0c24: Home # Home
-    b2ec015d-a8f7-4da8-a82c-5db01312f38b: Email # Email
-    b7d20b42-135e-4d76-85cd-1e890b36c30a: Text # Text
+    b2ec015d-a8f7-4da8-a82c-5db01312f38b: 'Courriel / Email' # Courriel / Email
+    b7d20b42-135e-4d76-85cd-1e890b36c30a: 'Texte / Text' # Texte / Text
+    b53b35f0-f95a-4300-b941-e4c5d1bc1e9a: Video # Video
     b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
-    b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Video embed url' # Video embed url
+    b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Embed Video URL' # Embed Video URL
+    b8850bb4-b99a-4a51-a26e-091f110677ca: 'Video Stream' # Video Stream
+    bd75c367-135c-44c8-a186-ef2170ffd6f3: 'Crédits et/ou légende / Copyrights and/or caption' # Crédits et/ou légende / Copyrights and/or caption
+    bf4657bf-4ba0-4447-a6f6-b8b0222e192c: Image # Image
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
-    caa63442-86cb-4489-baad-9aba2dc43dba: 'Prevent Indexation' # Prevent Indexation
+    caa63442-86cb-4489-baad-9aba2dc43dba: 'Empêcher l''indexation / Prevent Indexation' # Empêcher l'indexation / Prevent Indexation
     cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
-    cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Site Entry' # Site Entry
+    cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Entrée du site / Site Entry' # Entrée du site / Site Entry
+    ce4b816c-650d-4f68-825f-3ebe1de74d2a: Source # Source
+    cf8d2001-0a29-401d-9ddc-508eb23d82a4: 'Tiroirs / Drawers' # Tiroirs / Drawers
+    d0b09e80-95e5-4731-b171-d75c405b5cf5: 'Année / Year' # Année / Year
     d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
     d53f096e-9e71-40ca-89b6-2df0130b4582: 'GTM Consent Event' # GTM Consent Event
+    d828cf85-c92c-46f5-81ef-f7cb98956204: 'Rôle / Role' # Rôle / Role
+    d7592692-d00f-4485-982a-43f8fa3b6c2d: 'HLS Video Streaming URL' # HLS Video Streaming URL
     da1b5819-b168-4dd9-aa35-505a833ee367: Home # Home
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
-    e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
-    e2cdaad1-42b3-4873-a763-caf3bf386e18: Name # Name
-    e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: Asset # Asset
-    e45d3444-dd43-44a0-9878-0fea045f468b: Media # Media
+    de7d2c37-782f-442f-82fd-b6d553936ed4: 'Thème de couleur / Color theme' # Thème de couleur / Color theme
+    df9a8572-5130-4460-8d89-d85f354533fb: 'Video Stream (loop) - URL MP4' # Video Stream (loop) - URL MP4
+    e0fec26e-937b-4d32-b433-211242db4d9e: 'Méta-données / SEO' # Méta-données / SEO
+    e2cdaad1-42b3-4873-a763-caf3bf386e18: 'Nom / Name' # Nom / Name
+    e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: 'Fichier / Asset' # Fichier / Asset
+    e30d53e2-8287-4791-9efa-184c3024366c: 'Callout / Accroche' # Callout / Accroche
+    e45d3444-dd43-44a0-9878-0fea045f468b: 'Média / Media' # Média / Media
+    e95f3878-ee12-4f84-b29a-995d145730a1: 'Video Embed (YT/VIMEO)' # Video Embed (YT/VIMEO)
     e485bfb8-5e08-45cf-a792-6d7a97f6844d: Default # Default
+    ea088504-f49a-4b57-8ff3-5deab9d32418: 'Nom / Name' # Nom / Name
     eae04f61-8571-43a2-845c-063aa638db1e: 'Body Start' # Body Start
     ec8f8144-4229-4395-adcd-105b11962c8a: Pages # Pages
-    edb579ae-b8c5-4bba-9665-5dce08886786: Organization # Organization
+    ec897a0c-2ff5-4c93-9b2b-530800ffc3e2: 'Équipe / Team' # Équipe / Team
+    edb579ae-b8c5-4bba-9665-5dce08886786: 'Schema Organisation' # Schema Organisation
     eea7a6e3-c57b-4def-92df-fe22afc3903b: 'Video embed options' # Video embed options
-    f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Share Description' # Share Description
-    fbafa02b-3df0-475b-a2c9-78afc19c299f: Platform # Platform
-    fc75545c-a4e6-482c-866c-64e270d6d9a7: Address # Address
-    fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Plateform Name' # Plateform Name
+    f00f84ef-1880-4288-97ff-2c2acd5e98a9: embedUrl # embedUrl
+    f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Description de partage  / Share Description' # Description de partage  / Share Description
+    fbafa02b-3df0-475b-a2c9-78afc19c299f: 'Plateforme / Platform' # Plateforme / Platform
+    fc75545c-a4e6-482c-866c-64e270d6d9a7: 'Adresse / Address' # Adresse / Address
+    fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Nom / Name' # Nom / Name
 plugins:
   blur-hash:
     edition: standard
@@ -149,7 +214,7 @@ plugins:
   neo:
     edition: standard
     enabled: true
-    licenseKey: HWTQW4WCYH85IWQF519AIL1T
+    licenseKey: 1GP0M8D50Z4AG9BVWGPXLJ2T
     schemaVersion: 3.6.2
   redactor:
     edition: standard

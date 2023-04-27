@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: videoEmbedOptions
-instructions: ''
-name: 'Video embed options'
+instructions: null
+name: '[TO BE DEPRECATED] Video embed options'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_videoembedoptions}}'
-  maxBlocks: '1'
-  minBlocks: '1'
+  maxBlocks: 1
+  minBlocks: 1
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

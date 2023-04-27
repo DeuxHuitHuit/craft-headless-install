@@ -1,0 +1,123 @@
+fieldLayouts:
+  1070aa6c-7744-449a-8a25-0388655ced97:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence visuelle du module / *Module reference*]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: 98193d38-5f58-43b5-ac99-09f7db40e0ba
+            userCondition: null
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2eacdac1-f3cd-4ac6-b97b-d723d2244f48
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2276506e-3063-460f-9726-71c4c7d43183
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d27f5d64-bb5b-45e5-b622-c3b1f26092a9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7de9d8a-9d4e-47e4-8af2-10afe8d521bf
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Texte
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4013a280-e0df-4776-ab8d-14847a4d331a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton / Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d305f1c4-2cec-4fb0-b380-e8bc838bbbce
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fc62ac6-d551-48d2-bce5-7c87ab98e723
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b8cbeb00-4388-47a6-b4a1-fdde49105d29
+        userCondition: null
+handle: cta
+hasTitleField: false
+name: 'Appel à l''action / Call to action'
+section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
+sortOrder: 10
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

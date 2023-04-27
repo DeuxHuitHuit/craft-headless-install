@@ -3,7 +3,7 @@ contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: simpleRichText
 instructions: null
-name: Text
+name: 'Texte / Text'
 searchable: false
 settings:
   availableTransforms: ''
@@ -23,5 +23,5 @@ settings:
   showUnpermittedVolumes: false
   uiMode: enlarged
 translationKeyFormat: null
-translationMethod: language
+translationMethod: site
 type: craft\redactor\Field

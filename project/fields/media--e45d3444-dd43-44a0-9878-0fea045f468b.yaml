@@ -2,33 +2,18 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: media
-instructions: ''
-name: Media
+instructions: null
+name: 'Média / Media'
 searchable: false
 settings:
-  allowSelfRelations: false
-  allowUploads: true
-  allowedKinds:
-    - image
-    - video
-  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-  defaultUploadLocationSubpath: ''
-  limit: '1'
-  localizeRelations: false
-  previewMode: full
-  restrictFiles: '1'
-  selectionLabel: ''
-  showSiteMenu: false
-  showUnpermittedFiles: false
-  showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-  singleUploadLocationSubpath: ''
-  source: null
-  sources: '*'
-  targetSiteId: null
-  useSingleFolder: false
-  validateRelatedElements: false
-  viewMode: list
+  maxBlocks: 1
+  maxLevels: null
+  maxTopBlocks: null
+  minBlocks: null
+  minLevels: null
+  minTopBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Assets
+type: benf\neo\Field

@@ -1,0 +1,75 @@
+field: 8153532a-883b-43fa-bedd-a9798455e701 # [TO BE DEPRECATED]Vignette / Thumbnail
+fieldLayouts:
+  36e32e92-d029-4939-b08e-890e5fd424d3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 84f84d17-d6f1-4647-944c-cec29e6cea05 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7181961e-edfc-470a-8a7e-cae0b1a320ef
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 63ca5ea8-1b64-42a9-ba48-0a20889108d4
+        userCondition: null
+fields:
+  84f84d17-d6f1-4647-944c-cec29e6cea05: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: "Max 1 image\r\n\r\n* Dimensions maximales / *Maximum size*: 1920 x 1920.\r\n* Poids maximal / *Maximum weight*: 700Ko.\r\n* Types de fichiers acceptés / *Accepted file types*: JPG, PNG(avec fond transparent pour les logos / *with transparent background for logos*), SVG, WEBP.\r\n* Ratios recommandés / *Recommended ratios*: Horizontal= 16:9, 4:3, 3:2, 1:1 | Vertical= 2:3, 3:4, 9:16, 1:1.\r\n* Mode colorimétrique / *Color mode*: RGB.\r\n* Résolution / *Resolution*: 72 ou 96 ppi."
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: thumbs
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: imageThumbnail
+name: Image
+sortOrder: 1

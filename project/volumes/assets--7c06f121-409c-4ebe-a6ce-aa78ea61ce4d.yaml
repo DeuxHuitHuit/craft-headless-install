@@ -2,6 +2,7 @@ fieldLayouts:
   2641d65c-dbba-4caa-911e-bfe7bd448e8f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,9 +10,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
-            label: null
+            label: 'Titre / Title'
             max: null
             min: null
             name: null
@@ -24,24 +26,42 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 22fab569-29b6-474c-acb6-4ebfc0557015
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 93b69e94-91ec-4548-9997-e8257e5f9c47 # Alt
+            elementCondition: null
+            fieldUid: 93b69e94-91ec-4548-9997-e8257e5f9c47 # Texte alternatif / Alternative Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 555918ef-baae-4cbb-82bf-cad13c1e8266
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f097070c-9e2d-49e2-adcf-3fa6b143c44b
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
+        userCondition: null
 fs: assets
 handle: assets
-hasUrls: true
 name: Assets
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-url: $UPLOADS_URL
+transformFs: ''
+transformSubpath: ''

@@ -1,17 +1,16 @@
 columnSuffix: efodglcg
-contentColumnType: string(255)
+contentColumnType: string(500)
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: externalUrl
-instructions: ''
-name: 'External Url'
+instructions: "Page web / *Web page* : https://.....   \r\nTéléphone / *Phone* : +XXXXXXXXXX         \r\nCourriel / *Email* : mailto:email@email.com"
+name: 'URL Externe / External URL'
 searchable: false
 settings:
-  maxLength: '255'
-  placeholder: null
+  maxLength: 500
   types:
     - url
     - tel
     - email
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Url

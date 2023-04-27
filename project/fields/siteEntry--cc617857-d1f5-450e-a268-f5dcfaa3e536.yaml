@@ -2,17 +2,32 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: siteEntry
-instructions: ''
-name: 'Site Entry'
+instructions: null
+name: 'Entrée du site / Site Entry'
 searchable: false
 settings:
   allowSelfRelations: false
-  limit: '1'
+  branchLimit: null
   localizeRelations: false
-  selectionLabel: ''
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+  selectionLabel: null
   showSiteMenu: false
-  source: null
-  sources: '*'
+  sources:
+    - 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
+    - singles
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

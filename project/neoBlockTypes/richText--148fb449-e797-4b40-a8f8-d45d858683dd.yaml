@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+fieldLayouts:
+  fbfc58a8-c2ee-4115-9c57-1e29c6ad3ebc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d63aede3-cb9e-49b1-931d-6b24a564e326
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons / Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97fc8ce2-000e-4931-a622-5e602e9dc9e8
+            userCondition: null
+            warning: null
+            width: 25
+        name: Contenu
+        uid: e925b86c-5e37-4685-9588-8a9282104f52
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: richText
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Texte / Text'
+sortOrder: 2
+topLevel: true

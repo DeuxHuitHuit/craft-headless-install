@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: thumbnail
+instructions: "La vignette est le visuel de couverture de la vidéo. Elle est seulement visible avant que l'utilisateur.trice ne fasse jouer la vidéo. La vignette peut être une image statique **OU** une courte vidéo d'ambiance de quelques secondes Si la vignette est une courte vidéo, il faut fournir les urls des 3 types de fichiers de streaming (DASH, HLS, MP4). \r\n\r\n*The thumbnail is the video's visual cover only displayed before the user plays the video. The thumbnail can either be a static image **OR** a short mood video. If the thumbnail is a short video, the url for each 3 streaming files is required (DASH, HLS, MP4).*"
+name: '[TO BE DEPRECATED]Vignette / Thumbnail'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_thumbnail}}'
+  maxBlocks: 1
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

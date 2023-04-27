@@ -1,0 +1,40 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 150be634-eec1-4c4c-b913-9bb014431adf # [TO BE DEPRECATED] Video Neo
+fieldLayouts:
+  ffa2dcf6-8974-4538-b97b-1e4dd4f45e5d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8cd64b9-e6eb-44f5-a6f1-f0644352c67c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Video
+        uid: 05014246-4707-4f0d-a56e-00343e2631e7
+        userCondition: null
+group: b53b35f0-f95a-4300-b941-e4c5d1bc1e9a # Video
+groupChildBlockTypes: true
+handle: videoMp4Neo
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Video MP4'
+sortOrder: 4
+topLevel: true

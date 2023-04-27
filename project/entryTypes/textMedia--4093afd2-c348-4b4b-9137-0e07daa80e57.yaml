@@ -1,0 +1,135 @@
+fieldLayouts:
+  25442303-493f-4d95-8991-24b33381f3ee:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence visuelle du module / *Module reference*]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: 5c02e969-1957-4436-81b5-351880d63367
+            userCondition: null
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9025a457-9db5-4ee4-9888-1096c2c4be93
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62685c4b-9805-4430-9a15-718f71cdf5b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c78d47f-25be-446a-926a-0c85a9b3493c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44a7720a-b149-46c6-9246-a5f6d320f7fe
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87849cdf-869e-49da-a93d-fd58819b5e2c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53f31509-37fd-4b2f-a545-17cf54f3a605
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton / Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ba0db47e-d85b-4d03-83b8-31fa50b5cf53
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 1a006606-855e-4926-8e9f-dd3c0064e826 # Inverser / Invert
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fa7d170-332f-43b2-ae2e-07169ee908de
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: fbeae6f3-ff62-4c3c-a317-5677641bf49d
+        userCondition: null
+handle: textMedia
+hasTitleField: false
+name: 'Texte-Média / Text-Media'
+section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
+sortOrder: 2
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none

@@ -2,18 +2,18 @@ columnSuffix: jhtylxof
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: displayTitle
-instructions: ''
-name: 'Display title'
+instructions: null
+name: 'Titre / Title'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: '1'
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: language
+translationMethod: site
 type: craft\fields\PlainText

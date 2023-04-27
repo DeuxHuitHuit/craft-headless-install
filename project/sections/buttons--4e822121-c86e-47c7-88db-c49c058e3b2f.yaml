@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: buttons
-name: Buttons
+name: 'Boutons / Buttons'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR

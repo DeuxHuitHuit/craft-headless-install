@@ -1,0 +1,14 @@
+columnSuffix: qdadxsgt
+contentColumnType: boolean
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: inverted
+instructions: "Par défaut, le texte est toujours à gauche et le média à droite. Si coché, le texte se retrouvera à droite et le média à gauche.\r\n\r\n*By default, the text is always on the left and the media on the right. If checked, the text will be on the right and the media on the left.*"
+name: 'Inverser / Invert'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

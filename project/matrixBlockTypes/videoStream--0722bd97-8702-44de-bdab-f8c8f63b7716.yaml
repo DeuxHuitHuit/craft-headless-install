@@ -1,0 +1,110 @@
+field: 8c9f6394-80d2-416d-8e8f-a5fce958cae8 # [TO BE DEPRECATED] Video
+fieldLayouts:
+  9861ead3-efbb-40c7-8801-219529326d9e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5c74d01f-4a95-459c-a9bc-72c7f064839f # URL HLS
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57895d11-7379-4f9f-94e4-0840bbabe6fe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6afd3883-59ac-4615-99c2-7a89cfd5d1c2 # URL DASH
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d98f336a-9f1b-4535-93b4-ba23d63bac10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a91b6297-0bb5-4772-8a0a-53ed92c65d2a # URL MP4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b8f42ff0-f078-4801-8e7f-5ab505a96ff3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 125e9f26-bb4d-42c8-b475-eb55658c8f53
+        userCondition: null
+fields:
+  5c74d01f-4a95-459c-a9bc-72c7f064839f: # URL HLS
+    columnSuffix: atlrnehn
+    contentColumnType: text
+    fieldGroup: null
+    handle: urlHls
+    instructions: null
+    name: 'URL HLS'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  6afd3883-59ac-4615-99c2-7a89cfd5d1c2: # URL DASH
+    columnSuffix: mdlmxphi
+    contentColumnType: text
+    fieldGroup: null
+    handle: urlDash
+    instructions: null
+    name: 'URL DASH'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  a91b6297-0bb5-4772-8a0a-53ed92c65d2a: # URL MP4
+    columnSuffix: yxgvmgjk
+    contentColumnType: text
+    fieldGroup: null
+    handle: urlMp4
+    instructions: null
+    name: 'URL MP4'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: videoStream
+name: 'Video Stream'
+sortOrder: 2

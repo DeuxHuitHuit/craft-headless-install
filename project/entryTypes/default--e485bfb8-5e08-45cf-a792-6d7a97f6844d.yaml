@@ -2,6 +2,7 @@ fieldLayouts:
   d5617423-3ed2-4be7-9b83-323781292073:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,9 +10,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
-            instructions: null
-            label: null
+            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
             name: null
@@ -24,55 +26,74 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e97d2aae-1fed-40ce-9676-a83bcaf2fbba
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 10512774-a66c-4106-bdbc-fcb47780e8eb # Label
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
+            dismissible: false
+            elementCondition: null
             style: tip
-            tip: 'If an external url is present, it will take priority over the entry field below.'
+            tip: "La destination d'un bouton peut être soit un url externe **OU** une entrée du site (page à même le site)**OU** un fichier. L'url externe a **priorité** sur les autres champs.\r\n\r\n*A button's destination can either be an external url **OR** a site entry (page within the same website) **OR** an asset. The URL field has **priority** over the other fields.*"
             type: craft\fieldlayoutelements\Tip
+            uid: 46ad8b5b-9a1f-4d5f-b4c2-5f561b52536f
+            userCondition: null
           -
-            fieldUid: 8b5316ca-71f3-4b68-be3d-991a601fa490 # External Url
+            elementCondition: null
+            fieldUid: 10512774-a66c-4106-bdbc-fcb47780e8eb # Libellé / Label
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 07396cfa-d576-4d0b-84cb-2ceb0b25b21f
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: cc617857-d1f5-450e-a268-f5dcfaa3e536 # Site Entry
+            elementCondition: null
+            fieldUid: 8b5316ca-71f3-4b68-be3d-991a601fa490 # URL Externe / External URL
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e2b60d32-eb90-4083-86cc-860d757ac5f4
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90 # Asset
+            elementCondition: null
+            fieldUid: cc617857-d1f5-450e-a268-f5dcfaa3e536 # Entrée du site / Site Entry
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: af276376-3545-4856-bce6-ce140879a97b
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90 # Fichier / Asset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7b1c2bdf-8c08-4027-aa93-fdf28e5e556a
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
-        sortOrder: 1
+        uid: 54224ea8-bd41-43ce-aea5-1357c027ae79
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: 4e822121-c86e-47c7-88db-c49c058e3b2f # Buttons
+section: 4e822121-c86e-47c7-88db-c49c058e3b2f # Boutons / Buttons
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none

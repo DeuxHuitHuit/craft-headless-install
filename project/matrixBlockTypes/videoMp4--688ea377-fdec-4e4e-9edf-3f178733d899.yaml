@@ -1,0 +1,75 @@
+field: 8c9f6394-80d2-416d-8e8f-a5fce958cae8 # [TO BE DEPRECATED] Video
+fieldLayouts:
+  756656c4-3d11-40ad-b84e-305b64db2b8a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 526cd691-29bd-44d4-bcbe-0e0f4b678c5a # Video MP4
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90a1f32f-95f9-4814-a5fa-aa7078d7adc8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4473051e-25b1-451d-8fd2-aeb0c61bd77a
+        userCondition: null
+fields:
+  526cd691-29bd-44d4-bcbe-0e0f4b678c5a: # Video MP4
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: media
+    instructions: null
+    name: 'Video MP4'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - video
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: videoMp4
+name: 'Video MP4'
+sortOrder: 3

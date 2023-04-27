@@ -1,0 +1,19 @@
+columnSuffix: lvcelhop
+contentColumnType: text
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: plainText
+instructions: null
+name: 'Texte / Texte'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

@@ -1,19 +1,14 @@
 columnSuffix: kuqgmesg
-contentColumnType: text
+contentColumnType: string(500)
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: embedUrl
-instructions: 'Youtube or Vimeo URL'
-name: 'Video embed url'
+instructions: "URL de la vidéo à jouer à même la page (embed). La vidéo peut provenir de YouTube **OU** Vimeo. La vidéo ne joue pas automatiquement, il faut que l'utilisateur.trice clique sur le bouton «Jouer».\r\n\r\n*URL of the video to be played on the page(embed). The video can be hosted on YouTube **OR** Vimeo. The video won't automatically play; the user has to press the \"Play button\".*"
+name: 'Embed Video URL'
 searchable: false
 settings:
-  byteLimit: null
-  charLimit: null
-  code: ''
-  columnType: null
-  initialRows: '4'
-  multiline: ''
-  placeholder: null
-  uiMode: normal
+  maxLength: 500
+  types:
+    - url
 translationKeyFormat: null
-translationMethod: language
-type: craft\fields\PlainText
+translationMethod: none
+type: craft\fields\Url

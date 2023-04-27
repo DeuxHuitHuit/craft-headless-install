@@ -1,49 +1,57 @@
-field: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Socials
+field: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Médias sociaux / Socials
 fieldLayouts:
   cad55635-b898-4dab-b7e6-b621c43bec90:
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            fieldUid: fe7be7d2-aed9-4274-91c5-b1fc5432b42e # Plateform Name
+            elementCondition: null
+            fieldUid: fe7be7d2-aed9-4274-91c5-b1fc5432b42e # Nom / Name
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: f31050d5-c274-4e15-a4e2-e43354dbc223
+            userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
-            fieldUid: 5e423c33-bf01-4613-b511-0c196a0f3421 # Platform Url
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9085b051-821f-41e8-817c-e6365efcf707
-            warning: null
-            width: 100
-          -
-            fieldUid: 216a4e0a-27ae-4b0b-963e-26dc9ffae251 # Platform Logo
+            elementCondition: null
+            fieldUid: 216a4e0a-27ae-4b0b-963e-26dc9ffae251 # Logo
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 60e96c22-d58a-479d-9377-ef059858b47e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 5e423c33-bf01-4613-b511-0c196a0f3421 # URL du compte / Account URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9085b051-821f-41e8-817c-e6365efcf707
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 6906d9f3-c621-4c92-a016-0d133ed79641
+        userCondition: null
 fields:
-  5e423c33-bf01-4613-b511-0c196a0f3421: # Platform Url
+  5e423c33-bf01-4613-b511-0c196a0f3421: # URL du compte / Account URL
     columnSuffix: kcelfkir
     contentColumnType: text
     fieldGroup: null
     handle: platformUrl
     instructions: null
-    name: 'Platform Url'
+    name: 'URL du compte / Account URL'
     searchable: false
     settings:
       byteLimit: null
@@ -55,15 +63,15 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: site
     type: craft\fields\PlainText
-  216a4e0a-27ae-4b0b-963e-26dc9ffae251: # Platform Logo
+  216a4e0a-27ae-4b0b-963e-26dc9ffae251: # Logo
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: platformLogo
-    instructions: null
-    name: 'Platform Logo'
+    instructions: "Max 1 image\r\n\r\n* Dimensions maximales / *Maximum size*: 500 x 500.  \r\n* Poids maximal / *Maximum weight*: 300Ko.    \r\n* Types de fichiers acceptés / *Accepted file types*: SVG, PNG. "
+    name: Logo
     searchable: false
     settings:
       allowSelfRelations: false
@@ -71,12 +79,14 @@ fields:
       allowUploads: true
       allowedKinds:
         - image
+      branchLimit: null
       defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
       defaultUploadLocationSubpath: null
       localizeRelations: false
-      maxRelations: null
+      maintainHierarchy: false
+      maxRelations: 1
       minRelations: null
-      previewMode: full
+      previewMode: thumbs
       restrictFiles: true
       restrictLocation: false
       restrictedDefaultUploadSubpath: null
@@ -97,21 +107,20 @@ fields:
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      source: null
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false
-      viewMode: list
+      viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  fe7be7d2-aed9-4274-91c5-b1fc5432b42e: # Plateform Name
+  fe7be7d2-aed9-4274-91c5-b1fc5432b42e: # Nom / Name
     columnSuffix: wtfddxgb
     contentColumnType: text
     fieldGroup: null
     handle: platformName
     instructions: null
-    name: 'Plateform Name'
+    name: 'Nom / Name'
     searchable: false
     settings:
       byteLimit: null
@@ -123,8 +132,8 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: language
+    translationMethod: site
     type: craft\fields\PlainText
 handle: platform
-name: Platform
+name: 'Plateforme / Platform'
 sortOrder: 1

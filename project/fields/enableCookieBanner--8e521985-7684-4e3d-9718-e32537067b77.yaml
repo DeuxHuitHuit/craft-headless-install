@@ -3,7 +3,7 @@ contentColumnType: boolean
 fieldGroup: 1f225daf-1e85-461d-a339-b01dbf7b1e03 # Cookie Banner
 handle: enableCookieBanner
 instructions: null
-name: 'Enable cookie banner'
+name: 'Activer la bannière / Enable banner'
 searchable: false
 settings:
   default: false

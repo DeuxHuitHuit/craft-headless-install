@@ -3,7 +3,7 @@ contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: socials
 instructions: null
-name: Socials
+name: 'Médias sociaux / Socials'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_socials}}'

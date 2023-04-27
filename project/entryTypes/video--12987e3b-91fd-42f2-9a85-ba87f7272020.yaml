@@ -1,0 +1,84 @@
+fieldLayouts:
+  f1420589-e0df-4981-9b10-7702a5487bbc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2572ec75-509d-4afe-961f-5748c28d25f8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9bde8c35-461f-4b7b-b86e-29fdcedfb443
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8c9f6394-80d2-416d-8e8f-a5fce958cae8 # [TO BE DEPRECATED] Video
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d02bcb7-7b25-489f-b032-03b9a298529e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 04b0619a-bfd5-400b-aa2c-11f6d92d14ab
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 150be634-eec1-4c4c-b913-9bb014431adf # [TO BE DEPRECATED] Video Neo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6673ec65-54d2-4e50-b05f-9532b615cbbc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a3791a78-cc8c-430d-ad70-cf10b56fc85a
+        userCondition: null
+handle: video
+hasTitleField: true
+name: '[TO BE DEPRECATED]Video'
+section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
+sortOrder: 4
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

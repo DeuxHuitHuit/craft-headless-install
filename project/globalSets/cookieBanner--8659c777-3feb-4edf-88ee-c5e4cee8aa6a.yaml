@@ -6,8 +6,8 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 8e521985-7684-4e3d-9718-e32537067b77 # Enable cookie banner
-            instructions: null
+            fieldUid: 8e521985-7684-4e3d-9718-e32537067b77 # Activer la bannière / Enable banner
+            instructions: "Si coché, la bannière apparaîtra en «pop up» sur la page d'accueil du site.\r\n\r\n*If checked, the cookie banner will pop up on the homepage.*"
             label: null
             required: false
             tip: null
@@ -15,10 +15,10 @@ fieldLayouts:
             uid: a08f81bb-6f9c-4d29-8081-f577d6462327
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
             instructions: null
             label: null
             required: false
@@ -27,7 +27,7 @@ fieldLayouts:
             uid: 81fa2e80-68aa-40ff-a81b-27e7d71f7353
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: d53f096e-9e71-40ca-89b6-2df0130b4582 # GTM Consent Event
@@ -44,5 +44,5 @@ fieldLayouts:
         uid: becddd45-9a41-4faf-9ed2-c387c0d5aa5c
         userCondition: null
 handle: cookieBanner
-name: 'Cookie Banner'
+name: 'Bannière de cookies / Cookie Banner'
 sortOrder: 2

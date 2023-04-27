@@ -1,17 +1,17 @@
-columnSuffix: qetyniyg
+columnSuffix: swivhxfd
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: alt
-instructions: ''
-name: Alt
+handle: role
+instructions: null
+name: 'Rôle / Role'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

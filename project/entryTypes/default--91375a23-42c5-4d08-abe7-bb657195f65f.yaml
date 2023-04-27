@@ -1,0 +1,43 @@
+fieldLayouts:
+  63588e79-62de-45f8-a945-b1b14ad80325:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2f67a00e-6cb5-4208-9618-972573268c76
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: daa82a37-c708-451e-8ef8-f40e34c59ffc
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: ec897a0c-2ff5-4c93-9b2b-530800ffc3e2 # Équipe / Team
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
