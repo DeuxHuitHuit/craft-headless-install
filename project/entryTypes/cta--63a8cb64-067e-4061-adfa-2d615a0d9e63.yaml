@@ -76,7 +76,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Texte
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Text
             instructions: null
             label: null
             required: false
@@ -88,34 +88,34 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton / Button
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons / Buttons
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d305f1c4-2cec-4fb0-b380-e8bc838bbbce
+            uid: 63688198-8807-49e1-84e5-4cdb3aa81004
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1fc62ac6-d551-48d2-bce5-7c87ab98e723
+            uid: cb0eafc0-d62f-4264-be43-f8b35d3dba9d
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: Contenu
         uid: b8cbeb00-4388-47a6-b4a1-fdde49105d29
         userCondition: null
 handle: cta
 hasTitleField: false
-name: 'Appel à l''action / Call to action'
+name: 'Appel à l''action / Call to Action'
 section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
 sortOrder: 10
 titleFormat: '{type.name} - {identifier}'

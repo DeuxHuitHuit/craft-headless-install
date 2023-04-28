@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: quoteSource
+handle: galleryMedias
 instructions: null
-name: Source
+name: 'Médias / Medias'
 searchable: false
 settings:
-  maxBlocks: 1
+  maxBlocks: null
   maxLevels: null
   maxTopBlocks: null
   minBlocks: null

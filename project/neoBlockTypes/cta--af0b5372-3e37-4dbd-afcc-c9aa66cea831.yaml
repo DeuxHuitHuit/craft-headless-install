@@ -1,10 +1,10 @@
 childBlocks: null
 conditions: null
-description: "Communément appelée «Trio BigMac», le bloc est composé d'un surtitre, un titre et d'un court texte sous le titre.\r\n\r\n*Nicknamed \"Big Mac Trio\", the title is made of a surtitle, title and short text under the title.*"
+description: ''
 enabled: true
 field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  a5ad2b0c-084e-4e34-a898-06a877513c32:
+  dce8491d-8dba-4ec7-ab13-269aa2b9c191:
     tabs:
       -
         elementCondition: null
@@ -15,7 +15,7 @@ fieldLayouts:
             style: tip
             tip: '[Référence / Reference]()'
             type: craft\fieldlayoutelements\Tip
-            uid: 05ad2e95-f4f7-4591-8609-34294acff7b4
+            uid: 70a177a6-1279-43c7-bd8f-5ea547759cc1
             userCondition: null
           -
             elementCondition: null
@@ -25,7 +25,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: acd7d527-7cca-4574-887a-9af006c9837e
+            uid: a9abce1e-0f0f-45cd-80d6-8a8f6afeb9bc
             userCondition: null
             warning: null
             width: 50
@@ -37,28 +37,52 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 06a4c079-ee50-4f43-8b35-2ad9ec8414b4
+            uid: 088f0dd2-001e-4e8d-9897-c98d43b8a4b9
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Text
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: df8d273e-8572-445a-a474-2dffedaf4a45
+            uid: 3efd81b0-8f0a-4501-851e-a3f2826e1590
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons / Buttons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e71741d-f49e-41d5-8d0c-ff76b8fb129a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16c4de17-2535-4d41-abfb-0f2b76c54c7c
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: c0d837bb-fda9-431e-8efc-f6e79f0641dc
+        uid: 9449411f-6b62-44bc-b823-8356c872d0a3
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: trioBigMac
+handle: cta
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -67,6 +91,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Titre / Title'
-sortOrder: 1
+name: 'Appel à l''action / Call to Action'
+sortOrder: 12
 topLevel: true

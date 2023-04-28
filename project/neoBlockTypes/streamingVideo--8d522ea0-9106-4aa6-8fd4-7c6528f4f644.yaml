@@ -2,9 +2,9 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias / Medias
 fieldLayouts:
-  59522338-42ab-4ec1-acea-444c90fe2b53:
+  25236ac5-faf7-47cb-a526-5668cbd47574:
     tabs:
       -
         elementCondition: null
@@ -17,10 +17,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 246956d5-d18c-41bb-8e35-600ed2e8fd60
+            uid: 434e48cd-e40f-43ca-bb6a-d33d0c5c2408
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # HLS Video Streaming URL
@@ -29,10 +29,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 101e6b5a-ae71-432a-88e7-b9c68d3bb124
+            uid: 12afee61-97ef-42d0-9136-a7de0e509137
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # MP4 Video Streaming URL
@@ -41,10 +41,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 091ffbda-1eb1-466c-9409-7992d9c1c0c4
+            uid: a5f36bb4-18df-4fcf-838e-73eecd061432
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
@@ -53,24 +53,36 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f31fe940-d343-4dfa-b676-43b185d8ae04
+            uid: cf3513d9-3ce3-4b3f-ad6a-76caa50f05d3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
+            instructions: null
+            label: 'Vignette / Thumbnail'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e1c62701-2183-49c2-9430-fafe3eedfc08
             userCondition: null
             warning: null
             width: 50
         name: Contenu
-        uid: 570ce6cb-af7a-4e2a-8d6d-d606cea4d84f
+        uid: f1b3c846-f719-46e9-bb88-87e8c72e68fd
         userCondition: null
 group: null
 groupChildBlockTypes: true
 handle: streamingVideo
 icon: null
 ignorePermissions: true
-maxBlocks: 1
+maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Vidéo d''ambiance / Mood video'
-sortOrder: 2
+name: 'Vidéo diffusée / Streaming video'
+sortOrder: 3
 topLevel: true

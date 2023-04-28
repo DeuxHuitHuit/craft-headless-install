@@ -1,0 +1,35 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: partners
+instructions: null
+name: 'Partenaires / Partners'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Entry
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\entries\EntryCondition
+  selectionLabel: null
+  showSiteMenu: false
+  sources:
+    - 'section:914dafd0-4b91-4bbd-9492-c77aa866fdc0' # Partenaires / Partners
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

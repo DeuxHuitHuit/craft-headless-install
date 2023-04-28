@@ -53,8 +53,8 @@ fieldLayouts:
         userCondition: null
 handle: home
 hasTitleField: false
-name: Home
-section: da1b5819-b168-4dd9-aa35-505a833ee367 # Home
+name: 'Accueil / Homepage'
+section: da1b5819-b168-4dd9-aa35-505a833ee367 # Accueil / Homepage
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

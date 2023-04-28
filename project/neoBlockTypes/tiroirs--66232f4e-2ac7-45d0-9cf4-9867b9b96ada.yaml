@@ -1,40 +1,49 @@
-childBlocks: null
+childBlocks:
+  - tiroir
 conditions: null
 description: ''
 enabled: true
-field: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  3231f9aa-d041-442f-a833-e4e8c311d8c8:
+  9bc8fef9-9af7-4b41-9d50-10776b4ff735:
     tabs:
       -
         elementCondition: null
         elements:
           -
+            dismissible: false
             elementCondition: null
-            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
+            style: tip
+            tip: '[Référence / Reference]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: 681d48e6-d081-46aa-ad4a-581e0cffa265
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bef966f5-08f9-4149-89db-ae9ec5b14fa0
+            uid: abc5b46e-eece-4abd-831e-bd7c79b51ef3
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: 9487410a-d1b7-4146-92eb-824bce6f8865
+        uid: 78dee376-261e-44fe-a4b2-57dcbc0af80c
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: image
+handle: tiroirs
 icon: null
 ignorePermissions: true
-maxBlocks: 1
+maxBlocks: 0
 maxChildBlocks: 0
 maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Image
-sortOrder: 1
+name: Tiroirs
+sortOrder: 5
 topLevel: true

@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: home
-name: 'Accueil / Homepage'
+handle: partners
+name: 'Partenaires / Partners'
 previewTargets:
   -
     __assoc__:
@@ -18,12 +18,15 @@ propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR
     enabledByDefault: true
-    hasUrls: true
+    hasUrls: false
     template: null
-    uriFormat: __home__
+    uriFormat: null
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
-    hasUrls: true
+    hasUrls: false
     template: null
-    uriFormat: __home__
-type: single
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 9b2f9f54-0629-4f84-a672-7bbdd0bdec6e
+type: structure

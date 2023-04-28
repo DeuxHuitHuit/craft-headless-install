@@ -1,5 +1,5 @@
 fieldLayouts:
-  2641d65c-dbba-4caa-911e-bfe7bd448e8f:
+  8942097c-9cb2-4d20-848c-fb9982aa9bcb:
     tabs:
       -
         elementCondition: null
@@ -12,8 +12,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: null
-            label: 'Titre / Title'
+            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
             name: null
@@ -25,43 +25,43 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: 22fab569-29b6-474c-acb6-4ebfc0557015
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2b1830ef-78f6-4922-be30-851916cd9311
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
+            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f097070c-9e2d-49e2-adcf-3fa6b143c44b
+            uid: e73351a3-81da-4730-bdc0-0b9136ebc525
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif / Alternative Text
+            fieldUid: 8b5316ca-71f3-4b68-be3d-991a601fa490 # URL Externe / External URL
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 101a2bc2-163f-4591-b4c6-6b4c721bc066
+            uid: 3313e29a-636a-4ec6-88d9-9a621b8b80b5
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Content
-        uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
+        uid: fb5a645c-74db-4b0c-b17f-89886ae9473f
         userCondition: null
-fs: assets
-handle: assets
-name: Assets
+handle: default
+hasTitleField: true
+name: Default
+section: 914dafd0-4b91-4bbd-9492-c77aa866fdc0 # Partenaires / Partners
 sortOrder: 1
+titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
-transformFs: ''
-transformSubpath: ''
+titleTranslationMethod: none

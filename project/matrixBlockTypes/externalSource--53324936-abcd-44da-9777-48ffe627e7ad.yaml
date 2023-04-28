@@ -1,0 +1,171 @@
+field: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Source
+fieldLayouts:
+  4246d22d-3b84-4439-ace9-761bf266d2aa:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 3b5a590b-95e7-40bb-a16a-39f8c3aeec5f # Nom / Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49203aaa-4e98-4eec-923e-359d0efbea49
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 220f7530-a0f7-4885-bd51-fb58f83948a9 # Portrait
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1cdf29ab-ce19-4f7b-a5e0-be66001eb88d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: d6a9c7d7-6887-4a32-97b8-869a1625be3d # Titre personnel / Personal Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c5abdde-f33b-4cec-bd30-49a6ae6d5adf
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 062ef898-9c73-4473-9995-a0da70f2b9f5 # Rôle / Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 167b0ed2-65b6-4a71-a876-ca3bd5abace4
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: cbfc2df5-c798-43a9-be55-bec6450e010a
+        userCondition: null
+fields:
+  3b5a590b-95e7-40bb-a16a-39f8c3aeec5f: # Nom / Name
+    columnSuffix: iyigxwfe
+    contentColumnType: text
+    fieldGroup: null
+    handle: personName
+    instructions: null
+    name: 'Nom / Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  062ef898-9c73-4473-9995-a0da70f2b9f5: # Rôle / Role
+    columnSuffix: npobaexk
+    contentColumnType: text
+    fieldGroup: null
+    handle: role
+    instructions: null
+    name: 'Rôle / Role'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  220f7530-a0f7-4885-bd51-fb58f83948a9: # Portrait
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Portrait
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      previewMode: thumbs
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  d6a9c7d7-6887-4a32-97b8-869a1625be3d: # Titre personnel / Personal Title
+    columnSuffix: ikpwxurt
+    contentColumnType: text
+    fieldGroup: null
+    handle: plainTitle
+    instructions: 'Ph. D, Dr. MBA, etc.'
+    name: 'Titre personnel / Personal Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: externalSource
+name: 'Source externe / External source'
+sortOrder: 2

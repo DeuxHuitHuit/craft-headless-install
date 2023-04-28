@@ -10,6 +10,14 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence / Reference]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: bd030b2e-aaa9-4032-8abd-0c7cb5da63ec
+            userCondition: null
+          -
             elementCondition: null
             fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
             instructions: null

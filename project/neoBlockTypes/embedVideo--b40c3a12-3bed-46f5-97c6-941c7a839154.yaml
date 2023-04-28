@@ -1,10 +1,10 @@
 childBlocks: null
 conditions: null
-description: "Communément appelée «Trio BigMac», le bloc est composé d'un surtitre, un titre et d'un court texte sous le titre.\r\n\r\n*Nicknamed \"Big Mac Trio\", the title is made of a surtitle, title and short text under the title.*"
+description: ''
 enabled: true
 field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  a5ad2b0c-084e-4e34-a898-06a877513c32:
+  7ba92de0-d0f8-4565-be51-b92cb968629b:
     tabs:
       -
         elementCondition: null
@@ -15,50 +15,50 @@ fieldLayouts:
             style: tip
             tip: '[Référence / Reference]()'
             type: craft\fieldlayoutelements\Tip
-            uid: 05ad2e95-f4f7-4591-8609-34294acff7b4
+            uid: 6f32f4b0-a5a7-4bc3-8b43-b01fdaf06447
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # Embed Video URL
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: acd7d527-7cca-4574-887a-9af006c9837e
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 06a4c079-ee50-4f43-8b35-2ad9ec8414b4
+            uid: 5e0a6958-7d36-4101-a34a-1c6687e87cce
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: df8d273e-8572-445a-a474-2dffedaf4a45
+            uid: 9bb543ba-906d-4503-b6df-ad633706bd46
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            instructions: "La vignette est le visuel de couverture de la vidéo. Elle est seulement visible avant que l'utilisateur.trice ne fasse jouer la vidéo. La vignette peut être une image statique **OU** une courte vidéo d'ambiance de quelques secondes Si la vignette est une courte vidéo, il faut fournir les urls des 3 types de fichiers de streaming (DASH, HLS, MP4). \r\n\r\n*The thumbnail is the video's visual cover only displayed before the user plays the video. The thumbnail can either be a static image **OR** a short mood video. If the thumbnail is a short video, the url for each 3 streaming files is required (DASH, HLS, MP4).*"
+            label: 'Vignette / Thumbnail'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f4bf19e-fa3b-4ca6-afd4-b9f242f39b49
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: c0d837bb-fda9-431e-8efc-f6e79f0641dc
+        uid: 4001b591-7726-4a8d-afb6-bf5917bd5b06
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: trioBigMac
+handle: embedVideo
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -67,6 +67,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Titre / Title'
-sortOrder: 1
+name: 'Vidéo encastrée / Embed Video'
+sortOrder: 10
 topLevel: true

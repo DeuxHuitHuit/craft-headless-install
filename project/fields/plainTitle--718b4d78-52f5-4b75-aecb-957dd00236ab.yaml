@@ -1,17 +1,17 @@
-columnSuffix: lvcelhop
+columnSuffix: ebhzypvx
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: plainText
+handle: plainTitle
 instructions: null
-name: 'Texte / Text'
+name: 'Titre / Title'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: false
   columnType: null
-  initialRows: 2
-  multiline: true
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

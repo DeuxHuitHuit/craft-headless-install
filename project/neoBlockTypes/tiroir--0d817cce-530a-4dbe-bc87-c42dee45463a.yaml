@@ -4,37 +4,41 @@ description: ''
 enabled: true
 field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  ddb04cc8-1160-4736-be55-dc5734dc52d2:
+  30855179-57de-441c-b7fe-e160706e5b3d:
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dismissible: false
             elementCondition: null
-            style: tip
-            tip: '[Référence / Reference]()'
-            type: craft\fieldlayoutelements\Tip
-            uid: f2ad6a8e-4a34-4e16-b795-4eef36a0a3f5
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
+            fieldUid: 718b4d78-52f5-4b75-aecb-957dd00236ab # Titre / Title
             instructions: null
-            label: 'Citation / Quote'
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a9aa2415-518b-40ed-86ff-e70df2b7c705
+            uid: 65671d09-dd78-4a52-beb2-9b5a7c0cf2ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a257ce8-c3d6-4646-85bf-65b9631e69d9
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: 0fdebd63-8175-43e6-9ebe-4f193758f4a4
+        uid: 8bf570c3-fb56-4971-92d6-4aa27b3d3fa7
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: blockQuote
+handle: tiroir
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -43,6 +47,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Citation simple / BlockQuote'
-sortOrder: 3
-topLevel: true
+name: Tiroir
+sortOrder: 6
+topLevel: false

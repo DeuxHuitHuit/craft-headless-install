@@ -3,6 +3,47 @@ conditions: null
 description: ''
 enabled: true
 field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+fieldLayouts:
+  336c1a2a-e6d0-4f71-bf91-17421f464fbc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence / Reference]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: 65f5805b-3967-4798-a979-dd7240944024
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            instructions: null
+            label: 'Citation / Quote'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f8afb3e-7121-4e1c-8dfe-3bf2f4910c0a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Source
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72261250-4297-47be-a27f-5a06e6cff391
+            userCondition: null
+            warning: null
+            width: 50
+        name: Contenu
+        uid: e2864d8a-2e5d-433b-bdf9-5711edb74a3b
+        userCondition: null
 group: null
 groupChildBlockTypes: true
 handle: superQuote

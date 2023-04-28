@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: home
-name: 'Accueil / Homepage'
+handle: projects
+name: 'Projets / Projects'
 previewTargets:
   -
     __assoc__:
@@ -20,10 +20,13 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: __home__
+    uriFormat: 'realisations/{slug}'
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: __home__
-type: single
+    uriFormat: 'work/{slug}'
+structure:
+  maxLevels: null
+  uid: 559de9d1-a913-4808-8875-7c392b872ea9
+type: structure

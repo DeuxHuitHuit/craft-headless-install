@@ -1,19 +1,19 @@
-columnSuffix: lvcelhop
+columnSuffix: ephbryld
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: plainText
+handle: iFrame
 instructions: null
-name: 'Texte / Text'
+name: iFrame
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: false
   columnType: null
-  initialRows: 2
+  initialRows: 3
   multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\PlainText

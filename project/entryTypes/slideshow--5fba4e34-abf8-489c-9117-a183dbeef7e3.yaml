@@ -76,7 +76,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: abf1f7b7-9865-4919-abd6-3b87e6816e4a # Médias / Medias
+            fieldUid: abf1f7b7-9865-4919-abd6-3b87e6816e4a #   Médias / Medias
             instructions: null
             label: null
             required: false

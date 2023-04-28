@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  ddb04cc8-1160-4736-be55-dc5734dc52d2:
+  ee59d8cd-e5dd-4b02-bc1f-07ce40c28288:
     tabs:
       -
         elementCondition: null
@@ -15,26 +15,26 @@ fieldLayouts:
             style: tip
             tip: '[Référence / Reference]()'
             type: craft\fieldlayoutelements\Tip
-            uid: f2ad6a8e-4a34-4e16-b795-4eef36a0a3f5
+            uid: e3e80ea8-0a1a-4b4c-984d-aa7304c79379
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
+            fieldUid: c97a00b4-233b-4096-ae95-a4bbfc8b6bc5 # iFrame
             instructions: null
-            label: 'Citation / Quote'
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a9aa2415-518b-40ed-86ff-e70df2b7c705
+            uid: 4babfcfa-d416-480f-b240-ed3a2067eef8
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: 0fdebd63-8175-43e6-9ebe-4f193758f4a4
+        uid: ab20edc7-8418-4ab8-b755-53fa306929e2
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: blockQuote
+handle: iframe
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -43,6 +43,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Citation simple / BlockQuote'
-sortOrder: 3
+name: iFrame
+sortOrder: 14
 topLevel: true

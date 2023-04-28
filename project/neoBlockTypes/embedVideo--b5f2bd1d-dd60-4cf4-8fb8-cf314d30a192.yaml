@@ -2,63 +2,55 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias / Medias
 fieldLayouts:
-  3d105ebd-2a60-4a1f-b2b5-d2da987b6d8c:
+  5ba1f53c-8fc1-4dd9-9515-cda6416c6219:
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dismissible: false
             elementCondition: null
-            style: tip
-            tip: '[Référence / Reference]()'
-            type: craft\fieldlayoutelements\Tip
-            uid: e402352f-db05-479b-9906-4a3c8f7f7108
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: de7d2c37-782f-442f-82fd-b6d553936ed4 # Thème de couleur / Color theme
+            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # Embed Video URL
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c2e6cd75-9c69-4e97-a092-4d46c33072fb
+            uid: e6d4bfda-b288-46c3-96d0-e1d6e64abbcc
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2eb29999-44a6-4276-a5bd-94707e640d96
+            uid: 18087250-a5cf-49c3-a95d-ba21f339eba4
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
             instructions: null
-            label: null
+            label: 'Vignette / Thumbnail'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aad638aa-ff78-4f9e-9540-92995ae24aad
+            uid: 2d2c9b9b-607b-4294-98db-b01b3cbf5a8d
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: fbcb20c8-3e95-414c-bbd0-c8adfb24c5d8
+        uid: 8a99d602-249c-4079-b60b-e0b6cf9fce21
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: callout
+handle: embedVideo
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -67,6 +59,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Callout / Accroche'
-sortOrder: 7
+name: 'Vidéo encastrée / Embed Video'
+sortOrder: 2
 topLevel: true

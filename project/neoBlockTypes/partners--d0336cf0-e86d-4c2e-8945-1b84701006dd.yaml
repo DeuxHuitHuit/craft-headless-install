@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  ddb04cc8-1160-4736-be55-dc5734dc52d2:
+  aa9b77d5-34f6-400c-9834-5772eebd2edb:
     tabs:
       -
         elementCondition: null
@@ -15,26 +15,26 @@ fieldLayouts:
             style: tip
             tip: '[Référence / Reference]()'
             type: craft\fieldlayoutelements\Tip
-            uid: f2ad6a8e-4a34-4e16-b795-4eef36a0a3f5
+            uid: 44bd2fa8-3c7d-4973-bd26-b6ec1705b2b9
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
+            fieldUid: 915cb3c4-b6bb-4ecc-938c-c15c443065fa # Partenaires / Partners
             instructions: null
-            label: 'Citation / Quote'
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a9aa2415-518b-40ed-86ff-e70df2b7c705
+            uid: 05b4a9c6-b598-4738-b2f4-8429f263b2d7
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: 0fdebd63-8175-43e6-9ebe-4f193758f4a4
+        uid: 096860db-30fc-4c53-a87e-b3e64a7180ee
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: blockQuote
+handle: partners
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -43,6 +43,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Citation simple / BlockQuote'
-sortOrder: 3
+name: 'Partenaires / Partners'
+sortOrder: 8
 topLevel: true

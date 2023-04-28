@@ -2,13 +2,21 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: abf1f7b7-9865-4919-abd6-3b87e6816e4a #   Médias / Medias
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
 fieldLayouts:
-  406329c4-bb9c-4551-8821-f5334cf4727e:
+  0e188142-0030-48d4-9539-9a0fca8325e4:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: '[Référence / Reference]()'
+            type: craft\fieldlayoutelements\Tip
+            uid: bde0abdb-bac2-4f57-b6e1-3281860ba0fa
+            userCondition: null
           -
             elementCondition: null
             fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2 # DASH Video Streaming URL
@@ -17,10 +25,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a783977a-2b4c-4ac0-8fcf-6263fdce5551
+            uid: e66d7bfb-d73d-4c87-aa47-171dd9b81a5b
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # HLS Video Streaming URL
@@ -29,10 +37,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 843fb4b3-68e2-43d4-b2a3-5ce5a1e1a666
+            uid: 449b4710-5f16-4f5b-87ba-7803641296c9
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # MP4 Video Streaming URL
@@ -41,10 +49,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0a44df2a-a908-47a5-a80c-2a8c59ebd4bf
+            uid: 5085880c-7c81-4dba-b8cb-4d6726374b5d
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
             fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
@@ -53,24 +61,24 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 082956fd-fc42-4f60-850b-843073581b64
+            uid: 0dc686eb-a4d5-4469-9f49-7c46442270a9
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
-            instructions: null
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            instructions: "La vignette est le visuel de couverture de la vidéo. Elle est seulement visible avant que l'utilisateur.trice ne fasse jouer la vidéo. La vignette peut être une image statique **OU** une courte vidéo d'ambiance de quelques secondes Si la vignette est une courte vidéo, il faut fournir les urls des 3 types de fichiers de streaming (DASH, HLS, MP4). \r\n\r\n*The thumbnail is the video's visual cover only displayed before the user plays the video. The thumbnail can either be a static image **OR** a short mood video. If the thumbnail is a short video, the url for each 3 streaming files is required (DASH, HLS, MP4).*"
             label: 'Vignette / Thumbnail'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a8d78732-1564-467c-8a00-d1cff00d8377
+            uid: bba06b56-a882-4021-b2d6-b719947c2b2c
             userCondition: null
             warning: null
             width: 100
         name: Contenu
-        uid: 82a74bdf-fbbb-4c38-a8b7-788198006ab1
+        uid: a18c9a5d-9b35-4382-af73-20b6f88f6ae9
         userCondition: null
 group: null
 groupChildBlockTypes: true
@@ -83,6 +91,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Vidéo d''ambiance / Mood video'
-sortOrder: 2
+name: 'Vidéo diffusée / Streaming Video'
+sortOrder: 11
 topLevel: true
