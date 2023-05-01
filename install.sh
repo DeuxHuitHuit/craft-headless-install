@@ -531,7 +531,7 @@ PHP_EXEC="ea-php82"
 CMD="$1"
 GITHUB_RUN_ID="$2"
 
-echo "Hi from host $HOSTNAME for run $GITHUB_RUN_ID"
+echo "Hi from host $HOSTNAME for run $GITHUB_RUN_ID and command $CMD"
 cd "${CRAFT_HOME}"
 pwd
 
@@ -552,6 +552,22 @@ if [ "$CMD" = "backup" ]; then
 
     echo "Backup done"
 
+elif [ "$CMD" = "setup" ]; then
+
+    echo "Make sure required folder exists"
+    mkdir -p ./config
+    mkdir -p ./config/project
+    mkdir -p ./migrations
+    mkdir -p ./modules
+    mkdir -p ./templates
+    mkdir -p ./storage
+    mkdir -p ./storage/rebrand
+    mkdir -p ./storage/backups
+    mkdir -p ./storage/restore
+    mkdir -p ./web/uploads
+
+    echo "Setup done"
+
 elif [ "$CMD" = "apply" ]; then
 
     echo "Install composer deps"
@@ -568,6 +584,27 @@ elif [ "$CMD" = "apply" ]; then
 
     echo "Remove old backups"
     find ./storage/backups -mtime +7 -name '*.sql' -exec rm -f {} \;
+
+    echo "gg;wp 👍"
+
+elif [ "$CMD" = "install" ]; then
+
+    echo "Create .prod file symlinks"
+    ln -s .env.prod .env || true
+    rm -rf ./web/.htaccess || true
+    ln -s .htaccess.prod ./web/.htaccess || true
+
+    echo "Install composer deps"
+    "${PHP_EXEC}" composer.phar install --prefer-dist --no-progress
+
+    echo "Restore db"
+    "${PHP_EXEC}" ./craft db/restore ./storage/restore/*.sql
+
+    echo "Clear temp files"
+    "${PHP_EXEC}" ./craft clear-caches/temp-files
+
+    echo "Make sure craft runs"
+    "${PHP_EXEC}" ./craft
 
     echo "gg;wp 👍"
 
@@ -603,10 +640,19 @@ jobs:
           SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
           SLACK_TITLE: ":rocket: Nouveau déploiement du CMS en cours"
 
-      - name: Setup
+      - name: ssh setup
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
+      - name: Detect run type (install/deploy)
+        run: if [[ "${{ secrets.SETUP_DONE }}" -eq "1" ]]; then echo "IS_INSTALL=0" >> $GITHUB_OUTPUT; else echo "IS_INSTALL=1" >> $GITHUB_OUTPUT; fi;
+        id: runtype
+
+      - name: Remote setup
+        if: steps.runtype.outputs.IS_INSTALL == '1'
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }}' < deploy.sh
+
       - name: Backup
+        if: steps.runtype.outputs.IS_INSTALL == '0'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
       - name: Upload config
@@ -621,6 +667,10 @@ jobs:
       - name: Upload Rebrand
         run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
 
+      - name: Upload Restore
+        if: steps.runtype.outputs.IS_INSTALL == '1'
+        run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/restore ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
+
       - name: Upload .htaccess.prod
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
 
@@ -630,7 +680,23 @@ jobs:
       - name: Upload composer files
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
 
+      - name: Upload craft cli
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./craft ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+
+      - name: Upload bootstrap.php
+        if: steps.runtype.outputs.IS_INSTALL == '1'
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./bootstrap.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+
+      - name: Upload index.php
+        if: steps.runtype.outputs.IS_INSTALL == '1'
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/index.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web
+
+      - name: First install
+        if: steps.runtype.outputs.IS_INSTALL == '1'
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- install ${{ github.run_id }}' < deploy.sh
+
       - name: Install and apply
+        if: steps.runtype.outputs.IS_INSTALL == '0'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
 
       - name: Postdeploy failure notification
