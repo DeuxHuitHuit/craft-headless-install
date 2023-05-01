@@ -21,4 +21,4 @@ scope:
   - 'globalsets.7ddb842a-f59e-40b2-a970-b9797c1027a9:read' # Configuration
   - 'globalsets.8659c777-3feb-4edf-88ee-c5e4cee8aa6a:read' # Bannière de cookies / Cookie Banner
   - 'globalsets.6bb7eb36-b90f-451e-b921-1f377e3ff31e:read' # Scripts
-  - 'categorygroups.408df6af-a1c8-433f-862d-dac928da7cb3:read' # Misc
+  - 'categorygroups.408df6af-a1c8-433f-862d-dac928da7cb3:read' # Types d'articles / Article Types

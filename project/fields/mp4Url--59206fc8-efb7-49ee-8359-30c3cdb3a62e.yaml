@@ -3,7 +3,7 @@ contentColumnType: string(500)
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: mp4Url
 instructions: "URL du fichier vidéo MP4 hébergé sur une plateforme de streaming comme Cloudflare ou Vimeo Pro. La vidéo sera jouée en autoplay avec loop et sans son.\r\n\r\n*URL of MP4 video hosted on a streaming platform such as Cloudflare or Vimeo Pro. The video will autoplay, loop and be muted.*"
-name: 'MP4 Video Streaming URL'
+name: 'URL vidéo MP4 / MP4 Video URL'
 searchable: false
 settings:
   maxLength: 500

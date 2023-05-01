@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+handle: articles
+name: Articles
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'articles/{slug}'
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'articles/{slug}'
+structure:
+  maxLevels: null
+  uid: 24640e16-faa0-4e49-9706-28207c976d66
+type: structure

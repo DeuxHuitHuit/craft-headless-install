@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: modules
+handle: articleTypes
 instructions: null
-name: 'Modèle ouvert / Open Model / Modules'
+name: 'Type(s) d''article'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,24 +12,12 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Entry
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\entries\EntryCondition
   selectionLabel: null
   showSiteMenu: false
-  sources:
-    - 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
+  source: 'group:408df6af-a1c8-433f-862d-dac928da7cb3' # Types d'articles / Article Types
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Entries
+type: craft\fields\Categories

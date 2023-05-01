@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Source
+            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e(Source) / Author(Source)
             instructions: null
             label: null
             required: false

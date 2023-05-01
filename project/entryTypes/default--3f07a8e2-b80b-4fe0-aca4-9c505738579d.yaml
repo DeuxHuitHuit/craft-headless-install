@@ -92,7 +92,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
             instructions: null
             label: null
             required: false

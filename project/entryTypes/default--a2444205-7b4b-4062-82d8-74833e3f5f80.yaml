@@ -1,5 +1,5 @@
 fieldLayouts:
-  40be40ef-b964-465d-8b42-df34d3810571:
+  14c959a7-12d1-4e04-9109-bf41a8024401:
     tabs:
       -
         elementCondition: null
@@ -26,16 +26,10 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 43ba80f4-9821-4bfb-a2e8-f0ddc6f5572d
+            uid: 6fdcfb01-98d6-46b9-adba-bfa8d68302d6
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            heading: 'En-tête / Header'
-            type: craft\fieldlayoutelements\Heading
-            uid: 30af58a6-8b2c-4eae-91d4-2d2af6e45faf
-            userCondition: null
           -
             elementCondition: null
             fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
@@ -44,72 +38,72 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: afa80289-1538-4db0-86b1-10dd51dd0cc7
+            uid: ecc68518-46f7-4951-93c6-f7a556948716
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            fieldUid: cb674705-76bb-4c5c-aef0-412239f6fde6 # Date de début / Start Date
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 11e272a9-fd96-4b5a-8dc5-b0c7533e5e46
+            uid: 1b4ce9ac-c11f-465f-8551-9c51fee24704
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            heading: 'Taxonomie / Taxonomy'
-            type: craft\fieldlayoutelements\Heading
-            uid: 580186b1-0f71-4326-a674-f32a930c56e9
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: d0b09e80-95e5-4731-b171-d75c405b5cf5 # Année / Year
-            instructions: null
+            fieldUid: c8fe87c2-9d25-45db-93c5-2bc89cfff045 # Type d'emploi / Employment Type
+            instructions: "Ex: temps plein, temps partiel, à contrat, temporaire, saisonnier, stage\r\n\r\n*Ex: full-time, part-time, contract, temporary, seasonal, internship*"
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2e94d2bd-01ee-4d9e-8d93-4e690eb62e9e
+            uid: c8beeb84-255c-4a44-b744-eb227eb7f963
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: 286d5067-2dae-42ac-98bb-fe6e187047df # Type(s) de projet
+            fieldUid: 4a7fac31-8e92-4edc-bcfe-ae2348d30a0c # Emplacement / Location
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae1c45b6-9e84-4d39-86f6-e98b1feda7b8
+            uid: 1564a0b0-b820-4e4d-82d2-552a12546d15
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            heading: 'Galerie / Gallery'
-            type: craft\fieldlayoutelements\Heading
-            uid: b01d5bee-ed69-48d4-980d-6d8add2141be
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Text
+            instructions: null
+            label: Introduction
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f37ed83b-83e7-4171-bd37-e1274c2c1826
             userCondition: null
+            warning: null
+            width: 50
           -
             elementCondition: null
-            fieldUid: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias / Medias
+            fieldUid: e5888f8d-591b-411a-aa68-7334da565f86 # Description
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 627dd2b8-f023-46f6-af8e-f004b9447529
+            uid: 45c37659-3134-4357-b6cc-1986c5e13140
             userCondition: null
             warning: null
             width: 100
         name: 'Contenu / Content'
-        uid: 4d01be09-4440-41e6-8269-acc24ed7c34d
+        uid: 0cd43616-1a67-427e-a6e0-331b7b8df809
         userCondition: null
       -
         elementCondition: null
@@ -122,12 +116,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4998b20c-ac68-4b62-b4f5-2394fb6438de
+            uid: 4aa6ecbb-ac27-4c5f-b5db-0ad0b6c444aa
             userCondition: null
             warning: null
             width: 100
         name: 'Contenu supplémentaire / Additional Content'
-        uid: 0333aa65-8a01-4fcf-b116-fdefab94f8ff
+        uid: c6055216-c307-4fb7-b878-0cebd018e9e1
         userCondition: null
       -
         elementCondition: null
@@ -140,17 +134,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 69a3b1e5-fa38-4e34-884e-dc04f11de9e3
+            uid: 150eb59a-c873-4ecc-9a6b-5136d4c6da1e
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
-        uid: 5284afdc-817d-489d-b37b-682eec3015d3
+        name: SEO
+        uid: 3a09b97a-0094-4988-aabb-280fbcfb79a4
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: 90df0a08-7d42-4e4a-893e-a92d210e66a6 # Projets / Projects
+section: f23e6a71-9e92-4184-bdd9-8ff3775fb2ec # Emplois / Jobs
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

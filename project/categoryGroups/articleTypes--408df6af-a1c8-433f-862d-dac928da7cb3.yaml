@@ -1,5 +1,6 @@
+defaultPlacement: end
 fieldLayouts:
-  8942097c-9cb2-4d20-848c-fb9982aa9bcb:
+  7c14aed3-615c-4a87-be2e-7bffc9cf9779:
     tabs:
       -
         elementCondition: null
@@ -25,8 +26,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 2b1830ef-78f6-4922-be30-851916cd9311
+            type: craft\fieldlayoutelements\TitleField
+            uid: d8a5b1eb-3227-4f59-aed1-3c68e4bae582
             userCondition: null
             warning: null
             width: 100
@@ -34,46 +35,28 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
             instructions: null
-            label: Nom
+            label: Type
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fb3ed55c-d216-4176-bb5d-ba59af554378
+            uid: 58e0ca1e-9677-4a9b-9a57-4a885a413a7f
             userCondition: null
             warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
-            instructions: null
-            label: Logo
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e73351a3-81da-4730-bdc0-0b9136ebc525
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 8b5316ca-71f3-4b68-be3d-991a601fa490 # URL Externe / External URL
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3313e29a-636a-4ec6-88d9-9a621b8b80b5
-            userCondition: null
-            warning: null
-            width: 50
-        name: 'Contenu / Content'
-        uid: fb5a645c-74db-4b0c-b17f-89886ae9473f
+            width: 100
+        name: Content
+        uid: 23313fbe-a6ed-4f38-acf5-f1d035f3aeb1
         userCondition: null
-handle: default
-hasTitleField: true
-name: Default
-section: 914dafd0-4b91-4bbd-9492-c77aa866fdc0 # Partenaires / Partners
-sortOrder: 1
-titleFormat: null
-titleTranslationKeyFormat: null
-titleTranslationMethod: none
+handle: articleTypes
+name: 'Types d''articles / Article Types'
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    hasUrls: true
+    template: null
+    uriFormat: 'blog/{slug}'
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    hasUrls: true
+    template: null
+    uriFormat: 'blog/{slug}'
+structure:
+  maxLevels: null
+  uid: fd0dd2cb-1bea-4f74-a5af-89615bcd307b

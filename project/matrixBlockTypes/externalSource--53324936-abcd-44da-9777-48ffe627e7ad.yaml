@@ -1,4 +1,4 @@
-field: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Source
+field: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e(Source) / Author(Source)
 fieldLayouts:
   4246d22d-3b84-4439-ace9-761bf266d2aa:
     tabs:
@@ -167,5 +167,5 @@ fields:
     translationMethod: site
     type: craft\fields\PlainText
 handle: externalSource
-name: 'Source externe / External source'
+name: 'Auteur(source) externe / External author(source)'
 sortOrder: 2

@@ -1,5 +1,5 @@
 fieldLayouts:
-  40be40ef-b964-465d-8b42-df34d3810571:
+  b0d8c2b1-6237-484f-9062-983eb75bf83e:
     tabs:
       -
         elementCondition: null
@@ -12,8 +12,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
-            label: 'Identifiant CMS / CMS Identifier'
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
@@ -26,16 +26,28 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 43ba80f4-9821-4bfb-a2e8-f0ddc6f5572d
+            uid: f5c8da1d-b8d3-4d2b-a161-797384a18c81
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            heading: 'En-tête / Header'
+            heading: En-tête
             type: craft\fieldlayoutelements\Heading
-            uid: 30af58a6-8b2c-4eae-91d4-2d2af6e45faf
+            uid: 24a3e9c0-713f-40e2-8d94-c8dad74a294e
             userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e0e9fcb7-c3dc-43ef-b404-cb5e2ef73a5f
+            userCondition: null
+            warning: null
+            width: 50
           -
             elementCondition: null
             fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
@@ -44,7 +56,19 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: afa80289-1538-4db0-86b1-10dd51dd0cc7
+            uid: be4c938b-5568-458e-aa83-3cdbd47e352e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e09300d2-0e07-4e50-8b5d-1a8b1d52829d
             userCondition: null
             warning: null
             width: 50
@@ -56,60 +80,20 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 11e272a9-fd96-4b5a-8dc5-b0c7533e5e46
+            uid: c8f79d37-e70a-4bf9-bac3-a06e10c6c046
             userCondition: null
             warning: null
             width: 50
           -
+            dismissible: true
             elementCondition: null
-            heading: 'Taxonomie / Taxonomy'
-            type: craft\fieldlayoutelements\Heading
-            uid: 580186b1-0f71-4326-a674-f32a930c56e9
+            style: tip
+            tip: "Les entrées de la section Projets[/craft/entries/projects] seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the Projects[/craft/entries/projects] section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
+            type: craft\fieldlayoutelements\Tip
+            uid: a3bf39f5-b868-485c-b394-388755d3e529
             userCondition: null
-          -
-            elementCondition: null
-            fieldUid: d0b09e80-95e5-4731-b171-d75c405b5cf5 # Année / Year
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2e94d2bd-01ee-4d9e-8d93-4e690eb62e9e
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 286d5067-2dae-42ac-98bb-fe6e187047df # Type(s) de projet
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ae1c45b6-9e84-4d39-86f6-e98b1feda7b8
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            heading: 'Galerie / Gallery'
-            type: craft\fieldlayoutelements\Heading
-            uid: b01d5bee-ed69-48d4-980d-6d8add2141be
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias / Medias
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 627dd2b8-f023-46f6-af8e-f004b9447529
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Contenu / Content'
-        uid: 4d01be09-4440-41e6-8269-acc24ed7c34d
+        name: Content
+        uid: eb9e6ec8-764e-4504-8cbf-de9cecfc023c
         userCondition: null
       -
         elementCondition: null
@@ -122,12 +106,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4998b20c-ac68-4b62-b4f5-2394fb6438de
+            uid: 72284dbb-2f9e-4056-a6ae-a0bf1cfc876a
             userCondition: null
             warning: null
             width: 100
         name: 'Contenu supplémentaire / Additional Content'
-        uid: 0333aa65-8a01-4fcf-b116-fdefab94f8ff
+        uid: 2b02567c-6f45-4e09-a769-0c807154760d
         userCondition: null
       -
         elementCondition: null
@@ -140,18 +124,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 69a3b1e5-fa38-4e34-884e-dc04f11de9e3
+            uid: 3c7606d5-a7c5-408d-9b46-46254e20306a
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
-        uid: 5284afdc-817d-489d-b37b-682eec3015d3
+        name: SEO
+        uid: 4ed31235-9070-4a12-baa4-1c1c64c2ba56
         userCondition: null
-handle: default
+handle: work
 hasTitleField: true
-name: Default
-section: 90df0a08-7d42-4e4a-893e-a92d210e66a6 # Projets / Projects
+name: 'Work / Réalisations'
+section: 0a41ad00-fdfe-4ad0-a08b-1e2db0066d17 # Work / Réalisations
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

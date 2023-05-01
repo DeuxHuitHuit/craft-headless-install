@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2 # DASH Video Streaming URL
+            fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2 # URL vidéo DASH / DASH Video URL
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # HLS Video Streaming URL
+            fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # URL vidéo HLS / HLS Video URL
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # MP4 Video Streaming URL
+            fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # URL vidéo MP4 / MP4 Video URL
             instructions: null
             label: null
             required: false

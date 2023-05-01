@@ -1,8 +1,9 @@
 defaultPlacement: end
 fieldLayouts:
-  7c14aed3-615c-4a87-be2e-7bffc9cf9779:
+  6a8d24a1-086d-48e1-b588-609647ece891:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,6 +11,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,21 +27,36 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 0c342780-174b-4d18-9a46-9f64aceb9e9e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9745775-536a-4fa1-9140-522f675675dd
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
-handle: misc
-name: Misc
+        uid: cacbac62-1afc-4e6a-b497-c32df403f772
+        userCondition: null
+handle: topics
+name: 'Sujets / Topics'
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR
-    hasUrls: true
+    hasUrls: false
     template: null
-    uriFormat: '{slug}'
+    uriFormat: null
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
-    hasUrls: true
+    hasUrls: false
     template: null
-    uriFormat: '{slug}'
+    uriFormat: null
 structure:
   maxLevels: null
-  uid: fd0dd2cb-1bea-4f74-a5af-89615bcd307b
+  uid: a7f5871a-df28-4e60-919a-47cc05b7a957
