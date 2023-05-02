@@ -1,4 +1,4 @@
-dateModified: 1682967665
+dateModified: 1682976356
 elementSources:
   craft\elements\Entry:
     -
@@ -24,7 +24,11 @@ elementSources:
       disabled: false
       key: singles
       tableAttributes:
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre / Title
+        - slug
         - link
+        - revisionCreator
+        - dateUpdated
       type: native
     -
       defaultSort:
@@ -33,8 +37,12 @@ elementSources:
       disabled: false
       key: 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
       tableAttributes:
-        - postDate
-        - uri
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre / Title
+        - slug
+        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modèle ouvert / Open Model / Modules
+        - link
+        - dateUpdated
+        - revisionCreator
       type: native
     -
       heading: Sections
@@ -46,10 +54,14 @@ elementSources:
       disabled: false
       key: 'section:90df0a08-7d42-4e4a-893e-a92d210e66a6' # Projets / Projects
       tableAttributes:
-        - postDate
-        - expiryDate
-        - author
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre / Title
+        - slug
+        - 'field:d0b09e80-95e5-4731-b171-d75c405b5cf5' # Année / Year
+        - 'field:286d5067-2dae-42ac-98bb-fe6e187047df' # Type(s) de projet
+        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modèle ouvert / Open Model / Modules
         - link
+        - dateUpdated
+        - revisionCreator
       type: native
     -
       defaultSort:
@@ -58,10 +70,16 @@ elementSources:
       disabled: false
       key: 'section:c2b278b1-d1f1-4dc9-91f2-716fddb29525' # Articles
       tableAttributes:
-        - postDate
-        - expiryDate
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre / Title
+        - slug
         - author
+        - 'field:17588cb5-d2c1-41cd-aeef-57cc89a2f36a' # Type(s) d'article
+        - 'field:debcc386-7598-4edd-b042-2288c2ace344' # Sujet(s) / Topic(s)
+        - 'field:915cb3c4-b6bb-4ecc-938c-c15c443065fa' # Partenaires / Partners
+        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modèle ouvert / Open Model / Modules
         - link
+        - dateUpdated
+        - revisionCreator
       type: native
     -
       defaultSort:
@@ -80,12 +98,18 @@ elementSources:
         - structure
         - asc
       disabled: false
-      key: 'section:914dafd0-4b91-4bbd-9492-c77aa866fdc0' # Partenaires / Partners
+      key: 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Emplois / Jobs
       tableAttributes:
-        - postDate
-        - expiryDate
-        - author
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre / Title
+        - slug
+        - 'field:cb674705-76bb-4c5c-aef0-412239f6fde6' # Date de début / Start Date
+        - 'field:c8fe87c2-9d25-45db-93c5-2bc89cfff045' # Type d'emploi / Employment Type
+        - 'field:4a7fac31-8e92-4edc-bcfe-ae2348d30a0c' # Emplacement / Location
+        - 'field:615c8eda-5043-4fdd-a90c-3c77212764e6' # Texte / Text
+        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modèle ouvert / Open Model / Modules
         - link
+        - dateUpdated
+        - revisionCreator
       type: native
     -
       heading: 'Composantes / Components'
@@ -102,6 +126,20 @@ elementSources:
         - author
         - link
         - type
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:914dafd0-4b91-4bbd-9492-c77aa866fdc0' # Partenaires / Partners
+      tableAttributes:
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre / Title
+        - slug
+        - 'field:b56dc3db-a457-4448-9fec-dd6a5a543696' # Image
+        - 'field:8b5316ca-71f3-4b68-be3d-991a601fa490' # URL Externe / External URL
+        - dateUpdated
+        - revisionCreator
       type: native
     -
       defaultSort:
@@ -146,7 +184,7 @@ fs:
     url: $UPLOADS_URL
 meta:
   __names__:
-    0a41ad00-fdfe-4ad0-a08b-1e2db0066d17: 'Work / Réalisations' # Work / Réalisations
+    0a41ad00-fdfe-4ad0-a08b-1e2db0066d17: 'Réalisations / Work' # Réalisations / Work
     0d817cce-530a-4dbe-bc87-c42dee45463a: Tiroir # Tiroir
     0e50c9f4-5bcc-4d0a-969d-85902af71827: 'Emphase / Emphasis' # Emphase / Emphasis
     0f0e5f88-9336-4032-bfa2-11083f5fa132: 'Identifiant CMS / CMS Identifier' # Identifiant CMS / CMS Identifier
@@ -163,6 +201,7 @@ meta:
     3f07a8e2-b80b-4fe0-aca4-9c505738579d: Default # Default
     3f73ea2b-d2df-40e1-b481-33427f5052b2: 'URL vidéo DASH / DASH Video URL' # URL vidéo DASH / DASH Video URL
     3f978fac-bf27-4982-9b50-975ce9969dca: '[TO BE DEPRECATED] Video embed' # [TO BE DEPRECATED] Video embed
+    4a4ac845-5be1-4d2d-bb12-617c872d2ee5: 'Nous joindre / Contact' # Nous joindre / Contact
     4a7fac31-8e92-4edc-bcfe-ae2348d30a0c: 'Emplacement / Location' # Emplacement / Location
     4b8d5a84-3fab-441c-b90e-5439048b5ea9: Muted # Muted
     4cbb8576-1f85-4aa0-ac8c-638580d36c9b: Prose # Prose
@@ -175,6 +214,7 @@ meta:
     5fba4e34-abf8-489c-9117-a183dbeef7e3: 'Diaporama / Slideshow' # Diaporama / Slideshow
     6afd3883-59ac-4615-99c2-7a89cfd5d1c2: 'URL DASH' # URL DASH
     6bb7eb36-b90f-451e-b921-1f377e3ff31e: Scripts # Scripts
+    6c86c074-7558-42ed-9fbc-8c4fbc736b95: 'Blogue / Blog' # Blogue / Blog
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
     7c46388e-1ad1-466a-a30f-c138c9477b0f: 'Modèle ouvert / Open Model / Modules' # Modèle ouvert / Open Model / Modules
     7ddb842a-f59e-40b2-a970-b9797c1027a9: Configuration # Configuration
@@ -212,12 +252,13 @@ meta:
     277a4b64-e5f6-436d-93fb-11b923e50652: 'Sujets / Topics' # Sujets / Topics
     286d5067-2dae-42ac-98bb-fe6e187047df: 'Type(s) de projet' # Type(s) de projet
     316eddeb-1c05-4128-9882-b6960e13e8ee: Image # Image
-    340a1d3c-b17e-4ab8-85b4-a85d50b81926: 'Work / Réalisations' # Work / Réalisations
+    340a1d3c-b17e-4ab8-85b4-a85d50b81926: 'Réalisations / Work' # Réalisations / Work
     408df6af-a1c8-433f-862d-dac928da7cb3: 'Types d''articles / Article Types' # Types d'articles / Article Types
     410c4c51-cf57-4373-9a81-733371fbc539: 'Texte alternatif / Alternative Text' # Texte alternatif / Alternative Text
     414b45c8-d274-4c58-b6e8-f0ce31130d34: Modules # Modules
     455e6766-9c22-44eb-94f3-72b38807a490: 'Courriel / Email' # Courriel / Email
     458ea4b0-4f7d-4f55-b1c2-e4f9fecfb393: 'Video Stream (loop) - URL HLS' # Video Stream (loop) - URL HLS
+    492f0e2c-a4d9-43f1-bbe3-088788243930: 'Carrières / Careers' # Carrières / Careers
     506fb257-f530-4cda-b130-1af00a5bda55: Common # Common
     526cd691-29bd-44d4-bcbe-0e0f4b678c5a: 'Video MP4' # Video MP4
     615c8eda-5043-4fdd-a90c-3c77212764e6: 'Texte / Text' # Texte / Text
@@ -229,6 +270,7 @@ meta:
     749c7d4d-cae1-4f65-93b7-b546870551a7: Image # Image
     914dafd0-4b91-4bbd-9492-c77aa866fdc0: 'Partenaires / Partners' # Partenaires / Partners
     915cb3c4-b6bb-4ecc-938c-c15c443065fa: 'Partenaires / Partners' # Partenaires / Partners
+    0982d07a-c328-4033-8695-305319d78835: 'Carrières / Careers' # Carrières / Careers
     2731acb9-f3b8-46c4-8804-e4e1765f5291: 'Vidéo encastrée / Embed Video' # Vidéo encastrée / Embed Video
     3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Titre de partage / Share Title' # Titre de partage / Share Title
     4093afd2-c348-4b4b-9137-0e07daa80e57: 'Texte-Média / Text-Media' # Texte-Média / Text-Media
@@ -293,6 +335,7 @@ meta:
     d0336cf0-e86d-4c2e-8945-1b84701006dd: 'Partenaires / Partners' # Partenaires / Partners
     d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
     d6a9c7d7-6887-4a32-97b8-869a1625be3d: 'Titre personnel / Personal Title' # Titre personnel / Personal Title
+    d9f3be47-624e-49ae-90d4-79880f18013e: 'Nous joindre / Contact' # Nous joindre / Contact
     d53f096e-9e71-40ca-89b6-2df0130b4582: 'GTM Consent Event' # GTM Consent Event
     d828cf85-c92c-46f5-81ef-f7cb98956204: 'Rôle / Role' # Rôle / Role
     d841b955-ebbb-467e-8159-ddf909503912: Image # Image
@@ -300,6 +343,7 @@ meta:
     d7592692-d00f-4485-982a-43f8fa3b6c2d: 'URL vidéo HLS / HLS Video URL' # URL vidéo HLS / HLS Video URL
     da1b5819-b168-4dd9-aa35-505a833ee367: 'Accueil / Homepage' # Accueil / Homepage
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
+    dc92bc6c-36c7-4c5d-be20-91a74863ec70: 'Blogue / Blog' # Blogue / Blog
     dd7058b0-13b5-48d9-bdd2-292608962a13: 'Vidéo d''ambiance / Mood video' # Vidéo d'ambiance / Mood video
     de7d2c37-782f-442f-82fd-b6d553936ed4: 'Thème de couleur / Color theme' # Thème de couleur / Color theme
     debcc386-7598-4edd-b042-2288c2ace344: 'Sujet(s) / Topic(s)' # Sujet(s) / Topic(s)

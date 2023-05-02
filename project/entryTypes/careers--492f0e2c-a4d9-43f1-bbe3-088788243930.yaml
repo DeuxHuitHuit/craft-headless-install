@@ -1,5 +1,5 @@
 fieldLayouts:
-  ad8e7b86-4dcc-41c1-9449-b3b0eec13184:
+  fc89b914-46e6-47ac-8a0e-dccb9b233084:
     tabs:
       -
         elementCondition: null
@@ -26,7 +26,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 07494787-7237-46f7-9bc9-32c4f49c5b54
+            uid: 72fb8372-ed25-40df-a08b-8b49a4de483a
             userCondition: null
             warning: null
             width: 100
@@ -34,7 +34,7 @@ fieldLayouts:
             elementCondition: null
             heading: 'En-tête / Header'
             type: craft\fieldlayoutelements\Heading
-            uid: 2b38a84d-c595-4848-a761-20bfa5517764
+            uid: 740801da-0bd7-46ea-b0fa-1b218523ee87
             userCondition: null
           -
             elementCondition: null
@@ -44,7 +44,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 49251738-d58e-415b-9016-270651b9e829
+            uid: 29312c05-ee93-4ce2-91b6-9455e30fe945
             userCondition: null
             warning: null
             width: 50
@@ -56,7 +56,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 79bb37b2-b32a-49d4-aef4-17251a91b77d
+            uid: 58568658-d956-4eb6-b942-21773f5295ec
             userCondition: null
             warning: null
             width: 50
@@ -68,7 +68,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 84ebfba3-8ed6-475a-a7f8-e27d95a6b446
+            uid: ead1403d-18c6-4156-92b5-8d79159c88b6
             userCondition: null
             warning: null
             width: 50
@@ -76,20 +76,28 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
             instructions: null
-            label: 'Média d''en-tête / Header Media'
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 09577217-6641-47b2-a6dd-1db07c58e59d
+            uid: 461b9f09-8444-4387-8826-29a7fbbdffbb
             userCondition: null
             warning: null
             width: 50
           -
+            dismissible: false
             elementCondition: null
-            heading: 'Contenu de la page / Page Content'
-            type: craft\fieldlayoutelements\Heading
-            uid: 479b7533-7668-4e36-897f-57e5dbfcee8d
+            style: tip
+            tip: "Les entrées de la section [Emplois](/craft/entries/jobPostings) seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the [Jobs](/craft/entries/jobPostings) section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
+            type: craft\fieldlayoutelements\Tip
+            uid: 07aadd8f-79ae-42c1-84b2-28af202d3558
             userCondition: null
+        name: 'Contenu / Content'
+        uid: 08d199cf-89c7-4aa7-9faa-701d0da20f5c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
             elementCondition: null
             fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
@@ -98,12 +106,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b8ac2245-4303-413e-bbc8-85f8c94a30b0
+            uid: 5ae9a6d0-eeba-4f1e-b446-36114103ecb0
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu / Content'
-        uid: e28b2f85-ca4b-4fe8-8e3c-96267b721341
+        name: 'Contenu supplémentaire / Additional Content'
+        uid: 1de4e6ec-9b16-4a0a-ba7b-a670136ea874
         userCondition: null
       -
         elementCondition: null
@@ -116,18 +124,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 873f6a0e-a4bb-4728-b0db-825bbced5380
+            uid: aac251f8-bd6c-4118-ab2a-47e00d392a3f
             userCondition: null
             warning: null
             width: 100
         name: 'Méta-données / SEO'
-        uid: 37af9612-a047-43fe-9465-a1b2b452af17
+        uid: ccb0d851-bdeb-4af4-8842-d12c9daebefe
         userCondition: null
-handle: default
+handle: careers
 hasTitleField: true
-name: Default
-section: ec8f8144-4229-4395-adcd-105b11962c8a # Pages
+name: 'Carrières / Careers'
+section: 0982d07a-c328-4033-8695-305319d78835 # Carrières / Careers
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

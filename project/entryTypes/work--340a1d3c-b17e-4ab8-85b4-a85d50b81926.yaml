@@ -12,8 +12,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: null
-            label: null
+            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
             name: null
@@ -32,7 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            heading: En-tête
+            heading: 'En-tête / Header'
             type: craft\fieldlayoutelements\Heading
             uid: 24a3e9c0-713f-40e2-8d94-c8dad74a294e
             userCondition: null
@@ -88,11 +88,11 @@ fieldLayouts:
             dismissible: true
             elementCondition: null
             style: tip
-            tip: "Les entrées de la section Projets[/craft/entries/projects] seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the Projects[/craft/entries/projects] section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
+            tip: "Les entrées de la section [Projets](/craft/entries/projects) seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the [Projects](/craft/entries/projects) section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
             type: craft\fieldlayoutelements\Tip
             uid: a3bf39f5-b868-485c-b394-388755d3e529
             userCondition: null
-        name: Content
+        name: 'Contenu / Content'
         uid: eb9e6ec8-764e-4504-8cbf-de9cecfc023c
         userCondition: null
       -
@@ -128,13 +128,13 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: 'Méta-données / SEO'
         uid: 4ed31235-9070-4a12-baa4-1c1c64c2ba56
         userCondition: null
 handle: work
 hasTitleField: true
-name: 'Work / Réalisations'
-section: 0a41ad00-fdfe-4ad0-a08b-1e2db0066d17 # Work / Réalisations
+name: 'Réalisations / Work'
+section: 0a41ad00-fdfe-4ad0-a08b-1e2db0066d17 # Réalisations / Work
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

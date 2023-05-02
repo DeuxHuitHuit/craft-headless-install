@@ -1,5 +1,5 @@
 fieldLayouts:
-  ad8e7b86-4dcc-41c1-9449-b3b0eec13184:
+  fe197c37-90c6-4a22-8203-3cfb7b81f8f8:
     tabs:
       -
         elementCondition: null
@@ -26,7 +26,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 07494787-7237-46f7-9bc9-32c4f49c5b54
+            uid: 75cea28b-6409-489e-9beb-36d33d03c55b
             userCondition: null
             warning: null
             width: 100
@@ -34,7 +34,7 @@ fieldLayouts:
             elementCondition: null
             heading: 'En-tête / Header'
             type: craft\fieldlayoutelements\Heading
-            uid: 2b38a84d-c595-4848-a761-20bfa5517764
+            uid: 6e050c7c-56e2-4221-be7b-60fa0a180ac8
             userCondition: null
           -
             elementCondition: null
@@ -44,7 +44,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 49251738-d58e-415b-9016-270651b9e829
+            uid: a68f54a9-9517-4668-bc21-4a6a4787d57c
             userCondition: null
             warning: null
             width: 50
@@ -56,7 +56,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 79bb37b2-b32a-49d4-aef4-17251a91b77d
+            uid: cc82104b-2795-429d-b2e4-743e06c1b911
             userCondition: null
             warning: null
             width: 50
@@ -68,7 +68,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 84ebfba3-8ed6-475a-a7f8-e27d95a6b446
+            uid: 944ea8ae-b4d8-4503-ab6e-bacc0947a482
             userCondition: null
             warning: null
             width: 50
@@ -76,20 +76,28 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
             instructions: null
-            label: 'Média d''en-tête / Header Media'
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 09577217-6641-47b2-a6dd-1db07c58e59d
+            uid: e099ee3a-e962-4db0-8245-fa1314a1ca9b
             userCondition: null
             warning: null
             width: 50
           -
+            dismissible: false
             elementCondition: null
-            heading: 'Contenu de la page / Page Content'
-            type: craft\fieldlayoutelements\Heading
-            uid: 479b7533-7668-4e36-897f-57e5dbfcee8d
+            style: tip
+            tip: "Les entrées de la section [Articles](/craft/entries/articles) seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the [Articles](/craft/entries/articles) section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
+            type: craft\fieldlayoutelements\Tip
+            uid: 591fe1ed-5ca6-43c7-8899-93541e295eff
             userCondition: null
+        name: 'Contenu / Content'
+        uid: 6083a740-c96e-4972-b65b-5b1a02e80af7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
             elementCondition: null
             fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
@@ -98,12 +106,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b8ac2245-4303-413e-bbc8-85f8c94a30b0
+            uid: 7d656f45-4a57-4fbf-95d8-adb4b1a3d49b
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu / Content'
-        uid: e28b2f85-ca4b-4fe8-8e3c-96267b721341
+        name: 'Contenu supplémentaire / Additional Content'
+        uid: 24bf8b26-f61a-4c70-a1dd-1a8ae0587611
         userCondition: null
       -
         elementCondition: null
@@ -116,18 +124,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 873f6a0e-a4bb-4728-b0db-825bbced5380
+            uid: 997f79a1-3f55-4bda-8a26-e978eb266137
             userCondition: null
             warning: null
             width: 100
         name: 'Méta-données / SEO'
-        uid: 37af9612-a047-43fe-9465-a1b2b452af17
+        uid: 0f859370-b422-48b3-9f6d-cb55f8428ab8
         userCondition: null
-handle: default
+handle: blog
 hasTitleField: true
-name: Default
-section: ec8f8144-4229-4395-adcd-105b11962c8a # Pages
+name: 'Blogue / Blog'
+section: 6c86c074-7558-42ed-9fbc-8c4fbc736b95 # Blogue / Blog
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

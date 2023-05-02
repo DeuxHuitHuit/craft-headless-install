@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: work
-name: 'Réalisations / Work'
+handle: careers
+name: 'Carrières / Careers'
 previewTargets:
   -
     __assoc__:
@@ -20,10 +20,10 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: realisations
+    uriFormat: carrieres
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: work
+    uriFormat: careers
 type: single

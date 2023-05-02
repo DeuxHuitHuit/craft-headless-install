@@ -138,7 +138,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: 'Méta-données / SEO'
         uid: 3a09b97a-0094-4988-aabb-280fbcfb79a4
         userCondition: null
 handle: default
