@@ -1,4 +1,4 @@
-field: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données / SEO
+field: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
 fieldLayouts:
   55ffc0f0-7836-48a1-970b-fe7e8152e13a:
     tabs:
@@ -162,5 +162,5 @@ fields:
     translationMethod: site
     type: craft\fields\PlainText
 handle: seo
-name: 'Méta-données / SEO'
+name: 'Informations de partage / Sharing Info'
 sortOrder: 1

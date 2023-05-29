@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: video
+handle: thumbnail
 instructions: null
-name: '[TO BE DEPRECATED] Video'
+name: Vignette
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_video}}'
+  contentTable: '{{%matrixcontent_thumbnail}}'
   maxBlocks: 1
   minBlocks: null
   propagationKeyFormat: null

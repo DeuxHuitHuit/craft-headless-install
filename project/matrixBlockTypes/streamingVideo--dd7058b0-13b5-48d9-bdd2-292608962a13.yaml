@@ -1,4 +1,4 @@
-field: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+field: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
 fieldLayouts:
   313fa4c7-d2cd-41b8-96d5-70bdb2ae99a0:
     tabs:
@@ -41,30 +41,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: 2f32bdd1-e98a-4d79-b203-fae018ddea2e # Crédits et/ou légende / Copyrights and/or caption
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b044b392-5576-417d-ac52-ae26c8b05449
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: d841b955-ebbb-467e-8159-ddf909503912 # Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 592ea260-21b9-4434-bfdb-118924611682
-            userCondition: null
-            warning: null
-            width: 50
         name: Content
         uid: 416b94f8-4baa-4ed1-8f66-414fb295ba20
         userCondition: null
@@ -84,26 +60,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  2f32bdd1-e98a-4d79-b203-fae018ddea2e: # Crédits et/ou légende / Copyrights and/or caption
-    columnSuffix: bbdmeyiu
-    contentColumnType: text
-    fieldGroup: null
-    handle: caption
-    instructions: null
-    name: 'Crédits et/ou légende / Copyrights and/or caption'
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: false
-      columnType: null
-      initialRows: 4
-      multiline: false
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\PlainText
   78f5ad5c-d629-4183-beef-7d0d80ef3f3a: # HLS Video Streaming URL
     columnSuffix: kntwltpj
     contentColumnType: string(500)
@@ -119,55 +75,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  d841b955-ebbb-467e-8159-ddf909503912: # Image
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: image
-    instructions: "Max 1 image\r\n\r\n* Dimensions maximales / *Maximum size*: 1920 x 1920.\r\n* Poids maximal / *Maximum weight*: 700Ko.\r\n* Types de fichiers acceptés / *Accepted file types*: JPG, PNG(avec fond transparent pour les logos / *with transparent background for logos*), SVG, WEBP.\r\n* Ratios recommandés / *Recommended ratios*: Horizontal= 16:9, 4:3, 3:2, 1:1 | Vertical= 2:3, 3:4, 9:16, 1:1.\r\n* Mode colorimétrique / *Color mode*: RGB.\r\n* Résolution / *Resolution*: 72 ou 96 ppi."
-    name: Image
-    searchable: false
-    settings:
-      allowSelfRelations: false
-      allowSubfolders: false
-      allowUploads: true
-      allowedKinds:
-        - image
-      branchLimit: null
-      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      defaultUploadLocationSubpath: null
-      localizeRelations: false
-      maintainHierarchy: false
-      maxRelations: 1
-      minRelations: null
-      previewMode: thumbs
-      restrictFiles: true
-      restrictLocation: false
-      restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
-      showSiteMenu: false
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      sources: '*'
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: large
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Assets
   e9bb0b4f-8f12-4070-a311-55639c29aa63: # MP4 Video Streaming URL
     columnSuffix: qiaekqcb
     contentColumnType: string(500)

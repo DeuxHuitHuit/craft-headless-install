@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
             instructions: null
             label: null
             required: false
@@ -43,13 +43,13 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
-            instructions: "La vignette est le visuel de couverture de la vidéo. Elle est seulement visible avant que l'utilisateur.trice ne fasse jouer la vidéo. La vignette peut être une image statique **OU** une courte vidéo d'ambiance de quelques secondes Si la vignette est une courte vidéo, il faut fournir les urls des 3 types de fichiers de streaming (DASH, HLS, MP4). \r\n\r\n*The thumbnail is the video's visual cover only displayed before the user plays the video. The thumbnail can either be a static image **OR** a short mood video. If the thumbnail is a short video, the url for each 3 streaming files is required (DASH, HLS, MP4).*"
-            label: 'Vignette / Thumbnail'
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
+            instructions: null
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8f4bf19e-fa3b-4ca6-afd4-b9f242f39b49
+            uid: eb1e2992-54b7-4f01-b21b-7eda32f79980
             userCondition: null
             warning: null
             width: 100
@@ -68,5 +68,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Vidéo encastrée / Embed Video'
-sortOrder: 10
+sortOrder: 9
 topLevel: true

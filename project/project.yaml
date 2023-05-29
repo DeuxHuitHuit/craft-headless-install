@@ -1,5 +1,24 @@
-dateModified: 1682976356
+dateModified: 1683661660
 elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      tableAttributes:
+        - filename
+        - size
+        - alt
+        - 'field:bd75c367-135c-44c8-a186-ef2170ffd6f3' # Légende / Caption
+        - 'field:fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe' # Crédits / Copyrights
+        - link
+        - dateUpdated
+      type: native
+    -
+      key: 'folder:a5fe8508-76fa-45b0-8dc3-767fbd1b5356'
+      type: native
   craft\elements\Entry:
     -
       defaultSort:
@@ -191,6 +210,7 @@ meta:
     1a006606-855e-4926-8e9f-dd3c0064e826: 'Inverser / Invert' # Inverser / Invert
     1a025b55-4141-4cc4-8c57-683723b236c7: Logo # Logo
     1c99c20d-5da2-4f5b-ac70-0dcc85f1f19d: 'DASH Video Streaming URL' # DASH Video Streaming URL
+    1e870e2f-c954-42d4-8ca5-0068aecdca9a: 'Vidéo d''ambiance / Mood Video' # Vidéo d'ambiance / Mood Video
     1f225daf-1e85-461d-a339-b01dbf7b1e03: 'Cookie Banner' # Cookie Banner
     2f4cc73e-1fcb-41c0-a892-a938426d92cf: Images # Images
     2f32bdd1-e98a-4d79-b203-fae018ddea2e: 'Crédits et/ou légende / Copyrights and/or caption' # Crédits et/ou légende / Copyrights and/or caption
@@ -221,13 +241,13 @@ meta:
     8a2d5af3-151b-4ea4-9882-c0579fbe91f9: 'Super Citation / SuperQuote' # Super Citation / SuperQuote
     08b1c06e-f7b7-4b32-a8db-fa57b5cd828c: 'Tiroirs / Drawers' # Tiroirs / Drawers
     8b5316ca-71f3-4b68-be3d-991a601fa490: 'URL Externe / External URL' # URL Externe / External URL
-    8c9f6394-80d2-416d-8e8f-a5fce958cae8: '[TO BE DEPRECATED] Video' # [TO BE DEPRECATED] Video
     8d522ea0-9106-4aa6-8fd4-7c6528f4f644: 'Vidéo diffusée / Streaming video' # Vidéo diffusée / Streaming video
     8e521985-7684-4e3d-9718-e32537067b77: 'Activer la bannière / Enable banner' # Activer la bannière / Enable banner
     9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c: 'Surtitre / Surtitle' # Surtitre / Surtitle
-    10a5c368-5d0b-47a4-9978-105511f5e998: 'Méta-données / SEO' # Méta-données / SEO
+    9b2c0b30-578e-47ce-9750-2eaab7fcaf8e: 'URL vidéo DASH / DASH Video URL' # URL vidéo DASH / DASH Video URL
+    9cecd656-7be1-4472-9f05-474161b497c9: Image # Image
+    10a5c368-5d0b-47a4-9978-105511f5e998: 'Informations de partage / Sharing Info' # Informations de partage / Sharing Info
     16e1ca14-9781-44a1-b17f-7489cef3700a: 'Boutons / Buttons' # Boutons / Buttons
-    18de3190-6735-47a7-aed9-d9e29745c07c: 'Video MP4' # Video MP4
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
     26ac95b7-5d49-4702-94f5-91f13becdd1a: Autoplay # Autoplay
     38de93a0-a66a-41bf-81d4-a6bca6da710b: 'Tiroirs / Drawers' # Tiroirs / Drawers
@@ -238,17 +258,16 @@ meta:
     80faeb96-cf17-464b-aae2-cbf334c38969: 'Texte / Text' # Texte / Text
     82e66581-4e3a-4eb6-991e-7fc003ebc9c9: 'Membre d''équipe / Team member' # Membre d'équipe / Team member
     84f84d17-d6f1-4647-944c-cec29e6cea05: Image # Image
+    88db6459-c586-4683-ad52-8b2a091cfe9c: 'Vidéo d''ambiance / Mood Video' # Vidéo d'ambiance / Mood Video
     90df0a08-7d42-4e4a-893e-a92d210e66a6: 'Projets / Projects' # Projets / Projects
     092d02df-20c1-4e6e-8beb-eccd701ac60f: Personne # Personne
     98a8ef65-07bd-4865-a692-4c193237435a: 'Types de projets / Project Types' # Types de projets / Project Types
     99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Image de partage / Share Image' # Image de partage / Share Image
     121b43a1-8f3e-47f0-9827-2679be863bd6: 'Tiroir / Drawer' # Tiroir / Drawer
     148fb449-e797-4b40-a8f8-d45d858683dd: 'Texte / Text' # Texte / Text
-    150be634-eec1-4c4c-b913-9bb014431adf: '[TO BE DEPRECATED] Video Neo' # [TO BE DEPRECATED] Video Neo
     216a4e0a-27ae-4b0b-963e-26dc9ffae251: Logo # Logo
     220f7530-a0f7-4885-bd51-fb58f83948a9: Portrait # Portrait
     247fed59-90e6-4b37-ac0c-a42cfa306a81: Image # Image
-    251f2d61-fa61-49fb-8eed-dda09b6aaaea: 'Courte vidéo d''ambiance / Short mood video' # Courte vidéo d'ambiance / Short mood video
     277a4b64-e5f6-436d-93fb-11b923e50652: 'Sujets / Topics' # Sujets / Topics
     286d5067-2dae-42ac-98bb-fe6e187047df: 'Type(s) de projet' # Type(s) de projet
     316eddeb-1c05-4128-9882-b6960e13e8ee: Image # Image
@@ -263,10 +282,7 @@ meta:
     526cd691-29bd-44d4-bcbe-0e0f4b678c5a: 'Video MP4' # Video MP4
     615c8eda-5043-4fdd-a90c-3c77212764e6: 'Texte / Text' # Texte / Text
     0630a2e9-2fbf-476c-b8e4-8586a57d1366: Default # Default
-    638f89a9-12c5-4e17-a56d-83a3111f2db3: 'Citation simple / BlockQuote' # Citation simple / BlockQuote
-    688ea377-fdec-4e4e-9edf-3f178733d899: 'Video MP4' # Video MP4
     718b4d78-52f5-4b75-aecb-957dd00236ab: 'Titre / Title' # Titre / Title
-    0722bd97-8702-44de-bdab-f8c8f63b7716: 'Video Stream' # Video Stream
     749c7d4d-cae1-4f65-93b7-b546870551a7: Image # Image
     914dafd0-4b91-4bbd-9492-c77aa866fdc0: 'Partenaires / Partners' # Partenaires / Partners
     915cb3c4-b6bb-4ecc-938c-c15c443065fa: 'Partenaires / Partners' # Partenaires / Partners
@@ -293,11 +309,8 @@ meta:
     477958ed-8cd8-487c-9006-bf3805cf3fea: 'Bouton / Button' # Bouton / Button
     549419b9-9d24-42ba-8fb5-861e3c5330ef: 'Auteur.e(Source) / Author(Source)' # Auteur.e(Source) / Author(Source)
     638127e0-1136-4087-986c-21cc704b186a: Poster # Poster
-    8153532a-883b-43fa-bedd-a9798455e701: '[TO BE DEPRECATED]Vignette / Thumbnail' # [TO BE DEPRECATED]Vignette / Thumbnail
     9570135e-221e-4a53-bcf3-e704bea37a6f: 'Titre / Title' # Titre / Title
     10512774-a66c-4106-bdbc-fcb47780e8eb: 'Libellé / Label' # Libellé / Label
-    34274651-438c-45ff-ad23-a0063ca9b005: 'Video Embed' # Video Embed
-    45369444-3ab9-46b3-8f73-77d8240582d0: '[TO BE DEPRECATED] Video embed options' # [TO BE DEPRECATED] Video embed options
     53324936-abcd-44da-9777-48ffe627e7ad: 'Auteur(source) externe / External author(source)' # Auteur(source) externe / External author(source)
     56586313-03c2-4ded-b0c3-d22dee297e67: 'Organisation / Organization' # Organisation / Organization
     57658648-a27b-42d0-9da8-27b4e63facf9: Loop # Loop
@@ -316,12 +329,9 @@ meta:
     b5f2bd1d-dd60-4cf4-8fb8-cf314d30a192: 'Vidéo encastrée / Embed Video' # Vidéo encastrée / Embed Video
     b7d20b42-135e-4d76-85cd-1e890b36c30a: 'Texte / Text' # Texte / Text
     b40c3a12-3bed-46f5-97c6-941c7a839154: 'Vidéo encastrée / Embed Video' # Vidéo encastrée / Embed Video
-    b53b35f0-f95a-4300-b941-e4c5d1bc1e9a: Video # Video
     b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
     b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Embed Video URL' # Embed Video URL
-    b8850bb4-b99a-4a51-a26e-091f110677ca: 'Video Stream' # Video Stream
-    bd75c367-135c-44c8-a186-ef2170ffd6f3: 'Crédits et/ou légende / Copyrights and/or caption' # Crédits et/ou légende / Copyrights and/or caption
-    bf4657bf-4ba0-4447-a6f6-b8b0222e192c: Image # Image
+    bd75c367-135c-44c8-a186-ef2170ffd6f3: 'Légende / Caption' # Légende / Caption
     c2b278b1-d1f1-4dc9-91f2-716fddb29525: Articles # Articles
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
     c8fe87c2-9d25-45db-93c5-2bc89cfff045: 'Type d''emploi / Employment Type' # Type d'emploi / Employment Type
@@ -330,6 +340,7 @@ meta:
     cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
     cb674705-76bb-4c5c-aef0-412239f6fde6: 'Date de début / Start Date' # Date de début / Start Date
     cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Entrée du site / Site Entry' # Entrée du site / Site Entry
+    ceabf02b-849b-45b9-ad13-91b0841dc38e: '{{ ''test''|t }}' # {{ 'test'|t }}
     cf8d2001-0a29-401d-9ddc-508eb23d82a4: 'Tiroirs / Drawers' # Tiroirs / Drawers
     d0b09e80-95e5-4731-b171-d75c405b5cf5: 'Année / Year' # Année / Year
     d0336cf0-e86d-4c2e-8945-1b84701006dd: 'Partenaires / Partners' # Partenaires / Partners
@@ -343,19 +354,20 @@ meta:
     d7592692-d00f-4485-982a-43f8fa3b6c2d: 'URL vidéo HLS / HLS Video URL' # URL vidéo HLS / HLS Video URL
     da1b5819-b168-4dd9-aa35-505a833ee367: 'Accueil / Homepage' # Accueil / Homepage
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
+    dbef33ea-9c14-4875-8261-6085c799c032: 'URL vidéo HLS / HLS Video URL' # URL vidéo HLS / HLS Video URL
     dc92bc6c-36c7-4c5d-be20-91a74863ec70: 'Blogue / Blog' # Blogue / Blog
     dd7058b0-13b5-48d9-bdd2-292608962a13: 'Vidéo d''ambiance / Mood video' # Vidéo d'ambiance / Mood video
     de7d2c37-782f-442f-82fd-b6d553936ed4: 'Thème de couleur / Color theme' # Thème de couleur / Color theme
     debcc386-7598-4edd-b042-2288c2ace344: 'Sujet(s) / Topic(s)' # Sujet(s) / Topic(s)
     df9a8572-5130-4460-8d89-d85f354533fb: 'Video Stream (loop) - URL MP4' # Video Stream (loop) - URL MP4
     df77daf7-ccd8-4330-8c20-db6c0dff7a1d: 'Vidéo diffusée / Streaming Video' # Vidéo diffusée / Streaming Video
-    e0fec26e-937b-4d32-b433-211242db4d9e: 'Méta-données / SEO' # Méta-données / SEO
+    e0fec26e-937b-4d32-b433-211242db4d9e: Méta-données # Méta-données
     e2cdaad1-42b3-4873-a763-caf3bf386e18: 'Nom / Name' # Nom / Name
     e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: 'Fichier / Asset' # Fichier / Asset
+    e3fbaff8-e5cd-4652-9742-8eae122b1133: 'URL vidéo MP4 / MP4 Video URL' # URL vidéo MP4 / MP4 Video URL
     e9bb0b4f-8f12-4070-a311-55639c29aa63: 'MP4 Video Streaming URL' # MP4 Video Streaming URL
     e30d53e2-8287-4791-9efa-184c3024366c: 'Callout / Accroche' # Callout / Accroche
-    e45d3444-dd43-44a0-9878-0fea045f468b: 'Média / Media' # Média / Media
-    e95f3878-ee12-4f84-b29a-995d145730a1: 'Video Embed (YT/VIMEO)' # Video Embed (YT/VIMEO)
+    e45d3444-dd43-44a0-9878-0fea045f468b: Vignette # Vignette
     e485bfb8-5e08-45cf-a792-6d7a97f6844d: Default # Default
     e5888f8d-591b-411a-aa68-7334da565f86: Description # Description
     ea088504-f49a-4b57-8ff3-5deab9d32418: 'Nom / Name' # Nom / Name
@@ -365,10 +377,11 @@ meta:
     edb579ae-b8c5-4bba-9665-5dce08886786: 'Schema Organisation' # Schema Organisation
     edeabbef-a89c-4454-b27f-39a85c047eac: iFrame # iFrame
     eded1aaf-90ef-4347-8c64-db5347416f77: Image # Image
-    eea7a6e3-c57b-4def-92df-fe22afc3903b: 'Video embed options' # Video embed options
     f00f84ef-1880-4288-97ff-2c2acd5e98a9: embedUrl # embedUrl
     f23e6a71-9e92-4184-bdd9-8ff3775fb2ec: 'Emplois / Jobs' # Emplois / Jobs
     f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Description de partage  / Share Description' # Description de partage  / Share Description
+    f987f545-2398-4c60-8b09-e8fd55163932: 'Vidéo d''ambiance / Mood Video' # Vidéo d'ambiance / Mood Video
+    fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe: 'Crédits / Copyrights' # Crédits / Copyrights
     fbafa02b-3df0-475b-a2c9-78afc19c299f: 'Plateforme / Platform' # Plateforme / Platform
     fc75545c-a4e6-482c-866c-64e270d6d9a7: 'Adresse / Address' # Adresse / Address
     fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Nom / Name' # Nom / Name

@@ -29,10 +29,33 @@ fieldLayouts:
             uid: 22fab569-29b6-474c-acb6-4ebfc0557015
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Texte alternatif / Alternative Text'
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: a43007ea-d9bb-4b7e-806d-bb94bb2b65b1
+            userCondition: null
+            warning: null
+            width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Crédits et/ou légende / Copyrights and/or caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
             instructions: null
             label: null
             required: false
@@ -41,19 +64,19 @@ fieldLayouts:
             uid: f097070c-9e2d-49e2-adcf-3fa6b143c44b
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif / Alternative Text
+            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits / Copyrights
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 101a2bc2-163f-4591-b4c6-6b4c721bc066
+            uid: 22d258db-4f6b-45eb-a2d0-3d8841f820e4
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Content
         uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
         userCondition: null
@@ -62,6 +85,6 @@ handle: assets
 name: Assets
 sortOrder: 1
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
 transformFs: ''
 transformSubpath: ''

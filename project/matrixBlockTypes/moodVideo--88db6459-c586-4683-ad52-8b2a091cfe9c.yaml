@@ -1,0 +1,156 @@
+field: f987f545-2398-4c60-8b09-e8fd55163932 # Vidéo d'ambiance / Mood Video
+fieldLayouts:
+  6179c829-928f-4ac3-a12e-875542a1382c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9b2c0b30-578e-47ce-9750-2eaab7fcaf8e # URL vidéo DASH / DASH Video URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e99da685-1613-4be5-8310-d216cfc83521
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dbef33ea-9c14-4875-8261-6085c799c032 # URL vidéo HLS / HLS Video URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ff74ec9-f817-4d83-a0a1-dc31f84bd331
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e3fbaff8-e5cd-4652-9742-8eae122b1133 # URL vidéo MP4 / MP4 Video URL
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8683e59e-ee4c-4d45-90b3-c6782d9391f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9cecd656-7be1-4472-9f05-474161b497c9 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c62fa2a5-9570-490f-b8b5-bf5fc23f604f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d99f4620-9561-4b0a-9620-6ebdbc9fb61e
+        userCondition: null
+fields:
+  9b2c0b30-578e-47ce-9750-2eaab7fcaf8e: # URL vidéo DASH / DASH Video URL
+    columnSuffix: dfcjtsak
+    contentColumnType: string(500)
+    fieldGroup: null
+    handle: dashUrl
+    instructions: "URL du fichier vidéo DASH hébergé sur une plateforme de streaming comme Cloudflare ou Vimeo Pro. La vidéo sera jouée en autoplay avec loop et sans son.\r\n\r\n*URL of the HLS video hosted on a streaming platform such as Cloudflare or Vimeo Pro. The video will autoplay, loop and be muted.*"
+    name: 'URL vidéo DASH / DASH Video URL'
+    searchable: false
+    settings:
+      maxLength: 500
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  9cecd656-7be1-4472-9f05-474161b497c9: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: "Max 1 image\r\n\r\n* Dimensions maximales / *Maximum size*: 1920 x 1920.\r\n* Poids maximal / *Maximum weight*: 700Ko.\r\n* Types de fichiers acceptés / *Accepted file types*: JPG, PNG(avec fond transparent pour les logos / *with transparent background for logos*), SVG, WEBP.\r\n* Ratios recommandés / *Recommended ratios*: Horizontal= 16:9, 4:3, 3:2, 1:1 | Vertical= 2:3, 3:4, 9:16, 1:1.\r\n* Mode colorimétrique / *Color mode*: RGB.\r\n* Résolution / *Resolution*: 72 ou 96 ppi."
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: thumbs
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  dbef33ea-9c14-4875-8261-6085c799c032: # URL vidéo HLS / HLS Video URL
+    columnSuffix: hmhmrdrc
+    contentColumnType: string(500)
+    fieldGroup: null
+    handle: hlsUrl
+    instructions: "URL du fichier vidéo HLS hébergé sur une plateforme de streaming comme Cloudflare ou Vimeo Pro. La vidéo sera jouée en autoplay avec loop et sans son.\r\n\r\n*URL of the HLS video hosted on a streaming platform such as Cloudflare or Vimeo Pro. The video will autoplay, loop and be muted.*"
+    name: 'URL vidéo HLS / HLS Video URL'
+    searchable: false
+    settings:
+      maxLength: 500
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  e3fbaff8-e5cd-4652-9742-8eae122b1133: # URL vidéo MP4 / MP4 Video URL
+    columnSuffix: iggggljz
+    contentColumnType: string(500)
+    fieldGroup: null
+    handle: mp4Url
+    instructions: "URL du fichier vidéo MP4 hébergé sur une plateforme de streaming comme Cloudflare ou Vimeo Pro. La vidéo sera jouée en autoplay avec loop et sans son.\r\n\r\n*URL of the HLS video hosted on a streaming platform such as Cloudflare or Vimeo Pro. The video will autoplay, loop and be muted.*"
+    name: 'URL vidéo MP4 / MP4 Video URL'
+    searchable: false
+    settings:
+      maxLength: 500
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: moodVideo
+name: 'Vidéo d''ambiance / Mood Video'
+sortOrder: 1

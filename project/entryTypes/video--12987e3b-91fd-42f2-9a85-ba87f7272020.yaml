@@ -44,7 +44,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 8c9f6394-80d2-416d-8e8f-a5fce958cae8 # [TO BE DEPRECATED] Video
+            fieldUid: 8c9f6394-80d2-416d-8e8f-a5fce958cae8
             instructions: null
             label: null
             required: false
@@ -61,7 +61,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 150be634-eec1-4c4c-b913-9bb014431adf # [TO BE DEPRECATED] Video Neo
+            fieldUid: 150be634-eec1-4c4c-b913-9bb014431adf
             instructions: null
             label: null
             required: false

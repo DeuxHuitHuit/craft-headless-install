@@ -74,7 +74,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Média / Media
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
             instructions: null
             label: null
             required: false
@@ -118,7 +118,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données / SEO
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
             instructions: null
             label: null
             required: false

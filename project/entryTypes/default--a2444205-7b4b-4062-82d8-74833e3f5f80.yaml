@@ -128,7 +128,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données / SEO
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
             instructions: null
             label: null
             required: false
