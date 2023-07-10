@@ -777,4 +777,6 @@ cd -
 mv .env .env.dev
 ln -s .env.dev .env
 
-echo "We are done, please login at https://$PROJECT_CODE.288dev.com/craft"
+echo "We are done 🐔🐔🐔"
+echo "To use deuxhuithuit.co login, configure config/agency-auth.php"
+echo "Please login at https://$PROJECT_CODE.288dev.com/craft"
