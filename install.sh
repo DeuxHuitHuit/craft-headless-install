@@ -760,6 +760,41 @@ jobs:
 
 YAML
 
+cat > .github/workflows/cms-sync.yaml << 'YAML'
+name: "CMS Sync"
+on:
+  issues:
+    types: [opened, reopened]
+jobs:
+  sync:
+    runs-on: self-hosted
+    name: Sync
+    if: startsWith(github.event.issue.title, 'Request cms sync')
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Setup
+        run: echo "${{ secrets.DEV_SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+
+      - name: Sync
+        run: ./download-project.sh ${{ secrets.DEV_PROJECT_NAME }}
+
+      - name: Status
+        run: git status
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+            commit-message: CMS Sync
+            title: New CMS Sync
+            body: "Closes #${{ github.event.issue.number }}"
+            branch: cms-sync/${{ github.event.issue.number }}
+            delete-branch: true
+            reviewers: nitriques,f-elix
+            assignees: ${{ github.triggering_actor }}
+
+YAML
+
 echo "Install project files"
 rm -rf config/project
 wget https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz
