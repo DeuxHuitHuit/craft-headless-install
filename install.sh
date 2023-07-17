@@ -404,7 +404,7 @@ return [
         'disallowRobots' => true,
         // Aliases
         'aliases' => [
-            '@host' => 'https://-dev.vercel.app',
+            '@host' => 'http://localhost:3000',
             '@web' => 'https://$PROJECT_CODE.288dev.com',
         ]
     ],
@@ -419,8 +419,8 @@ return [
         'disallowRobots' => true,
         // Aliases
         'aliases' => [
-            '@host' => 'https://.vercel.app',
-            '@web' => '',
+            '@host' => 'https://',
+            '@web' => 'https://',
         ]
     ],
 ];
