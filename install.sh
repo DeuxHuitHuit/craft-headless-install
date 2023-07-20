@@ -790,10 +790,42 @@ jobs:
             body: "Closes #${{ github.event.issue.number }}"
             branch: cms-sync/${{ github.event.issue.number }}
             delete-branch: true
-            reviewers: nitriques,f-elix
+            reviewers: stepho288
             assignees: ${{ github.triggering_actor }}
 
 YAML
+
+echo "Create issues templates"
+mkdir -p .github/ISSUE_TEMPLATE
+cat > .github/ISSUE_TEMPLATE/cms-sync.md << MD
+---
+name: Request cms sync
+about: 'Template for creating a pull request with latest cms changes'
+title: "Request cms sync"
+labels: ''
+assignees: ''
+
+---
+
+Request cms sync for project $PROJECT_CODE
+
+MD
+
+cat > .github/ISSUE_TEMPLATE/bug-report.md << 'MD'
+---
+name: Bug Report
+about: 'Template for logging issues about bugs in the cms'
+title: ""
+labels: ''
+assignees: ''
+
+---
+
+Url: https://$PROJECT_CODE.288dev.com/
+
+Please describe your issue:
+
+MD
 
 echo "Install project files"
 rm -rf config/project
