@@ -1,4 +1,4 @@
-dateModified: 1688572260
+dateModified: 1689193754
 elementSources:
   craft\elements\Asset:
     -
@@ -184,6 +184,26 @@ elementSources:
         - author
         - link
       type: native
+    -
+      heading: DEV
+      type: heading
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:e74a37af-6e26-4c16-8a4c-9ef593749c6b'
+      label: 'Everything / Tout'
+      tableAttributes:
+        - section
+        - type
+        - author
+        - slug
+        - uri
+      type: custom
 email:
   fromEmail: $EMAIL_FROM
   fromName: $SITE_NAME
