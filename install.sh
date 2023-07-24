@@ -299,8 +299,11 @@ echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
 echo ""
 echo "SITE_NAME=$PROJECT_CODE"
 echo ""
-echo "SENDGRID_API=XXX"
+echo "SENDGRID_API=\"\""
 echo "EMAIL_FROM=noreply@$PROJECT_CODE.288dev.com"
+echo ""
+echo "CF_STREAM_ACCOUNT_ID=\"\""
+echo "CF_STREAM_API_TOKEN=\"\""
 echo ""
 } >> .env
 
