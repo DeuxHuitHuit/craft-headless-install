@@ -1,0 +1,10 @@
+columnSuffix: rnytwmmm
+contentColumnType: text
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: videoStream
+instructions: null
+name: 'Video Stream'
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: deuxhuithuit\cfstream\fields\CloudflareVideoStreamField

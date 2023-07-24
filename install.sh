@@ -238,6 +238,8 @@ ${INSTALLER_PHP_EXEC} composer.phar require dodecastudio/craft-blurhash -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
 ${INSTALLER_PHP_EXEC} composer.phar require verbb/field-manager -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install field-manager
+${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-cloudflare-stream
+${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev

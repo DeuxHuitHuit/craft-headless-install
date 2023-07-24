@@ -77,6 +77,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            elementCondition: null
+            fieldUid: a4075417-c1ab-4ea9-86bb-9848b83afec3 # Video Stream
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e53cea26-bd4b-466b-a762-c5cf2a1a0bcc
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
         userCondition: null

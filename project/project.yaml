@@ -1,4 +1,4 @@
-dateModified: 1689193754
+dateModified: 1690213568
 elementSources:
   craft\elements\Asset:
     -
@@ -339,6 +339,7 @@ meta:
     a91b6297-0bb5-4772-8a0a-53ed92c65d2a: 'URL MP4' # URL MP4
     a6746c3e-bd21-4113-87e7-0d0469f24d0e: Image # Image
     a2444205-7b4b-4062-82d8-74833e3f5f80: Default # Default
+    a4075417-c1ab-4ea9-86bb-9848b83afec3: 'Video Stream' # Video Stream
     abf1f7b7-9865-4919-abd6-3b87e6816e4a: '  Médias / Medias' #   Médias / Medias
     ae5f7c10-69b6-4c22-ba2a-e58338a90395: 'Titre / Title' # Titre / Title
     af0b5372-3e37-4dbd-afcc-c9aa66cea831: 'Appel à l''action / Call to Action' # Appel à l'action / Call to Action
@@ -409,6 +410,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  cloudflare-stream:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      accountId: $CF_STREAM_ACCOUNT_ID
+      apiToken: $CF_STREAM_API_TOKEN
   cp-field-inspect:
     edition: standard
     enabled: true
