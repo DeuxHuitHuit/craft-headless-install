@@ -1,5 +1,5 @@
 fieldLayouts:
-  2641d65c-dbba-4caa-911e-bfe7bd448e8f:
+  56eb2417-7d56-4b5e-b05c-b98689f5c44d:
     tabs:
       -
         elementCondition: null
@@ -13,7 +13,7 @@ fieldLayouts:
             elementCondition: null
             id: null
             instructions: null
-            label: 'Titre / Title'
+            label: null
             max: null
             min: null
             name: null
@@ -26,30 +26,19 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: 22fab569-29b6-474c-acb6-4ebfc0557015
+            uid: 0f9c4967-1f09-49f3-bcdc-efc8d93dca46
             userCondition: null
             warning: null
             width: 50
           -
-            attribute: alt
-            class: null
-            cols: null
-            disabled: false
             elementCondition: null
-            id: null
+            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif / Alternative Text
             instructions: null
-            label: 'Texte alternatif / Alternative Text'
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: true
+            label: null
             required: false
-            rows: null
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\assets\AltField
-            uid: a43007ea-d9bb-4b7e-806d-bb94bb2b65b1
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a422e42-d421-4114-b1d7-4a468e571bb5
             userCondition: null
             warning: null
             width: 50
@@ -61,7 +50,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f097070c-9e2d-49e2-adcf-3fa6b143c44b
+            uid: 5c1f6b23-b8b4-47c3-8f37-e238b465162b
             userCondition: null
             warning: null
             width: 50
@@ -73,18 +62,30 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 22d258db-4f6b-45eb-a2d0-3d8841f820e4
+            uid: b3500645-aada-42d0-8f59-e1850c0c27cd
             userCondition: null
             warning: null
             width: 50
+          -
+            elementCondition: null
+            fieldUid: a4075417-c1ab-4ea9-86bb-9848b83afec3 # Video Stream
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd6e6a9f-482b-49bb-9491-6e20f637e894
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
-        uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
+        uid: 5e1ce82a-8a95-4d3f-aaf8-4a9b0eefc1ed
         userCondition: null
-fs: assets
-handle: assets
-name: Assets
-sortOrder: 1
+fs: stream
+handle: stream
+name: Stream
+sortOrder: 2
 titleTranslationKeyFormat: null
-titleTranslationMethod: none
+titleTranslationMethod: site
 transformFs: ''
 transformSubpath: ''

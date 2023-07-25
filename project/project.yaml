@@ -1,4 +1,4 @@
-dateModified: 1690213568
+dateModified: 1690313868
 elementSources:
   craft\elements\Asset:
     -
@@ -221,6 +221,13 @@ fs:
       path: $ASSETS_FILE_SYSTEM_PATH
     type: craft\fs\Local
     url: $UPLOADS_URL
+  stream:
+    hasUrls: true
+    name: Stream
+    settings:
+      path: $STREAM_FILE_SYSTEM_PATH
+    type: craft\fs\Local
+    url: $STREAM_URL
 meta:
   __names__:
     0a41ad00-fdfe-4ad0-a08b-1e2db0066d17: 'Réalisations / Work' # Réalisations / Work
@@ -237,6 +244,7 @@ meta:
     3ace2ccf-b4ee-4079-870f-0ea874d7eabf: 'HLS Video Streaming URL' # HLS Video Streaming URL
     3b5a590b-95e7-40bb-a16a-39f8c3aeec5f: 'Nom / Name' # Nom / Name
     3b201410-7c1b-4123-aa95-e7e742a06113: Scripts # Scripts
+    3c0c2fcb-c361-472f-80d1-6bb4e36bcab6: Stream # Stream
     3e83dc82-def8-4d04-8cfb-90d704061df5: Default # Default
     3f07a8e2-b80b-4fe0-aca4-9c505738579d: Default # Default
     3f73ea2b-d2df-40e1-b481-33427f5052b2: 'URL vidéo DASH / DASH Video URL' # URL vidéo DASH / DASH Video URL
@@ -413,10 +421,12 @@ plugins:
   cloudflare-stream:
     edition: standard
     enabled: true
+    licenseKey: N8KGTD9VBJBKPJGWC9QOH2IY
     schemaVersion: 1.0.0
     settings:
       accountId: $CF_STREAM_ACCOUNT_ID
       apiToken: $CF_STREAM_API_TOKEN
+      autoUpload: '1'
   cp-field-inspect:
     edition: standard
     enabled: true
