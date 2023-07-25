@@ -202,6 +202,7 @@ mkdir -p "./storage"
 
 echo "Create uploads directory"
 mkdir -p "./web/uploads"
+mkdir -p "./web/uploads/stream"
 
 echo "Nuke and recreate the module folder"
 rm -rf ./modules
@@ -294,8 +295,9 @@ echo "Update .env file"
 {
 echo ""
 echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads"
-echo ""
 echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
+echo "STREAM_FILE_SYSTEM_PATH=$(pwd)/web/uploads/stream"
+echo "STREAM_URL=https://$PROJECT_CODE.288dev.com/uploads/stream"
 echo ""
 echo "SITE_NAME=$PROJECT_CODE"
 echo ""
@@ -572,6 +574,7 @@ elif [ "$CMD" = "setup" ]; then
     mkdir -p ./storage/backups
     mkdir -p ./storage/restore
     mkdir -p ./web/uploads
+    mkdir -p ./web/uploads/stream
 
     echo "Setup done"
 
