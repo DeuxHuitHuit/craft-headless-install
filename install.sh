@@ -836,6 +836,11 @@ Please describe your issue:
 
 MD
 
+cat > .github/ISSUE_TEMPLATE/config.yaml << 'YAML'
+blank_issues_enabled: true
+
+YAML
+
 echo "Install project files"
 rm -rf config/project
 wget https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz
