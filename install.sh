@@ -765,7 +765,6 @@ jobs:
             - uses: stefanzweifel/git-auto-commit-action@v4
               with:
                   commit_message: Format code
-                  file_pattern: '*.php *.yaml'
 
 YAML
 
