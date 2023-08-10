@@ -1,4 +1,4 @@
-dateModified: 1690313868
+dateModified: 1691679124
 elementSources:
   craft\elements\Asset:
     -
@@ -414,6 +414,10 @@ meta:
     fc75545c-a4e6-482c-866c-64e270d6d9a7: 'Adresse / Address' # Adresse / Address
     fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Nom / Name' # Nom / Name
 plugins:
+  admin-panel-controllers:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   blur-hash:
     edition: standard
     enabled: true
