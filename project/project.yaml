@@ -1,4 +1,4 @@
-dateModified: 1691679124
+dateModified: 1692036767
 elementSources:
   craft\elements\Asset:
     -
@@ -415,6 +415,10 @@ meta:
     fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Nom / Name' # Nom / Name
 plugins:
   admin-panel-controllers:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  agency-auth:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
