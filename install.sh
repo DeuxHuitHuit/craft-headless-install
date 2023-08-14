@@ -204,20 +204,10 @@ echo "Create uploads directory"
 mkdir -p "./web/uploads"
 mkdir -p "./web/uploads/stream"
 
-echo "Nuke and recreate the module folder"
+echo "Nuke and recreate an empty module folder"
 rm -rf ./modules
 mkdir ./modules
-
-echo "Install custom modules"
-cd ./modules
-git clone https://github.com/DeuxHuitHuit/craft-agency-auth.git
-mv ./craft-agency-auth ./agency-auth
-rm -rf ./agency-auth/.git
-rm -f ./agency-auth/.gitignore
-cd ..
-sed 's/modules\\\\"\: "modules\/"/modules\\\\agencyauth\\\\"\: "modules\/agency-auth\/src\/"/g' composer.json > composer.tmp
-mv -f composer.tmp composer.json
-${INSTALLER_PHP_EXEC} composer.phar dump-autoload -a
+touch ./modules/.gitkeep
 
 echo "Delete IIS web.config file"
 rm -f "./web/web.config"
@@ -243,6 +233,8 @@ ${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
 ${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./craft plugin/install admin-panel-controllers
+${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-agency-auth
+${INSTALLER_PHP_EXEC} ./craft plugin/install craft-agency-auth
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
@@ -319,6 +311,8 @@ return [
     '*' => [
         'client_id' => '',
         'client_secret' => '',
+        'domain' => 'deuxhuithuit.co',
+        'default_password' => '$AGENCY_AUTH_DEFAULT_PASSWORD',
     ]
 ];
 
@@ -350,10 +344,8 @@ use craft\helpers\App;
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS Headless',
     'modules' => [
-        'agency-auth' => \modules\agencyauth\AgencyAuth::class,
     ],
     'bootstrap' => [
-        'agency-auth',
     ],
 ];
 
