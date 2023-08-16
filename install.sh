@@ -578,7 +578,7 @@ elif [ "$CMD" = "setup" ]; then
 elif [ "$CMD" = "apply" ]; then
 
     echo "Install composer deps"
-    "${PHP_EXEC}" composer.phar install --prefer-dist --no-progress
+    "${PHP_EXEC}" composer.phar install --no-dev --prefer-dist --no-progress
 
     echo "Apply changes and run migrations"
     "${PHP_EXEC}" ./craft up
@@ -602,7 +602,7 @@ elif [ "$CMD" = "install" ]; then
     ln -s .htaccess.prod ./web/.htaccess || true
 
     echo "Install composer deps"
-    "${PHP_EXEC}" composer.phar install --prefer-dist --no-progress
+    "${PHP_EXEC}" composer.phar install --no-dev --prefer-dist --no-progress
 
     echo "Restore db"
     "${PHP_EXEC}" ./craft db/restore ./storage/restore/*.sql
