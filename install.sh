@@ -794,7 +794,7 @@ jobs:
             body: "Closes #${{ github.event.issue.number }}"
             branch: cms-sync/${{ github.event.issue.number }}
             delete-branch: true
-            reviewers: stepho288
+            reviewers: ${{ github.actor }}
             assignees: ${{ github.triggering_actor }}
 
 YAML
