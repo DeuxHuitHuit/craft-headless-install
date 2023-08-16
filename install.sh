@@ -31,9 +31,10 @@ for F in ".htaccess" "web" ".well-known"; do
 done
 
 echo "Install craft"
-composer create-project craftcms/craft .
+# Use composer from home dir for the first time
+${INSTALLER_PHP_EXEC} ~/composer.phar create-project craftcms/craft .
 
-echo "Download phar version of composer"
+echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
 
 echo "Restore htaccess infos"
@@ -74,6 +75,7 @@ Options +SymLinksIfOwnerMatch -Indexes
 
 ### CRAFT CMS
 HTACCESS
+
 	cat web/.htaccess
 	cat ../authbypass.htaccess
 	cat << HTACCESS
@@ -213,31 +215,31 @@ echo "Delete IIS web.config file"
 rm -f "./web/web.config"
 
 echo "Install cp-field-inspect, redactor, snitch, ..."
-${INSTALLER_PHP_EXEC} composer.phar require mmikkel/cp-field-inspect
+${INSTALLER_PHP_EXEC} ./composer.phar require mmikkel/cp-field-inspect
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cp-field-inspect
-${INSTALLER_PHP_EXEC} composer.phar require craftcms/redactor
+${INSTALLER_PHP_EXEC} ./composer.phar require craftcms/redactor
 ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor
-#${INSTALLER_PHP_EXEC} composer.phar require marionnewlevant/snitch
+#${INSTALLER_PHP_EXEC} ./composer.phar require marionnewlevant/snitch
 #${INSTALLER_PHP_EXEC} ./craft plugin/install snitch
-${INSTALLER_PHP_EXEC} composer.phar require putyourlightson/craft-sendgrid
+${INSTALLER_PHP_EXEC} ./composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
-${INSTALLER_PHP_EXEC} composer.phar require carlcs/craft-redactorcustomstyles
+${INSTALLER_PHP_EXEC} ./composer.phar require carlcs/craft-redactorcustomstyles
 ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor-custom-styles
-${INSTALLER_PHP_EXEC} composer.phar require spicyweb/craft-neo -w
+${INSTALLER_PHP_EXEC} ./composer.phar require spicyweb/craft-neo -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install neo
-${INSTALLER_PHP_EXEC} composer.phar require dodecastudio/craft-blurhash -w
+${INSTALLER_PHP_EXEC} ./composer.phar require dodecastudio/craft-blurhash -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
-${INSTALLER_PHP_EXEC} composer.phar require verbb/field-manager -w
+${INSTALLER_PHP_EXEC} ./composer.phar require verbb/field-manager -w
 ${INSTALLER_PHP_EXEC} ./craft plugin/install field-manager
-${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-cloudflare-stream
+${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
-${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-admin-panel-controllers
+${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./craft plugin/install admin-panel-controllers
-${INSTALLER_PHP_EXEC} composer.phar require deuxhuithuit/craft-agency-auth
+${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-agency-auth
 ${INSTALLER_PHP_EXEC} ./craft plugin/install craft-agency-auth
 
 echo "Install dev packages"
-${INSTALLER_PHP_EXEC} composer.phar  require friendsofphp/php-cs-fixer --dev
+${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
 
 echo "Create custom htmlpurifier config (overwrites default)"
 cat > ./config/htmlpurifier/Default.json << HTMLPURIFIER
