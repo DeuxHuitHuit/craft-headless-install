@@ -769,11 +769,13 @@ name: "CMS Sync"
 on:
   issues:
     types: [opened, reopened]
+  workflow_dispatch:
+
 jobs:
   sync:
     runs-on: self-hosted
     name: Sync
-    if: startsWith(github.event.issue.title, 'Request cms sync')
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'issue' && startsWith(github.event.issue.title, 'Request cms sync'))
     steps:
       - uses: actions/checkout@master
 
@@ -787,15 +789,43 @@ jobs:
         run: git status
 
       - name: Create Pull Request
+        id: pr
         uses: peter-evans/create-pull-request@v3
         with:
-            commit-message: CMS Sync
-            title: New CMS Sync
-            body: "Closes #${{ github.event.issue.number }}"
-            branch: cms-sync/${{ github.event.issue.number }}
-            delete-branch: true
-            reviewers: ${{ github.actor }}
-            assignees: ${{ github.triggering_actor }}
+          commit-message: CMS Sync
+          title: New CMS Sync
+          body: "Closes #${{ github.event.issue.number }}"
+          branch: cms-sync/${{ github.run_id }}
+          delete-branch: true
+          reviewers: ${{ github.actor }}
+          assignees: ${{ github.triggering_actor }}
+
+      - name: Post PR notification
+        uses: rtCamp/action-slack-notify@v2
+        if: success() && steps.pr.outputs.pull-request-number != ''
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_USERNAME: CMS
+          SLACK_ICON: ${{ secrets.SLACK_ICON }}
+          SLACK_TITLE: "Le PR pour le sync du CMS est prêt !"
+          SLACK_MESSAGE: |
+            Vous devez maintenant faire le code review!
+            <${{ github.server_url }}/${{ github.repository }}/pull/${{ steps.pr.outputs.pull-request-number }}>
+
+      - name: No PR notification
+        uses: rtCamp/action-slack-notify@v2
+        if: failure() || steps.pr.outputs.pull-request-number == ''
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_USERNAME: CMS
+          SLACK_ICON: ${{ secrets.SLACK_ICON }}
+          SLACK_TITLE: "Pas de diff!"
+          SLACK_MESSAGE: |
+            Il n'y a pas de différence entre le CMS et le projet.
 
 YAML
 
