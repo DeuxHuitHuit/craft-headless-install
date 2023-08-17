@@ -644,7 +644,7 @@ jobs:
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
-          SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
+          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: ":rocket: Nouveau déploiement du CMS en cours"
 
       - name: ssh setup
@@ -714,7 +714,7 @@ jobs:
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
-          SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
+          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: ":alert::alert::alert: Échec du déploiement :alert::alert::alert:"
 
       - name: Postdeploy success notification
@@ -725,7 +725,7 @@ jobs:
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: POUUUUUUCHE
-          SLACK_ICON: https://avatars.slack-edge.com/2021-06-02/2136052044132_16b61538cb6639b492ef_72.jpg
+          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: ":moon: Le CMS a atterrit avec succès :sparkles:"
 
 YAML
