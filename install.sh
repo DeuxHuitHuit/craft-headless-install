@@ -767,15 +767,12 @@ YAML
 cat > .github/workflows/cms-sync.yaml << 'YAML'
 name: "CMS Sync"
 on:
-  issues:
-    types: [opened, reopened]
   workflow_dispatch:
 
 jobs:
   sync:
     runs-on: self-hosted
     name: Sync
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'issue' && startsWith(github.event.issue.title, 'Request cms sync'))
     steps:
       - uses: actions/checkout@master
 
@@ -794,7 +791,6 @@ jobs:
         with:
           commit-message: CMS Sync
           title: New CMS Sync
-          body: "Closes #${{ github.event.issue.number }}"
           branch: cms-sync/${{ github.run_id }}
           delete-branch: true
           reviewers: ${{ github.actor }}
@@ -826,43 +822,6 @@ jobs:
           SLACK_TITLE: "Pas de diff!"
           SLACK_MESSAGE: |
             Il n'y a pas de différence entre le CMS et le projet.
-
-YAML
-
-echo "Create issues templates"
-mkdir -p .github/ISSUE_TEMPLATE
-cat > .github/ISSUE_TEMPLATE/cms-sync.md << MD
----
-name: Request cms sync
-about: 'Template for creating a pull request with latest cms changes'
-title: "Request cms sync"
-labels: ''
-assignees: ''
-
----
-
-Request cms sync for project $PROJECT_CODE
-
-MD
-
-cat > .github/ISSUE_TEMPLATE/bug-report.md << 'MD'
----
-name: Bug Report
-about: 'Template for logging issues about bugs in the cms'
-title: ""
-labels: ''
-assignees: ''
-
----
-
-Url: https://$PROJECT_CODE.288dev.com/
-
-Please describe your issue:
-
-MD
-
-cat > .github/ISSUE_TEMPLATE/config.yaml << 'YAML'
-blank_issues_enabled: true
 
 YAML
 
