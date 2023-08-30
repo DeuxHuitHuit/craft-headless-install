@@ -236,7 +236,7 @@ ${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./craft plugin/install admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-agency-auth
-${INSTALLER_PHP_EXEC} ./craft plugin/install craft-agency-auth
+${INSTALLER_PHP_EXEC} ./craft plugin/install agency-auth
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
@@ -578,7 +578,7 @@ elif [ "$CMD" = "setup" ]; then
 elif [ "$CMD" = "apply" ]; then
 
     echo "Install composer deps"
-    "${PHP_EXEC}" composer.phar install --no-dev --prefer-dist --no-progress
+    "${PHP_EXEC}" composer.phar install --no-scripts --no-dev --prefer-dist --no-progress
 
     echo "Apply changes and run migrations"
     "${PHP_EXEC}" ./craft up
@@ -602,7 +602,7 @@ elif [ "$CMD" = "install" ]; then
     ln -s .htaccess.prod ./web/.htaccess || true
 
     echo "Install composer deps"
-    "${PHP_EXEC}" composer.phar install --no-dev --prefer-dist --no-progress
+    "${PHP_EXEC}" composer.phar install --no-scripts --no-dev --prefer-dist --no-progress
 
     echo "Restore db"
     "${PHP_EXEC}" ./craft db/restore ./storage/restore/*.sql
@@ -753,7 +753,7 @@ jobs:
                 tools: composer
 
             - name: composer install
-              run: composer install --prefer-dist --no-suggest --no-progress
+              run: composer install --no-scripts --prefer-dist --no-suggest --no-progress
 
             - name: format
               run: ./vendor/bin/php-cs-fixer fix modules --rules=@PhpCsFixer,-yoda_style,-concat_space
