@@ -638,7 +638,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Predeploy notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: rtCamp/action-slack-notify@master
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
@@ -707,7 +707,7 @@ jobs:
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
 
       - name: Postdeploy failure notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: rtCamp/action-slack-notify@master
         if: failure()
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
@@ -718,7 +718,7 @@ jobs:
           SLACK_TITLE: ":alert::alert::alert: Échec du déploiement :alert::alert::alert:"
 
       - name: Postdeploy success notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: rtCamp/action-slack-notify@master
         if: success()
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
@@ -746,7 +746,7 @@ jobs:
                   ref: ${{ github.head_ref }}
 
             - name: Setup PHP
-              uses: shivammathur/setup-php@v2
+              uses: shivammathur/setup-php@master
               with:
                 php-version: '8.2'
                 coverage: none
@@ -758,7 +758,7 @@ jobs:
             - name: format
               run: ./vendor/bin/php-cs-fixer fix modules --rules=@PhpCsFixer,-yoda_style,-concat_space
 
-            - uses: stefanzweifel/git-auto-commit-action@v4
+            - uses: stefanzweifel/git-auto-commit-action@master
               with:
                   commit_message: Format code
 
@@ -787,7 +787,7 @@ jobs:
 
       - name: Create Pull Request
         id: pr
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@main
         with:
           commit-message: CMS Sync
           title: New CMS Sync
@@ -797,7 +797,7 @@ jobs:
           assignees: ${{ github.triggering_actor }}
 
       - name: Post PR notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: rtCamp/action-slack-notify@master
         if: success() && steps.pr.outputs.pull-request-number != ''
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
@@ -811,7 +811,7 @@ jobs:
             <${{ github.server_url }}/${{ github.repository }}/pull/${{ steps.pr.outputs.pull-request-number }}>
 
       - name: No PR notification
-        uses: rtCamp/action-slack-notify@v2
+        uses: rtCamp/action-slack-notify@master
         if: failure() || steps.pr.outputs.pull-request-number == ''
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
