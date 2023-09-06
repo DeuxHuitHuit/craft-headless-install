@@ -237,6 +237,8 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-admin-panel-con
 ${INSTALLER_PHP_EXEC} ./craft plugin/install admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-agency-auth
 ${INSTALLER_PHP_EXEC} ./craft plugin/install agency-auth
+${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-routes-api
+${INSTALLER_PHP_EXEC} ./craft plugin/install routes-api
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
