@@ -400,6 +400,7 @@ return [
         'sanitizeSvgUploads' => false,
         // If the project has the queue server on, we need to disable this
         'runQueueAutomatically' => true,
+        'sameSiteCookieValue' => 'None'
     ],
 
     // Dev environment settings
