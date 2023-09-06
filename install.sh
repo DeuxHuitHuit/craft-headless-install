@@ -400,6 +400,8 @@ return [
         'sanitizeSvgUploads' => false,
         // If the project has the queue server on, we need to disable this
         'runQueueAutomatically' => true,
+        // Since we are in headless mode, we need cookies to be available across sites so we can check authentication
+        'sameSiteCookieValue' => 'None'
     ],
 
     // Dev environment settings
