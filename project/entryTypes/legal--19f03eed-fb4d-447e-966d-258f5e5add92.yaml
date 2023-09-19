@@ -1,0 +1,58 @@
+fieldLayouts:
+  ce3352f4-d32e-4bac-8977-e3bca8a144a5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            label: 'Identifiant CMS / CMS Identifier'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 245af404-c349-4331-9573-34d419704250
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte / Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 32b0dc2d-16f0-4bf3-8d3a-d1f525d72261
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 53aa8bda-02a4-42e1-8cf5-2d8860df2340
+        userCondition: null
+handle: legal
+hasTitleField: true
+name: 'Légale / Legal'
+section: ec8f8144-4229-4395-adcd-105b11962c8a # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

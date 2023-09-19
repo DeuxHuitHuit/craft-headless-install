@@ -1,4 +1,4 @@
-dateModified: 1693434515
+dateModified: 1694619373
 elementSources:
   craft\elements\Asset:
     -
@@ -276,6 +276,7 @@ meta:
     9cecd656-7be1-4472-9f05-474161b497c9: Image # Image
     10a5c368-5d0b-47a4-9978-105511f5e998: 'Informations de partage / Sharing Info' # Informations de partage / Sharing Info
     16e1ca14-9781-44a1-b17f-7489cef3700a: 'Boutons / Buttons' # Boutons / Buttons
+    19f03eed-fb4d-447e-966d-258f5e5add92: 'Légale / Legal' # Légale / Legal
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
     26ac95b7-5d49-4702-94f5-91f13becdd1a: Autoplay # Autoplay
     38de93a0-a66a-41bf-81d4-a6bca6da710b: 'Tiroirs / Drawers' # Tiroirs / Drawers
@@ -453,6 +454,10 @@ plugins:
     enabled: true
     schemaVersion: 2.3.0
   redactor-custom-styles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  routes-api:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
