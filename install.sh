@@ -37,6 +37,9 @@ ${INSTALLER_PHP_EXEC} ~/composer.phar create-project craftcms/craft .
 echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
 
+echo "Set proper php version in composer.json"
+sed -i 's/"php": "8\.0\.2"/"php": "8.2"/g' composer.json
+
 echo "Restore htaccess infos"
 echo "" >> web/.htaccess
 cat "../$PROJECT_CODE.htaccess" >> web/.htaccess
