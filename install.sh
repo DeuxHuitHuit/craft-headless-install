@@ -222,8 +222,6 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require mmikkel/cp-field-inspect
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cp-field-inspect
 ${INSTALLER_PHP_EXEC} ./composer.phar require craftcms/redactor
 ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor
-#${INSTALLER_PHP_EXEC} ./composer.phar require marionnewlevant/snitch
-#${INSTALLER_PHP_EXEC} ./craft plugin/install snitch
 ${INSTALLER_PHP_EXEC} ./composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
 ${INSTALLER_PHP_EXEC} ./composer.phar require carlcs/craft-redactorcustomstyles
