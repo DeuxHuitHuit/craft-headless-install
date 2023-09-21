@@ -411,6 +411,8 @@ return [
         'devMode' => true,
         // No indexing
         'disallowRobots' => true,
+        // Always disable queue server in dev
+        'runQueueAutomatically' => true,
         // Aliases
         'aliases' => [
             '@host' => 'http://localhost:3000',
