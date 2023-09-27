@@ -470,6 +470,9 @@ for E in .env.example*; do
 	rm -f "${E}";
 done
 
+echo "Delete twig files"
+rm -f "./templates/*.twig"
+
 echo "Setup dev project downloader"
 cat > download-project.sh << 'BASH'
 #!/bin/bash
