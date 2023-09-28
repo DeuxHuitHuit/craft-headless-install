@@ -1,4 +1,4 @@
-dateModified: 1694619373
+dateModified: 1695863440
 elementSources:
   craft\elements\Asset:
     -
@@ -17,7 +17,36 @@ elementSources:
         - dateUpdated
       type: native
     -
-      key: 'folder:a5fe8508-76fa-45b0-8dc3-767fbd1b5356'
+      heading: ''
+      type: heading
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:3c0c2fcb-c361-472f-80d1-6bb4e36bcab6' # Stream
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - uploader
+        - link
+      type: native
+    -
+      heading: ''
+      type: heading
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'folder:a6b7bb6e-5307-4d0a-932d-fc0ef57c597c'
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - uploader
+        - link
       type: native
   craft\elements\Entry:
     -
@@ -475,7 +504,8 @@ system:
 users:
   allowPublicRegistration: false
   deactivateByDefault: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
+  defaultGroup: ''
+  photoSubpath: user-profile
+  photoVolumeUid: 7c06f121-409c-4ebe-a6ce-aa78ea61ce4d # Assets
   requireEmailVerification: true
+  validateOnPublicRegistration: false
