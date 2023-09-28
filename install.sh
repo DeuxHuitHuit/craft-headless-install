@@ -318,6 +318,8 @@ return [
         'client_secret' => '',
         'domain' => 'deuxhuithuit.co',
         'default_password' => '$AGENCY_AUTH_DEFAULT_PASSWORD',
+        'photo_volume_handle' => 'assets',
+        'photo_folder_name' => 'user-profile',
     ]
 ];
 
