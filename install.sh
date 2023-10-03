@@ -663,7 +663,7 @@ jobs:
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
       - name: Detect run type (install/deploy)
-        run: if [[ "${{ secrets.SETUP_DONE }}" -eq "1" ]]; then echo "IS_INSTALL=0" >> $GITHUB_OUTPUT; else echo "IS_INSTALL=1" >> $GITHUB_OUTPUT; fi;
+        run: if [[ "${{ vars.SETUP_DONE }}" -eq "1" ]]; then echo "IS_INSTALL=0" >> $GITHUB_OUTPUT; else echo "IS_INSTALL=1" >> $GITHUB_OUTPUT; fi;
         id: runtype
 
       - name: Remote setup
