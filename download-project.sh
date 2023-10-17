@@ -21,7 +21,7 @@ echo "2. Downloading project files"
 git rm -r ./project
 rsync -Phavz -e "ssh -p $PORT" "$HOST":"~/www/$PROJECT/config/project" "./"
 
-echo "2. Edit project files to remove license key and other sensitive data"
+echo "3. Edit project files to remove license key and other sensitive data"
 sed "s/licenseKey:.*/licenseKey: /g" project/project.yaml > project/project.yaml.tmp
 mv -f project/project.yaml.tmp project/project.yaml
 
