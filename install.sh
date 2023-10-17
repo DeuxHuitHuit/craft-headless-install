@@ -63,7 +63,7 @@ Options +SymLinksIfOwnerMatch -Indexes
 
 #### CORS
 <IfModule mod_headers.c>
-    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token, Origin, Ranges"
+    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token, Origin, Range"
     Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS"
     Header always set Access-Control-Allow-Credentials "true"
     Header always unset Access-Control-Allow-Origin
@@ -73,7 +73,7 @@ Options +SymLinksIfOwnerMatch -Indexes
     # 3. Vercel deploys ($PROJECT_CODE-sveltekit.vercel.app or $PROJECT_CODE-sveltekit-commitish-deuxhuithuit.vercel.app)
     SetEnvIf Origin "^https?://(localhost(:[345][\d][\d][\d])?|((qa|www)\.)?$PROJECT_CODE\.com|$PROJECT_CODE-sveltekit(.+-deuxhuithuit)?\.vercel\.app)$" origin_is=\$0
     Header always set Access-Control-Allow-Origin "%{origin_is}e" env=origin_is
-    Header always set vary "Accept-Encoding, Origin, Ranges"
+    Header always set vary "Accept-Encoding, Origin, Range"
 </IfModule>
 
 ### CRAFT CMS
