@@ -1,4 +1,4 @@
-dateModified: 1695863440
+dateModified: 1697485606
 elementSources:
   craft\elements\Asset:
     -
@@ -251,7 +251,7 @@ fs:
     type: craft\fs\Local
     url: $UPLOADS_URL
   stream:
-    hasUrls: true
+    hasUrls: false
     name: Stream
     settings:
       path: $STREAM_FILE_SYSTEM_PATH
@@ -459,12 +459,13 @@ plugins:
   cloudflare-stream:
     edition: standard
     enabled: true
-    licenseKey: N8KGTD9VBJBKPJGWC9QOH2IY
+    licenseKey: 
     schemaVersion: 1.0.0
     settings:
       accountId: $CF_STREAM_ACCOUNT_ID
       apiToken: $CF_STREAM_API_TOKEN
       autoUpload: '1'
+      useFormUpload: '1'
   cp-field-inspect:
     edition: standard
     enabled: true
@@ -476,7 +477,7 @@ plugins:
   neo:
     edition: standard
     enabled: true
-    licenseKey: 1GP0M8D50Z4AG9BVWGPXLJ2T
+    licenseKey: 
     schemaVersion: 3.6.2
   redactor:
     edition: standard
