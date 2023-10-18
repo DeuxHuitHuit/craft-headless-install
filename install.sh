@@ -63,7 +63,7 @@ Options +SymLinksIfOwnerMatch -Indexes
 
 #### CORS
 <IfModule mod_headers.c>
-    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token, Origin, Range"
+    Header always set Access-Control-Allow-Headers "X-Requested-With, Authorization, Content-Type, Request-Method, X-Craft-Token, Origin, Accept-Ranges"
     Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS"
     Header always set Access-Control-Allow-Credentials "true"
     Header always unset Access-Control-Allow-Origin
