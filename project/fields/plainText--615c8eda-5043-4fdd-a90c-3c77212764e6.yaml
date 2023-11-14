@@ -2,8 +2,8 @@ columnSuffix: lvcelhop
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: plainText
-instructions: null
-name: 'Texte / Text'
+instructions: "Aucun formatage du texte possible.\r\n\r\n---\r\n\r\nNo text formatting possible."
+name: 'Texte de base // Plain Text'
 searchable: false
 settings:
   byteLimit: null

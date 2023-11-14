@@ -1,9 +1,9 @@
-columnSuffix: jhtylxof
+columnSuffix: grseetmc
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: displayTitle
+handle: jobType
 instructions: null
-name: 'Titre // Title'
+name: 'Type d''emploi // Job Type'
 searchable: false
 settings:
   byteLimit: null

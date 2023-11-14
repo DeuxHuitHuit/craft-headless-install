@@ -2,9 +2,9 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  336c1a2a-e6d0-4f71-bf91-17421f464fbc:
+  179a4b62-cbf9-418d-a5a0-30a54672fd76:
     tabs:
       -
         elementCondition: null
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
             instructions: null
             label: 'Citation / Quote'
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e(Source) / Author(Source)
+            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e (Source) // Author (Source)
             instructions: null
             label: null
             required: false
@@ -46,7 +46,7 @@ fieldLayouts:
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: superQuote
+handle: quoteWithSource
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -55,6 +55,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Super Citation / SuperQuote'
+name: 'Citation avec source // Quote with source'
 sortOrder: 3
 topLevel: true

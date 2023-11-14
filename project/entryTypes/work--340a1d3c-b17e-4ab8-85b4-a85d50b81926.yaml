@@ -12,7 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n---\r\n\r\nRequired Field. The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only."
             label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
@@ -32,25 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            heading: 'En-tête / Header'
+            heading: 'En-tête // Header'
             type: craft\fieldlayoutelements\Heading
             uid: 24a3e9c0-713f-40e2-8d94-c8dad74a294e
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e0e9fcb7-c3dc-43ef-b404-cb5e2ef73a5f
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 6b0a75dc-19aa-46a7-a741-6a221f563e32
             userCondition: null
-            warning: null
-            width: 50
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -62,37 +55,30 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e # Introduction
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e09300d2-0e07-4e50-8b5d-1a8b1d52829d
+            uid: d97cfacf-0565-4269-9b11-0147f114a8b9
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c8f79d37-e70a-4bf9-bac3-a06e10c6c046
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 8b7aa641-56bd-4708-9254-abc5d94c6412
             userCondition: null
-            warning: null
-            width: 50
           -
             dismissible: true
             elementCondition: null
             style: tip
-            tip: "Les entrées de la section [Projets](/craft/entries/projects) seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the [Projects](/craft/entries/projects) section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
+            tip: "Les entrées de la section [Projets](/craft/entries/projects) seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n---\r\n\r\n*The entries from the [Projects](/craft/entries/projects) section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
             type: craft\fieldlayoutelements\Tip
             uid: a3bf39f5-b868-485c-b394-388755d3e529
             userCondition: null
-        name: 'Contenu / Content'
+        name: 'Contenu // Content'
         uid: eb9e6ec8-764e-4504-8cbf-de9cecfc023c
         userCondition: null
       -
@@ -100,25 +86,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 72284dbb-2f9e-4056-a6ae-a0bf1cfc876a
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Contenu supplémentaire / Additional Content'
-        uid: 2b02567c-6f45-4e09-a769-0c807154760d
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -128,13 +96,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 4ed31235-9070-4a12-baa4-1c1c64c2ba56
         userCondition: null
 handle: work
 hasTitleField: true
-name: 'Réalisations / Work'
-section: 0a41ad00-fdfe-4ad0-a08b-1e2db0066d17 # Réalisations / Work
+name: 'Réalisations // Work'
+section: 0a41ad00-fdfe-4ad0-a08b-1e2db0066d17 # Réalisations // Work
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

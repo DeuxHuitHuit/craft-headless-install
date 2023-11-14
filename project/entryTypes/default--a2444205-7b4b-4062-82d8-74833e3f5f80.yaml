@@ -12,7 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
             label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
@@ -32,7 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -44,7 +44,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: cb674705-76bb-4c5c-aef0-412239f6fde6 # Date de début / Start Date
+            fieldUid: cb674705-76bb-4c5c-aef0-412239f6fde6 # Date de début de l'emploi // Job Start Date
             instructions: null
             label: null
             required: false
@@ -56,7 +56,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: c8fe87c2-9d25-45db-93c5-2bc89cfff045 # Type d'emploi / Employment Type
+            fieldUid: c8fe87c2-9d25-45db-93c5-2bc89cfff045 # Type d'emploi // Job Type
             instructions: "Ex: temps plein, temps partiel, à contrat, temporaire, saisonnier, stage\r\n\r\n*Ex: full-time, part-time, contract, temporary, seasonal, internship*"
             label: null
             required: false
@@ -68,7 +68,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 4a7fac31-8e92-4edc-bcfe-ae2348d30a0c # Emplacement / Location
+            fieldUid: 4a7fac31-8e92-4edc-bcfe-ae2348d30a0c # Emplacement de l'emploi // Job Location
             instructions: null
             label: null
             required: false
@@ -80,19 +80,19 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Text
+            fieldUid: 9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e # Introduction
             instructions: null
-            label: Introduction
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f37ed83b-83e7-4171-bd37-e1274c2c1826
+            uid: a6fec3ca-cfea-442b-856e-1c1ac17309cd
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: e5888f8d-591b-411a-aa68-7334da565f86 # Description
+            fieldUid: e5888f8d-591b-411a-aa68-7334da565f86 # Description de l'emploi // Job Description
             instructions: null
             label: null
             required: false
@@ -110,25 +110,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4aa6ecbb-ac27-4c5f-b5db-0ad0b6c444aa
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Contenu supplémentaire / Additional Content'
-        uid: c6055216-c307-4fb7-b878-0cebd018e9e1
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -138,13 +120,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 3a09b97a-0094-4988-aabb-280fbcfb79a4
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: f23e6a71-9e92-4184-bdd9-8ff3775fb2ec # Emplois / Jobs
+section: f23e6a71-9e92-4184-bdd9-8ff3775fb2ec # Emplois // Jobs
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

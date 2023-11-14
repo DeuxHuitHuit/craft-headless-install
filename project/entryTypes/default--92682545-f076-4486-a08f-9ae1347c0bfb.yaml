@@ -12,7 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
             label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
@@ -32,25 +32,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            heading: 'En-tête / Header'
-            type: craft\fieldlayoutelements\Heading
-            uid: 30af58a6-8b2c-4eae-91d4-2d2af6e45faf
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: afa80289-1538-4db0-86b1-10dd51dd0cc7
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
             instructions: null
             label: null
             required: false
@@ -62,13 +44,54 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            heading: 'Taxonomie / Taxonomy'
+            heading: 'En-tête // Header'
             type: craft\fieldlayoutelements\Heading
-            uid: 580186b1-0f71-4326-a674-f32a930c56e9
+            uid: 30af58a6-8b2c-4eae-91d4-2d2af6e45faf
             userCondition: null
           -
             elementCondition: null
-            fieldUid: d0b09e80-95e5-4731-b171-d75c405b5cf5 # Année / Year
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: dfd8a9de-b59a-4664-8823-51c89a6bde56
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afa80289-1538-4db0-86b1-10dd51dd0cc7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Média // Media
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7238393a-6fed-4ed4-a39e-446f0fac64e9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: c8fd912c-bd53-4e56-8979-29c50e0077b3 # Description courte // Short Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49a34421-c5c8-46cd-af9b-466659daf254
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d0b09e80-95e5-4731-b171-d75c405b5cf5 # Année // Year
             instructions: null
             label: null
             required: false
@@ -80,25 +103,30 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 286d5067-2dae-42ac-98bb-fe6e187047df # Type(s) de projet
+            fieldUid: be9c9966-1e4e-4129-a43b-b77bb7764fef # Client
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae1c45b6-9e84-4d39-86f6-e98b1feda7b8
+            uid: ffc7b0af-92ed-4671-9383-06ea88d40b52
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            heading: 'Galerie / Gallery'
+            heading: 'Galerie // Gallery'
             type: craft\fieldlayoutelements\Heading
             uid: b01d5bee-ed69-48d4-980d-6d8add2141be
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias / Medias
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: e8c94eaa-3326-4106-b640-ed5fcd44b8db
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias de la galerie // Gallery Medias
             instructions: null
             label: null
             required: false
@@ -108,15 +136,20 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu / Content'
-        uid: 4d01be09-4440-41e6-8269-acc24ed7c34d
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
+            heading: 'Contenu de la page // Page content'
+            type: craft\fieldlayoutelements\Heading
+            uid: c5c3995b-da45-401b-b842-3ffe2a85748c
+            userCondition: null
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 88bf3230-3a89-495e-aceb-c484556ee4e7
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert (Modules) // Open Model (Modules)
             instructions: null
             label: null
             required: false
@@ -126,15 +159,15 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu supplémentaire / Additional Content'
-        uid: 0333aa65-8a01-4fcf-b116-fdefab94f8ff
+        name: 'Contenu // Content'
+        uid: 4d01be09-4440-41e6-8269-acc24ed7c34d
         userCondition: null
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -144,13 +177,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 5284afdc-817d-489d-b37b-682eec3015d3
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: 90df0a08-7d42-4e4a-893e-a92d210e66a6 # Projets / Projects
+section: 90df0a08-7d42-4e4a-893e-a92d210e66a6 # Projets // Projects
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

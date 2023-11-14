@@ -2,16 +2,16 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias / Medias
+field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias de la galerie // Gallery Medias
 fieldLayouts:
-  5ba1f53c-8fc1-4dd9-9515-cda6416c6219:
+  005a5817-c070-43f8-b216-7195304f1a6c:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # Embed Video URL
+            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # URL de la vidéo Embed // Embed Video URL
             instructions: null
             label: null
             required: false
@@ -20,10 +20,22 @@ fieldLayouts:
             uid: e6d4bfda-b288-46c3-96d0-e1d6e64abbcc
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
+            instructions: null
+            label: 'Vignette / Thumbnail'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d2c9b9b-607b-4294-98db-b01b3cbf5a8d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
             instructions: null
             label: null
             required: false
@@ -33,19 +45,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
-            instructions: null
-            label: 'Vignette / Thumbnail'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2d2c9b9b-607b-4294-98db-b01b3cbf5a8d
-            userCondition: null
-            warning: null
-            width: 100
-        name: Contenu
+        name: 'Contenu // Content'
         uid: 8a99d602-249c-4079-b60b-e0b6cf9fce21
         userCondition: null
 group: null
@@ -59,6 +59,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Vidéo encastrée / Embed Video'
-sortOrder: 2
+name: 'Vidéo encastrée (Embed) // Embed Video'
+sortOrder: 1
 topLevel: true

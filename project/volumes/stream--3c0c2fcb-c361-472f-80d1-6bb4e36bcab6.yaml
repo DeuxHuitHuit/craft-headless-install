@@ -32,7 +32,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif / Alternative Text
+            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif // Alternative Text
             instructions: null
             label: null
             required: false
@@ -44,7 +44,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
             instructions: null
             label: null
             required: false
@@ -56,7 +56,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits / Copyrights
+            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits // Copyrights
             instructions: null
             label: null
             required: false
@@ -68,7 +68,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: a4075417-c1ab-4ea9-86bb-9848b83afec3 # Video Stream
+            fieldUid: a4075417-c1ab-4ea9-86bb-9848b83afec3 # Video Stream (pour les Asset Volumes seulement)
             instructions: null
             label: null
             required: false

@@ -1,5 +1,5 @@
 fieldLayouts:
-  a543f511-f97d-46f6-add1-c76c01d35916:
+  b3e48273-863f-4d57-ba48-dd674c31a7b9:
     tabs:
       -
         elementCondition: null
@@ -10,7 +10,7 @@ fieldLayouts:
             style: tip
             tip: '[Référence visuelle du module / *Module reference*]()'
             type: craft\fieldlayoutelements\Tip
-            uid: 33d8cdc4-8ebc-491e-9139-dd9f2ade3d0c
+            uid: d1da5690-3ef4-4d23-b204-70eb7b7c198a
             userCondition: null
           -
             autocapitalize: true
@@ -34,66 +34,45 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: a7869730-52ae-4937-9e4c-936091242073
+            uid: 4a280511-8663-426d-9a76-9a4b3bff3735
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS // CMS Identifier
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3b713fcb-67e7-4a6e-8408-f72cae92b89e
+            uid: cae37334-95dd-4b7a-a0d2-31a180a23a88
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Média // Media
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a8c63a3b-afa0-4572-a4c0-07593b554ef0
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3f798b93-3876-41c8-971d-2cccce7ef4cb
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: abf1f7b7-9865-4919-abd6-3b87e6816e4a #   Médias / Medias
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5345b696-917f-4324-a105-a5f46500fe8b
+            uid: 0ed9ad97-9d88-4efc-9262-ab4bd015d51e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 4ec23c87-8015-4a50-a4fc-3fe6fac4acaa
+        uid: b50856de-9b27-4e6c-ad7c-26439f797d24
         userCondition: null
-handle: slideshow
+handle: media
 hasTitleField: false
-name: 'Diaporama / Slideshow'
+name: Média
 section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
-sortOrder: 12
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 9
 titleFormat: '{type.name} - {identifier}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

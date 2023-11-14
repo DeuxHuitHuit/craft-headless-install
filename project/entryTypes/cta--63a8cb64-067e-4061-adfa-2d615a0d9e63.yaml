@@ -40,7 +40,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS // CMS Identifier
             instructions: null
             label: null
             required: false
@@ -52,7 +52,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre // Surtitle
             instructions: null
             label: null
             required: false
@@ -64,7 +64,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -76,7 +76,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Text
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte de base // Plain Text
             instructions: null
             label: null
             required: false
@@ -88,7 +88,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons / Buttons
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons // Buttons
             instructions: null
             label: null
             required: false
@@ -100,7 +100,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
             instructions: null
             label: null
             required: false

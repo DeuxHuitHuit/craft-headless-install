@@ -40,7 +40,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -52,7 +52,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
             instructions: null
             label: null
             required: false
@@ -64,7 +64,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton / Button
+            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton // Button
             instructions: null
             label: null
             required: false

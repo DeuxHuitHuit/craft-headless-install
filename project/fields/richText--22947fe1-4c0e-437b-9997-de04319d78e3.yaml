@@ -2,12 +2,13 @@ columnSuffix: aygkrnor
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: richText
-instructions: null
-name: 'Texte / Text'
+instructions: "Tous formatages de texte possibles.\r\n\r\n---\r\n\r\nAll text formatting possible."
+name: 'Texte riche // Rich Text'
 searchable: false
 settings:
   availableTransforms: ''
-  availableVolumes: '*'
+  availableVolumes:
+    - 7c06f121-409c-4ebe-a6ce-aa78ea61ce4d # Assets
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''

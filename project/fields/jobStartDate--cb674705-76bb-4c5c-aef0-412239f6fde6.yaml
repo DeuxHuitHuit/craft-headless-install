@@ -3,7 +3,7 @@ contentColumnType: datetime
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: jobStartDate
 instructions: null
-name: 'Date de début / Start Date'
+name: 'Date de début de l''emploi // Job Start Date'
 searchable: false
 settings:
   max: null

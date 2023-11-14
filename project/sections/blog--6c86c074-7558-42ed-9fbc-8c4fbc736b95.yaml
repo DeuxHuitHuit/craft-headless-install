@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: blog
-name: 'Blogue / Blog'
+name: 'Blogue // Blog'
 previewTargets:
   -
     __assoc__:

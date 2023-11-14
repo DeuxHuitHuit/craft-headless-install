@@ -2,18 +2,48 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: medias
-instructions: null
-name: '  Médias / Medias'
+instructions: "Image **OU** courte vidéo\r\n\r\nSe référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) et [**vidéos**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) de la section Globals.\r\n\r\n//\r\n\r\n*Image **OR** short video*\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) and [**video**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) spec sheets in the Globals section.*"
+name: 'Médias // Medias'
 searchable: false
 settings:
-  maxBlocks: null
-  maxLevels: null
-  maxTopBlocks: null
-  minBlocks: null
-  minLevels: null
-  minTopBlocks: null
-  propagationKeyFormat: null
-  propagationMethod: all
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: false
+  allowedKinds:
+    - image
+    - word
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: thumbs
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
+  selectionLabel: 'Ajouter des images ou vidéos // Add images or videos'
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
 translationKeyFormat: null
 translationMethod: site
-type: benf\neo\Field
+type: craft\fields\Assets

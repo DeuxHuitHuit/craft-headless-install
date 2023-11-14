@@ -3,7 +3,7 @@ contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: siteEntry
 instructions: null
-name: 'Entrée du site / Site Entry'
+name: 'Entrée du site // Site Entry'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -23,7 +23,7 @@ settings:
       -
         - class
         - craft\elements\conditions\entries\EntryCondition
-  selectionLabel: null
+  selectionLabel: 'Sélectionner une entrée // Select an entry'
   showSiteMenu: false
   sources:
     - 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages

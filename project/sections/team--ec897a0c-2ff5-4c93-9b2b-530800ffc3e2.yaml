@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: team
-name: 'Équipe / Team'
+name: 'Équipe // Team'
 previewTargets:
   -
     __assoc__:

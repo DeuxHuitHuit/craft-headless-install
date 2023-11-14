@@ -1,19 +1,19 @@
-columnSuffix: ephbryld
+columnSuffix: uujzrlav
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: iFrame
+handle: client
 instructions: null
-name: iFrame
+name: Client
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: false
   columnType: null
-  initialRows: 3
-  multiline: true
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\PlainText

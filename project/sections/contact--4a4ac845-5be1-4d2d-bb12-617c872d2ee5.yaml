@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: contact
-name: 'Nous joindre / Contact'
+name: 'Nous joindre // Contact'
 previewTargets:
   -
     __assoc__:

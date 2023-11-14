@@ -2,9 +2,9 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  dce8491d-8dba-4ec7-ab13-269aa2b9c191:
+  c5020b19-1e25-46cb-873a-671d2424cbc1:
     tabs:
       -
         elementCondition: null
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
+            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre // Surtitle
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte / Text
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Texte de base // Plain Text
             instructions: null
             label: null
             required: false
@@ -55,7 +55,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons / Buttons
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons // Buttons
             instructions: null
             label: null
             required: false
@@ -67,7 +67,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
             instructions: null
             label: null
             required: false
@@ -91,6 +91,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Appel à l''action / Call to Action'
-sortOrder: 12
+name: 'Appel à l''action // Call to Action'
+sortOrder: 6
 topLevel: true

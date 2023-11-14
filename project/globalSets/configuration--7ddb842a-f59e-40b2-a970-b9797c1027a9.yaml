@@ -6,7 +6,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 56586313-03c2-4ded-b0c3-d22dee297e67 # Organisation / Organization
+            fieldUid: 56586313-03c2-4ded-b0c3-d22dee297e67 # Organisation // Organization
             instructions: null
             label: null
             required: false
@@ -18,7 +18,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Médias sociaux / Socials
+            fieldUid: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Médias sociaux // Socials
             instructions: null
             label: null
             required: false
@@ -36,7 +36,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -48,7 +48,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 78376c37-546a-4c5a-b132-d9d8c8acf806 # Twitter Handle
+            fieldUid: 78376c37-546a-4c5a-b132-d9d8c8acf806 # Nom d'utilisateur.trice sur Twitter // Twitter Handle
             instructions: null
             label: null
             required: false
@@ -58,7 +58,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 755a4652-c6d8-4a0f-b6d5-8ba92dd1d9bb
         userCondition: null
 handle: configuration

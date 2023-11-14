@@ -55,7 +55,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
             instructions: null
             label: null
             required: false
@@ -67,7 +67,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits / Copyrights
+            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits // Copyrights
             instructions: null
             label: null
             required: false

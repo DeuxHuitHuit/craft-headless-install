@@ -40,7 +40,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS / CMS Identifier
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS // CMS Identifier
             instructions: null
             label: null
             required: false
@@ -52,7 +52,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # Embed Video URL
+            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # URL de la vidéo Embed // Embed Video URL
             instructions: null
             label: null
             required: true
@@ -64,25 +64,25 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
+            instructions: null
+            label: 'Vignette / Thumbnail'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a5fc3fe-4f29-4d00-9aaa-c65b9bc9a967
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1670c243-3404-4aab-ac5c-a37fde5e84ec
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
-            instructions: "La vignette est le visuel de couverture de la vidéo. Elle est seulement visible avant que l'utilisateur.trice ne fasse jouer la vidéo. La vignette peut être une image statique **OU** une courte vidéo d'ambiance de quelques secondes Si la vignette est une courte vidéo, il faut fournir les urls des 3 types de fichiers de streaming (DASH, HLS, MP4). \r\n\r\n*The thumbnail is the video's visual cover only displayed before the user plays the video. The thumbnail can either be a static image **OR** a short mood video. If the thumbnail is a short video, the url for each 3 streaming files is required (DASH, HLS, MP4).*"
-            label: 'Vignette / Thumbnail'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2a5fc3fe-4f29-4d00-9aaa-c65b9bc9a967
             userCondition: null
             warning: null
             width: 100
@@ -93,6 +93,9 @@ handle: embedVideo
 hasTitleField: false
 name: 'Vidéo encastrée / Embed Video'
 section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 5
 titleFormat: '{type.name} - {identifier}'
 titleTranslationKeyFormat: null

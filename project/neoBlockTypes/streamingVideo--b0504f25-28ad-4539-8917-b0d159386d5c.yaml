@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: abf1f7b7-9865-4919-abd6-3b87e6816e4a #   Médias / Medias
+field: abf1f7b7-9865-4919-abd6-3b87e6816e4a # Médias // Medias
 fieldLayouts:
   406329c4-bb9c-4551-8821-f5334cf4727e:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2 # URL vidéo DASH / DASH Video URL
+            fieldUid: 3f73ea2b-d2df-40e1-b481-33427f5052b2
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d # URL vidéo HLS / HLS Video URL
+            fieldUid: d7592692-d00f-4485-982a-43f8fa3b6c2d
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e # URL vidéo MP4 / MP4 Video URL
+            fieldUid: 59206fc8-efb7-49ee-8359-30c3cdb3a62e
             instructions: null
             label: null
             required: false
@@ -47,7 +47,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
             instructions: null
             label: null
             required: false

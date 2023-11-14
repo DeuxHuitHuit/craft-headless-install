@@ -1,0 +1,12 @@
+columnSuffix: ixmyiqyx
+contentColumnType: char(7)
+fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
+handle: color
+instructions: null
+name: 'Couleur // Color'
+searchable: false
+settings:
+  defaultColor: '#000000'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

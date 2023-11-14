@@ -3,7 +3,7 @@ contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: source
 instructions: null
-name: 'Auteur.e(Source) / Author(Source)'
+name: 'Auteur.e (Source) // Author (Source)'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_source}}'

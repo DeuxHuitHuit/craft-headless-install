@@ -3,9 +3,10 @@ contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: theme
 instructions: null
-name: 'Thème de couleur / Color theme'
+name: 'Thème // Theme'
 searchable: false
 settings:
+  columnType: string
   options:
     -
       __assoc__:

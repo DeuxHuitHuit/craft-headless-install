@@ -1,4 +1,4 @@
-field: 56586313-03c2-4ded-b0c3-d22dee297e67 # Organisation / Organization
+field: 56586313-03c2-4ded-b0c3-d22dee297e67 # Organisation // Organization
 fieldLayouts:
   a67f37b5-f748-410b-9c06-3a35d4678fce:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e2cdaad1-42b3-4873-a763-caf3bf386e18 # Nom / Name
+            fieldUid: e2cdaad1-42b3-4873-a763-caf3bf386e18 # Nom // Name
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: fc75545c-a4e6-482c-866c-64e270d6d9a7 # Adresse / Address
+            fieldUid: fc75545c-a4e6-482c-866c-64e270d6d9a7 # Adresse // Address
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: b2ec015d-a8f7-4da8-a82c-5db01312f38b # Courriel / Email
+            fieldUid: b2ec015d-a8f7-4da8-a82c-5db01312f38b # Courriel // Email
             instructions: null
             label: null
             required: false
@@ -55,7 +55,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 94179dde-ab52-4487-b729-d1503068b684 # Téléphone / Phone
+            fieldUid: 94179dde-ab52-4487-b729-d1503068b684 # Téléphone // Phone
             instructions: null
             label: null
             required: false
@@ -74,13 +74,13 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: organizationLogo
-    instructions: "Max 1 image\r\n\r\n* Dimensions maximales / Maximum size: 500 x 500.\r\n* Poids maximal / Maximum weight: 300Ko.\r\n* Types de fichiers acceptés / Accepted file types: SVG, PN"
+    instructions: "* Dimensions recommandées (en pixels): 500 x 500   \r\n* Poids recommandé: entre 150 ko et 300 ko   \r\n* Formats de fichiers recommandés: SVG, WEBP     \r\n* Autre(s) format(s) de fichiers acceptés: PNG, JPEG\r\n* Résolution: entre 72 et 96 ppi (*pixels per inch*)\r\n\r\n---\r\n\r\n* Recommended size (in pixels): 500 x 500    \r\n* Recommended weight: between 150 ko and 300 ko   \r\n* Recommended file formats: SVG, WEBP   \r\n* Other accepted file formats: PNG, JPEG\r\n* Resolution: between 72 and 96 ppi (pixels per inch)"
     name: Logo
     searchable: false
     settings:
       allowSelfRelations: false
       allowSubfolders: false
-      allowUploads: true
+      allowUploads: false
       allowedKinds:
         - image
       branchLimit: null
@@ -107,28 +107,29 @@ fields:
           -
             - class
             - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
+      selectionLabel: 'Ajouter un logo // Add a logo'
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      sources: '*'
+      sources:
+        - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
       targetSiteId: null
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  94179dde-ab52-4487-b729-d1503068b684: # Téléphone / Phone
+  94179dde-ab52-4487-b729-d1503068b684: # Téléphone // Phone
     columnSuffix: eoivwrfs
-    contentColumnType: text
+    contentColumnType: string(48)
     fieldGroup: null
     handle: organizationPhone
     instructions: null
-    name: 'Téléphone / Phone'
+    name: 'Téléphone // Phone'
     searchable: false
     settings:
       byteLimit: null
-      charLimit: null
+      charLimit: 12
       code: false
       columnType: null
       initialRows: 4
@@ -136,15 +137,15 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\PlainText
-  b2ec015d-a8f7-4da8-a82c-5db01312f38b: # Courriel / Email
+  b2ec015d-a8f7-4da8-a82c-5db01312f38b: # Courriel // Email
     columnSuffix: yfyifwlw
     contentColumnType: text
     fieldGroup: null
     handle: organizationEmail
     instructions: null
-    name: 'Courriel / Email'
+    name: 'Courriel // Email'
     searchable: false
     settings:
       byteLimit: null
@@ -158,13 +159,13 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  e2cdaad1-42b3-4873-a763-caf3bf386e18: # Nom / Name
+  e2cdaad1-42b3-4873-a763-caf3bf386e18: # Nom // Name
     columnSuffix: kewzhjkv
     contentColumnType: text
     fieldGroup: null
     handle: organizationName
     instructions: null
-    name: 'Nom / Name'
+    name: 'Nom // Name'
     searchable: false
     settings:
       byteLimit: null
@@ -178,13 +179,13 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
-  fc75545c-a4e6-482c-866c-64e270d6d9a7: # Adresse / Address
+  fc75545c-a4e6-482c-866c-64e270d6d9a7: # Adresse // Address
     columnSuffix: jemqnqkw
     contentColumnType: text
     fieldGroup: null
     handle: organizationAddress
     instructions: null
-    name: 'Adresse / Address'
+    name: 'Adresse // Address'
     searchable: false
     settings:
       byteLimit: null
@@ -199,5 +200,5 @@ fields:
     translationMethod: site
     type: craft\fields\PlainText
 handle: organization
-name: 'Schema Organisation'
+name: 'Informations sur l''organisation // Organization Info'
 sortOrder: 1

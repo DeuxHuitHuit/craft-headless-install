@@ -2,9 +2,9 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  3d105ebd-2a60-4a1f-b2b5-d2da987b6d8c:
+  f9acc8d2-e6cb-4881-8447-8e66efec09b8:
     tabs:
       -
         elementCondition: null
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: de7d2c37-782f-442f-82fd-b6d553936ed4 # Thème de couleur / Color theme
+            fieldUid: de7d2c37-782f-442f-82fd-b6d553936ed4 # Thème // Theme
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
             instructions: null
             label: null
             required: false
@@ -67,6 +67,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Callout / Accroche'
-sortOrder: 6
+name: 'Emphase // Callout'
+sortOrder: 2
 topLevel: true

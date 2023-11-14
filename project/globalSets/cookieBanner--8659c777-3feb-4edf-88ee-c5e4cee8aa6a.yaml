@@ -6,8 +6,8 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 8e521985-7684-4e3d-9718-e32537067b77 # Activer la bannière / Enable banner
-            instructions: "Si coché, la bannière apparaîtra en «pop up» sur la page d'accueil du site.\r\n\r\n*If checked, the cookie banner will pop up on the homepage.*"
+            fieldUid: 8e521985-7684-4e3d-9718-e32537067b77 # Activer la bannière // Enable banner
+            instructions: null
             label: null
             required: false
             tip: null
@@ -18,7 +18,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
             instructions: null
             label: null
             required: false
@@ -44,5 +44,5 @@ fieldLayouts:
         uid: becddd45-9a41-4faf-9ed2-c387c0d5aa5c
         userCondition: null
 handle: cookieBanner
-name: 'Bannière de cookies / Cookie Banner'
+name: 'Bannière de cookies // Cookie Banner'
 sortOrder: 2

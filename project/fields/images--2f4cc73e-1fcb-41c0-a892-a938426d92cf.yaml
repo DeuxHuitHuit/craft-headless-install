@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: images
-instructions: "* Dimensions maximales / *Maximum size*: 1920 x 1920.\r\n* Poids maximal / *Maximum weight*: 700Ko.\r\n* Types de fichiers acceptés / *Accepted file types*: JPG, PNG(avec fond transparent pour les logos / *with transparent background for logos*), SVG, WEBP.\r\n* Ratios recommandés / *Recommended ratios*: Horizontal= 16:9, 4:3, 3:2, 1:1 | Vertical= 2:3, 3:4, 9:16, 1:1.\r\n* Mode colorimétrique / *Color mode*: RGB.\r\n* Résolution / *Resolution*: 72 ou 96 ppi."
+instructions: "Se référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheets in the Globals section.*"
 name: Images
 searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: true
+  allowUploads: false
   allowedKinds:
     - image
   branchLimit: null
@@ -35,11 +35,12 @@ settings:
       -
         - class
         - craft\elements\conditions\assets\AssetCondition
-  selectionLabel: null
+  selectionLabel: 'Ajouter des images // Add images'
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   targetSiteId: null
   validateRelatedElements: false
   viewMode: large

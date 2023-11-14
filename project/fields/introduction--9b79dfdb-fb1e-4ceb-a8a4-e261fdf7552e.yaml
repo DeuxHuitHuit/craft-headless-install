@@ -1,13 +1,13 @@
-columnSuffix: vndwokjg
+columnSuffix: mgvwdnto
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: simpleRichText
-instructions: "Certains formatages possibles.\r\n\r\n---\r\n\r\nSome formatting possible."
-name: 'Texte riche simple // Simple Rich Text'
+handle: introduction
+instructions: null
+name: Introduction
 searchable: false
 settings:
   availableTransforms: ''
-  availableVolumes: ''
+  availableVolumes: '*'
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''

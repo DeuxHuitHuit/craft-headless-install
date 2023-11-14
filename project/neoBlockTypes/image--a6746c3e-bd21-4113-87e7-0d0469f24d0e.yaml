@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: abf1f7b7-9865-4919-abd6-3b87e6816e4a #   Médias / Medias
+field: abf1f7b7-9865-4919-abd6-3b87e6816e4a # Médias // Medias
 fieldLayouts:
   c0eb2bfd-a4a0-4a30-b796-ceb4c617eb7d:
     tabs:

@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: work
-name: 'Réalisations / Work'
+name: 'Réalisations // Work'
 previewTargets:
   -
     __assoc__:

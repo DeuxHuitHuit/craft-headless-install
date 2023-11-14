@@ -38,19 +38,12 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 49251738-d58e-415b-9016-270651b9e829
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 32cc0730-8efa-4199-bc43-68a1557a21bc
             userCondition: null
-            warning: null
-            width: 50
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -62,28 +55,28 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Média // Media
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 84ebfba3-8ed6-475a-a7f8-e27d95a6b446
+            uid: d0f37468-cfb5-4770-9c27-95c16cba8d16
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
+            fieldUid: c8fd912c-bd53-4e56-8979-29c50e0077b3 # Description courte // Short Description
             instructions: null
-            label: 'Média d''en-tête / Header Media'
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 09577217-6641-47b2-a6dd-1db07c58e59d
+            uid: 8049fc06-3990-4842-a678-5cf28da86543
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             elementCondition: null
             heading: 'Contenu de la page / Page Content'
@@ -92,7 +85,12 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2e004773-15c7-46ad-8c5a-6c85290d8fa6
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert (Modules) // Open Model (Modules)
             instructions: null
             label: null
             required: false
@@ -102,7 +100,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu / Content'
+        name: 'Contenu // Content'
         uid: e28b2f85-ca4b-4fe8-8e3c-96267b721341
         userCondition: null
       -
@@ -110,7 +108,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -120,13 +118,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 37af9612-a047-43fe-9465-a1b2b452af17
         userCondition: null
 handle: default
 hasTitleField: true
-name: Default
+name: 'Page narrative par défaut / Default Narrative'
 section: ec8f8144-4229-4395-adcd-105b11962c8a # Pages
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

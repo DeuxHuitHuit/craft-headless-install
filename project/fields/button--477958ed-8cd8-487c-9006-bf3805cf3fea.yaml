@@ -3,7 +3,7 @@ contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: button
 instructions: 'Max 1'
-name: 'Bouton / Button'
+name: 'Bouton // Button'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -23,10 +23,10 @@ settings:
       -
         - class
         - craft\elements\conditions\entries\EntryCondition
-  selectionLabel: null
+  selectionLabel: 'Ajouter un bouton // Add a button'
   showSiteMenu: false
   sources:
-    - 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Boutons / Buttons
+    - 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Boutons // Buttons
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null

@@ -1,4 +1,4 @@
-field: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Médias sociaux / Socials
+field: 4f2acaa1-189a-4e2d-ad0c-f313c4b00118 # Médias sociaux // Socials
 fieldLayouts:
   cad55635-b898-4dab-b7e6-b621c43bec90:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: fe7be7d2-aed9-4274-91c5-b1fc5432b42e # Nom / Name
+            fieldUid: fe7be7d2-aed9-4274-91c5-b1fc5432b42e # Nom // Name
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 5e423c33-bf01-4613-b511-0c196a0f3421 # URL du compte / Account URL
+            fieldUid: 5e423c33-bf01-4613-b511-0c196a0f3421 # URL du compte // Account URL
             instructions: null
             label: null
             required: false
@@ -45,13 +45,13 @@ fieldLayouts:
         uid: 6906d9f3-c621-4c92-a016-0d133ed79641
         userCondition: null
 fields:
-  5e423c33-bf01-4613-b511-0c196a0f3421: # URL du compte / Account URL
+  5e423c33-bf01-4613-b511-0c196a0f3421: # URL du compte // Account URL
     columnSuffix: kcelfkir
     contentColumnType: text
     fieldGroup: null
     handle: platformUrl
     instructions: null
-    name: 'URL du compte / Account URL'
+    name: 'URL du compte // Account URL'
     searchable: false
     settings:
       byteLimit: null
@@ -63,20 +63,20 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\PlainText
   216a4e0a-27ae-4b0b-963e-26dc9ffae251: # Logo
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: platformLogo
-    instructions: "Max 1 image\r\n\r\n* Dimensions maximales / *Maximum size*: 500 x 500.  \r\n* Poids maximal / *Maximum weight*: 300Ko.    \r\n* Types de fichiers acceptés / *Accepted file types*: SVG, PNG. "
+    instructions: "* Dimensions recommandées (en pixels): 500 x 500   \r\n* Poids recommandé: entre 150 ko et 300 ko   \r\n* Formats de fichiers recommandés: SVG, WEBP     \r\n* Autre(s) format(s) de fichiers acceptés: PNG, JPEG\r\n* Résolution: entre 72 et 96 ppi (*pixels per inch*)\r\n\r\n---\r\n\r\n* Recommended size (in pixels): 500 x 500    \r\n* Recommended weight: between 150 ko and 300 ko   \r\n* Recommended file formats: SVG, WEBP   \r\n* Other accepted file formats: PNG, JPEG\r\n* Resolution: between 72 and 96 ppi (pixels per inch)"
     name: Logo
     searchable: false
     settings:
       allowSelfRelations: false
       allowSubfolders: false
-      allowUploads: true
+      allowUploads: false
       allowedKinds:
         - image
       branchLimit: null
@@ -103,24 +103,25 @@ fields:
           -
             - class
             - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
+      selectionLabel: 'Ajouter un logo'
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      sources: '*'
+      sources:
+        - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
       targetSiteId: null
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  fe7be7d2-aed9-4274-91c5-b1fc5432b42e: # Nom / Name
+  fe7be7d2-aed9-4274-91c5-b1fc5432b42e: # Nom // Name
     columnSuffix: wtfddxgb
     contentColumnType: text
     fieldGroup: null
     handle: platformName
     instructions: null
-    name: 'Nom / Name'
+    name: 'Nom // Name'
     searchable: false
     settings:
       byteLimit: null
@@ -132,8 +133,8 @@ fields:
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\fields\PlainText
 handle: platform
-name: 'Plateforme / Platform'
+name: 'Plateforme // Platform'
 sortOrder: 1

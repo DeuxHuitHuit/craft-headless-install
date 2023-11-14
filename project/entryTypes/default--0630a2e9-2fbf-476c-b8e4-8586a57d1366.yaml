@@ -12,7 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
             label: 'Identifiant CMS / CMS Identifier'
             max: null
             min: null
@@ -32,13 +32,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            heading: 'En-tête / Heading'
+            heading: 'En-tête // Heading'
             type: craft\fieldlayoutelements\Heading
             uid: 0c946f71-c92e-40ec-bc81-727269033090
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -50,43 +50,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 44fe9ca8-8201-402a-b03f-9d38ae069a59
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 17588cb5-d2c1-41cd-aeef-57cc89a2f36a # Type(s) d'article
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7cb091da-7642-47dc-861e-ae54293fb34b
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: debcc386-7598-4edd-b042-2288c2ace344 # Sujet(s) / Topic(s)
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 21698d36-0741-4d4b-8e52-918219e40d0c
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e(Source) / Author(Source)
+            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e (Source) // Author (Source)
             instructions: null
             label: null
             required: false
@@ -98,25 +62,49 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 915cb3c4-b6bb-4ecc-938c-c15c443065fa # Partenaires / Partners
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Média // Media
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8a2082e7-9ae0-4495-b524-22e8ff6b8489
+            uid: e7c3724e-9691-4848-979b-72d430fd3e0a
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            heading: 'Contenu / Content'
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44fe9ca8-8201-402a-b03f-9d38ae069a59
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e # Introduction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7eb428e5-b9ec-4c8a-8c8f-f53a72aac449
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: 'Contenu de l''article / Article Content'
             type: craft\fieldlayoutelements\Heading
             uid: 982d0b74-0ae2-4cd9-8702-a0ea180bacf3
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+            fieldUid: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
             instructions: null
             label: null
             required: false
@@ -126,7 +114,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu / Content'
+        name: 'Contenu // Content'
         uid: 90e723bf-16ac-47a9-be65-a6cf7e2dc8e8
         userCondition: null
       -
@@ -134,25 +122,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cb9f725f-99d0-46f9-8386-0fd82d2a293b
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Contenu supplémentaire / Additional Content'
-        uid: 6f1ff371-e154-483c-acfa-29b2c2a53fdf
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -162,13 +132,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 49798f83-c5cb-4c16-acdc-30896e73663f
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
 section: c2b278b1-d1f1-4dc9-91f2-716fddb29525 # Articles
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

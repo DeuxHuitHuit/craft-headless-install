@@ -12,8 +12,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: "L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
-            label: 'Identifiant CMS / CMS Identifier'
+            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
+            label: 'Identifiant CMS // CMS Identifier'
             max: null
             min: null
             name: null
@@ -32,25 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            heading: 'En-tête / Header'
+            heading: 'En-tête // Header'
             type: craft\fieldlayoutelements\Heading
             uid: 905a4aaa-2044-4c9e-a972-05100fc5d909
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre / Surtitle
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d1b10286-bbc9-49a0-a7eb-555ef0972de7
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 45ec85e1-1636-45c9-b2c7-900a07c6ef11
             userCondition: null
-            warning: null
-            width: 50
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -62,28 +55,21 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e # Introduction
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 443f2188-9643-4c87-929d-a9cacb59779c
+            uid: 107beef0-c4d6-42a3-93f0-319149860f22
             userCondition: null
             warning: null
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 322825b7-3327-45c1-be6a-4e1b98142173
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a4d552c6-4f56-4f08-81a6-b964ac92679e
             userCondition: null
-            warning: null
-            width: 50
           -
             dismissible: false
             elementCondition: null
@@ -100,7 +86,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\Tip
             uid: 67236fcf-20e8-4c2f-a2cf-8433514e45ce
             userCondition: null
-        name: 'Contenu / Content'
+        name: 'Contenu // Content'
         uid: e610521d-6bc2-405a-8a7b-063cacabae17
         userCondition: null
       -
@@ -108,25 +94,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert / Open Model / Modules
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f8700a6c-c31e-4f1c-aa69-8aad20dc7c4c
-            userCondition: null
-            warning: null
-            width: 100
-        name: 'Contenu supplémentaire / Additional Content'
-        uid: 1903c46d-09df-4a96-bb58-df1f856d63d2
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -136,13 +104,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Méta-données / SEO'
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: e411ac17-7869-4de3-9afa-dfaba5811fa9
         userCondition: null
 handle: contact
 hasTitleField: true
-name: 'Nous joindre / Contact'
-section: 4a4ac845-5be1-4d2d-bb12-617c872d2ee5 # Nous joindre / Contact
+name: 'Nous joindre // Contact'
+section: 4a4ac845-5be1-4d2d-bb12-617c872d2ee5 # Nous joindre // Contact
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

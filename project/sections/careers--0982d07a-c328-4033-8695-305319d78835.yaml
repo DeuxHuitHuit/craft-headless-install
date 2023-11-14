@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: careers
-name: 'Carrières / Careers'
+name: 'Carrières // Careers'
 previewTargets:
   -
     __assoc__:

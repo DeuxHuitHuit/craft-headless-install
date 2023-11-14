@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: jobPostings
-name: 'Emplois / Jobs'
+name: 'Emplois // Jobs'
 previewTargets:
   -
     __assoc__:

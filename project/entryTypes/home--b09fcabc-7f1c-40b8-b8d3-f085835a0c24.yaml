@@ -12,8 +12,8 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            instructions: null
-            label: null
+            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
+            label: 'Identifiant CMS // CMS Identifier'
             max: null
             min: null
             name: null
@@ -30,7 +30,53 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+          -
+            elementCondition: null
+            heading: 'En-tête // Header'
+            type: craft\fieldlayoutelements\Heading
+            uid: 758c8cbb-b4ed-4e71-8bc1-90e0defe8eb2
+            userCondition: null
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b831e123-e4d6-4f1f-8ed8-a54fb37741a0
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7445da9f-f6bb-4d60-b1cf-fe10862b91f8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            heading: 'Contenu de la page // Page Content'
+            type: craft\fieldlayoutelements\Heading
+            uid: f741f0ec-9d9c-49be-8e7f-f2b166da42b4
+            userCondition: null
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 23bd8865-cf8b-4ff9-8518-16b492797e20
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert (Modules) // Open Model (Modules)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b1f83bf2-2085-48ff-8df7-771ffd9b08ae
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contenu // Content'
         uid: 49575285-e5d8-43fa-aa49-38409a53c90b
         userCondition: null
       -
@@ -38,7 +84,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
             instructions: null
             label: null
             required: false
@@ -48,14 +94,17 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: SEO
+        name: 'Partage (SEO) // Sharing (SEO)'
         uid: 3c7c9c8f-c5e1-4f38-85b8-3960b7aefe72
         userCondition: null
 handle: home
-hasTitleField: false
-name: 'Accueil / Homepage'
-section: da1b5819-b168-4dd9-aa35-505a833ee367 # Accueil / Homepage
+hasTitleField: true
+name: 'Accueil // Homepage'
+section: da1b5819-b168-4dd9-aa35-505a833ee367 # Accueil // Homepage
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none

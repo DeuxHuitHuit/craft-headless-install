@@ -3,7 +3,7 @@ contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: organization
 instructions: null
-name: 'Organisation / Organization'
+name: 'Organisation // Organization'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_organization}}'

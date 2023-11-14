@@ -3,7 +3,7 @@ contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: personName
 instructions: null
-name: 'Nom / Name'
+name: 'Nom // Name'
 searchable: false
 settings:
   byteLimit: null

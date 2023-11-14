@@ -2,8 +2,8 @@ columnSuffix: efodglcg
 contentColumnType: string(500)
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: externalUrl
-instructions: "Page web / *Web page* : https://.....   \r\nTéléphone / *Phone* : +XXXXXXXXXX         \r\nCourriel / *Email* : mailto:email@email.com"
-name: 'URL Externe / External URL'
+instructions: "Site web: https://.....   \r\nTéléphone: +XXXXXXXXXX         \r\nCourriel: mailto:email@email.com\r\n\r\n---\r\n\r\nWebsite: https://.....   \r\nPhone: +XXXXXXXXXX         \r\nEmail: mailto:email@email.com"
+name: 'URL externe // External URL'
 searchable: false
 settings:
   maxLength: 500

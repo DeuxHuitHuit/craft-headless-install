@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: home
-name: 'Accueil / Homepage'
+name: 'Accueil // Homepage'
 previewTargets:
   -
     __assoc__:

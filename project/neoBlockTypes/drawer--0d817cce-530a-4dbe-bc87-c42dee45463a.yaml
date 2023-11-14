@@ -2,16 +2,16 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  30855179-57de-441c-b7fe-e160706e5b3d:
+  b698f580-8fb0-4de6-8e96-e29b4c27fc10:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: 718b4d78-52f5-4b75-aecb-957dd00236ab # Titre / Title
+            fieldUid: 718b4d78-52f5-4b75-aecb-957dd00236ab # Titre // Title
             instructions: null
             label: null
             required: false
@@ -20,10 +20,10 @@ fieldLayouts:
             uid: 65671d09-dd78-4a52-beb2-9b5a7c0cf2ff
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte / Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
             instructions: null
             label: null
             required: false
@@ -32,13 +32,13 @@ fieldLayouts:
             uid: 4a257ce8-c3d6-4646-85bf-65b9631e69d9
             userCondition: null
             warning: null
-            width: 100
-        name: Contenu
+            width: 50
+        name: 'Contenu // Content'
         uid: 8bf570c3-fb56-4971-92d6-4aa27b3d3fa7
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: tiroir
+handle: drawer
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -47,6 +47,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Tiroir
-sortOrder: 5
+name: 'Tiroir // Drawer'
+sortOrder: 9
 topLevel: false

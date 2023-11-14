@@ -1,4 +1,4 @@
-field: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e(Source) / Author(Source)
+field: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e (Source) // Author (Source)
 fieldLayouts:
   4246d22d-3b84-4439-ace9-761bf266d2aa:
     tabs:
@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 3b5a590b-95e7-40bb-a16a-39f8c3aeec5f # Nom / Name
+            fieldUid: 3b5a590b-95e7-40bb-a16a-39f8c3aeec5f # Nom // Name
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: d6a9c7d7-6887-4a32-97b8-869a1625be3d # Titre personnel / Personal Title
+            fieldUid: d6a9c7d7-6887-4a32-97b8-869a1625be3d # Titre personnel // Personal Title
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 062ef898-9c73-4473-9995-a0da70f2b9f5 # Rôle / Role
+            fieldUid: 062ef898-9c73-4473-9995-a0da70f2b9f5 # Rôle // Role
             instructions: null
             label: null
             required: false
@@ -57,13 +57,13 @@ fieldLayouts:
         uid: cbfc2df5-c798-43a9-be55-bec6450e010a
         userCondition: null
 fields:
-  3b5a590b-95e7-40bb-a16a-39f8c3aeec5f: # Nom / Name
+  3b5a590b-95e7-40bb-a16a-39f8c3aeec5f: # Nom // Name
     columnSuffix: iyigxwfe
     contentColumnType: text
     fieldGroup: null
     handle: personName
     instructions: null
-    name: 'Nom / Name'
+    name: 'Nom // Name'
     searchable: false
     settings:
       byteLimit: null
@@ -77,13 +77,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  062ef898-9c73-4473-9995-a0da70f2b9f5: # Rôle / Role
+  062ef898-9c73-4473-9995-a0da70f2b9f5: # Rôle // Role
     columnSuffix: npobaexk
     contentColumnType: text
     fieldGroup: null
     handle: role
     instructions: null
-    name: 'Rôle / Role'
+    name: 'Rôle // Role'
     searchable: false
     settings:
       byteLimit: null
@@ -102,13 +102,13 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: null
+    instructions: "Se référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\n//\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheet in the Globals section.*"
     name: Portrait
     searchable: false
     settings:
       allowSelfRelations: false
       allowSubfolders: false
-      allowUploads: true
+      allowUploads: false
       allowedKinds:
         - image
       branchLimit: null
@@ -116,7 +116,7 @@ fields:
       defaultUploadLocationSubpath: null
       localizeRelations: false
       maintainHierarchy: false
-      maxRelations: null
+      maxRelations: 1
       minRelations: null
       previewMode: thumbs
       restrictFiles: true
@@ -135,24 +135,25 @@ fields:
           -
             - class
             - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
+      selectionLabel: 'Ajouter une image // Add an image'
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      sources: '*'
+      sources:
+        - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
       targetSiteId: null
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  d6a9c7d7-6887-4a32-97b8-869a1625be3d: # Titre personnel / Personal Title
+  d6a9c7d7-6887-4a32-97b8-869a1625be3d: # Titre personnel // Personal Title
     columnSuffix: ikpwxurt
     contentColumnType: text
     fieldGroup: null
     handle: plainTitle
-    instructions: 'Ph. D, Dr. MBA, etc.'
-    name: 'Titre personnel / Personal Title'
+    instructions: 'Ex: Ph. D, Dr. MBA, etc.'
+    name: 'Titre personnel // Personal Title'
     searchable: false
     settings:
       byteLimit: null
@@ -167,5 +168,5 @@ fields:
     translationMethod: site
     type: craft\fields\PlainText
 handle: externalSource
-name: 'Auteur(source) externe / External author(source)'
+name: 'Auteur (source) externe // External author (source)'
 sortOrder: 2

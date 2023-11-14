@@ -1,13 +1,13 @@
-columnSuffix: vndwokjg
+columnSuffix: bdsbowrl
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: simpleRichText
-instructions: "Certains formatages possibles.\r\n\r\n---\r\n\r\nSome formatting possible."
-name: 'Texte riche simple // Simple Rich Text'
+handle: shortDescription
+instructions: null
+name: 'Description courte // Short Description'
 searchable: false
 settings:
   availableTransforms: ''
-  availableVolumes: ''
+  availableVolumes: '*'
   columnType: text
   configSelectionMode: choose
   defaultTransform: ''
@@ -23,5 +23,5 @@ settings:
   showUnpermittedVolumes: false
   uiMode: enlarged
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\redactor\Field

@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: image
-instructions: "Max 1 image\r\n\r\nSe référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheets in the Globals section.*"
-name: Image
+handle: media
+instructions: "Image **OU** courte vidéo\r\n\r\nSe référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) et [**vidéos**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) de la section Globals.\r\n\r\n//\r\n\r\n*Image **OR** short video*\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) and [**video**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) spec sheets in the Globals section.*"
+name: 'Média // Media'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -11,6 +11,7 @@ settings:
   allowUploads: false
   allowedKinds:
     - image
+    - video
   branchLimit: null
   defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   defaultUploadLocationSubpath: null
@@ -35,12 +36,11 @@ settings:
       -
         - class
         - craft\elements\conditions\assets\AssetCondition
-  selectionLabel: 'Ajouter une image // Add an image'
+  selectionLabel: 'Ajouter une image ou vidéo // Add an image or a video '
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources:
-    - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: large

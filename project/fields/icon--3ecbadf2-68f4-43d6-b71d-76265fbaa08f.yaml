@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: image
-instructions: "Max 1 image\r\n\r\nSe référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheets in the Globals section.*"
-name: Image
+handle: icon
+instructions: "* Dimensions recommandées (en pixels): 500 x 500   \r\n* Poids recommandé: entre 150 ko et 300 ko   \r\n* Formats de fichiers recommandés: SVG, WEBP     \r\n* Autre(s) format(s) de fichiers acceptés: PNG, JPEG\r\n* Résolution: entre 72 et 96 ppi (*pixels per inch*)\r\n\r\n---\r\n\r\n* Recommended size (in pixels): 500 x 500    \r\n* Recommended weight: between 150 ko and 300 ko   \r\n* Recommended file formats: SVG, WEBP   \r\n* Other accepted file formats: PNG, JPEG\r\n* Resolution: between 72 and 96 ppi (pixels per inch)"
+name: 'Icône // Icon'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -35,7 +35,7 @@ settings:
       -
         - class
         - craft\elements\conditions\assets\AssetCondition
-  selectionLabel: 'Ajouter une image // Add an image'
+  selectionLabel: 'Ajouter une icône // Add an icon'
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false

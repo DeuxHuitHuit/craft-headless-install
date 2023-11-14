@@ -34,13 +34,13 @@ fieldLayouts:
             dismissible: false
             elementCondition: null
             style: tip
-            tip: "La destination d'un bouton peut être soit un url externe **OU** une entrée du site (page à même le site)**OU** un fichier. L'url externe a **priorité** sur les autres champs.\r\n\r\n*A button's destination can either be an external url **OR** a site entry (page within the same website) **OR** an asset. The URL field has **priority** over the other fields.*"
+            tip: "La destination d'un bouton peut être soit un url externe **OU** une entrée du site (page à même le site) **OU** un fichier.   \r\nL'url externe a **priorité** sur les autres champs.\r\n\r\n---\r\n\r\n*A button's destination can either be an external url **OR** a site entry (page within the same website) **OR** an asset.    \r\nThe URL field has **priority** over the other fields.*"
             type: craft\fieldlayoutelements\Tip
             uid: 46ad8b5b-9a1f-4d5f-b4c2-5f561b52536f
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 10512774-a66c-4106-bdbc-fcb47780e8eb # Libellé / Label
+            fieldUid: 10512774-a66c-4106-bdbc-fcb47780e8eb # Libellé // Label
             instructions: null
             label: null
             required: false
@@ -52,7 +52,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 8b5316ca-71f3-4b68-be3d-991a601fa490 # URL Externe / External URL
+            fieldUid: 8b5316ca-71f3-4b68-be3d-991a601fa490 # URL externe // External URL
             instructions: null
             label: null
             required: false
@@ -64,7 +64,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: cc617857-d1f5-450e-a268-f5dcfaa3e536 # Entrée du site / Site Entry
+            fieldUid: cc617857-d1f5-450e-a268-f5dcfaa3e536 # Entrée du site // Site Entry
             instructions: null
             label: null
             required: false
@@ -76,7 +76,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90 # Fichier / Asset
+            fieldUid: e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90 # Fichier // File
             instructions: null
             label: null
             required: false
@@ -86,13 +86,16 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-        name: Content
+        name: 'Contenu // Content'
         uid: 54224ea8-bd41-43ce-aea5-1357c027ae79
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: 4e822121-c86e-47c7-88db-c49c058e3b2f # Boutons / Buttons
+section: 4e822121-c86e-47c7-88db-c49c058e3b2f # Boutons // Buttons
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

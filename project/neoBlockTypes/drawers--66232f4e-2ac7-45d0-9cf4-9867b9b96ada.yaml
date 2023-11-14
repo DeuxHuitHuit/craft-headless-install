@@ -3,9 +3,9 @@ childBlocks:
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  9bc8fef9-9af7-4b41-9d50-10776b4ff735:
+  f5689e91-706d-4ffd-a84b-9a160846cf9f:
     tabs:
       -
         elementCondition: null
@@ -20,7 +20,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre / Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: tiroirs
+handle: drawers
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -44,6 +44,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Tiroirs
-sortOrder: 4
+name: 'Tiroirs // Drawers'
+sortOrder: 8
 topLevel: true

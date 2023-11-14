@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: partners
-name: 'Partenaires / Partners'
+handle: projectTypes
+name: 'Types de projets // Project Types'
 previewTargets:
   -
     __assoc__:
@@ -28,5 +28,5 @@ siteSettings:
     uriFormat: null
 structure:
   maxLevels: null
-  uid: 9b2f9f54-0629-4f84-a672-7bbdd0bdec6e
+  uid: af0b2fa9-daae-48cc-b537-62bc84de700d
 type: structure

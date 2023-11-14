@@ -2,9 +2,9 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  7ba92de0-d0f8-4565-be51-b92cb968629b:
+  6b64a5e3-93e6-45dc-af70-6cab5f418a63:
     tabs:
       -
         elementCondition: null
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # Embed Video URL
+            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # URL de la vidéo Embed // Embed Video URL
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende / Caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
             instructions: null
             label: null
             required: false
@@ -67,6 +67,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Vidéo encastrée / Embed Video'
-sortOrder: 9
+name: 'Vidéo Embed // Embed Video'
+sortOrder: 5
 topLevel: true

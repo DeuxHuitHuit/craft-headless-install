@@ -1,9 +1,9 @@
-columnSuffix: grseetmc
+columnSuffix: tvbtkxpc
 contentColumnType: text
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
-handle: employmentType
+handle: simpleTitle
 instructions: null
-name: 'Type d''emploi / Employment Type'
+name: 'Titre // Title'
 searchable: false
 settings:
   byteLimit: null

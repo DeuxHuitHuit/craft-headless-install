@@ -2,9 +2,9 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
 fieldLayouts:
-  12d14b31-cc30-4317-9843-cb6b2daa4997:
+  28eb11db-866c-444c-bbbe-b6a6868442d8:
     tabs:
       -
         elementCondition: null
@@ -19,13 +19,13 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: b56dc3db-a457-4448-9fec-dd6a5a543696 # Image
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Média // Media
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8bfaaa6a-4d4e-4472-8054-4f2372f53e50
+            uid: e914f9aa-8d64-4317-b2a6-79237f9a1f56
             userCondition: null
             warning: null
             width: 100
@@ -34,7 +34,7 @@ fieldLayouts:
         userCondition: null
 group: null
 groupChildBlockTypes: true
-handle: image
+handle: media
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -43,6 +43,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Image
-sortOrder: 8
+name: 'Média // Media'
+sortOrder: 4
 topLevel: true
