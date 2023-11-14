@@ -226,11 +226,11 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
 ${INSTALLER_PHP_EXEC} ./composer.phar require carlcs/craft-redactorcustomstyles
 ${INSTALLER_PHP_EXEC} ./craft plugin/install redactor-custom-styles
-${INSTALLER_PHP_EXEC} ./composer.phar require spicyweb/craft-neo -w
+${INSTALLER_PHP_EXEC} ./composer.phar require spicyweb/craft-neo
 ${INSTALLER_PHP_EXEC} ./craft plugin/install neo
-${INSTALLER_PHP_EXEC} ./composer.phar require dodecastudio/craft-blurhash -w
+${INSTALLER_PHP_EXEC} ./composer.phar require dodecastudio/craft-blurhash
 ${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
-${INSTALLER_PHP_EXEC} ./composer.phar require verbb/field-manager -w
+${INSTALLER_PHP_EXEC} ./composer.phar require verbb/field-manager
 ${INSTALLER_PHP_EXEC} ./craft plugin/install field-manager
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
