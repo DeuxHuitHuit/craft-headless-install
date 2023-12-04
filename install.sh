@@ -244,6 +244,55 @@ ${INSTALLER_PHP_EXEC} ./craft plugin/install routes-api
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
 
+echo "Create default redactor config"
+cat > ./config/redactor/Default.json << REDACTORDEFAULT
+{
+	"buttons": ["html", "formatting", "unorderedlist", "orderedlist", "bold", "italic", "link"],
+	"formatting": [],
+	"formattingAdd": {
+		"heading-2": {
+			"title": "Titre",
+			"api": "module.block.format",
+			"args": {
+				"tag": "h2"
+			}
+		},
+		"heading-3": {
+			"title": "Sous-titre",
+			"api": "module.block.format",
+			"args": {
+				"tag": "h3"
+			}
+		},
+		"paragraph": {
+			"title": "Paragraphe",
+			"api": "module.block.format",
+			"args": {
+				"tag": "p"
+			}
+		},
+		"quote": {
+			"title": "Citation",
+			"api": "module.block.format",
+			"args": {
+				"tag": "blockquote"
+			}
+		}
+	},
+	"linkNewTab": true
+}
+REDACTORDEFAULT
+
+echo "Create inline redactor config"
+cat > ./config/redactor/Inline.json << REDACTORINLINE
+{
+	"buttons": ["html", "bold", "italic", "link"],
+	"formatting": [],
+	"breakline": true,
+	"linkNewTab": true
+}
+REDACTORINLINE
+
 echo "Create custom htmlpurifier config (overwrites default)"
 cat > ./config/htmlpurifier/Default.json << HTMLPURIFIER
 {
