@@ -1,4 +1,4 @@
-dateModified: 1699971322
+dateModified: 1701704026
 elementSources:
   craft\elements\Asset:
     -
@@ -256,6 +256,7 @@ meta:
     16e1ca14-9781-44a1-b17f-7489cef3700a: 'Boutons // Buttons' # Boutons // Buttons
     19f03eed-fb4d-447e-966d-258f5e5add92: 'Page légale / Legal Page' # Page légale / Legal Page
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
+    24fcc82a-e774-4756-8f1e-62edb2119633: 'Inline Rich Text' # Inline Rich Text
     26ac95b7-5d49-4702-94f5-91f13becdd1a: Autoplay # Autoplay
     40ae4b06-dda4-4f6a-918a-ff01d9149953: 'Citation / Quote' # Citation / Quote
     062ef898-9c73-4473-9995-a0da70f2b9f5: 'Rôle // Role' # Rôle // Role
@@ -343,7 +344,7 @@ meta:
     d6a9c7d7-6887-4a32-97b8-869a1625be3d: 'Titre personnel // Personal Title' # Titre personnel // Personal Title
     d9f3be47-624e-49ae-90d4-79880f18013e: 'Nous joindre // Contact' # Nous joindre // Contact
     d53f096e-9e71-40ca-89b6-2df0130b4582: 'GTM Consent Event' # GTM Consent Event
-    d54d25fa-9fc6-4fb2-96c7-17d51a9e91e9: 'Image ou courte vidéo // Image or short video' # Image ou courte vidéo // Image or short video
+    d54d25fa-9fc6-4fb2-96c7-17d51a9e91e9: 'Média // Media' # Média // Media
     d828cf85-c92c-46f5-81ef-f7cb98956204: 'Rôle // Role' # Rôle // Role
     d841b955-ebbb-467e-8159-ddf909503912: Image # Image
     da1b5819-b168-4dd9-aa35-505a833ee367: 'Accueil // Homepage' # Accueil // Homepage

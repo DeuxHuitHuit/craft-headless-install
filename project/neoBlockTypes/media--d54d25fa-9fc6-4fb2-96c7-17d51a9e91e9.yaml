@@ -1,10 +1,10 @@
 childBlocks: null
 conditions: null
-description: "Se référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) et [**vidéos**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) de la section Globals.\r\n\r\n---\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?sit"
+description: "Image **OU** courte vidéo\r\n\r\nSe référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) et [**vidéos**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) de la section Globals.\r\n\r\nAttention de bien téléverser l'**image** "
 enabled: true
 field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias de la galerie // Gallery Medias
 fieldLayouts:
-  0bc702a0-cce1-4428-9ebc-38c0566e4831:
+  8b418d55-e05a-4b5e-a9fc-7a2e21a2c908:
     tabs:
       -
         elementCondition: null
@@ -35,6 +35,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: 'Image ou courte vidéo // Image or short video'
-sortOrder: 2
+name: 'Média // Media'
+sortOrder: 1
 topLevel: true

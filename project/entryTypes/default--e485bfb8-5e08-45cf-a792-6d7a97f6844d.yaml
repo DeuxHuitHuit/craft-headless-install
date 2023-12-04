@@ -34,7 +34,7 @@ fieldLayouts:
             dismissible: false
             elementCondition: null
             style: tip
-            tip: "La destination d'un bouton peut être soit un url externe **OU** une entrée du site (page à même le site) **OU** un fichier.   \r\nL'url externe a **priorité** sur les autres champs.\r\n\r\n---\r\n\r\n*A button's destination can either be an external url **OR** a site entry (page within the same website) **OR** an asset.    \r\nThe URL field has **priority** over the other fields.*"
+            tip: "La destination d'un bouton peut être soit un url externe, **SOIT** une entrée du site, **SOIT** une ressource (image, vidéo ou fichier).   \r\nL'url externe a **priorité** sur les autres champs.\r\n\r\n---\r\n\r\n*The button's destination can either be an external url **OR** a site entry **OR** an asset (image, video or a file).    \r\nThe URL field has **priority** over the other fields.*"
             type: craft\fieldlayoutelements\Tip
             uid: 46ad8b5b-9a1f-4d5f-b4c2-5f561b52536f
             userCondition: null

@@ -2,7 +2,7 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: images
-instructions: "Se référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheets in the Globals section.*"
+instructions: "Se référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\nAttention de bien téléverser les **images** dans la section [\"**Assets**\"](/craft/assets?site=fr&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) des Assets (Ressources).\r\n\r\n---\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheets in the Globals section.*\r\n\r\nMake sure to upload the **images** in the Assets' [\"**Assets**\"](/craft/assets?site=fr&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) section." # Assets
 name: Images
 searchable: false
 settings:
