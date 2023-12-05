@@ -715,6 +715,10 @@ jobs:
         run: if [[ "${{ vars.SETUP_DONE }}" -eq "1" ]]; then echo "IS_INSTALL=0" >> $GITHUB_OUTPUT; else echo "IS_INSTALL=1" >> $GITHUB_OUTPUT; fi;
         id: runtype
 
+      - name: Set CRAFT_HOME
+        run: echo "CRAFT_HOME=/home/${{ secrets.SSH_USERNAME }}" >> $GITHUB_OUTPUT;
+        id: path
+
       - name: Remote setup
         if: steps.runtype.outputs.IS_INSTALL == '1'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }}' < deploy.sh
@@ -724,43 +728,43 @@ jobs:
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
       - name: Upload config
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload modules
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload migrations
-        run: '[ -d "./migrations" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/ || true'
+        run: '[ -d "./migrations" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
 
       - name: Upload Rebrand
-        run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
+        run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload Restore
         if: steps.runtype.outputs.IS_INSTALL == '1'
-        run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/restore ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/storage/ || true'
+        run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/restore ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload .htaccess.prod
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web/
 
       - name: Upload .env.prod
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload composer files
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload craft cli
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./craft ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./craft ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload service file
-        run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }} || true'
+        run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:{{ steps.path.outputs.CRAFT_HOME }} || true'
 
       - name: Upload bootstrap.php
         if: steps.runtype.outputs.IS_INSTALL == '1'
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./bootstrap.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./bootstrap.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload index.php
         if: steps.runtype.outputs.IS_INSTALL == '1'
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/index.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/web
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/index.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web
 
       - name: First install
         if: steps.runtype.outputs.IS_INSTALL == '1'
