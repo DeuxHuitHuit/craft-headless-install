@@ -245,6 +245,7 @@ echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
 
 echo "Create default redactor config"
+mkdir -p ./config/redactor
 cat > ./config/redactor/Default.json << REDACTORDEFAULT
 {
 	"buttons": ["html", "formatting", "unorderedlist", "orderedlist", "bold", "italic", "link"],
@@ -294,6 +295,7 @@ cat > ./config/redactor/Inline.json << REDACTORINLINE
 REDACTORINLINE
 
 echo "Create custom htmlpurifier config (overwrites default)"
+mkdir -p ./config/htmlpurifier
 cat > ./config/htmlpurifier/Default.json << HTMLPURIFIER
 {
   "Attr.AllowedFrameTargets": [
