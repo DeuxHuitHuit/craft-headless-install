@@ -4,6 +4,6 @@ handle: en
 hasUrls: true
 language: en
 name: EN
-primary: false
+primary: true
 siteGroup: dbc05352-c8d9-4615-a1c6-79954bf4033b # $SITE_NAME
 sortOrder: 1

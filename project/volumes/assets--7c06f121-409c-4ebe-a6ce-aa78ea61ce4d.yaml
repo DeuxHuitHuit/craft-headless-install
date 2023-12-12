@@ -31,25 +31,14 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            attribute: alt
-            class: null
-            cols: null
-            disabled: false
             elementCondition: null
-            id: null
-            instructions: "Le texte alternatif est une description textuelle courte et précise d'une image sur une page web. L'ALT text est utilisé pour fournir une information contextuelle à ceux qui ne peuvent pas voir l'image, que ce soit en raison d'une déficience visuelle, de la désactivation des images dans le navigateur ou d'autres raisons.\r\n\r\n---\r\n\r\nThe alternative text is a short and concise textual description of an image on a web page. ALT text is used to provide contextual information for those who cannot see the image, whether due to visual impairment, image loading disabled in the browser, or other reasons."
-            label: 'Texte alternatif / Alternative Text'
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: true
+            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif // Alternative Text
+            instructions: null
+            label: null
             required: false
-            rows: null
             tip: null
-            title: null
-            type: craft\fieldlayoutelements\assets\AltField
-            uid: a43007ea-d9bb-4b7e-806d-bb94bb2b65b1
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5225d869-0789-4936-97a0-1ef02aa19a10
             userCondition: null
             warning: null
             width: 50
