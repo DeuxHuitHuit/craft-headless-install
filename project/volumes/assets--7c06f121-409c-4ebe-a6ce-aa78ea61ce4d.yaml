@@ -33,7 +33,7 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif // Alternative Text
-            instructions: null
+            instructions: "Le texte alternatif est une description textuelle courte et précise d'une image sur une page web. L'ALT text est utilisé pour fournir une information contextuelle à ceux qui ne peuvent pas voir l'image, que ce soit en raison d'une déficience visuelle, de la désactivation des images dans le navigateur ou d'autres raisons.\r\n\r\nThe alternative text is a short and concise textual description of an image on a web page. ALT text is used to provide contextual information for those who can"
             label: null
             required: false
             tip: null
