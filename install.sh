@@ -755,7 +755,7 @@ jobs:
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./craft ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload service file
-        run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:{{ steps.path.outputs.CRAFT_HOME }} || true'
+        run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
 
       - name: Upload bootstrap.php
         if: vars.SETUP_DONE == '0'
