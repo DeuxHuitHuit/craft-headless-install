@@ -697,17 +697,18 @@ jobs:
   deploy:
     runs-on: self-hosted
     name: Deploy
+    env:
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+      SLACK_USERNAME: POUUUUUUCHE
+      SLACK_ICON: ${{ secrets.SLACK_ICON }}
     steps:
       - uses: actions/checkout@master
 
       - name: Predeploy notification
         uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
-          SLACK_USERNAME: POUUUUUUCHE
-          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: ":rocket: Nouveau déploiement du CMS en cours"
 
       - name: ssh setup
@@ -780,22 +781,14 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         if: failure()
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
-          SLACK_USERNAME: POUUUUUUCHE
-          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: ":alert::alert::alert: Échec du déploiement :alert::alert::alert:"
 
       - name: Postdeploy success notification
         uses: rtCamp/action-slack-notify@master
         if: success()
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
-          SLACK_USERNAME: POUUUUUUCHE
-          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: ":moon: Le CMS a atterrit avec succès :sparkles:"
 
 YAML
