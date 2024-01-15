@@ -714,20 +714,16 @@ jobs:
       - name: ssh setup
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
-      - name: Detect run type (install/deploy)
-        run: if [[ "${{ vars.SETUP_DONE }}" -eq "1" ]]; then echo "IS_INSTALL=0" >> $GITHUB_OUTPUT; else echo "IS_INSTALL=1" >> $GITHUB_OUTPUT; fi;
-        id: runtype
-
       - name: Set CRAFT_HOME
         run: echo "CRAFT_HOME=/home/${{ secrets.SSH_USERNAME }}" >> $GITHUB_OUTPUT;
         id: path
 
       - name: Remote setup
-        if: steps.runtype.outputs.IS_INSTALL == '1'
+        if: vars.SETUP_DONE == '0'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }}' < deploy.sh
 
       - name: Backup
-        if: steps.runtype.outputs.IS_INSTALL == '0'
+        if: vars.SETUP_DONE == '1'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
       - name: Upload config
@@ -743,7 +739,7 @@ jobs:
         run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload Restore
-        if: steps.runtype.outputs.IS_INSTALL == '1'
+        if: vars.SETUP_DONE == '0'
         run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/restore ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload .htaccess.prod
@@ -762,19 +758,19 @@ jobs:
         run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:{{ steps.path.outputs.CRAFT_HOME }} || true'
 
       - name: Upload bootstrap.php
-        if: steps.runtype.outputs.IS_INSTALL == '1'
+        if: vars.SETUP_DONE == '0'
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./bootstrap.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload index.php
-        if: steps.runtype.outputs.IS_INSTALL == '1'
+        if: vars.SETUP_DONE == '0'
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/index.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web
 
       - name: First install
-        if: steps.runtype.outputs.IS_INSTALL == '1'
+        if: vars.SETUP_DONE == '0'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- install ${{ github.run_id }}' < deploy.sh
 
       - name: Install and apply
-        if: steps.runtype.outputs.IS_INSTALL == '0'
+        if: vars.SETUP_DONE == '1'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
 
       - name: Postdeploy failure notification
