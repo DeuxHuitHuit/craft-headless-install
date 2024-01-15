@@ -597,14 +597,16 @@ cat > deploy.sh << 'BASH'
 
 set -e -o pipefail
 
-CRAFT_HOME="${HOME}"
 PHP_EXEC="ea-php82"
 CMD="$1"
 GITHUB_RUN_ID="$2"
+CRAFT_HOME="${3:-HOME}"
+TARGET="${4:-prod}"
 
-echo "Hi from host $HOSTNAME for run $GITHUB_RUN_ID and command $CMD"
+echo "👋 Hi from host $HOSTNAME!"
+echo "Target is '$TARGET'"
+echo "This is run id '$GITHUB_RUN_ID' and command '$CMD'"
 cd "${CRAFT_HOME}"
-pwd
 
 if [ "$CMD" = "backup" ]; then
 
@@ -661,10 +663,10 @@ elif [ "$CMD" = "apply" ]; then
 
 elif [ "$CMD" = "install" ]; then
 
-    echo "Create .prod file symlinks"
-    ln -s .env.prod .env || true
+    echo "Create .${TARGET} file symlinks"
+    ln -s ".env.${TARGET}" .env || true
     rm -rf ./web/.htaccess || true
-    ln -s .htaccess.prod ./web/.htaccess || true
+    ln -s ".htaccess.${TARGET}" ./web/.htaccess || true
 
     echo "Install composer deps"
     "${PHP_EXEC}" composer.phar install --no-scripts --no-dev --prefer-dist --no-progress
@@ -681,7 +683,7 @@ elif [ "$CMD" = "install" ]; then
     echo "gg;wp 👍"
 
 else
-    echo "ERROR, $CMD is not a valid command";
+    echo "🛑✋ ERROR, ${CMD} is not a valid command";
     exit 1;
 fi
 
@@ -734,11 +736,11 @@ jobs:
 
       - name: Remote setup
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }}' < deploy.sh
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Backup
         if: matrix.enabled && vars.SETUP_DONE  == '1'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Upload config
         if: matrix.enabled
@@ -790,11 +792,11 @@ jobs:
 
       - name: First install
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- install ${{ github.run_id }}' < deploy.sh
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- install ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Install and apply
         if: matrix.enabled && vars.SETUP_DONE == '1'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
+        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Postdeploy failure notification
         uses: rtCamp/action-slack-notify@master
