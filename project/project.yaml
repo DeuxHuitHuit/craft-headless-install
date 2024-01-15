@@ -1,4 +1,4 @@
-dateModified: 1705337445
+dateModified: 1705337805
 elementSources:
   craft\elements\Asset:
     -
@@ -398,6 +398,10 @@ plugins:
       apiToken: $CF_STREAM_API_TOKEN
       autoUpload: '1'
       useFormUpload: '1'
+  colour-swatches:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.4.3
   cp-field-inspect:
     edition: standard
     enabled: true
