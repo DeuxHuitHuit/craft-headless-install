@@ -721,7 +721,7 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_COLOR: ${{ job.status }}
-          SLACK_TITLE: ":rocket: Nouveau déploiement du CMS en cours"
+          SLACK_TITLE: ":rocket: Nouveau déploiement du CMS de ${{ matrix.target }} en cours"
 
       - name: ssh setup
         if: matrix.enabled
@@ -801,14 +801,14 @@ jobs:
         if: matrix.enabled && failure()
         env:
           SLACK_COLOR: ${{ job.status }}
-          SLACK_TITLE: ":alert::alert::alert: Échec du déploiement :alert::alert::alert:"
+          SLACK_TITLE: ":alert::alert::alert: Échec du déploiement de ${{ matrix.target }} :alert::alert::alert:"
 
       - name: Postdeploy success notification
         uses: rtCamp/action-slack-notify@master
         if: matrix.enabled && success()
         env:
           SLACK_COLOR: ${{ job.status }}
-          SLACK_TITLE: ":moon: Le CMS a atterrit avec succès :sparkles:"
+          SLACK_TITLE: ":moon: Le CMS de ${{ matrix.target }} a atterrit avec succès :sparkles:"
 
 YAML
 
