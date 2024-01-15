@@ -56,5 +56,4 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: 'Citation avec source // Quote with source'
-sortOrder: 3
 topLevel: true

@@ -1,4 +1,4 @@
-dateModified: 1702404767
+dateModified: 1705337445
 elementSources:
   craft\elements\Asset:
     -
@@ -410,7 +410,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 
-    schemaVersion: 3.6.2
+    schemaVersion: 4.0.0
   redactor:
     edition: standard
     enabled: true

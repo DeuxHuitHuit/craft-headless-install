@@ -1,0 +1,9 @@
+- 'blockType:148fb449-e797-4b40-a8f8-d45d858683dd' # Texte // Text
+- 'blockType:e30d53e2-8287-4791-9efa-184c3024366c' # Emphase // Callout
+- 'blockType:8a2d5af3-151b-4ea4-9882-c0579fbe91f9' # Citation avec source // Quote with source
+- 'blockType:247fed59-90e6-4b37-ac0c-a42cfa306a81' # Média // Media
+- 'blockType:b40c3a12-3bed-46f5-97c6-941c7a839154' # Vidéo Embed // Embed Video
+- 'blockType:af0b5372-3e37-4dbd-afcc-c9aa66cea831' # Appel à l'action // Call to Action
+- 'blockType:16e1ca14-9781-44a1-b17f-7489cef3700a' # Boutons // Buttons
+- 'blockType:66232f4e-2ac7-45d0-9cf4-9867b9b96ada' # Tiroirs // Drawers
+- 'blockType:0d817cce-530a-4dbe-bc87-c42dee45463a' # Tiroir // Drawer
