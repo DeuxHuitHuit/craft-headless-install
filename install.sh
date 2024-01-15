@@ -702,87 +702,108 @@ jobs:
       SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
       SLACK_USERNAME: POUUUUUUCHE
       SLACK_ICON: ${{ secrets.SLACK_ICON }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # CMS PROD
+          - target: prod
+            enabled: ${{ github.ref_name == 'main' }}
+            path: ''
     steps:
       - uses: actions/checkout@master
+        if: matrix.enabled
 
       - name: Predeploy notification
+        if: matrix.enabled
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_COLOR: ${{ job.status }}
           SLACK_TITLE: ":rocket: Nouveau déploiement du CMS en cours"
 
       - name: ssh setup
+        if: matrix.enabled
         run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
       - name: Set CRAFT_HOME
-        run: echo "CRAFT_HOME=/home/${{ secrets.SSH_USERNAME }}" >> $GITHUB_OUTPUT;
+        if: matrix.enabled
+        run: echo "CRAFT_HOME=/home/${{ secrets.SSH_USERNAME }}${{ matrix.path }}" >> $GITHUB_OUTPUT;
         id: path
 
       - name: Remote setup
-        if: vars.SETUP_DONE == '0'
+        if: matrix.enabled && vars.SETUP_DONE == '0'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }}' < deploy.sh
 
       - name: Backup
-        if: vars.SETUP_DONE == '1'
+        if: matrix.enabled && vars.SETUP_DONE  == '1'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }}' < deploy.sh
 
       - name: Upload config
+        if: matrix.enabled
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload modules
+        if: matrix.enabled
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload migrations
+        if: matrix.enabled
         run: '[ -d "./migrations" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
 
       - name: Upload Rebrand
+        if: matrix.enabled
         run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload Restore
-        if: vars.SETUP_DONE == '0'
+        if: matrix.enabled && vars.SETUP_DONE == '0'
         run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/restore ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
-      - name: Upload .htaccess.prod
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web/
+      - name: Upload .htaccess.${{ matrix.target }}
+        if: matrix.enabled
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.${{ matrix.target }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web/
 
-      - name: Upload .env.prod
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.prod ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+      - name: Upload .env.${{ matrix.target }}
+        if: matrix.enabled
+        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.${{ matrix.target }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload composer files
+        if: matrix.enabled
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload craft cli
+        if: matrix.enabled
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./craft ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload service file
+        if: matrix.enabled
         run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
 
       - name: Upload bootstrap.php
-        if: vars.SETUP_DONE == '0'
+        if: matrix.enabled && vars.SETUP_DONE == '0'
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./bootstrap.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload index.php
-        if: vars.SETUP_DONE == '0'
+        if: matrix.enabled && vars.SETUP_DONE == '0'
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/index.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web
 
       - name: First install
-        if: vars.SETUP_DONE == '0'
+        if: matrix.enabled && vars.SETUP_DONE == '0'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- install ${{ github.run_id }}' < deploy.sh
 
       - name: Install and apply
-        if: vars.SETUP_DONE == '1'
+        if: matrix.enabled && vars.SETUP_DONE == '1'
         run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }}' < deploy.sh
 
       - name: Postdeploy failure notification
         uses: rtCamp/action-slack-notify@master
-        if: failure()
+        if: matrix.enabled && failure()
         env:
           SLACK_COLOR: ${{ job.status }}
           SLACK_TITLE: ":alert::alert::alert: Échec du déploiement :alert::alert::alert:"
 
       - name: Postdeploy success notification
         uses: rtCamp/action-slack-notify@master
-        if: success()
+        if: matrix.enabled && success()
         env:
           SLACK_COLOR: ${{ job.status }}
           SLACK_TITLE: ":moon: Le CMS a atterrit avec succès :sparkles:"
