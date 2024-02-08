@@ -6,7 +6,7 @@
 set -e -o pipefail
 
 PROJECT_CODE=$(basename "$(pwd)");
-INSTALLER_PHP_EXEC="ea-php82"
+INSTALLER_PHP_EXEC="ea-php83"
 
 echo "Welcome to Deux Huit Huit craft installer"
 echo ""
@@ -38,7 +38,7 @@ echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
 
 echo "Set proper php version in composer.json"
-sed -i 's/"php": "8\.0\.2"/"php": "8.2"/g' composer.json
+sed -i 's/"php": "8\.0\.2"/"php": "8.3"/g' composer.json
 
 echo "Restore htaccess infos"
 echo "" >> web/.htaccess
@@ -537,7 +537,7 @@ set -e -o pipefail
 HOST="dev@hg2.288dev.com"
 PORT="1023"
 PROJECT="$1"
-PHP_EXEC="ea-php82"
+PHP_EXEC="ea-php83"
 
 if [[ -z "$PROJECT" ]]; then
 	echo "ERROR! Please specify a project name.";
@@ -597,7 +597,7 @@ cat > deploy.sh << 'BASH'
 
 set -e -o pipefail
 
-PHP_EXEC="ea-php82"
+PHP_EXEC="ea-php83"
 CMD="$1"
 GITHUB_RUN_ID="$2"
 CRAFT_HOME="${3:-HOME}"
@@ -832,7 +832,7 @@ jobs:
             - name: Setup PHP
               uses: shivammathur/setup-php@master
               with:
-                php-version: '8.2'
+                php-version: '8.3'
                 coverage: none
                 tools: composer
 
