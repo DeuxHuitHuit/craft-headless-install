@@ -84,54 +84,6 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
       restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
-          -
-            - conditionRules
-            -
-              -
-                __assoc__:
-                  -
-                    - class
-                    - craft\elements\conditions\assets\WidthConditionRule
-                  -
-                    - uid
-                    - bc84e0f2-244a-4822-b00e-6421c509f654
-                  -
-                    - operator
-                    - '='
-                  -
-                    - value
-                    - '1200'
-                  -
-                    - maxValue
-                    - ''
-              -
-                __assoc__:
-                  -
-                    - class
-                    - craft\elements\conditions\assets\HeightConditionRule
-                  -
-                    - uid
-                    - a7009423-65d3-413f-ba96-7dec99a7c0d4
-                  -
-                    - operator
-                    - '='
-                  -
-                    - value
-                    - '630'
-                  -
-                    - maxValue
-                    - ''
       selectionLabel: 'Ajouter une image de partage // Add a sharing image'
       showSiteMenu: false
       showUnpermittedFiles: false

@@ -12,6 +12,7 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
+            inputType: null
             instructions: null
             label: 'Titre / Title'
             max: null
@@ -32,6 +33,18 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
+            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits // Copyrights
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3f0b53af-ef03-4a46-bbef-e8386907186f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
             fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif // Alternative Text
             instructions: "Le texte alternatif est une description textuelle courte et précise d'une image sur une page web. L'ALT text est utilisé pour fournir une information contextuelle à ceux qui ne peuvent pas voir l'image, que ce soit en raison d'une déficience visuelle, de la désactivation des images dans le navigateur ou d'autres raisons.\r\n\r\nThe alternative text is a short and concise textual description of an image on a web page. ALT text is used to provide contextual information for those who can"
             label: null
@@ -41,31 +54,7 @@ fieldLayouts:
             uid: 5225d869-0789-4936-97a0-1ef02aa19a10
             userCondition: null
             warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f097070c-9e2d-49e2-adcf-3fa6b143c44b
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits // Copyrights
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 22d258db-4f6b-45eb-a2d0-3d8841f820e4
-            userCondition: null
-            warning: null
-            width: 50
+            width: 100
         name: Content
         uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
         userCondition: null
