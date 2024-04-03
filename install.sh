@@ -8,7 +8,7 @@ set -e -o pipefail
 PROJECT_CODE=$(basename "$(pwd)");
 INSTALLER_PHP_EXEC="ea-php83"
 
-echo "Welcome to Deux Huit Huit craft installer"
+echo "Welcome to Deux Huit Huit's Craft cms v4 installer"
 echo ""
 echo "We are installing projet $PROJECT_CODE in $(pwd)";
 
@@ -32,7 +32,7 @@ done
 
 echo "Install craft"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} ~/composer.phar create-project craftcms/craft .
+${INSTALLER_PHP_EXEC} ~/composer.phar create-project craftcms/craft:4.* .
 
 echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
