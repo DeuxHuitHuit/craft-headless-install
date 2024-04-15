@@ -32,7 +32,7 @@ done
 
 echo "Install craft"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} ~/composer.phar create-project craftcms/craft:^4.8 .
+${INSTALLER_PHP_EXEC} ~/composer.phar create-project "craftcms/craft:^4" .
 
 echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
