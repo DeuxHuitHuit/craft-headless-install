@@ -242,6 +242,8 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-agency-auth
 ${INSTALLER_PHP_EXEC} ./craft plugin/install agency-auth
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-routes-api
 ${INSTALLER_PHP_EXEC} ./craft plugin/install routes-api
+${INSTALLER_PHP_EXEC} ./composer.phar require craftcms/webhooks
+${INSTALLER_PHP_EXEC} ./craft plugin/install webhooks
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
