@@ -348,6 +348,8 @@ GITATTR
 echo "Update .env file"
 {
 echo ""
+echo "VERCEL_SITE_URL=http://localhost:3000"
+echo ""
 echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads"
 echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
 echo "STREAM_FILE_SYSTEM_PATH=$(pwd)/web/uploads/stream"
@@ -459,7 +461,12 @@ return [
         // If the project has the queue server on, we need to disable this
         'runQueueAutomatically' => true,
         // Since we are in headless mode, we need cookies to be available across sites so we can check authentication
-        'sameSiteCookieValue' => 'None'
+        'sameSiteCookieValue' => 'None',
+        // Aliases
+        'aliases' => [
+            '@host' => App::env('VERCEL_SITE_URL'),
+            '@web' => App::env('PRIMARY_SITE_URL'),
+        ],
     ],
 
     // Dev environment settings
@@ -470,11 +477,6 @@ return [
         'disallowRobots' => true,
         // Always disable queue server in dev
         'runQueueAutomatically' => true,
-        // Aliases
-        'aliases' => [
-            '@host' => 'http://localhost:3000',
-            '@web' => 'https://$PROJECT_CODE.288dev.com',
-        ]
     ],
 
     // Production environment settings
@@ -485,11 +487,6 @@ return [
         'allowUpdates' => false,
         // No indexing
         'disallowRobots' => true,
-        // Aliases
-        'aliases' => [
-            '@host' => 'https://',
-            '@web' => 'https://',
-        ]
     ],
 ];
 
