@@ -118,6 +118,9 @@ AddType text/plain less
     <FilesMatch "\.(png|jpg|jpeg|gif|ico)$">
         Header append Cache-Control "public, no-transform"
     </FilesMatch>
+    <FilesMatch "\.(js|css|txt|xml|html|json|woff|woff2|otf|svg|webp)$">
+        Header append Cache-Control "public"
+    </FilesMatch>
 </IfModule>
 
 # ----------------------------------------------------------------------
