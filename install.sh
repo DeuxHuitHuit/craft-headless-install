@@ -210,7 +210,7 @@ mkdir -p "./storage"
 
 echo "Create uploads directory"
 mkdir -p "./web/uploads"
-mkdir -p "./web/uploads/stream"
+mkdir -p "./web/stream"
 
 echo "Nuke and recreate an empty module folder"
 rm -rf ./modules
@@ -351,18 +351,26 @@ GITATTR
 echo "Update .env file"
 {
 echo ""
+echo "# Env setup"
+echo "SITE_NAME=\"$PROJECT_CODE DEV\""
+echo ""
 echo "VERCEL_SITE_URL=http://localhost:3000"
+echo "PRIMARY_SITE_URL=https://$PROJECT_CODE.288dev.com"
 echo ""
-echo "ASSETS_FILE_SYSTEM_PATH=$(pwd)/web/uploads"
-echo "UPLOADS_URL=https://$PROJECT_CODE.288dev.com/uploads"
-echo "STREAM_FILE_SYSTEM_PATH=$(pwd)/web/uploads/stream"
-echo "STREAM_URL=https://$PROJECT_CODE.288dev.com/uploads/stream"
+echo "CRAFT_HOME=$(pwd)"
+echo "CRAFT_WEBROOT=\${CRAFT_HOME}/web"
 echo ""
-echo "SITE_NAME=$PROJECT_CODE"
+echo "# Assets"
+echo "ASSETS_FILE_SYSTEM_PATH=\${CRAFT_WEBROOT}/uploads"
+echo "UPLOADS_URL=\${PRIMARY_SITE_URL}/uploads"
+echo "STREAM_FILE_SYSTEM_PATH=\${CRAFT_WEBROOT}/stream"
+echo "STREAM_URL=\${PRIMARY_SITE_URL}/stream"
 echo ""
+echo "# Emails"
 echo "SENDGRID_API=\"\""
 echo "EMAIL_FROM=noreply@$PROJECT_CODE.288dev.com"
 echo ""
+echo "# Cloudflare Stream"
 echo "CF_STREAM_ACCOUNT_ID=\"\""
 echo "CF_STREAM_API_TOKEN=\"\""
 echo ""
@@ -443,7 +451,7 @@ return [
         'cpTrigger' => 'craft',
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => App::env('SECURITY_KEY'),
-        // Enable headless mode: https://craftcms.com/docs/3.x/config/config-settings.html#headlessmode
+        // Enable headless mode: https://craftcms.com/docs/4.x/config/config-settings.html#headlessmode
         'headlessMode' => true,
         'addTrailingSlashesToUrls' => false,
         'limitAutoSlugsToAscii' => true,
@@ -469,6 +477,7 @@ return [
         'aliases' => [
             '@host' => App::env('VERCEL_SITE_URL'),
             '@web' => App::env('PRIMARY_SITE_URL'),
+            '@webroot' => App::env('CRAFT_WEBROOT'),
         ],
     ],
 
@@ -640,7 +649,7 @@ elif [ "$CMD" = "setup" ]; then
     mkdir -p ./storage/backups
     mkdir -p ./storage/restore
     mkdir -p ./web/uploads
-    mkdir -p ./web/uploads/stream
+    mkdir -p ./web/stream
 
     echo "Setup done"
 
