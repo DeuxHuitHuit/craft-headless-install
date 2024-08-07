@@ -34,6 +34,10 @@ echo "Install craft"
 # Use composer from home dir for the first time
 ${INSTALLER_PHP_EXEC} ~/composer.phar create-project "craftcms/craft:^4" .
 
+# Fix broken permissions set by craft
+chmod 750 web
+chmod 640 web/index.php web/.htaccess
+
 echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
 
