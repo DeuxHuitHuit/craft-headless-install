@@ -35,8 +35,8 @@ echo "Install craft"
 ${INSTALLER_PHP_EXEC} ~/composer.phar create-project "craftcms/craft:^4" .
 
 # Fix broken permissions set by craft
-chmod 750 web
-chmod 640 web/index.php web/.htaccess
+chmod 755 web
+chmod 644 web/index.php web/.htaccess
 
 echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
