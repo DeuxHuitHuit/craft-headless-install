@@ -941,6 +941,13 @@ cd -
 mv .env .env.dev
 ln -s .env.dev .env
 
+echo "Initialize git repository"
+git init
+git add .gitignore .gitattributes
+git add .
+git add .env.*
+git commit -a -m "Initial commit, on dev server"
+
 echo "We are done 🐔🐔🐔"
 echo "To use deuxhuithuit.co login, configure config/agency-auth.php"
 echo "Please login at https://$PROJECT_CODE.288dev.com/craft"
