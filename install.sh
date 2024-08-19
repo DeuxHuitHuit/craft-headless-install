@@ -333,6 +333,8 @@ echo "Add .php-cs-fixer.cache to .gitignore"
 echo ".php-cs-fixer.cache" >> .gitignore
 echo "Add /web/uploads to .gitignore"
 echo "/web/uploads" >> .gitignore
+echo "Add /web/stream to .gitignore"
+echo "/web/stream" >> .gitignore
 
 echo "Create .gitattributes file"
 cat > .gitattributes << GITATTR
