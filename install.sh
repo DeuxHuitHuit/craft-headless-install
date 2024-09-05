@@ -854,7 +854,7 @@ jobs:
                 tools: composer
 
             - name: composer install
-              run: composer install --no-scripts --prefer-dist --no-suggest --no-progress
+              run: composer install --no-scripts --prefer-dist --no-progress
 
             - name: format
               run: ./vendor/bin/php-cs-fixer fix modules --rules=@PhpCsFixer,-yoda_style,-concat_space
