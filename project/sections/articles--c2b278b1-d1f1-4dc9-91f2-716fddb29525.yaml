@@ -2,7 +2,6 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - 0630a2e9-2fbf-476c-b8e4-8586a57d1366 # Article
-  - 796e67f3-c861-4fc8-9eed-e9e1c093c0c6 # Video
 handle: articles
 maxAuthors: 1
 name: Articles

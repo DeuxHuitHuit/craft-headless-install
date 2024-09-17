@@ -6,48 +6,48 @@ scope:
   - 'elements.drafts:read'
   - 'elements.revisions:read'
   - 'elements.inactive:read'
-  - 'sections.dee216e7-8b9e-4a86-9e70-2e95cea7284c:read' # Banner
+  - 'sections.dee216e7-8b9e-4a86-9e70-2e95cea7284c:read'
   - 'sections.6c86c074-7558-42ed-9fbc-8c4fbc736b95:read' # Blog
   - 'sections.0982d07a-c328-4033-8695-305319d78835:read' # Careers
-  - 'sections.549d68f5-bdcc-46ad-93b3-647d55939f1b:read' # Client stories
+  - 'sections.549d68f5-bdcc-46ad-93b3-647d55939f1b:read'
   - 'sections.4a4ac845-5be1-4d2d-bb12-617c872d2ee5:read' # Contact
-  - 'sections.e3bfebc3-a957-4dee-9de2-d799d2e240ff:read' # Glossary
+  - 'sections.e3bfebc3-a957-4dee-9de2-d799d2e240ff:read'
   - 'sections.da1b5819-b168-4dd9-aa35-505a833ee367:read' # Homepage
-  - 'sections.0a148063-2d43-4e12-a498-3bd136f0ce3b:read' # Main CTAs
+  - 'sections.0a148063-2d43-4e12-a498-3bd136f0ce3b:read'
   - 'sections.9477a487-01b6-4a09-bb9b-4e4fdc45d8c6:read' # Media specs
-  - 'sections.409a3302-f65c-44c9-a6c8-4e6862dd3508:read' # Prefooter
+  - 'sections.409a3302-f65c-44c9-a6c8-4e6862dd3508:read'
   - 'sections.3bf78167-9a80-4012-b67c-faf5e0984c25:read' # Scripts
   - 'sections.6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc:read' # Site configuration
   - 'sections.ff4e6d75-2bed-40aa-8718-1e77a25a37d7:read' # Site footer
   - 'sections.800d763b-bbca-482a-9345-81b70bf730b2:read' # Site header
   - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' #  Modules
-  - 'sections.adb71d4d-0c55-4161-9e9d-374fa6f41330:read' #  Terms
+  - 'sections.adb71d4d-0c55-4161-9e9d-374fa6f41330:read'
   - 'sections.c2b278b1-d1f1-4dc9-91f2-716fddb29525:read' # Articles
   - 'sections.c26c7142-c8a9-4cac-b0ea-c84428d04864:read' # Blog topics
-  - 'sections.98946b67-862c-4244-adb2-59123dff10c9:read' # Content types
-  - 'sections.b0277867-0e54-4d84-8e6b-74ccbd78cabe:read' # Industries
+  - 'sections.98946b67-862c-4244-adb2-59123dff10c9:read'
+  - 'sections.b0277867-0e54-4d84-8e6b-74ccbd78cabe:read'
   - 'sections.f23e6a71-9e92-4184-bdd9-8ff3775fb2ec:read' # Jobs
   - 'sections.ec8f8144-4229-4395-adcd-105b11962c8a:read' # Pages
   - 'sections.46ed0eb4-8c01-447c-9087-62ca99521b71:read' # Partners
-  - 'sections.820282a2-c7ad-4e4c-ace1-0f4964f07d07:read' # Services
-  - 'sections.8e5a1941-22e5-47d5-a343-f22511f7fb8d:read' # Technologies
-  - 'nestedentryfields.7194bc81-7207-43c5-9c4a-eb7937f6bf60:read' # Additional Information
-  - 'nestedentryfields.93df1b76-1ac7-49df-8735-9bb05097375b:read' # CTA blocks
-  - 'nestedentryfields.83a83424-d0b9-489b-83d9-c03a7a083255:read' # CTAs
+  - 'sections.820282a2-c7ad-4e4c-ace1-0f4964f07d07:read'
+  - 'sections.8e5a1941-22e5-47d5-a343-f22511f7fb8d:read'
+  - 'nestedentryfields.7194bc81-7207-43c5-9c4a-eb7937f6bf60:read'
+  - 'nestedentryfields.93df1b76-1ac7-49df-8735-9bb05097375b:read'
+  - 'nestedentryfields.83a83424-d0b9-489b-83d9-c03a7a083255:read'
   - 'nestedentryfields.e4b3fe13-7dcf-4ebe-8edd-570b3fa7b618:read' # Drawers
-  - 'nestedentryfields.e3937a4e-2b2f-4efc-88a1-51c8580a3e4e:read' # Events
-  - 'nestedentryfields.3cc36f2e-cfdd-4bb2-9ab3-fcc08404e867:read' # Grid items media
-  - 'nestedentryfields.5d6e428e-09bc-4de0-a490-c7286a0e47c3:read' # Info cards
-  - 'nestedentryfields.9c463a5c-44c7-4657-bee4-0d9c2ef6c51c:read' # Items
-  - 'nestedentryfields.e14411d6-d28c-4e11-9e6e-8ce80094463e:read' # Items
-  - 'nestedentryfields.c1144e41-83aa-4135-a049-3516bb04e4a2:read' # Items
-  - 'nestedentryfields.c8ca579c-50a7-46b6-88aa-ce8fbf20116b:read' # Modals
+  - 'nestedentryfields.e3937a4e-2b2f-4efc-88a1-51c8580a3e4e:read'
+  - 'nestedentryfields.3cc36f2e-cfdd-4bb2-9ab3-fcc08404e867:read'
+  - 'nestedentryfields.5d6e428e-09bc-4de0-a490-c7286a0e47c3:read'
+  - 'nestedentryfields.9c463a5c-44c7-4657-bee4-0d9c2ef6c51c:read'
+  - 'nestedentryfields.e14411d6-d28c-4e11-9e6e-8ce80094463e:read'
+  - 'nestedentryfields.c1144e41-83aa-4135-a049-3516bb04e4a2:read'
+  - 'nestedentryfields.c8ca579c-50a7-46b6-88aa-ce8fbf20116b:read'
   - 'nestedentryfields.3221aacd-9b06-4daa-a21c-d632a438983d:read' # Prose drawers
-  - 'nestedentryfields.ea4cbc8b-abf0-41eb-949d-36005d242b30:read' # Prose stats rows
+  - 'nestedentryfields.ea4cbc8b-abf0-41eb-949d-36005d242b30:read'
   - 'nestedentryfields.e0fec26e-937b-4d32-b433-211242db4d9e:read' # SEO
-  - 'nestedentryfields.2aa331e8-6f0e-489f-b33f-ec0c7aed02a5:read' # Services CTA
-  - 'nestedentryfields.68842798-370f-4697-8091-2ec5e30ee372:read' # Solutions CTA
-  - 'nestedentryfields.1c16912f-6e0e-4398-8d7e-b852e9eaa45c:read' # Stats
-  - 'nestedentryfields.8c650dbb-1723-4615-a787-b3bbcbaf0e65:read' # Term examples
+  - 'nestedentryfields.2aa331e8-6f0e-489f-b33f-ec0c7aed02a5:read'
+  - 'nestedentryfields.68842798-370f-4697-8091-2ec5e30ee372:read'
+  - 'nestedentryfields.1c16912f-6e0e-4398-8d7e-b852e9eaa45c:read'
+  - 'nestedentryfields.8c650dbb-1723-4615-a787-b3bbcbaf0e65:read'
   - 'volumes.7c06f121-409c-4ebe-a6ce-aa78ea61ce4d:read' # Assets
   - 'volumes.3c0c2fcb-c361-472f-80d1-6bb4e36bcab6:read' # Stream

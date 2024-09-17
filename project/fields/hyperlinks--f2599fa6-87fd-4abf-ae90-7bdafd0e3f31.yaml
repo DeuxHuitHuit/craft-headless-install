@@ -158,17 +158,17 @@ settings:
         -
           - sources
           -
-            - 'section:adb71d4d-0c55-4161-9e9d-374fa6f41330' #  Terms
+            - 'section:adb71d4d-0c55-4161-9e9d-374fa6f41330'
             - 'section:c2b278b1-d1f1-4dc9-91f2-716fddb29525' # Articles
             - 'custom:c3b3934b-b63e-4662-ae65-9e1f51407c4e'
-            - 'section:98946b67-862c-4244-adb2-59123dff10c9' # Content types
+            - 'section:98946b67-862c-4244-adb2-59123dff10c9'
             - 'custom:1363d8c9-0624-4681-802c-6d73aeb2c5bc'
-            - 'section:b0277867-0e54-4d84-8e6b-74ccbd78cabe' # Industries
+            - 'section:b0277867-0e54-4d84-8e6b-74ccbd78cabe'
             - 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Jobs
             - 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
-            - 'section:820282a2-c7ad-4e4c-ace1-0f4964f07d07' # Services
+            - 'section:820282a2-c7ad-4e4c-ace1-0f4964f07d07'
             - 'custom:eef88424-12ea-4adc-a32f-6d6df4466116'
-            - 'section:8e5a1941-22e5-47d5-a343-f22511f7fb8d' # Technologies
+            - 'section:8e5a1941-22e5-47d5-a343-f22511f7fb8d'
     -
       __assoc__:
         -

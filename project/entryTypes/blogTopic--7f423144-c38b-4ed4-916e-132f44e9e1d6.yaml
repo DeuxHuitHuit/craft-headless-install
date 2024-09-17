@@ -51,47 +51,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          -
-            dateAdded: '2024-08-19T19:03:51+00:00'
-            elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Short description'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: eb3208e5-3fd4-4b3b-b799-37fd82e2942b
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-19T19:03:51+00:00'
-            elementCondition: null
-            fieldUid: edba4e76-f2d9-4352-80bf-e324c2ee7637 # Color
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d6a7871b-acb7-4787-bfc0-0f78ef907dbd
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-19T19:03:51+00:00'
-            dismissible: false
-            elementCondition: null
-            style: tip
-            tip: '[Articles](/craft/entries/articles) of the same category are automatically displayed, ordered by post date.'
-            type: craft\fieldlayoutelements\Tip
-            uid: 5a027134-a2a2-4a9e-9154-300807ad5388
-            userCondition: null
         name: Content
         uid: b2b153cd-a25e-47d1-92fe-65128c690197
         userCondition: null
@@ -123,8 +82,8 @@ icon: icons
 name: 'Blog topic'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{displayTitle}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

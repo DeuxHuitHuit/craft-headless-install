@@ -52,38 +52,6 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-08-20T17:49:49+00:00'
-            elementCondition: null
-            fieldUid: 3b6cf951-6048-4fee-bdcc-485a39003ab8 # Gated
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f91fafcf-7dea-4e4d-8def-896a00228348
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-19T19:17:41+00:00'
-            elementCondition: null
-            fieldUid: edba4e76-f2d9-4352-80bf-e324c2ee7637 # Color
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Hero background'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7a616532-bd83-4477-a8e9-1ab9f178e80f
-            userCondition: null
-            warning: null
-            width: 50
-          -
             dateAdded: '2024-08-27T15:25:53+00:00'
             elementCondition: null
             fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
@@ -112,22 +80,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1a15025f-b62e-42f5-8ebd-c9cab5fa479c
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-22T14:13:32+00:00'
-            elementCondition: null
-            fieldUid: 5167fd22-2bff-451f-bb5b-0166e876d431 # Partner
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3a0ab3e6-130b-428d-a4aa-2e7d4994ff69
             userCondition: null
             warning: null
             width: 50
@@ -172,7 +124,7 @@ fieldLayouts:
           -
             dateAdded: '2024-09-11T20:24:37+00:00'
             elementCondition: null
-            fieldUid: eb06fbb5-a0f2-44b3-88e4-f1355300f911 # Article
+            fieldUid: eb06fbb5-a0f2-44b3-88e4-f1355300f911 # Rich Text - Article
             handle: null
             includeInCards: false
             instructions: null
@@ -216,8 +168,8 @@ icon: newspaper
 name: Article
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{displayTitle}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

@@ -35,146 +35,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: 43e380c0-0690-4a46-9b42-e6c78d6052ec # Triple line title
-            handle: firstTitle
-            includeInCards: false
-            instructions: null
-            label: 'First title'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 33588db7-18df-445b-b1a2-319bb4bbb7cb
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: b4a91503-b7be-423e-966c-fe87d7cd8da6 # Bubble texts
-            handle: null
-            includeInCards: false
-            instructions: "Displayed on the second row of the first title\r\n"
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 9453fd9d-1437-4446-adc3-09337e2baa29
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: 43e380c0-0690-4a46-9b42-e6c78d6052ec # Triple line title
-            handle: secondTitle
-            includeInCards: false
-            instructions: null
-            label: SecondTitle
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a2927a2c-39be-4d23-ad6e-639cf00b0ac6
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
-            handle: intro
-            includeInCards: false
-            instructions: null
-            label: Introduction
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ea7a8963-5c87-4dd6-9f1a-03c86a74b3fd
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: 43e380c0-0690-4a46-9b42-e6c78d6052ec # Triple line title
-            handle: thirdTitle
-            includeInCards: false
-            instructions: null
-            label: 'Third title'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 39921bd9-a2d4-4100-beab-a6b7ba38f462
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 902a6472-1d23-41c5-9129-fce236268f7d
-            userCondition: null
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: partnersTitle
-            includeInCards: false
-            instructions: null
-            label: 'Partners title'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 702a7958-6885-4a74-8c0a-3c137fcb03c8
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            fieldUid: e60013a8-ce72-424b-9582-971b0ca73b09 # Partners
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: bb1560a5-8afb-4886-b648-fc524dad2cb9
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T20:10:54+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 9469ec2f-7e57-44f8-b3f7-e6c816c3cdee
-            userCondition: null
-          -
-            dateAdded: '2024-08-13T20:02:20+00:00'
-            elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b1f83bf2-2085-48ff-8df7-771ffd9b08ae
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 49575285-e5d8-43fa-aa49-38409a53c90b
         userCondition: null
@@ -206,8 +66,8 @@ icon: house
 name: Homepage
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

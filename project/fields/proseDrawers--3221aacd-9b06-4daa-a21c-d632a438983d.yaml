@@ -6,7 +6,7 @@ searchable: false
 settings:
   createButtonLabel: 'New drawer'
   entryTypes:
-    - 7cd5a1f9-fd58-4b41-a236-424527a88fec # Prose drawer
+    - f20d3272-0ab0-4656-aa6d-e27e58f20a40 # Drawer
   includeTableView: false
   maxEntries: null
   minEntries: null

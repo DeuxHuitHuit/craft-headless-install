@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - a2444205-7b4b-4062-82d8-74833e3f5f80 # Jobs
+  - a2444205-7b4b-4062-82d8-74833e3f5f80 # Job
 handle: jobs
 maxAuthors: 1
 name: Jobs
@@ -12,11 +12,11 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
-        - refresh
-        - '1'
-      -
         - urlFormat
         - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR

@@ -35,109 +35,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2024-08-20T19:33:47+00:00'
-            elementCondition: null
-            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 42ad1c07-0188-44d6-8938-f723b6858152
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T19:33:47+00:00'
-            elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: subtitle
-            includeInCards: false
-            instructions: null
-            label: Subtitle
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7fdd5310-913e-4997-a75b-46bcf4481aae
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T19:33:47+00:00'
-            elementCondition: null
-            fieldUid: 93df1b76-1ac7-49df-8735-9bb05097375b # CTA blocks
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c1d1a633-7b1d-472d-ad2f-d316416a2142
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-20T19:37:07+00:00'
-            elementCondition: null
-            heading: Coordinates
-            type: craft\fieldlayoutelements\Heading
-            uid: e00e06e4-9d0e-4e75-b958-87d1ea00049f
-            userCondition: null
-          -
-            dateAdded: '2024-08-20T19:37:07+00:00'
-            elementCondition: null
-            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
-            handle: address
-            includeInCards: false
-            instructions: null
-            label: Address
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 374ec643-adfb-48b4-815f-f7bbcb7e52e6
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T19:37:07+00:00'
-            elementCondition: null
-            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
-            handle: officeHours
-            includeInCards: false
-            instructions: null
-            label: 'Office hours'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 530554ca-e77b-4da7-a490-132008b57272
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T19:37:07+00:00'
-            elementCondition: null
-            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Phones
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8a418cdf-7c9c-4e03-bdef-47e18e19bf21
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: e610521d-6bc2-405a-8a7b-063cacabae17
         userCondition: null
@@ -169,8 +66,8 @@ icon: envelope
 name: Contact
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

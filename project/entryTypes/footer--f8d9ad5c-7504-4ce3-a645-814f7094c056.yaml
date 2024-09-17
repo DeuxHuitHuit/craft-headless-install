@@ -35,63 +35,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            dateAdded: '2024-08-27T19:40:27+00:00'
-            dismissible: false
-            elementCondition: null
-            style: tip
-            tip: 'The links of the 5 main sections (Industries, Content Types, Services, Technology and Resources) are either fetched from the [**Site header**](https://trsb.dev2.288dev.com/craft/entries/header/74-header-navigation?site=en) or automatically generated.'
-            type: craft\fieldlayoutelements\Tip
-            uid: 62158c0f-66bd-4e27-94a2-e5eeb1ec0c7e
-            userCondition: null
-          -
-            dateAdded: '2024-09-06T15:57:30+00:00'
-            elementCondition: null
-            fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
-            handle: companyLinks
-            includeInCards: false
-            instructions: null
-            label: 'Company links'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b60f213f-a946-4eeb-9649-ab20d9851b2b
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-06T15:57:30+00:00'
-            elementCondition: null
-            fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
-            handle: socialLinks
-            includeInCards: false
-            instructions: null
-            label: 'Social links'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 606fc1b9-fdf2-41a4-93dd-6e358dfafe97
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-06T15:57:30+00:00'
-            elementCondition: null
-            fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
-            handle: legalLinks
-            includeInCards: false
-            instructions: null
-            label: 'Legal links'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e566736f-05d5-4017-bbdd-2d73d129bbc2
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: db280247-e304-453e-aaca-6d41b88e1062
         userCondition: null
@@ -101,8 +44,8 @@ icon: trademark
 name: 'Site footer'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: 'Site footer  '
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

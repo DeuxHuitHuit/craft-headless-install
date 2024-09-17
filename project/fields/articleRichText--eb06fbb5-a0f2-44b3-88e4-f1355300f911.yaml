@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: articleRichText
 instructions: 'H2 titles (*Heading 2* format option) are used to generate the table of contents.'
-name: Article
+name: 'Rich Text - Article'
 searchable: false
 settings:
   availableTransforms: ''
@@ -207,16 +207,6 @@ settings:
                                   -
                                     __assoc__:
                                       0: [type, craft\fieldlayoutelements\CustomField]
-                                      6: [required, false]
-                                      7: [providesThumbs, false]
-                                      8: [includeInCards, false]
-                                      9: [width, 100]
-                                      10: [dateAdded, '2024-09-11T20:17:35+00:00']
-                                      11: [uid, f9db4085-6a17-4b79-ac15-fab518d4920d]
-                                      14: [fieldUid, edba4e76-f2d9-4352-80bf-e324c2ee7637] # Color
-                                  -
-                                    __assoc__:
-                                      0: [type, craft\fieldlayoutelements\CustomField]
                                       1: [handle, calloutText]
                                       2: [label, Text]
                                       6: [required, false]
@@ -374,61 +364,6 @@ settings:
               __assoc__:
                 0:
                   - id
-                  - type-rhfChL7FRM
-                1:
-                  - name
-                  - Stats
-                2:
-                  - handle
-                  - stats
-                3:
-                  - icon
-                  -
-                    __assoc__:
-                      -
-                        - label
-                        - Percentage
-                      -
-                        - value
-                        - percentage-solid
-                5:
-                  - enabled
-                  - true
-                6:
-                  - layoutUid
-                  - 4815747a-7e96-4928-865b-f05df1bdd602
-                7:
-                  - layoutConfig
-                  -
-                    __assoc__:
-                      -
-                        - tabs
-                        -
-                          -
-                            __assoc__:
-                              0:
-                                - name
-                                - Content
-                              1:
-                                - uid
-                                - 18810e03-d493-470d-aa57-97eb5b96adba
-                              4:
-                                - elements
-                                -
-                                  -
-                                    __assoc__:
-                                      0: [type, craft\fieldlayoutelements\CustomField]
-                                      6: [required, false]
-                                      7: [providesThumbs, false]
-                                      8: [includeInCards, false]
-                                      9: [width, 100]
-                                      10: [dateAdded, '2024-09-11T20:21:54+00:00']
-                                      11: [uid, d32be5a6-f973-4546-8f25-a38170de77f9]
-                                      14: [fieldUid, ea4cbc8b-abf0-41eb-949d-36005d242b30] # Prose stats rows
-            -
-              __assoc__:
-                0:
-                  - id
                   - type-smE8vVGiit
                 1:
                   - name
@@ -572,7 +507,7 @@ settings:
                                       11: [uid, 6f5f558d-c8a0-4976-ad6d-885557bbf7b7]
                                       14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
   initialRows: 7
-  manualConfig: "{\r\n    \"buttons\": [\"h2\", \"h3\", \"paragraph\", \"unordered-list\", \"ordered-list\", \"checklist\", \"blockquote\", \"hr\", \"bold\", \"italic\", \"link\", \"highlight\", \"clear-format\"],\r\n\"plugins\": [\"checklist\"]\r\n}"
+  manualConfig: "{\r\n    \"buttons\": [\"h2\", \"h3\", \"paragraph\", \"unordered-list\", \"ordered-list\", \"blockquote\", \"hr\", \"bold\", \"italic\", \"link\", \"highlight\", \"clear-format\"]\r\n}"
   maxBlocks: null
   minBlocks: null
   pasteAsPlainText: false

@@ -38,22 +38,6 @@ fieldLayouts:
           -
             dateAdded: '2024-08-19T18:58:46+00:00'
             elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Short description'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a7b482c4-8c63-4a82-b324-d86d8ade6782
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-19T18:58:46+00:00'
-            elementCondition: null
             fieldUid: 374406b8-233f-4e1b-ae1e-f779112eaca6 # Article
             handle: featuredArticle
             includeInCards: false
@@ -67,31 +51,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          -
-            dateAdded: '2024-08-19T18:58:46+00:00'
-            elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: newsletterText
-            includeInCards: false
-            instructions: null
-            label: 'Newsletter text'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 8cf4113f-226b-4743-8807-e6d064589ee4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-13T20:02:20+00:00'
-            dismissible: false
-            elementCondition: null
-            style: tip
-            tip: '[Articles](/craft/entries/articles) and [blog topics](/craft/entries?site=en&source=custom:c3b3934b-b63e-4662-ae65-9e1f51407c4e) are automatically displayed, ordered by post date.'
-            type: craft\fieldlayoutelements\Tip
-            uid: 591fe1ed-5ca6-43c7-8899-93541e295eff
-            userCondition: null
         name: Content
         uid: 6083a740-c96e-4972-b65b-5b1a02e80af7
         userCondition: null
@@ -123,8 +82,8 @@ icon: rss
 name: Blog
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

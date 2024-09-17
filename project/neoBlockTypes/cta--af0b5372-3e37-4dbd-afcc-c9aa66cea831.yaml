@@ -55,7 +55,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Phones
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05
             instructions: null
             label: null
             required: false

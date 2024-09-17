@@ -35,129 +35,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
-          -
-            dateAdded: '2024-08-20T18:00:58+00:00'
-            elementCondition: null
-            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 043eb291-f0d8-4f55-a647-dde01f596c60
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-20T18:00:58+00:00'
-            elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: description
-            includeInCards: false
-            instructions: null
-            label: Description
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a1acb3ff-c859-4d2e-b068-a3031e80402f
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-20T18:00:58+00:00'
-            elementCondition: null
-            fieldUid: 0858fc4c-c694-4711-84b9-c1dbe35c2c16 # Illustration
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f18c6507-ea16-4bdb-a4d2-1097128251ab
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-27T18:03:44+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: f2dc1a7a-d75d-4e66-9c21-2f14d7e16c71
-            userCondition: null
-          -
-            dateAdded: '2024-08-20T18:00:58+00:00'
-            elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
-            handle: modulesBefore
-            includeInCards: false
-            instructions: null
-            label: 'Modules before job posts'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f1fa6214-a076-4ed5-97b8-892ae00944a2
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-27T18:03:44+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 2b819e90-ccce-446f-82de-00c116f05f7f
-            userCondition: null
-          -
-            dateAdded: '2024-09-04T19:51:54+00:00'
-            elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: jobsSectionDescription
-            includeInCards: false
-            instructions: null
-            label: 'Jobs section description'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 341a489e-7950-4d5d-9942-e1eab0f5e58e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-08-13T20:02:21+00:00'
-            dismissible: false
-            elementCondition: null
-            style: tip
-            tip: '[Jobs entries](/craft/entries/jobPostings) are automatically displayed. They can be manually reordered directly in the section, using drag and drop.'
-            type: craft\fieldlayoutelements\Tip
-            uid: 07aadd8f-79ae-42c1-84b2-28af202d3558
-            userCondition: null
-          -
-            dateAdded: '2024-08-27T18:03:44+00:00'
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: c349f3c2-9856-449f-a448-18b677dfc2c5
-            userCondition: null
-          -
-            dateAdded: '2024-08-20T18:00:58+00:00'
-            elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
-            handle: modulesAfter
-            includeInCards: false
-            instructions: null
-            label: 'Modules after job posts'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c8b6a10b-3fb4-4c38-b1af-5fe6e1ddeb32
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: 08d199cf-89c7-4aa7-9faa-701d0da20f5c
         userCondition: null
@@ -189,8 +66,8 @@ icon: briefcase
 name: Careers
 showSlugField: false
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

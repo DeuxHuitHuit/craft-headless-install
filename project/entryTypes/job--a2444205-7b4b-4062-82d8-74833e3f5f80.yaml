@@ -1,6 +1,6 @@
 color: null
 fieldLayouts:
-  d4d1ec20-d8bb-42c4-9e5e-544c06819496:
+  14c959a7-12d1-4e04-9109-bf41a8024401:
     tabs:
       -
         elementCondition: null
@@ -10,13 +10,13 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-08-19T18:08:22+00:00'
+            dateAdded: '2024-08-13T20:02:27+00:00'
             disabled: false
             elementCondition: null
             id: null
             includeInCards: false
             inputType: null
-            instructions: null
+            instructions: "\r\n"
             label: null
             max: null
             min: null
@@ -31,14 +31,14 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 7f2e07b5-643e-4ca9-9f0e-e0d8b3e754ef
+            uid: 6fdcfb01-98d6-46b9-adba-bfa8d68302d6
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-19T18:09:54+00:00'
+            dateAdded: '2024-08-20T18:06:24+00:00'
             elementCondition: null
-            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
             handle: null
             includeInCards: false
             instructions: null
@@ -47,53 +47,59 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 13e7e800-e5ac-4849-8dbe-5addd0257a87
+            uid: 418bcdec-5c81-4241-8a25-5e30b722e63e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-05T16:30:42+00:00'
+            elementCondition: null
+            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Rich text - Full
+            handle: jobDescription
+            includeInCards: false
+            instructions: null
+            label: 'Job description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89a1d4d7-2c72-49d6-a9ce-8ec33dfbc110
             userCondition: null
             warning: null
             width: 100
+        name: Content
+        uid: 0cd43616-1a67-427e-a6e0-331b7b8df809
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
           -
-            dateAdded: '2024-08-19T18:09:54+00:00'
+            dateAdded: '2024-08-13T20:02:27+00:00'
             elementCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: displayTitle
-            includeInCards: false
-            instructions: null
-            label: Title
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 17c861c6-e5ef-40d2-814a-6a261958bb75
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            dateAdded: '2024-08-29T17:13:32+00:00'
-            elementCondition: null
-            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - inline
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
             handle: null
             includeInCards: false
             instructions: null
-            label: Text
+            label: __blank__
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b52ef8e1-39f6-444e-877d-716798b9b62d
+            uid: 150eb59a-c873-4ecc-9a6b-5136d4c6da1e
             userCondition: null
             warning: null
-            width: 50
-        name: Content
-        uid: 021ac8fc-bdac-4969-91d5-3423a3e672c3
+            width: 100
+        name: SEO
+        uid: 3a09b97a-0094-4988-aabb-280fbcfb79a4
         userCondition: null
-handle: gridCardMedia
+handle: job
 hasTitleField: false
-icon: null
-name: 'Grid card media'
-showSlugField: false
+icon: person-digging
+name: Job
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: '{displayTitle}'
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationKeyFormat: ''
+titleTranslationMethod: none
