@@ -1,0 +1,16 @@
+columnSuffix: lvcelhop
+handle: text
+instructions: null
+name: 'Plain text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 2
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

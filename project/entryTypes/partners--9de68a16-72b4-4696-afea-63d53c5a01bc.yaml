@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  d5eefd96-89a4-49e2-90f7-554e49192770:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:31:37+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 86597f22-22a5-485c-85c1-b3689b1805c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:35:30+00:00'
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # CMS Identifier
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6e8a034-a584-47c2-bc33-05a76997d07d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:35:30+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 443b61dc-e80c-439b-9128-958fbb70113e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-27T12:43:46+00:00'
+            elementCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - inline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67382c36-e7a0-4f9b-9bed-4d9c44f2a724
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-27T21:36:35+00:00'
+            elementCondition: null
+            fieldUid: 193062ab-b7c0-4fee-b207-80bf4bcc5ffa # Dark
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4837a9e7-c644-41f7-ae6d-fae00a531066
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T19:22:42+00:00'
+            elementCondition: null
+            fieldUid: e60013a8-ce72-424b-9582-971b0ca73b09 # Partners
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78e2e180-67a9-461a-9070-5474b9bd5dfe
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: b6c4375e-7dba-4f4a-9813-4d6809ab0983
+        userCondition: null
+handle: partners
+hasTitleField: false
+icon: null
+name: Partners
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

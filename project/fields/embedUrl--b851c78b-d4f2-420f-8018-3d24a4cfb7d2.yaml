@@ -1,14 +1,24 @@
 columnSuffix: kuqgmesg
-contentColumnType: string(500)
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: embedUrl
-instructions: "* URL de la vidéo à jouer à même la page (Embed).    \r\n* La vidéo peut provenir de YouTube **OU** Vimeo.   \r\n* La vidéo ne joue pas automatiquement, il faut que l'utilisateur.trice clique sur le bouton «Jouer».\r\n* La vignette est affichée en premier. S'il n'y en a pas, la vignette fournie par la plateforme d'hébergement de la vidéo sera affichée à la place.\r\n\r\n---\r\n\r\n* URL of the video to be played on the page (Embed).   \r\n* The video can be hosted on YouTube **OR** Vimeo.\r\n* The video won't play automatically; the user has to press the \"Play\" button.   \r\n* The thumbnail is displayed first. If there's no thumbnail, the one provided by the platform hosting the video will be displayed instead."
-name: 'URL de la vidéo Embed // Embed Video URL'
+instructions: "* URL of the video to be embedded on the page.   \r\n* The video can be hosted on YouTube **OR** Vimeo.\r\n* The video won't play automatically; the user has to press the \"Play\" button.   \r\n* The thumbnail is displayed first. If there's no thumbnail, the one provided by the platform hosting the video will be displayed instead."
+name: 'Embed URL'
 searchable: false
 settings:
   maxLength: 500
+  typeSettings:
+    __assoc__:
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
   types:
     - url
 translationKeyFormat: null
-translationMethod: none
-type: craft\fields\Url
+translationMethod: site
+type: craft\fields\Link

@@ -6,43 +6,48 @@ scope:
   - 'elements.drafts:read'
   - 'elements.revisions:read'
   - 'elements.inactive:read'
-  - 'sections.da1b5819-b168-4dd9-aa35-505a833ee367:read' # Accueil // Homepage
-  - 'entrytypes.b09fcabc-7f1c-40b8-b8d3-f085835a0c24:read' # Accueil // Homepage
+  - 'sections.dee216e7-8b9e-4a86-9e70-2e95cea7284c:read' # Banner
+  - 'sections.6c86c074-7558-42ed-9fbc-8c4fbc736b95:read' # Blog
+  - 'sections.0982d07a-c328-4033-8695-305319d78835:read' # Careers
+  - 'sections.549d68f5-bdcc-46ad-93b3-647d55939f1b:read' # Client stories
+  - 'sections.4a4ac845-5be1-4d2d-bb12-617c872d2ee5:read' # Contact
+  - 'sections.e3bfebc3-a957-4dee-9de2-d799d2e240ff:read' # Glossary
+  - 'sections.da1b5819-b168-4dd9-aa35-505a833ee367:read' # Homepage
+  - 'sections.0a148063-2d43-4e12-a498-3bd136f0ce3b:read' # Main CTAs
+  - 'sections.9477a487-01b6-4a09-bb9b-4e4fdc45d8c6:read' # Media specs
+  - 'sections.409a3302-f65c-44c9-a6c8-4e6862dd3508:read' # Prefooter
+  - 'sections.3bf78167-9a80-4012-b67c-faf5e0984c25:read' # Scripts
+  - 'sections.6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc:read' # Site configuration
+  - 'sections.ff4e6d75-2bed-40aa-8718-1e77a25a37d7:read' # Site footer
+  - 'sections.800d763b-bbca-482a-9345-81b70bf730b2:read' # Site header
+  - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' #  Modules
+  - 'sections.adb71d4d-0c55-4161-9e9d-374fa6f41330:read' #  Terms
   - 'sections.c2b278b1-d1f1-4dc9-91f2-716fddb29525:read' # Articles
-  - 'entrytypes.0630a2e9-2fbf-476c-b8e4-8586a57d1366:read' # Default
-  - 'sections.6c86c074-7558-42ed-9fbc-8c4fbc736b95:read' # Blogue // Blog
-  - 'entrytypes.dc92bc6c-36c7-4c5d-be20-91a74863ec70:read' # Blogue // Blog
-  - 'sections.4e822121-c86e-47c7-88db-c49c058e3b2f:read' # Boutons // Buttons
-  - 'entrytypes.e485bfb8-5e08-45cf-a792-6d7a97f6844d:read' # Default
-  - 'sections.0982d07a-c328-4033-8695-305319d78835:read' # Carrières // Careers
-  - 'entrytypes.492f0e2c-a4d9-43f1-bbe3-088788243930:read' # Carrières // Careers
-  - 'sections.f23e6a71-9e92-4184-bdd9-8ff3775fb2ec:read' # Emplois // Jobs
-  - 'entrytypes.a2444205-7b4b-4062-82d8-74833e3f5f80:read' # Default
-  - 'sections.ec897a0c-2ff5-4c93-9b2b-530800ffc3e2:read' # Équipe // Team
-  - 'entrytypes.91375a23-42c5-4d08-abe7-bb657195f65f:read' # Default
-  - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' # Modules
-  - 'entrytypes.b7d20b42-135e-4d76-85cd-1e890b36c30a:read' # Texte / Text
-  - 'entrytypes.4093afd2-c348-4b4b-9137-0e07daa80e57:read' # Texte-Média / Text-Media
-  - 'entrytypes.2731acb9-f3b8-46c4-8804-e4e1765f5291:read' # Vidéo encastrée / Embed Video
-  - 'entrytypes.40ae4b06-dda4-4f6a-918a-ff01d9149953:read' # Citation / Quote
-  - 'entrytypes.0e50c9f4-5bcc-4d0a-969d-85902af71827:read' # Emphase / Emphasis
-  - 'entrytypes.749c7d4d-cae1-4f65-93b7-b546870551a7:read' # Média
-  - 'entrytypes.63a8cb64-067e-4061-adfa-2d615a0d9e63:read' # Appel à l'action / Call to Action
-  - 'entrytypes.312799c9-ad1d-4b5d-a676-89aa94ae2ee1:read' # Prose
-  - 'sections.4a4ac845-5be1-4d2d-bb12-617c872d2ee5:read' # Nous joindre // Contact
-  - 'entrytypes.d9f3be47-624e-49ae-90d4-79880f18013e:read' # Nous joindre // Contact
+  - 'sections.c26c7142-c8a9-4cac-b0ea-c84428d04864:read' # Blog topics
+  - 'sections.98946b67-862c-4244-adb2-59123dff10c9:read' # Content types
+  - 'sections.b0277867-0e54-4d84-8e6b-74ccbd78cabe:read' # Industries
+  - 'sections.f23e6a71-9e92-4184-bdd9-8ff3775fb2ec:read' # Jobs
   - 'sections.ec8f8144-4229-4395-adcd-105b11962c8a:read' # Pages
-  - 'entrytypes.3f07a8e2-b80b-4fe0-aca4-9c505738579d:read' # Page narrative par défaut / Default Narrative
-  - 'entrytypes.19f03eed-fb4d-447e-966d-258f5e5add92:read' # Page légale / Legal Page
-  - 'sections.90df0a08-7d42-4e4a-893e-a92d210e66a6:read' # Projets // Projects
-  - 'entrytypes.92682545-f076-4486-a08f-9ae1347c0bfb:read' # Default
-  - 'sections.0a41ad00-fdfe-4ad0-a08b-1e2db0066d17:read' # Réalisations // Work
-  - 'entrytypes.340a1d3c-b17e-4ab8-85b4-a85d50b81926:read' # Réalisations // Work
-  - 'sections.f5e5d2b1-6f17-41db-875a-b5c7d7832171:read' # Types de projets // Project Types
-  - 'entrytypes.2ad2d52c-30c8-4246-b7d0-940e33c3a34a:read' # Default
+  - 'sections.46ed0eb4-8c01-447c-9087-62ca99521b71:read' # Partners
+  - 'sections.820282a2-c7ad-4e4c-ace1-0f4964f07d07:read' # Services
+  - 'sections.8e5a1941-22e5-47d5-a343-f22511f7fb8d:read' # Technologies
+  - 'nestedentryfields.7194bc81-7207-43c5-9c4a-eb7937f6bf60:read' # Additional Information
+  - 'nestedentryfields.93df1b76-1ac7-49df-8735-9bb05097375b:read' # CTA blocks
+  - 'nestedentryfields.83a83424-d0b9-489b-83d9-c03a7a083255:read' # CTAs
+  - 'nestedentryfields.e4b3fe13-7dcf-4ebe-8edd-570b3fa7b618:read' # Drawers
+  - 'nestedentryfields.e3937a4e-2b2f-4efc-88a1-51c8580a3e4e:read' # Events
+  - 'nestedentryfields.3cc36f2e-cfdd-4bb2-9ab3-fcc08404e867:read' # Grid items media
+  - 'nestedentryfields.5d6e428e-09bc-4de0-a490-c7286a0e47c3:read' # Info cards
+  - 'nestedentryfields.9c463a5c-44c7-4657-bee4-0d9c2ef6c51c:read' # Items
+  - 'nestedentryfields.e14411d6-d28c-4e11-9e6e-8ce80094463e:read' # Items
+  - 'nestedentryfields.c1144e41-83aa-4135-a049-3516bb04e4a2:read' # Items
+  - 'nestedentryfields.c8ca579c-50a7-46b6-88aa-ce8fbf20116b:read' # Modals
+  - 'nestedentryfields.3221aacd-9b06-4daa-a21c-d632a438983d:read' # Prose drawers
+  - 'nestedentryfields.ea4cbc8b-abf0-41eb-949d-36005d242b30:read' # Prose stats rows
+  - 'nestedentryfields.e0fec26e-937b-4d32-b433-211242db4d9e:read' # SEO
+  - 'nestedentryfields.2aa331e8-6f0e-489f-b33f-ec0c7aed02a5:read' # Services CTA
+  - 'nestedentryfields.68842798-370f-4697-8091-2ec5e30ee372:read' # Solutions CTA
+  - 'nestedentryfields.1c16912f-6e0e-4398-8d7e-b852e9eaa45c:read' # Stats
+  - 'nestedentryfields.8c650dbb-1723-4615-a787-b3bbcbaf0e65:read' # Term examples
   - 'volumes.7c06f121-409c-4ebe-a6ce-aa78ea61ce4d:read' # Assets
   - 'volumes.3c0c2fcb-c361-472f-80d1-6bb4e36bcab6:read' # Stream
-  - 'globalsets.7ddb842a-f59e-40b2-a970-b9797c1027a9:read' # Configuration
-  - 'globalsets.8659c777-3feb-4edf-88ee-c5e4cee8aa6a:read' # Bannière de cookies // Cookie Banner
-  - 'globalsets.6bb7eb36-b90f-451e-b921-1f377e3ff31e:read' # Scripts
-  - 'globalsets.924f35e5-7a95-4c28-aab3-db4ac6e4ecc7:read' # Spécifications images et vidéos // Image and video specs

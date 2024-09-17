@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   f6da2620-ec2b-41ca-9579-497e38c59e74:
     tabs:
@@ -5,6 +6,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             dismissible: false
             elementCondition: null
             style: tip
@@ -17,9 +19,12 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:20+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -27,6 +32,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -39,10 +45,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             elementCondition: null
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS // CMS Identifier
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # CMS Identifier
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -51,50 +61,50 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-19T18:22:41+00:00'
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre // Surtitle
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: displayTitle
+            includeInCards: false
             instructions: null
-            label: null
+            label: Title
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 684a6dd0-7bc1-444e-8d53-f2331c3d84ce
+            uid: f8590bc8-e25f-4053-aca4-483e7f87c2ae
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-19T18:22:41+00:00'
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: Text
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fefdccb6-6d79-455b-b0cb-f06b42d42cee
+            uid: d21dcd99-8217-4618-965c-14a9caf7c77c
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-09-06T16:28:34+00:00'
             elementCondition: null
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte riche // Rich Text
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0f3003db-8686-4d27-8b14-14afd0ff039a
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton // Button
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5c238a40-d755-4568-a794-ce20702b65b0
+            uid: 94c955a1-903d-49b1-a5c3-8023c6218883
             userCondition: null
             warning: null
             width: 100
@@ -103,9 +113,12 @@ fieldLayouts:
         userCondition: null
 handle: text
 hasTitleField: false
-name: 'Texte / Text'
-section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
-sortOrder: 1
+icon: null
+name: Text
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{type.name} - {identifier}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

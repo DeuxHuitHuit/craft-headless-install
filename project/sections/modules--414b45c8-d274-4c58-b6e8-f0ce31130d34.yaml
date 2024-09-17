@@ -1,7 +1,25 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - b7d20b42-135e-4d76-85cd-1e890b36c30a # Text
+  - 4093afd2-c348-4b4b-9137-0e07daa80e57 # Text-Media
+  - 7c8b6246-df99-4cc5-8a43-fa5ed9b0ff18 # Grid - Initials
+  - f0dcc611-5def-4054-af82-7f009a7698a4 # Grid - Media
+  - 3bf0c80a-1ddf-4c2f-80dd-c1b171022058 # Grid - Text
+  - 58bc3602-cfed-411e-bc6c-380f84340e3f # Grid - Stats
+  - 4f9bb904-18d0-40ef-b854-d7779ec54378 # Modals
+  - 407be569-defa-40f8-be1f-92ceb65b41bb # Info cards
+  - 9f95538d-d01c-4bf7-a527-422b7418ed90 # Stats
+  - 5c7e62d8-147e-41d8-ae2d-8b6867db809f # Timeline
+  - 9de68a16-72b4-4696-afea-63d53c5a01bc # Partners
+  - 63a8cb64-067e-4061-adfa-2d615a0d9e63 # CTA 
+  - f7dd0879-f402-4072-990c-9981aaae2cc2 # CTA - Full width
+  - 095f6b18-db1d-40dc-9362-d2a489860e4b # Accordion
+  - a0a65bff-fadd-4bb4-ae89-c3f15c01bbbc # Carousel
+  - 46e9d2cf-9ffa-4d70-b132-f32d2c4c4c58 # Embed
 handle: modules
-name: Modules
+maxAuthors: 1
+name: ' Modules'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR

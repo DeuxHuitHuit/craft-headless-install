@@ -1,0 +1,2870 @@
+columnSuffix: null
+handle: phones
+instructions: null
+name: Phones
+searchable: false
+settings:
+  defaultLinkType: default-verbb-hyper-links-phone
+  defaultNewWindow: false
+  fieldLayoutId: null
+  linkTypes:
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Phone
+        -
+          - label
+          - Phone
+        -
+          - handle
+          - default-verbb-hyper-links-phone
+        -
+          - enabled
+          - true
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 4e639a56-98c6-46ad-84e6-32b481de3b88
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 727446c2-fa07-40c2-a56e-46b77aabf242
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T16:16:11+00:00'
+                              -
+                                - uid
+                                - daea9771-6b38-4f9f-bfc9-a3ff2ebd49f3
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T16:16:11+00:00'
+                              -
+                                - uid
+                                - 38ae6e6a-7668-4a6e-946f-62beed1c15d7
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Asset
+        -
+          - label
+          - Asset
+        -
+          - handle
+          - default-verbb-hyper-links-asset
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 40f637d0-9cc2-40e6-b3c9-30595a1b3f25
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 0755c162-0429-4661-8fd4-3b7b378b825c
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - ec8893f3-adda-407c-86da-34327c805c7f
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - d8b0bb93-94f5-40b3-af74-383d8fa53ccd
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - c24904a7-2b1d-4ca3-97a6-791e21c5596c
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - b2988e33-cb74-436b-8a27-4c2c112e3006
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 972aca18-cfa1-4468-bb7a-0fa5448c0ee6
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 7efdb8d3-9e34-456e-9976-a0def5743340
+        -
+          - sources
+          - '*'
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Category
+        -
+          - label
+          - Category
+        -
+          - handle
+          - default-verbb-hyper-links-category
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 8c182df7-ab90-4b0f-a79f-c2774e44ecb6
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 9d3cb234-9994-473b-89e3-a44b39b8072b
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - d2cd5084-923f-431b-a3a3-33064c5424ea
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - ece2fc4c-e27a-4b1b-ba6e-05891347aed5
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - 3d417001-db12-4be2-8822-9092447da16f
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 7d251711-d2fa-4a1d-afa5-b038f1f5eb89
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - f20b59fb-2719-4abb-aabd-6b20068fd8ec
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 896e9ec2-3bd5-4fe1-907e-515fdf9ea813
+        -
+          - sources
+          - '*'
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Custom
+        -
+          - label
+          - Custom
+        -
+          - handle
+          - default-verbb-hyper-links-custom
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 22a8b8ca-46d5-4294-b144-ff74131a5d1f
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 390e0316-f72c-4327-af11-be0dc09661aa
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - d620cbf8-5cb7-4bed-9169-8f33df99f002
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - c49fe5b7-c853-46c7-98f8-c85839c9e2e1
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - db81bcfa-7357-4500-943e-26c2b11821f7
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 2d7af3ce-4aca-4034-898d-44c5cf14134b
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 9f308778-e472-4a0e-a46b-d2ad5ca037b5
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - ddceeb42-0b25-4d3f-8f00-4f2d66ec85cf
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Email
+        -
+          - label
+          - Email
+        -
+          - handle
+          - default-verbb-hyper-links-email
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 0931f14f-f6a3-4ebd-92d9-553b1471db8b
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - c7ba25b1-ec0d-4f86-9db1-acf0dce82775
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 8f4c0395-d9f7-44aa-90ef-bab3f0a21d0c
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 7b77b8c4-aedc-4574-b6e6-0b65448ca66b
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - bea97d02-7039-4d26-bffb-bb209ab8c080
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - b3bca9bb-c6f8-4862-8236-d4cf8c78d8e0
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - b564e64c-9459-4da2-922e-ddeda3a27a82
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 7e7ee7b3-388f-4ee9-98b7-192e36f1b83b
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Embed
+        -
+          - label
+          - Embed
+        -
+          - handle
+          - default-verbb-hyper-links-embed
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 5571f6af-c81f-43db-8ac4-43cb147e2897
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - b99de26a-49bb-4660-a0df-3d51fd426a98
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 5d1782e9-3af0-4a95-a0f0-43e15a4d299f
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - aa989755-668c-4878-a51e-d669b709e56e
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - 3e356c65-f77c-4ff1-81da-76421dce00ad
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 4479a735-d866-493f-a718-ea09aab865ee
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 31639d21-3e9f-4544-bda0-1bc574e15fc6
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - ea84a565-785b-4427-9f7c-ec492399cd54
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Entry
+        -
+          - label
+          - Entry
+        -
+          - handle
+          - default-verbb-hyper-links-entry
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - e9141a94-a4ab-482e-9703-8e8afb15a4e7
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 0c4807a5-1461-4bcb-a174-0ad016818614
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 2390249b-6e4d-44ed-be06-4e030d576585
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 4f3eb880-9943-4803-8f6c-db2e625ec517
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - 934b700f-dc4d-4e2f-abed-a92871bfafc1
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 8ce78ffb-eca3-4dee-a830-e87caaa334e8
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 1aaf7389-c568-4c3b-996c-c82bfa585dba
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 429feffc-5da2-4dca-9077-9e76e4c66777
+        -
+          - sources
+          - '*'
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Site
+        -
+          - label
+          - Site
+        -
+          - handle
+          - default-verbb-hyper-links-site
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 4cac2f03-29dd-4fea-9a97-265d89334c15
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 9dac664b-d391-4cdb-8f9f-9ab3e0794641
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 88a3c9ef-59eb-45f4-bee3-d7d862395654
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - b7ccec4c-6afa-4269-88ba-9d5ea6cf9f42
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - 99d6783c-ae5b-45e3-818a-25107aa916d5
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - f00b715b-05c1-46a6-8974-c15048f244a3
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 88d8574b-ebfd-4d36-b416-d11edc3e0761
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 92b80773-affd-4f18-b4f6-f7951568e03a
+        -
+          - sites
+          - '*'
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\Url
+        -
+          - label
+          - URL
+        -
+          - handle
+          - default-verbb-hyper-links-url
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - e83b0794-41cd-401b-b555-d88745fd791d
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 27b11d7f-b843-4048-a214-d682a926a646
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 0ea25299-cb83-4848-b061-0172bdeb5314
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 8fa99943-d1a2-45c0-b148-dd9e5479d85e
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - 5c592a57-d183-4f25-8859-0f237c87b6d5
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - d80b9d84-e885-44ec-b2d9-29e05a77376c
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 6a5e5b69-57e2-4dfd-b38b-b7eadda444b3
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 1651802a-db67-4c6d-a908-f96a7f44bfca
+    -
+      __assoc__:
+        -
+          - type
+          - verbb\hyper\links\User
+        -
+          - label
+          - User
+        -
+          - handle
+          - default-verbb-hyper-links-user
+        -
+          - enabled
+          - false
+        -
+          - isCustom
+          - false
+        -
+          - layoutUid
+          - 022acb27-fef8-44fc-a9a5-84e2a4761118
+        -
+          - layoutConfig
+          -
+            __assoc__:
+              -
+                - tabs
+                -
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Content
+                      -
+                        - uid
+                        - 9ac76110-c716-42f4-9a39-163f0fafde56
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkField
+                              -
+                                - attribute
+                                - linkValue
+                              -
+                                - mandatory
+                                - true
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 81c79877-3775-423d-ba7c-46c4e0633829
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTextField
+                              -
+                                - attribute
+                                - linkText
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - placeholder
+                                - 'e.g. Read more'
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 50
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 68c02aa3-edb2-4d3e-bc55-06ed84a4544e
+                  -
+                    __assoc__:
+                      -
+                        - name
+                        - Advanced
+                      -
+                        - uid
+                        - d662c413-af2d-4e9a-86e1-9d668d80e24b
+                      -
+                        - elements
+                        -
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\LinkTitleField
+                              -
+                                - attribute
+                                - linkTitle
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 2717c818-771e-4c57-ab5f-9eab93464429
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\ClassesField
+                              -
+                                - attribute
+                                - classes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - autocomplete
+                                - false
+                              -
+                                - autofocus
+                                - false
+                              -
+                                - autocorrect
+                                - true
+                              -
+                                - autocapitalize
+                                - true
+                              -
+                                - disabled
+                                - false
+                              -
+                                - readonly
+                                - false
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - 83038381-0422-4896-ab33-6acb572ae9ba
+                          -
+                            __assoc__:
+                              -
+                                - type
+                                - verbb\hyper\fieldlayoutelements\CustomAttributesField
+                              -
+                                - attribute
+                                - customAttributes
+                              -
+                                - requirable
+                                - true
+                              -
+                                - mandatory
+                                - false
+                              -
+                                - translatable
+                                - false
+                              -
+                                - required
+                                - false
+                              -
+                                - providesThumbs
+                                - false
+                              -
+                                - includeInCards
+                                - false
+                              -
+                                - width
+                                - 100
+                              -
+                                - dateAdded
+                                - '2024-09-06T12:16:25-04:00'
+                              -
+                                - uid
+                                - b3df1b84-4695-4edc-8514-619fed784628
+        -
+          - sources
+          - '*'
+  maxLinks: null
+  minLinks: null
+  multipleLinks: true
+  newWindow: false
+translationKeyFormat: null
+translationMethod: none
+type: verbb\hyper\fields\HyperField

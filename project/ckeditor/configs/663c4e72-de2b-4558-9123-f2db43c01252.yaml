@@ -1,0 +1,27 @@
+headingLevels:
+  - 2
+  - 3
+name: Article
+options:
+  list:
+    properties:
+      styles: false
+toolbar:
+  - createEntry
+  - heading
+  - bulletedList
+  - numberedList
+  - todoList
+  - blockQuote
+  - horizontalLine
+  - '|'
+  - bold
+  - italic
+  - link
+  - '|'
+  - removeFormat
+  - findAndReplace
+  - selectAll
+  - undo
+  - redo
+  - sourceEditing

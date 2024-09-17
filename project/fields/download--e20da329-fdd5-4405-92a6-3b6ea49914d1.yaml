@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: download
+instructions: null
+name: Download
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

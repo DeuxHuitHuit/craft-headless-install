@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: legalRichText
+instructions: 'H2 titles (*Heading 2* format option) are used to generate the table of contents.'
+name: Text
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  blockTypeBehaviour: click
+  configSelectionMode: manual
+  defaultTransform: ''
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  editorMode: richText
+  initialRows: 7
+  manualConfig: "{\r\n  \"buttons\": [\"h2\", \"h3\", \"h4\", \"h5\", \"paragraph\", \"unordered-list\", \"ordered-list\", \"bold\", \"italic\", \"link\", \"iframe\"]\r\n}"
+  maxBlocks: null
+  minBlocks: null
+  pasteAsPlainText: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  trimEmptyParagraphs: true
+  vizyConfig: ''
+translationKeyFormat: null
+translationMethod: language
+type: verbb\vizy\fields\VizyField

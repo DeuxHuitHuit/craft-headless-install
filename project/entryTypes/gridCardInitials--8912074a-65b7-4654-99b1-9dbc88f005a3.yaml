@@ -1,0 +1,99 @@
+color: null
+fieldLayouts:
+  50dbf5c4-995b-4e58-b090-c28b0927cfba:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:05:48+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a326a35e-6ee2-485e-81c3-619dfd8efac9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-29T19:15:21+00:00'
+            elementCondition: null
+            fieldUid: e3edf03d-99c0-4fcf-a60a-9a2c629191d7 # Initials
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ece681a8-1168-4cc2-ab95-3e2682042787
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-08-19T18:07:45+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: displayTitle
+            includeInCards: false
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2ddeb6c-a66c-4539-a4e8-97a1581cb6f5
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-08-29T17:21:19+00:00'
+            elementCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - inline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24bdb808-8895-4e5e-81b8-4735e98c2f72
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 22c38a10-f28f-4c6c-8450-c6e1c748d11d
+        userCondition: null
+handle: gridCardInitials
+hasTitleField: false
+icon: null
+name: 'Grid card initials'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

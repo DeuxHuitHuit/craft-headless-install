@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: initials
+instructions: null
+name: Initials
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 2
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

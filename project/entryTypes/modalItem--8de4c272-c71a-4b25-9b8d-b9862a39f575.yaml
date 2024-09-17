@@ -1,0 +1,137 @@
+color: null
+fieldLayouts:
+  8e0f50e9-ffcf-4330-a9cb-da26d7a2fcec:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:17:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ac8a84c2-e5ed-4443-914c-c0e537ca6b6a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:20:33+00:00'
+            elementCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c3aba6e-86c5-432e-901e-f8b13ba969c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:20:33+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: displayTitle
+            includeInCards: false
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d50936a5-03df-4450-9c9a-be1b774f2edf
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:20:33+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: subtitle
+            includeInCards: false
+            instructions: null
+            label: Subtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acefed4c-8f73-425a-b3c9-035fd3eb343f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:20:33+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c35dc5e8-23c9-4b07-b587-bde2ad8d0210
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T18:20:33+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: modalTitle
+            includeInCards: false
+            instructions: null
+            label: 'Modal title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 947bc951-9467-4b45-a842-935778b66729
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:20:33+00:00'
+            elementCondition: null
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
+            handle: modalText
+            includeInCards: false
+            instructions: null
+            label: 'Modal text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70f93df1-e919-4b23-9e89-731091811916
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: cda7a371-3e72-41ee-8b97-68326560abce
+        userCondition: null
+handle: modalItem
+hasTitleField: false
+icon: null
+name: Modal
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

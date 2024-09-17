@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: solutionsCta
+instructions: null
+name: 'Solutions CTA'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 5eb94b3a-89eb-4e14-94a7-eb73061858d8 # Header Submenu Cta
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

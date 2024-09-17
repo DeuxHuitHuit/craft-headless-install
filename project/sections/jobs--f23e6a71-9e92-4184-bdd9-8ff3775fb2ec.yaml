@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - a2444205-7b4b-4062-82d8-74833e3f5f80 # Jobs
+handle: jobs
+maxAuthors: 1
+name: Jobs
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'carrieres/{slug}'
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'careers/{slug}'
+structure:
+  maxLevels: null
+  uid: 679d610c-99f5-4e5a-bef1-a6304fef2fc6
+type: structure

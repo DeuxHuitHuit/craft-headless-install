@@ -1,0 +1,99 @@
+color: null
+fieldLayouts:
+  f28abbfd-65f9-4e4b-9a96-7015dd1913a3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-14T17:40:06+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9eb4e5ed-84f1-4ad3-8d35-3abb0442c316
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T17:53:08+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: orgName
+            includeInCards: false
+            instructions: null
+            label: Name
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e985f60-7b97-4b7c-b230-0b3e5057d68d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-14T18:11:30+00:00'
+            elementCondition: null
+            fieldUid: e8a9774e-14c6-4ae6-b673-a9740e5af59b # Plain text - Non-translatable
+            handle: xHandle
+            includeInCards: false
+            instructions: 'Include the @'
+            label: 'X (Twitter) Handle'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7630b07c-675a-4975-845b-5d0aa5a3a294
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T19:29:23+00:00'
+            elementCondition: null
+            fieldUid: 99a344a6-d5b9-4dfb-8ab7-9d6909dd6644 # Share image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Global share image'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea21e5d5-699e-4205-86fd-2b58a1d499c7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Organization
+        uid: 063b0f87-7ffd-48bc-8316-26b543008489
+        userCondition: null
+handle: config
+hasTitleField: false
+icon: gear
+name: 'Site configuration'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Site configuration'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

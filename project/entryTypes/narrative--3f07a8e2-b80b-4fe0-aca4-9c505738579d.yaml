@@ -1,0 +1,216 @@
+color: null
+fieldLayouts:
+  ad8e7b86-4dcc-41c1-9449-b3b0eec13184:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-13T20:02:27+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: '*The "identifier" is the entry''s name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*'
+            label: 'CMS Identifier'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 07494787-7237-46f7-9bc9-32c4f49c5b54
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T13:47:28+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4f4940c-79d7-49d6-977c-f872838a18fb
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T13:47:28+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: subtitle
+            includeInCards: false
+            instructions: null
+            label: Subtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b1d615c8-a922-4207-ab35-b5e848d57953
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T13:47:28+00:00'
+            elementCondition: null
+            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
+            handle: description
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2de46aed-6670-41ac-b95b-382f4ba40439
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T13:47:28+00:00'
+            elementCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9016d66e-0d18-403c-81bc-d5da93aaadc6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-21T21:28:52+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\entries\SectionConditionRule
+                  operator: in
+                  uid: 7e6a109e-f7ac-44cd-8771-e11566d9ef80
+                  values:
+                    - 8e5a1941-22e5-47d5-a343-f22511f7fb8d # Technologies
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: linkDescription
+            includeInCards: false
+            instructions: 'Displayed in the [technologies menu](https://shft.cl/57360p7yj), under "Services".'
+            label: 'Menu Link description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6865bdb6-fc9c-438c-9a5d-63c02b764409
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T13:47:28+00:00'
+            elementCondition: null
+            fieldUid: 83a83424-d0b9-489b-83d9-c03a7a083255 # CTAs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Custom CTAs'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 018d6528-725e-4f70-8e13-7e0adaa04eac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T13:47:28+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b84d360d-2482-4116-a4e8-9a2cf6849137
+            userCondition: null
+          -
+            dateAdded: '2024-08-20T13:21:28+00:00'
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70747a92-f692-4804-97e9-9655e1a547a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T13:48:44+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 26c012ab-fe6f-47d7-b7d8-ef7fc5a0380a
+            userCondition: null
+          -
+            dateAdded: '2024-08-20T13:48:44+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Content types are automatically displayed.'
+            type: craft\fieldlayoutelements\Tip
+            uid: a948529f-8a9f-4dd2-ac05-c30ab14a13e2
+            userCondition: null
+        name: Content
+        uid: e28b2f85-ca4b-4fe8-8e3c-96267b721341
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-13T20:02:27+00:00'
+            elementCondition: null
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 873f6a0e-a4bb-4728-b0db-825bbced5380
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 37af9612-a047-43fe-9465-a1b2b452af17
+        userCondition: null
+handle: narrative
+hasTitleField: false
+icon: book
+name: Narrative
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none

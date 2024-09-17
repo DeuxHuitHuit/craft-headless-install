@@ -1,15 +1,12 @@
 columnSuffix: dblkmfwp
-contentColumnType: text
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: identifier
-instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
-name: 'Identifiant CMS // CMS Identifier'
+instructions: 'The "identifier" is the entry''s name in the CMS. It is only visible in the CMS and used for content management and organization purposes.*'
+name: 'CMS Identifier'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null

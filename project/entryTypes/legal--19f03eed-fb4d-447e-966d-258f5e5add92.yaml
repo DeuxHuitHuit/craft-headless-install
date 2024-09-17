@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   ce3352f4-d32e-4bac-8977-e3bca8a144a5:
     tabs:
@@ -9,16 +10,20 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:21+00:00'
             disabled: false
             elementCondition: null
             id: null
-            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It is only visible in the CMS and used for content management and organization purposes only.*"
-            label: 'Identifiant CMS / CMS Identifier'
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -31,40 +36,52 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-20T18:29:48+00:00'
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0b6d3ec0-8364-4bcd-9c29-ecdf102d795f
+            uid: 57b4fde2-8f95-4777-bec3-36857f80bfcf
             userCondition: null
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-20T19:13:12+00:00'
             elementCondition: null
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte riche // Rich Text
+            fieldUid: 9ec6fdb3-b8d0-4641-96b9-16c9875584fa # Text
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 32b0dc2d-16f0-4bf3-8d3a-d1f525d72261
+            uid: cd890beb-adc3-4cae-bebf-3949ec85e0b2
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu // Content'
+        name: Content
         uid: 53aa8bda-02a4-42e1-8cf5-2d8860df2340
         userCondition: null
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-13T20:02:21+00:00'
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: __blank__
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,17 +89,17 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Partage (SEO) // Sharing (SEO)'
+        name: SEO
         uid: 3be565d7-73fa-470f-9166-c8fa8227941a
         userCondition: null
 handle: legal
-hasTitleField: true
-name: 'Page légale / Legal Page'
-section: ec8f8144-4229-4395-adcd-105b11962c8a # Pages
+hasTitleField: false
+icon: scale-balanced
+name: ' Legal'
+showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-sortOrder: 2
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: ''
 titleTranslationMethod: none

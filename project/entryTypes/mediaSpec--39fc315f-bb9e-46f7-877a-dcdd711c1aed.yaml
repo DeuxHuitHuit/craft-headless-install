@@ -1,0 +1,75 @@
+color: null
+fieldLayouts:
+  d1eb5b73-c044-4888-b6ca-4704cb4c3c3f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-14T17:36:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9c958276-0718-4945-bb66-d7811f5b2514
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-13T20:02:21+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: "## Spécifications générales des images\r\n\r\n### Ces spécifications s'appliquent à **toutes** les images du site.\r\n\r\n#### Taille **maximale** en pixels (L X H):\r\n\r\n* approx. 2000 x 4000 pixels.\r\n\r\n#### Poids **maximal**\r\n\r\n* 1 Mo, *en tenant compte de la taille de l'image*. Se référer au tableau ci-bas pour le poids recommandé par taille.\r\n\r\n![](/uploads/reccos-taille-vs-poids-images_3.jpg) \r\n\r\n#### Formats de fichier acceptés:\r\n\r\n* JPG/JPEG, WEBP, PNG, SVG. Se référer au tableau ci-bas pour le format à privilégier selon le cas.\r\n\r\n![](/uploads/reccos-formats-images_3.jpg)\r\n\r\n#### Résolution en ppi (pixels per inch):\r\n\r\n* Entre 72 ppi et 96 ppi.\r\n\r\n---\r\n\r\n## Ratios d'aspect recommandés et leurs tailles approximatives en pixels (L x H)\r\n\r\nExemples d'utilisation: En-têtes, arrière-plans, images pleine largeur, images «mood», galeries des Réalisations et Espaces disponibles, cartes (ou «tuiles»), ligne du temps, vignette (ou poster), photos de la direction, module Prose, etc. \r\n\r\n### Paysage (horizontal)\r\n\r\n* 16:9 (2000 x 1125);\r\n* 4:3 (2000 x 1500);\r\n* 3:2 (2000 x 1333);\r\n* 3:1 ou 6:2 - Panoramique (2000 x 667);\r\n* 1:1 (2000 x 2000)\r\n\r\n### Portrait (vertical)\r\n\r\n* 3:4 (1500 x 2000);\r\n* 2:3 (1333 x 2000);\r\n* 9:16 (1125 x 2000);\r\n* 1:1 (2000 x 2000)\r\n\r\n**À noter: d'autres ratios que ceux mentionnés ci-haut sont également acceptés dans le champ image ou média. Toutefois, si le ratio de l'image ne correspond pas à celui prédéterminé pour son utilisation dans la page, celle-ci sera tronquée sur la hauteur ou la largeur, selon le cas.**"
+            type: craft\fieldlayoutelements\Tip
+            uid: 134a78a4-fffd-4e5f-8ff6-0f0f0790f96a
+            userCondition: null
+        name: Images
+        uid: 53b35500-d78b-4b1c-b27c-f0d57fc21e18
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-13T20:02:21+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: "## Spécifications générales des vidéos\r\n\r\n### Ces spécifications s'appliquent à **toutes** les vidéos du site.\r\n\r\nExemples d'utilisation: En-têtes, arrière-plans, images pleine largeur, images «mood», galeries des Réalisations et Espaces disponibles, cartes (ou «tuiles»), ligne du temps, vignette (ou poster), photos de la direction, module Prose, etc.\r\n\r\n#### Taille et poids\r\n\r\nSe référer aux colonnes «Type de vidéo», «Taille premium» et «Poids premium» du tableau ci-bas.\r\n\r\n![](/uploads/reccos-taille-vs-poids-videos_2.jpg)\r\n\r\n#### Formats de fichier acceptés\r\n\r\nSe référer à la colonne «Format strictement recommandé» du tableau ci-bas.\r\n\r\n![](/uploads/reccos-formats-videos_2.jpg) \r\n\r\n**À noter: Si le ratio de la vidéo ne correspond pas à celui prédéterminé pour son utilisation dans la page, celle-ci sera tronquée sur la hauteur ou la largeur, selon le cas.**"
+            type: craft\fieldlayoutelements\Tip
+            uid: 2946365f-5d6a-492a-bb3a-58c478fb2194
+            userCondition: null
+        name: Vidéos
+        uid: 4bf9acd3-4eae-48c0-8e57-d2629bb7f407
+        userCondition: null
+handle: mediaSpec
+hasTitleField: false
+icon: image
+name: 'Media spec'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Media specs'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

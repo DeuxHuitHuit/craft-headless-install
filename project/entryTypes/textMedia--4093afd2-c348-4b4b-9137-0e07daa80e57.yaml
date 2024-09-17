@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   25442303-493f-4d95-8991-24b33381f3ee:
     tabs:
@@ -5,6 +6,7 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             dismissible: false
             elementCondition: null
             style: tip
@@ -17,9 +19,12 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:20+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -27,6 +32,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -39,10 +45,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             elementCondition: null
-            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # Identifiant CMS // CMS Identifier
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # CMS Identifier
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -51,85 +61,96 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-19T17:10:15+00:00'
             elementCondition: null
-            fieldUid: 9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c # Surtitre // Surtitle
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: displayTitle
+            includeInCards: false
             instructions: null
-            label: null
+            label: Title
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9c78d47f-25be-446a-926a-0c85a9b3493c
+            uid: 59f0aacc-011d-40b8-9a52-688a1c3a1843
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-19T17:10:15+00:00'
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: Text
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 44a7720a-b149-46c6-9246-a5f6d320f7fe
+            uid: 09991469-9b60-47ea-8d68-569a95f41c67
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-09-06T16:29:15+00:00'
             elementCondition: null
-            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Texte riche // Rich Text
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 87849cdf-869e-49da-a93d-fd58819b5e2c
+            uid: 305e7424-efb2-40a1-8878-02be80226f7d
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-19T17:10:15+00:00'
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 53f31509-37fd-4b2f-a545-17cf54f3a605
+            uid: 2de06c0a-5a9d-44d8-af04-7ff45d43dc1e
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-19T17:10:15+00:00'
             elementCondition: null
-            fieldUid: 477958ed-8cd8-487c-9006-bf3805cf3fea # Bouton // Button
+            fieldUid: 9e18815d-4be1-43b2-9287-19eef168429b # Invert
+            handle: invert
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ba0db47e-d85b-4d03-83b8-31fa50b5cf53
+            uid: 2ace07c7-f7a2-4815-a0ed-67080c7669ee
             userCondition: null
             warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 1a006606-855e-4926-8e9f-dd3c0064e826 # Inverser // Invert
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 1fa7d170-332f-43b2-ae2e-07169ee908de
-            userCondition: null
-            warning: null
-            width: 50
+            width: 100
         name: Content
         uid: fbeae6f3-ff62-4c3c-a317-5677641bf49d
         userCondition: null
 handle: textMedia
 hasTitleField: false
-name: 'Texte-Média / Text-Media'
-section: 414b45c8-d274-4c58-b6e8-f0ce31130d34 # Modules
-sortOrder: 2
+icon: null
+name: Text-Media
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{type.name} - {identifier}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

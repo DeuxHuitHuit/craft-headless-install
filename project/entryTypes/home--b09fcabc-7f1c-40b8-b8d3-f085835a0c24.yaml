@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   e2f4f679-ad72-4f36-b8b1-3a498f8ea45d:
     tabs:
@@ -9,16 +10,20 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:20+00:00'
             disabled: false
             elementCondition: null
             id: null
-            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
-            label: 'Identifiant CMS // CMS Identifier'
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -31,44 +36,138 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-20T20:10:54+00:00'
             elementCondition: null
-            heading: 'En-tête // Header'
-            type: craft\fieldlayoutelements\Heading
-            uid: 758c8cbb-b4ed-4e71-8bc1-90e0defe8eb2
-            userCondition: null
-          -
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: b831e123-e4d6-4f1f-8ed8-a54fb37741a0
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 43e380c0-0690-4a46-9b42-e6c78d6052ec # Triple line title
+            handle: firstTitle
+            includeInCards: false
             instructions: null
-            label: null
+            label: 'First title'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7445da9f-f6bb-4d60-b1cf-fe10862b91f8
+            uid: 33588db7-18df-445b-b1a2-319bb4bbb7cb
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
+            dateAdded: '2024-08-20T20:10:54+00:00'
             elementCondition: null
-            heading: 'Contenu de la page // Page Content'
-            type: craft\fieldlayoutelements\Heading
-            uid: f741f0ec-9d9c-49be-8e7f-f2b166da42b4
+            fieldUid: b4a91503-b7be-423e-966c-fe87d7cd8da6 # Bubble texts
+            handle: null
+            includeInCards: false
+            instructions: "Displayed on the second row of the first title\r\n"
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9453fd9d-1437-4446-adc3-09337e2baa29
             userCondition: null
+            warning: null
+            width: 50
           -
+            dateAdded: '2024-08-20T20:10:54+00:00'
+            elementCondition: null
+            fieldUid: 43e380c0-0690-4a46-9b42-e6c78d6052ec # Triple line title
+            handle: secondTitle
+            includeInCards: false
+            instructions: null
+            label: SecondTitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2927a2c-39be-4d23-ad6e-639cf00b0ac6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T20:10:54+00:00'
+            elementCondition: null
+            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introduction
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea7a8963-5c87-4dd6-9f1a-03c86a74b3fd
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T20:10:54+00:00'
+            elementCondition: null
+            fieldUid: 43e380c0-0690-4a46-9b42-e6c78d6052ec # Triple line title
+            handle: thirdTitle
+            includeInCards: false
+            instructions: null
+            label: 'Third title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 39921bd9-a2d4-4100-beab-a6b7ba38f462
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T20:10:54+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
-            uid: 23bd8865-cf8b-4ff9-8518-16b492797e20
+            uid: 902a6472-1d23-41c5-9129-fce236268f7d
             userCondition: null
           -
+            dateAdded: '2024-08-20T20:10:54+00:00'
             elementCondition: null
-            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modèle ouvert (Modules) // Open Model (Modules)
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: partnersTitle
+            includeInCards: false
+            instructions: null
+            label: 'Partners title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 702a7958-6885-4a74-8c0a-3c137fcb03c8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T20:10:54+00:00'
+            elementCondition: null
+            fieldUid: e60013a8-ce72-424b-9582-971b0ca73b09 # Partners
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb1560a5-8afb-4886-b648-fc524dad2cb9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T20:10:54+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 9469ec2f-7e57-44f8-b3f7-e6c816c3cdee
+            userCondition: null
+          -
+            dateAdded: '2024-08-13T20:02:20+00:00'
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -76,17 +175,21 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Contenu // Content'
+        name: Content
         uid: 49575285-e5d8-43fa-aa49-38409a53c90b
         userCondition: null
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: __blank__
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -94,17 +197,17 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Partage (SEO) // Sharing (SEO)'
+        name: SEO
         uid: 3c7c9c8f-c5e1-4f38-85b8-3960b7aefe72
         userCondition: null
 handle: home
-hasTitleField: true
-name: 'Accueil // Homepage'
-section: da1b5819-b168-4dd9-aa35-505a833ee367 # Accueil // Homepage
+hasTitleField: false
+icon: house
+name: Homepage
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

@@ -1,6 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 0630a2e9-2fbf-476c-b8e4-8586a57d1366 # Article
+  - 796e67f3-c861-4fc8-9eed-e9e1c093c0c6 # Video
 handle: articles
+maxAuthors: 1
 name: Articles
 previewTargets:
   -
@@ -20,13 +24,10 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: 'articles/{slug}'
+    uriFormat: 'blogue/{slug}'
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: 'articles/{slug}'
-structure:
-  maxLevels: null
-  uid: 24640e16-faa0-4e49-9706-28207c976d66
-type: structure
+    uriFormat: 'blog/{slug}'
+type: channel

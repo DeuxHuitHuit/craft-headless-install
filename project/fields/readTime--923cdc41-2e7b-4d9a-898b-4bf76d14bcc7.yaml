@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: readTime
+instructions: null
+name: 'Read time'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 1
+  max: null
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: null
+  suffix: min
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

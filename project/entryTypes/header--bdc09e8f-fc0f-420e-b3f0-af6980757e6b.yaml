@@ -1,0 +1,211 @@
+color: null
+fieldLayouts:
+  08b64850-5b8f-4a19-936e-97b42b5dcf33:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-14T18:29:32+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0d9d0b21-ecce-4533-8e54-863033af80e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T15:52:03+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Industries and content types are displayed automatically.'
+            type: craft\fieldlayoutelements\Tip
+            uid: df1b1b76-c758-4b24-9bf9-c97d80c78dbc
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T15:59:07+00:00'
+            elementCondition: null
+            fieldUid: 68842798-370f-4697-8091-2ec5e30ee372 # Solutions CTA
+            handle: solutionsCta
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c7d50e9-16eb-4ff8-9ad6-475fc3f842b0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Solutions
+        uid: 4ef390b6-8967-4de9-adcb-9d89c7057a88
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-19T15:52:03+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: "Services and technologies are displayed automatically.\r\n"
+            type: craft\fieldlayoutelements\Tip
+            uid: 35e355c8-3d43-4a6d-a898-0ff2a3e81c72
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T15:59:07+00:00'
+            elementCondition: null
+            fieldUid: 2aa331e8-6f0e-489f-b33f-ec0c7aed02a5 # Services CTA
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42c213e4-b875-4592-884b-df9d0b5e0b16
+            userCondition: null
+            warning: null
+            width: 100
+        name: Services
+        uid: 5422da44-604d-41b9-a773-5d54e580ee35
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-19T15:52:03+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: "Link and recent blog posts are displayed automatically.\r\n\r\nYou can modify the word of the week in the [Glossary entry](/craft/entries/glossary/163-glossary)."
+            type: craft\fieldlayoutelements\Tip
+            uid: 2aac4604-94f3-460a-8150-f8ecf5796fe1
+            userCondition: null
+        name: Resources
+        uid: d2a200a9-416c-40e2-a901-7effbda18773
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-09-06T15:55:16+00:00'
+            elementCondition: null
+            fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4834bc7e-622c-474c-b4bf-3821435d7821
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T15:56:14+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 8680a5bb-d7cd-4ba7-98b6-9d1bef53561a
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T15:56:14+00:00'
+            elementCondition: null
+            fieldUid: c7146694-e480-4fb8-b084-1a17bacb4f2a # Featured jobs
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be26472c-00ef-451b-9a31-1b49aff7eacf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T15:56:14+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c7acfd3e-0e8c-4439-9a69-d18c5adbe451
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T15:56:14+00:00'
+            elementCondition: null
+            heading: 'Submenu footer'
+            type: craft\fieldlayoutelements\Heading
+            uid: f2c865d5-6055-436c-86d2-9f59ffd20c15
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T15:56:14+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: resourcesFooterTitle
+            includeInCards: false
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 361d09c8-7c8b-4f74-a5b0-faab725f74f3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T15:56:14+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: resourcesFooterDescription
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c688536f-6a7b-4fc1-a86b-30e7e9abcf28
+            userCondition: null
+            warning: null
+            width: 50
+        name: Company
+        uid: d91f28bc-09ca-4e58-83cf-db77f58c3430
+        userCondition: null
+handle: header
+hasTitleField: false
+icon: bars
+name: 'Site header'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

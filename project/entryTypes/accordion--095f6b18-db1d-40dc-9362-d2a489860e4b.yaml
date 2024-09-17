@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  bbc5097b-21a3-4376-8add-3f7f3b5d2752:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:39:14+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 275b0788-91b4-4957-bf1e-4efb92d9deb7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:42:14+00:00'
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # CMS Identifier
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 711f92ae-65a2-4097-ac85-8c016ae7ae6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:42:14+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: surtitle
+            includeInCards: false
+            instructions: null
+            label: Surtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8abf277d-5f42-44bb-b1a5-dfe2c0f38818
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:42:14+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8cf9dacb-66d0-4ac9-a0b7-0041f9916b7c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:42:14+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: description
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d4392df-48ec-41b6-8ce4-1108dac18841
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:42:14+00:00'
+            elementCondition: null
+            fieldUid: e4b3fe13-7dcf-4ebe-8edd-570b3fa7b618 # Drawers
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efec5120-db31-4dc3-9fea-501c859bf8c1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f1e61480-2010-4a77-8c49-7417ad061ed9
+        userCondition: null
+handle: accordion
+hasTitleField: false
+icon: null
+name: Accordion
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,35 +1,22 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: modules
-instructions: "Le modèle ouvert est le nom donné au regroupement des modules mis à votre disposition pour bâtir une page. Les modules s'empilent les uns sur les autres.\r\n\r\n---\r\n\r\nThe Open Model is the name given to the group of modules at your disposal to build a page. The modules are stacked one on top of another."
-name: 'Modèle ouvert (Modules) // Open Model (Modules)'
+instructions: 'Modules are **reusable components that are stacked** on top of each other to create the flow of the page. Think of it as LEGO® blocks that you bring together to create the content of your page.'
+name: Modules
 searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionCondition:
-    __assoc__:
-      -
-        - elementType
-        - craft\elements\Entry
-      -
-        - fieldContext
-        - global
-      -
-        - class
-        - craft\elements\conditions\entries\EntryCondition
-  selectionLabel: 'Ajouter des modules // Add modules'
+  selectionLabel: 'Add modules'
+  showCardsInGrid: false
   showSiteMenu: false
   sources:
-    - 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
+    - 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' #  Modules
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Entries

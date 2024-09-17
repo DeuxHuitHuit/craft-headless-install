@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 39fc315f-bb9e-46f7-877a-dcdd711c1aed # Media spec
+handle: mediaSpecs
+maxAuthors: 1
+name: 'Media specs'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

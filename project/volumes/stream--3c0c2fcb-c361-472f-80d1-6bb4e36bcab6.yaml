@@ -1,3 +1,5 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   56eb2417-7d56-4b5e-b05c-b98689f5c44d:
     tabs:
@@ -9,9 +11,12 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:20+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -19,6 +24,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -31,46 +37,14 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            elementCondition: null
-            fieldUid: 410c4c51-cf57-4373-9a81-733371fbc539 # Texte alternatif // Alternative Text
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6a422e42-d421-4114-b1d7-4a468e571bb5
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5c1f6b23-b8b4-47c3-8f37-e238b465162b
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe # Crédits // Copyrights
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b3500645-aada-42d0-8f59-e1850c0c27cd
-            userCondition: null
-            warning: null
-            width: 50
-          -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             elementCondition: null
             fieldUid: a4075417-c1ab-4ea9-86bb-9848b83afec3 # Video Stream (pour les Asset Volumes seulement)
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -85,6 +59,7 @@ fs: stream
 handle: stream
 name: Stream
 sortOrder: 2
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''

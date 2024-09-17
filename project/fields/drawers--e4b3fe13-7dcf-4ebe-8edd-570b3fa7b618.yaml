@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: drawers
+instructions: null
+name: Drawers
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - f20d3272-0ab0-4656-aa6d-e27e58f20a40 # Drawer
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

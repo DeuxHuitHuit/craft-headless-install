@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 05578bc4-55f9-492f-b33c-80a322aadef4 # Prefooter
+handle: prefooter
+maxAuthors: 1
+name: Prefooter
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

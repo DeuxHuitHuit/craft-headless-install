@@ -1,7 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - b09fcabc-7f1c-40b8-b8d3-f085835a0c24 # Homepage
 handle: home
-name: 'Accueil // Homepage'
+maxAuthors: 1
+name: Homepage
 previewTargets:
   -
     __assoc__:
@@ -9,11 +12,11 @@ previewTargets:
         - label
         - 'Primary entry page'
       -
-        - urlFormat
-        - '{url}'
-      -
         - refresh
         - '1'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR

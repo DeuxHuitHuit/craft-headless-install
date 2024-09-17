@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: ctaBlocks
+instructions: null
+name: 'CTA blocks'
+searchable: false
+settings:
+  createButtonLabel: 'New block'
+  entryTypes:
+    - ec0a4ef6-f165-4437-a659-691b30503c4c # CTA block
+  includeTableView: false
+  maxEntries: 2
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

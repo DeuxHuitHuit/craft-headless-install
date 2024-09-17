@@ -1,0 +1,20 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - a03206c2-0f1f-4ac9-affe-b6a82de9bf75 # Site configuration
+handle: config
+maxAuthors: 1
+name: 'Site configuration'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

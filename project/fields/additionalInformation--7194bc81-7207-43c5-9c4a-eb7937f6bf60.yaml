@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: additionalInformation
+instructions: 'Displayed in the sidebar'
+name: 'Additional Information'
+searchable: false
+settings:
+  createButtonLabel: 'Add information'
+  entryTypes:
+    - 7411b628-c5e1-4b0e-8a1e-1220e9c1e4ed # Information
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: invertTextMedia
+instructions: null
+name: Invert
+searchable: false
+settings:
+  default: false
+  offLabel: 'Media left - Text right'
+  onLabel: 'Text left - Media right'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

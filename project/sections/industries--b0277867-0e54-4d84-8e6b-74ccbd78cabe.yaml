@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3f07a8e2-b80b-4fe0-aca4-9c505738579d # Narrative
+handle: industries
+maxAuthors: 1
+name: Industries
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'industrie/{slug}'
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'industry/{slug}'
+structure:
+  maxLevels: null
+  uid: 91fe2a97-0a98-453b-9587-fce7cc124405
+type: structure

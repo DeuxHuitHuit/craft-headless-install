@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b
 fieldLayouts:
   f9acc8d2-e6cb-4881-8447-8e66efec09b8:
     tabs:
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: de7d2c37-782f-442f-82fd-b6d553936ed4 # Thème // Theme
+            fieldUid: de7d2c37-782f-442f-82fd-b6d553936ed4
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
             instructions: null
             label: null
             required: false
@@ -60,6 +60,7 @@ group: null
 groupChildBlockTypes: true
 handle: callout
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

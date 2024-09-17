@@ -1,4 +1,4 @@
-dateModified: 1707250048
+dateModified: 1726500611
 elementSources:
   craft\elements\Asset:
     -
@@ -11,14 +11,9 @@ elementSources:
         - filename
         - size
         - alt
-        - 'field:bd75c367-135c-44c8-a186-ef2170ffd6f3' # Légende // Caption
-        - 'field:fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe' # Crédits // Copyrights
         - link
         - dateUpdated
       type: native
-    -
-      heading: ''
-      type: heading
     -
       defaultSort:
         - dateCreated
@@ -33,20 +28,20 @@ elementSources:
         - link
       type: native
     -
-      heading: ''
-      type: heading
-    -
       defaultSort:
         - dateCreated
         - desc
-      disabled: false
-      key: 'folder:a6b7bb6e-5307-4d0a-932d-fc0ef57c597c'
+      disabled: true
+      key: temp
       tableAttributes:
         - filename
         - size
         - dateModified
         - uploader
         - link
+      type: native
+    -
+      key: 'volume:7b21edba-fb22-4729-8c3b-ada8d7692fb7'
       type: native
   craft\elements\Entry:
     -
@@ -59,17 +54,64 @@ elementSources:
         - section
         - postDate
         - expiryDate
-        - author
         - link
       type: native
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: 427bf5cd-a59b-490b-b909-59f7aeeef7a6
+            values:
+              - dee216e7-8b9e-4a86-9e70-2e95cea7284c # Banner
+              - 0a148063-2d43-4e12-a498-3bd136f0ce3b # Main CTAs
+              - 9477a487-01b6-4a09-bb9b-4e4fdc45d8c6 # Media specs
+              - 3bf78167-9a80-4012-b67c-faf5e0984c25 # Scripts
+              - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site configuration
+              - ff4e6d75-2bed-40aa-8718-1e77a25a37d7 # Site footer
+              - 800d763b-bbca-482a-9345-81b70bf730b2 # Site header
+              - 409a3302-f65c-44c9-a6c8-4e6862dd3508 # Prefooter
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:1363d8c9-0624-4681-802c-6d73aeb2c5bc'
+      label: Globals
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: 38c6dc4c-a415-4e43-8298-6c8aa55610bb
+            values:
+              - 6c86c074-7558-42ed-9fbc-8c4fbc736b95 # Blog
+              - 0982d07a-c328-4033-8695-305319d78835 # Careers
+              - 4a4ac845-5be1-4d2d-bb12-617c872d2ee5 # Contact
+              - e3bfebc3-a957-4dee-9de2-d799d2e240ff # Glossary
+              - da1b5819-b168-4dd9-aa35-505a833ee367 # Homepage
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:eef88424-12ea-4adc-a32f-6d6df4466116'
+      label: Singles
+      tableAttributes: '-'
+      type: custom
     -
       defaultSort:
         - title
         - asc
-      disabled: false
+      disabled: true
       key: singles
       tableAttributes:
-        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre // Title
         - slug
         - link
         - revisionCreator
@@ -82,91 +124,125 @@ elementSources:
       disabled: false
       key: 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
       tableAttributes:
-        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre // Title
         - slug
-        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modèle ouvert (Modules) // Open Model (Modules)
+        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modules
         - link
         - dateUpdated
         - revisionCreator
       type: native
     -
-      heading: Sections
+      heading: Content
       type: heading
     -
       defaultSort:
-        - structure
-        - asc
-      disabled: false
-      key: 'section:90df0a08-7d42-4e4a-893e-a92d210e66a6' # Projets // Projects
-      tableAttributes:
-        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre // Title
-        - slug
-        - 'field:d0b09e80-95e5-4731-b171-d75c405b5cf5' # Année // Year
-        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modèle ouvert (Modules) // Open Model (Modules)
-        - link
-        - dateUpdated
-        - revisionCreator
-      type: native
-    -
-      defaultSort:
-        - structure
+        - title
         - asc
       disabled: false
       key: 'section:c2b278b1-d1f1-4dc9-91f2-716fddb29525' # Articles
       tableAttributes:
-        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre // Title
         - slug
-        - author
         - link
         - dateUpdated
         - revisionCreator
       type: native
     -
       defaultSort:
-        - structure
-        - asc
+        - postDate
+        - desc
       disabled: false
-      key: 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Emplois // Jobs
+      key: 'section:adb71d4d-0c55-4161-9e9d-374fa6f41330' #  Terms
       tableAttributes:
-        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f' # Titre // Title
+        - status
         - slug
-        - 'field:cb674705-76bb-4c5c-aef0-412239f6fde6' # Date de début de l'emploi // Job Start Date
-        - 'field:c8fe87c2-9d25-45db-93c5-2bc89cfff045' # Type d'emploi // Job Type
-        - 'field:4a7fac31-8e92-4edc-bcfe-ae2348d30a0c' # Emplacement de l'emploi // Job Location
+        - 'fieldInstance:70d3b7fc-41df-4559-a959-5eb58dc315e1'
+        - 'fieldInstance:938286ba-3a86-437e-9a84-95a5bc08ba21'
+        - 'fieldInstance:64ea7e1e-0ae1-4027-b9df-e1a30fca6179'
         - link
         - dateUpdated
         - revisionCreator
       type: native
     -
-      heading: Contenu
-      type: heading
-    -
       defaultSort:
-        - structure
-        - asc
+        - postDate
+        - desc
       disabled: false
-      key: 'section:ec897a0c-2ff5-4c93-9b2b-530800ffc3e2' # Équipe // Team
+      key: 'section:8e5a1941-22e5-47d5-a343-f22511f7fb8d' # Technologies
       tableAttributes:
+        - status
         - postDate
         - expiryDate
-        - author
+        - authors
         - link
       type: native
     -
-      heading: Catégories
-      type: heading
-    -
-      key: 'section:f5e5d2b1-6f17-41db-875a-b5c7d7832171' # Types de projets // Project Types
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Jobs
+      tableAttributes:
+        - 'field:9570135e-221e-4a53-bcf3-e704bea37a6f'
+        - slug
+        - 'field:cb674705-76bb-4c5c-aef0-412239f6fde6'
+        - 'field:c8fe87c2-9d25-45db-93c5-2bc89cfff045'
+        - 'field:4a7fac31-8e92-4edc-bcfe-ae2348d30a0c'
+        - link
+        - dateUpdated
+        - revisionCreator
       type: native
     -
-      heading: Composantes
+      key: 'section:98946b67-862c-4244-adb2-59123dff10c9' # Content types
+      type: native
+    -
+      key: 'section:b0277867-0e54-4d84-8e6b-74ccbd78cabe' # Industries
+      type: native
+    -
+      key: 'section:820282a2-c7ad-4e4c-ace1-0f4964f07d07' # Services
+      type: native
+    -
+      heading: Categories
+      type: heading
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\TypeConditionRule
+            operator: in
+            uid: 43268d74-7a8f-419c-a826-81dc8e41c19e
+            values:
+              - 7f423144-c38b-4ed4-916e-132f44e9e1d6 # Blog topic
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      key: 'custom:c3b3934b-b63e-4662-ae65-9e1f51407c4e'
+      label: 'Blog topics'
+      tableAttributes: '-'
+      type: custom
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: true
+      key: 'section:c26c7142-c8a9-4cac-b0ea-c84428d04864' # Blog topics
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      heading: Components
       type: heading
     -
       defaultSort:
         - postDate
         - desc
       disabled: false
-      key: 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
+      key: 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' #  Modules
       tableAttributes:
         - postDate
         - expiryDate
@@ -175,16 +251,7 @@ elementSources:
         - type
       type: native
     -
-      defaultSort:
-        - postDate
-        - desc
-      disabled: false
-      key: 'section:4e822121-c86e-47c7-88db-c49c058e3b2f' # Boutons // Buttons
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - author
-        - link
+      key: 'section:46ed0eb4-8c01-447c-9087-62ca99521b71' # Partners
       type: native
 email:
   fromEmail: $EMAIL_FROM
@@ -212,169 +279,176 @@ fs:
     url: $STREAM_URL
 meta:
   __names__:
-    0a41ad00-fdfe-4ad0-a08b-1e2db0066d17: 'Réalisations // Work' # Réalisations // Work
+    0a148063-2d43-4e12-a498-3bd136f0ce3b: 'Main CTAs' # Main CTAs
     0d817cce-530a-4dbe-bc87-c42dee45463a: 'Tiroir // Drawer' # Tiroir // Drawer
-    0e50c9f4-5bcc-4d0a-969d-85902af71827: 'Emphase / Emphasis' # Emphase / Emphasis
-    0f0e5f88-9336-4032-bfa2-11083f5fa132: 'Identifiant CMS // CMS Identifier' # Identifiant CMS // CMS Identifier
-    1a006606-855e-4926-8e9f-dd3c0064e826: 'Inverser // Invert' # Inverser // Invert
-    1a025b55-4141-4cc4-8c57-683723b236c7: Logo # Logo
-    1c99c20d-5da2-4f5b-ac70-0dcc85f1f19d: 'DASH Video Streaming URL' # DASH Video Streaming URL
-    1ecf630f-5487-42a1-b4ca-d449639b3a83: 'Vidéo // Video' # Vidéo // Video
-    1f225daf-1e85-461d-a339-b01dbf7b1e03: 'Cookie Banner' # Cookie Banner
-    2ad2d52c-30c8-4246-b7d0-940e33c3a34a: Default # Default
-    2dbcea24-6454-4370-b235-6b5882a96431: 'Couleur // Color' # Couleur // Color
+    0f0e5f88-9336-4032-bfa2-11083f5fa132: 'CMS Identifier' # CMS Identifier
+    1b87bba6-669b-4114-b597-210e967e2891: Legal # Legal
+    1c16912f-6e0e-4398-8d7e-b852e9eaa45c: Stats # Stats
+    2aa331e8-6f0e-489f-b33f-ec0c7aed02a5: 'Services CTA' # Services CTA
+    0002bc44-d51f-4243-b0c1-283dbfb202ea: Immersive # Immersive
     2f4cc73e-1fcb-41c0-a892-a938426d92cf: Images # Images
-    2f32bdd1-e98a-4d79-b203-fae018ddea2e: 'Crédits et/ou légende / Copyrights and/or caption' # Crédits et/ou légende / Copyrights and/or caption
-    3ace2ccf-b4ee-4079-870f-0ea874d7eabf: 'HLS Video Streaming URL' # HLS Video Streaming URL
-    3b5a590b-95e7-40bb-a16a-39f8c3aeec5f: 'Nom // Name' # Nom // Name
+    3b6cf951-6048-4fee-bdcc-485a39003ab8: Gated # Gated
     3b201410-7c1b-4123-aa95-e7e742a06113: Scripts # Scripts
+    3bf0c80a-1ddf-4c2f-80dd-c1b171022058: 'Grid - Text' # Grid - Text
+    3bf78167-9a80-4012-b67c-faf5e0984c25: Scripts # Scripts
     3c0c2fcb-c361-472f-80d1-6bb4e36bcab6: Stream # Stream
-    3ecbadf2-68f4-43d6-b71d-76265fbaa08f: 'Icône // Icon' # Icône // Icon
-    3f07a8e2-b80b-4fe0-aca4-9c505738579d: 'Page narrative par défaut / Default Narrative' # Page narrative par défaut / Default Narrative
-    4a4ac845-5be1-4d2d-bb12-617c872d2ee5: 'Nous joindre // Contact' # Nous joindre // Contact
-    4a7fac31-8e92-4edc-bcfe-ae2348d30a0c: 'Emplacement de l''emploi // Job Location' # Emplacement de l'emploi // Job Location
-    4b8d5a84-3fab-441c-b90e-5439048b5ea9: Muted # Muted
-    4cbb8576-1f85-4aa0-ac8c-638580d36c9b: 'Prose éditoriale // Editorial Prose' # Prose éditoriale // Editorial Prose
-    4e7d9e35-e595-483d-b711-4acfd6173b33: 'DASH Video Streaming URL' # DASH Video Streaming URL
-    4e822121-c86e-47c7-88db-c49c058e3b2f: 'Boutons // Buttons' # Boutons // Buttons
-    4f2acaa1-189a-4e2d-ad0c-f313c4b00118: 'Médias sociaux // Socials' # Médias sociaux // Socials
-    5a2f8d95-a235-41c5-8a55-11325fe64a0f: 'MP4 Video Streaming URL' # MP4 Video Streaming URL
-    5c74d01f-4a95-459c-a9bc-72c7f064839f: 'URL HLS' # URL HLS
-    5e423c33-bf01-4613-b511-0c196a0f3421: 'URL du compte // Account URL' # URL du compte // Account URL
-    6afd3883-59ac-4615-99c2-7a89cfd5d1c2: 'URL DASH' # URL DASH
-    6bb7eb36-b90f-451e-b921-1f377e3ff31e: Scripts # Scripts
-    6c86c074-7558-42ed-9fbc-8c4fbc736b95: 'Blogue // Blog' # Blogue // Blog
+    3cc36f2e-cfdd-4bb2-9ab3-fcc08404e867: 'Grid items media' # Grid items media
+    3ce9ecc2-8c9b-4d1f-962c-eca70eee7033: Title # Title
+    3d598329-9100-4395-99d6-00ba71ab632c: Articles # Articles
+    3f07a8e2-b80b-4fe0-aca4-9c505738579d: Narrative # Narrative
+    3ff054f5-5ec7-45a1-a9cb-43e7ed4b58fe: 'Term example' # Term example
+    4a4ac845-5be1-4d2d-bb12-617c872d2ee5: Contact # Contact
+    4c508769-fc04-4e88-9cfd-85313caaf2b4: Script # Script
+    4dabd377-5b99-4269-90ab-1129bab3dea0: 'Plain text - Multiline' # Plain text - Multiline
+    4f9bb904-18d0-40ef-b854-d7779ec54378: Modals # Modals
+    5c7e62d8-147e-41d8-ae2d-8b6867db809f: Timeline # Timeline
+    5c75991e-bdd9-4b52-9402-430bc0fad3a8: Banner # Banner
+    5d6e428e-09bc-4de0-a490-c7286a0e47c3: 'Info cards' # Info cards
+    5eb94b3a-89eb-4e14-94a7-eb73061858d8: 'Header Submenu Cta' # Header Submenu Cta
+    6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc: 'Site configuration' # Site configuration
+    6b5ee047-7241-4605-88b8-870f81d1ba9d: List # List
+    6c86c074-7558-42ed-9fbc-8c4fbc736b95: Blog # Blog
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
-    7c46388e-1ad1-466a-a30f-c138c9477b0f: 'Modèle ouvert (Modules) // Open Model (Modules)' # Modèle ouvert (Modules) // Open Model (Modules)
-    7ddb842a-f59e-40b2-a970-b9797c1027a9: Configuration # Configuration
+    7c8b6246-df99-4cc5-8a43-fa5ed9b0ff18: 'Grid - Initials' # Grid - Initials
+    7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
+    7cd5a1f9-fd58-4b41-a236-424527a88fec: 'Prose drawer' # Prose drawer
+    7d6d33a6-5d21-417b-a4e7-def3b8a03c8f: Topics # Topics
+    7f423144-c38b-4ed4-916e-132f44e9e1d6: 'Blog topic' # Blog topic
     8a2d5af3-151b-4ea4-9882-c0579fbe91f9: 'Citation avec source // Quote with source' # Citation avec source // Quote with source
-    8b5316ca-71f3-4b68-be3d-991a601fa490: 'URL externe // External URL' # URL externe // External URL
-    8e521985-7684-4e3d-9718-e32537067b77: 'Activer la bannière // Enable banner' # Activer la bannière // Enable banner
-    9a2d2841-4b6d-450e-8fbb-c6c5c0855f2c: 'Surtitre // Surtitle' # Surtitre // Surtitle
-    9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e: Introduction # Introduction
-    10a5c368-5d0b-47a4-9978-105511f5e998: 'Informations de partage // Sharing Info' # Informations de partage // Sharing Info
+    8c650dbb-1723-4615-a787-b3bbcbaf0e65: 'Term examples' # Term examples
+    8de4c272-c71a-4b25-9b8d-b9862a39f575: Modal # Modal
+    8e5a1941-22e5-47d5-a343-f22511f7fb8d: Technologies # Technologies
+    9bfe8632-ddf7-4840-bf27-91e0700fbd22: 'Grid card media' # Grid card media
+    9c463a5c-44c7-4657-bee4-0d9c2ef6c51c: Items # Items
+    9de68a16-72b4-4696-afea-63d53c5a01bc: Partners # Partners
+    9e18815d-4be1-43b2-9287-19eef168429b: Invert # Invert
+    9ec6fdb3-b8d0-4641-96b9-16c9875584fa: Text # Text
+    9f95538d-d01c-4bf7-a527-422b7418ed90: Stats # Stats
+    10a5c368-5d0b-47a4-9978-105511f5e998: SEO # SEO
     16e1ca14-9781-44a1-b17f-7489cef3700a: 'Boutons // Buttons' # Boutons // Buttons
-    19f03eed-fb4d-447e-966d-258f5e5add92: 'Page légale / Legal Page' # Page légale / Legal Page
+    19f03eed-fb4d-447e-966d-258f5e5add92: ' Legal' #  Legal
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
-    24fcc82a-e774-4756-8f1e-62edb2119633: 'Inline Rich Text' # Inline Rich Text
-    26ac95b7-5d49-4702-94f5-91f13becdd1a: Autoplay # Autoplay
-    40ae4b06-dda4-4f6a-918a-ff01d9149953: 'Citation / Quote' # Citation / Quote
-    062ef898-9c73-4473-9995-a0da70f2b9f5: 'Rôle // Role' # Rôle // Role
-    63a8cb64-067e-4061-adfa-2d615a0d9e63: 'Appel à l''action / Call to Action' # Appel à l'action / Call to Action
-    78f5ad5c-d629-4183-beef-7d0d80ef3f3a: 'HLS Video Streaming URL' # HLS Video Streaming URL
-    80faeb96-cf17-464b-aae2-cbf334c38969: 'Texte riche simple // Simple Rich Text' # Texte riche simple // Simple Rich Text
+    24fcc82a-e774-4756-8f1e-62edb2119633: 'Rich text - inline' # Rich text - inline
+    39fc315f-bb9e-46f7-877a-dcdd711c1aed: 'Media spec' # Media spec
+    43e380c0-0690-4a46-9b42-e6c78d6052ec: 'Triple line title' # Triple line title
+    46e9d2cf-9ffa-4d70-b132-f32d2c4c4c58: Embed # Embed
+    46ed0eb4-8c01-447c-9087-62ca99521b71: Partners # Partners
+    58bc3602-cfed-411e-bc6c-380f84340e3f: 'Grid - Stats' # Grid - Stats
+    59d5a6cf-12d1-4545-97b4-16e72fe93b7f: Link # Link
+    63a8cb64-067e-4061-adfa-2d615a0d9e63: 'CTA ' # CTA 
+    80faeb96-cf17-464b-aae2-cbf334c38969: 'Rich text - Simple' # Rich text - Simple
     82e66581-4e3a-4eb6-991e-7fc003ebc9c9: 'Membre d''équipe // Team member' # Membre d'équipe // Team member
-    84f84d17-d6f1-4647-944c-cec29e6cea05: Image # Image
-    90df0a08-7d42-4e4a-893e-a92d210e66a6: 'Projets // Projects' # Projets // Projects
-    092d02df-20c1-4e6e-8beb-eccd701ac60f: 'Personne // Person' # Personne // Person
-    99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Image de partage // Share Image' # Image de partage // Share Image
+    83a83424-d0b9-489b-83d9-c03a7a083255: CTAs # CTAs
+    89a0d307-caf6-4065-836e-f59cea4d6bf7: Simple # Simple
+    93df1b76-1ac7-49df-8735-9bb05097375b: 'CTA blocks' # CTA blocks
+    095f6b18-db1d-40dc-9362-d2a489860e4b: Accordion # Accordion
+    99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Share image' # Share image
     148fb449-e797-4b40-a8f8-d45d858683dd: 'Texte // Text' # Texte // Text
-    216a4e0a-27ae-4b0b-963e-26dc9ffae251: Logo # Logo
-    220f7530-a0f7-4885-bd51-fb58f83948a9: Portrait # Portrait
     247fed59-90e6-4b37-ac0c-a42cfa306a81: 'Média // Media' # Média // Media
-    316eddeb-1c05-4128-9882-b6960e13e8ee: Image # Image
-    340a1d3c-b17e-4ab8-85b4-a85d50b81926: 'Réalisations // Work' # Réalisations // Work
-    410c4c51-cf57-4373-9a81-733371fbc539: 'Texte alternatif // Alternative Text' # Texte alternatif // Alternative Text
-    414b45c8-d274-4c58-b6e8-f0ce31130d34: Modules # Modules
-    455e6766-9c22-44eb-94f3-72b38807a490: 'Courriel // Email' # Courriel // Email
-    458ea4b0-4f7d-4f55-b1c2-e4f9fecfb393: 'Video Stream (loop) - URL HLS' # Video Stream (loop) - URL HLS
-    492f0e2c-a4d9-43f1-bbe3-088788243930: 'Carrières // Careers' # Carrières // Careers
-    506fb257-f530-4cda-b130-1af00a5bda55: Common # Common
-    526cd691-29bd-44d4-bcbe-0e0f4b678c5a: 'Video MP4' # Video MP4
-    615c8eda-5043-4fdd-a90c-3c77212764e6: 'Texte de base // Plain Text' # Texte de base // Plain Text
-    0630a2e9-2fbf-476c-b8e4-8586a57d1366: Default # Default
-    718b4d78-52f5-4b75-aecb-957dd00236ab: 'Titre // Title' # Titre // Title
+    407be569-defa-40f8-be1f-92ceb65b41bb: 'Info cards' # Info cards
+    409a3302-f65c-44c9-a6c8-4e6862dd3508: Prefooter # Prefooter
+    414b45c8-d274-4c58-b6e8-f0ce31130d34: ' Modules' #  Modules
+    492f0e2c-a4d9-43f1-bbe3-088788243930: Careers # Careers
+    549d68f5-bdcc-46ad-93b3-647d55939f1b: 'Client stories' # Client stories
+    588f163f-1874-4083-b473-72a38dfd5f9b: Format # Format
+    615c8eda-5043-4fdd-a90c-3c77212764e6: 'Plain text' # Plain text
+    0630a2e9-2fbf-476c-b8e4-8586a57d1366: Article # Article
+    663c4e72-de2b-4558-9123-f2db43c01252: Article # Article
     749c7d4d-cae1-4f65-93b7-b546870551a7: Média # Média
-    924f35e5-7a95-4c28-aab3-db4ac6e4ecc7: 'Spécifications images et vidéos // Image and video specs' # Spécifications images et vidéos // Image and video specs
-    0982d07a-c328-4033-8695-305319d78835: 'Carrières // Careers' # Carrières // Careers
-    2731acb9-f3b8-46c4-8804-e4e1765f5291: 'Vidéo encastrée / Embed Video' # Vidéo encastrée / Embed Video
-    3070e537-2129-43f0-addf-fbae4049f8e1: 'Média // Media' # Média // Media
-    3549d929-b071-40e7-9ecd-b06f0f29fb04: 'Titre de partage // Share Title' # Titre de partage // Share Title
-    4093afd2-c348-4b4b-9137-0e07daa80e57: 'Texte-Média / Text-Media' # Texte-Média / Text-Media
-    5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f: 'Médias de la galerie // Gallery Medias' # Médias de la galerie // Gallery Medias
-    7660df84-3284-4698-a6b9-3c14ecc4dae2: Scripts # Scripts
+    796e67f3-c861-4fc8-9eed-e9e1c093c0c6: Video # Video
+    800d763b-bbca-482a-9345-81b70bf730b2: 'Site header' # Site header
+    0858fc4c-c694-4711-84b9-c1dbe35c2c16: Illustration # Illustration
+    923cdc41-2e7b-4d9a-898b-4bf76d14bcc7: 'Read time' # Read time
+    0982d07a-c328-4033-8695-305319d78835: Careers # Careers
+    3070e537-2129-43f0-addf-fbae4049f8e1: Media # Media
+    3221aacd-9b06-4daa-a21c-d632a438983d: 'Prose drawers' # Prose drawers
+    4093afd2-c348-4b4b-9137-0e07daa80e57: Text-Media # Text-Media
+    5022ae0f-5f8a-4457-a9ec-63cceb30296a: 'Job type' # Job type
+    5167fd22-2bff-451f-bb5b-0166e876d431: Partner # Partner
+    05578bc4-55f9-492f-b33c-80a322aadef4: Prefooter # Prefooter
+    7194bc81-7207-43c5-9c4a-eb7937f6bf60: 'Additional Information' # Additional Information
+    7411b628-c5e1-4b0e-8a1e-1220e9c1e4ed: Information # Information
     8534cb8d-ec47-4d88-a55d-3e22d08c402b: Logo # Logo
-    8659c777-3feb-4edf-88ee-c5e4cee8aa6a: 'Bannière de cookies // Cookie Banner' # Bannière de cookies // Cookie Banner
-    8839b979-af6a-4ea0-bc8e-a9a63bde6b1b: 'Titre // Title' # Titre // Title
-    22947fe1-4c0e-437b-9997-de04319d78e3: 'Texte riche // Rich Text' # Texte riche // Rich Text
-    23284f12-4d7f-4e0c-96d0-ec4b36578576: Start # Start
+    9477a487-01b6-4a09-bb9b-4e4fdc45d8c6: 'Media specs' # Media specs
+    11868b86-f6ff-48b7-8681-e1bced2ae55f: Service # Service
+    22947fe1-4c0e-437b-9997-de04319d78e3: 'Rich text - Full' # Rich text - Full
     66232f4e-2ac7-45d0-9cf4-9867b9b96ada: 'Tiroirs // Drawers' # Tiroirs // Drawers
-    78376c37-546a-4c5a-b132-d9d8c8acf806: 'Nom d''utilisateur.trice sur Twitter // Twitter Handle' # Nom d'utilisateur.trice sur Twitter // Twitter Handle
-    82932fdc-2730-4352-a49f-21abd4e96f05: 'Boutons // Buttons' # Boutons // Buttons
-    91375a23-42c5-4d08-abe7-bb657195f65f: Default # Default
-    94179dde-ab52-4487-b729-d1503068b684: 'Téléphone // Phone' # Téléphone // Phone
-    312799c9-ad1d-4b5d-a676-89aa94ae2ee1: Prose # Prose
-    477958ed-8cd8-487c-9006-bf3805cf3fea: 'Bouton // Button' # Bouton // Button
-    549419b9-9d24-42ba-8fb5-861e3c5330ef: 'Auteur.e (Source) // Author (Source)' # Auteur.e (Source) // Author (Source)
-    638127e0-1136-4087-986c-21cc704b186a: Poster # Poster
-    9570135e-221e-4a53-bcf3-e704bea37a6f: 'Titre // Title' # Titre // Title
-    10512774-a66c-4106-bdbc-fcb47780e8eb: 'Libellé // Label' # Libellé // Label
-    53324936-abcd-44da-9777-48ffe627e7ad: 'Auteur (source) externe // External author (source)' # Auteur (source) externe // External author (source)
-    56586313-03c2-4ded-b0c3-d22dee297e67: 'Organisation // Organization' # Organisation // Organization
-    57658648-a27b-42d0-9da8-27b4e63facf9: Loop # Loop
-    63103729-f35f-4655-80f6-26ba068fcbe2: 'Video Stream (loop) - URL DASH' # Video Stream (loop) - URL DASH
-    92682545-f076-4486-a08f-9ae1347c0bfb: Default # Default
-    a91b6297-0bb5-4772-8a0a-53ed92c65d2a: 'URL MP4' # URL MP4
-    a6746c3e-bd21-4113-87e7-0d0469f24d0e: Image # Image
-    a2444205-7b4b-4062-82d8-74833e3f5f80: Default # Default
+    82932fdc-2730-4352-a49f-21abd4e96f05: Phones # Phones
+    98946b67-862c-4244-adb2-59123dff10c9: 'Content types' # Content types
+    0145468f-d01a-4e00-bdf3-d734c3e52a72: Inline # Inline
+    193062ab-b7c0-4fee-b207-80bf4bcc5ffa: Dark # Dark
+    374406b8-233f-4e1b-ae1e-f779112eaca6: Article # Article
+    820282a2-c7ad-4e4c-ace1-0f4964f07d07: Services # Services
+    2556508a-1412-450e-8cad-0369ef9cced4: Url # Url
+    8912074a-65b7-4654-99b1-9dbc88f005a3: 'Grid card initials' # Grid card initials
+    68842798-370f-4697-8091-2ec5e30ee372: 'Solutions CTA' # Solutions CTA
+    74021407-d899-4659-9833-c6676a5ae2ab: 'Info card' # Info card
+    85050609-12b8-4783-b9c6-5f753f3fe36b: Full # Full
+    a0a65bff-fadd-4bb4-ae89-c3f15c01bbbc: Carousel # Carousel
+    a03206c2-0f1f-4ac9-affe-b6a82de9bf75: 'Site configuration' # Site configuration
+    a2444205-7b4b-4062-82d8-74833e3f5f80: Jobs # Jobs
     a4075417-c1ab-4ea9-86bb-9848b83afec3: 'Video Stream (pour les Asset Volumes seulement)' # Video Stream (pour les Asset Volumes seulement)
+    ab61c712-b703-49db-adec-42e6fbf05a9a: 'Main CTAs' # Main CTAs
     abf1f7b7-9865-4919-abd6-3b87e6816e4a: 'Médias // Medias' # Médias // Medias
+    ad8cd694-5bdd-45ca-8e26-e9d4a783f27f: Conversion # Conversion
+    adb71d4d-0c55-4161-9e9d-374fa6f41330: ' Terms' #  Terms
     af0b5372-3e37-4dbd-afcc-c9aa66cea831: 'Appel à l''action // Call to Action' # Appel à l'action // Call to Action
     af77db16-7383-4e3b-ae49-71b93d94b959: FR # FR
-    b0504f25-28ad-4539-8917-b0d159386d5c: 'Vidéo d''ambiance / Mood video' # Vidéo d'ambiance / Mood video
-    b09fcabc-7f1c-40b8-b8d3-f085835a0c24: 'Accueil // Homepage' # Accueil // Homepage
-    b2ec015d-a8f7-4da8-a82c-5db01312f38b: 'Courriel // Email' # Courriel // Email
+    b0277867-0e54-4d84-8e6b-74ccbd78cabe: Industries # Industries
+    b09fcabc-7f1c-40b8-b8d3-f085835a0c24: Homepage # Homepage
+    b4a91503-b7be-423e-966c-fe87d7cd8da6: 'Bubble texts' # Bubble texts
+    b5dbe309-4008-42e6-afee-9062a4827fb0: 'Prose stat item' # Prose stat item
     b5f2bd1d-dd60-4cf4-8fb8-cf314d30a192: 'Vidéo encastrée (Embed) // Embed Video' # Vidéo encastrée (Embed) // Embed Video
-    b7d20b42-135e-4d76-85cd-1e890b36c30a: 'Texte / Text' # Texte / Text
+    b7d20b42-135e-4d76-85cd-1e890b36c30a: Text # Text
     b40c3a12-3bed-46f5-97c6-941c7a839154: 'Vidéo Embed // Embed Video' # Vidéo Embed // Embed Video
     b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
-    b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'URL de la vidéo Embed // Embed Video URL' # URL de la vidéo Embed // Embed Video URL
-    bd75c367-135c-44c8-a186-ef2170ffd6f3: 'Légende // Caption' # Légende // Caption
-    be9c9966-1e4e-4129-a43b-b77bb7764fef: Client # Client
+    b85d1f47-0899-4399-bce0-683df19cdcd2: 'CTA pair' # CTA pair
+    b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Embed URL' # Embed URL
+    bc22634f-2d69-42d4-80d0-f4ea8d2818c1: 'Grid card stat' # Grid card stat
+    bdc09e8f-fc0f-420e-b3f0-af6980757e6b: 'Site header' # Site header
     c2b278b1-d1f1-4dc9-91f2-716fddb29525: Articles # Articles
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
-    c8fd912c-bd53-4e56-8979-29c50e0077b3: 'Description courte // Short Description' # Description courte // Short Description
-    c8fe87c2-9d25-45db-93c5-2bc89cfff045: 'Type d''emploi // Job Type' # Type d'emploi // Job Type
-    caa63442-86cb-4489-baad-9aba2dc43dba: 'Empêcher l''indexation // Prevent Indexation' # Empêcher l'indexation // Prevent Indexation
-    cb8bd9eb-3ad5-44d0-8c11-52f215b0e027: Head # Head
-    cb674705-76bb-4c5c-aef0-412239f6fde6: 'Date de début de l''emploi // Job Start Date' # Date de début de l'emploi // Job Start Date
-    cc617857-d1f5-450e-a268-f5dcfaa3e536: 'Entrée du site // Site Entry' # Entrée du site // Site Entry
-    d0b09e80-95e5-4731-b171-d75c405b5cf5: 'Année // Year' # Année // Year
-    d4f4b051-1f67-458c-8641-162f89f47e59: 'Body End' # Body End
-    d6a9c7d7-6887-4a32-97b8-869a1625be3d: 'Titre personnel // Personal Title' # Titre personnel // Personal Title
-    d9f3be47-624e-49ae-90d4-79880f18013e: 'Nous joindre // Contact' # Nous joindre // Contact
-    d53f096e-9e71-40ca-89b6-2df0130b4582: 'GTM Consent Event' # GTM Consent Event
+    c8ca579c-50a7-46b6-88aa-ce8fbf20116b: Modals # Modals
+    c26c7142-c8a9-4cac-b0ea-c84428d04864: 'Blog topics' # Blog topics
+    c1144e41-83aa-4135-a049-3516bb04e4a2: Items # Items
+    c7146694-e480-4fb8-b084-1a17bacb4f2a: 'Featured jobs' # Featured jobs
+    caa63442-86cb-4489-baad-9aba2dc43dba: 'No index' # No index
+    cc5591b6-0516-4dfb-8b70-671168f3b268: Partner # Partner
+    d9f3be47-624e-49ae-90d4-79880f18013e: Contact # Contact
     d54d25fa-9fc6-4fb2-96c7-17d51a9e91e9: 'Média // Media' # Média // Media
-    d828cf85-c92c-46f5-81ef-f7cb98956204: 'Rôle // Role' # Rôle // Role
-    d841b955-ebbb-467e-8159-ddf909503912: Image # Image
-    da1b5819-b168-4dd9-aa35-505a833ee367: 'Accueil // Homepage' # Accueil // Homepage
+    d6330437-c7cc-4048-a81b-2d746f7b2ae5: 'Stat card' # Stat card
+    da1b5819-b168-4dd9-aa35-505a833ee367: Homepage # Homepage
+    dad65de1-4e4e-4619-a0ae-d7b5f0c19e6a: 'Prose stats row' # Prose stats row
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
-    dc92bc6c-36c7-4c5d-be20-91a74863ec70: 'Blogue // Blog' # Blogue // Blog
-    dd7058b0-13b5-48d9-bdd2-292608962a13: 'Vidéo d''ambiance / Mood video' # Vidéo d'ambiance / Mood video
-    de7d2c37-782f-442f-82fd-b6d553936ed4: 'Thème // Theme' # Thème // Theme
-    df9a8572-5130-4460-8d89-d85f354533fb: 'Video Stream (loop) - URL MP4' # Video Stream (loop) - URL MP4
-    e0fec26e-937b-4d32-b433-211242db4d9e: 'Méta-données // Metadatas ' # Méta-données // Metadatas 
-    e2cdaad1-42b3-4873-a763-caf3bf386e18: 'Nom // Name' # Nom // Name
-    e2d0dc6d-d940-4394-9ed8-c7fa6bb35d90: 'Fichier // File' # Fichier // File
-    e9bb0b4f-8f12-4070-a311-55639c29aa63: 'MP4 Video Streaming URL' # MP4 Video Streaming URL
+    dc92bc6c-36c7-4c5d-be20-91a74863ec70: Blog # Blog
+    dee216e7-8b9e-4a86-9e70-2e95cea7284c: Banner # Banner
+    e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
+    e3bfebc3-a957-4dee-9de2-d799d2e240ff: Glossary # Glossary
+    e3edf03d-99c0-4fcf-a60a-9a2c629191d7: Initials # Initials
+    e4b3fe13-7dcf-4ebe-8edd-570b3fa7b618: Drawers # Drawers
+    e8a9774e-14c6-4ae6-b673-a9740e5af59b: 'Plain text - Non-translatable' # Plain text - Non-translatable
+    e20da329-fdd5-4405-92a6-3b6ea49914d1: Download # Download
     e30d53e2-8287-4791-9efa-184c3024366c: 'Emphase // Callout' # Emphase // Callout
-    e45d3444-dd43-44a0-9878-0fea045f468b: 'Vignette // Thumbnail' # Vignette // Thumbnail
-    e485bfb8-5e08-45cf-a792-6d7a97f6844d: Default # Default
-    e5888f8d-591b-411a-aa68-7334da565f86: 'Description de l''emploi // Job Description' # Description de l'emploi // Job Description
-    ea088504-f49a-4b57-8ff3-5deab9d32418: 'Nom // Name' # Nom // Name
-    eae04f61-8571-43a2-845c-063aa638db1e: 'Body Start' # Body Start
+    e40a726a-0d15-4911-98eb-7fa82a695d75: Term # Term
+    e3937a4e-2b2f-4efc-88a1-51c8580a3e4e: Events # Events
+    e14411d6-d28c-4e11-9e6e-8ce80094463e: Items # Items
+    e60013a8-ce72-424b-9582-971b0ca73b09: Partners # Partners
+    e1248033-7806-4f45-a111-b38646111da1: Glossary # Glossary
+    ea4cbc8b-abf0-41eb-949d-36005d242b30: 'Prose stats rows' # Prose stats rows
+    eb06fbb5-a0f2-44b3-88e4-f1355300f911: Article # Article
+    eba42e11-ad7c-47bb-acdb-2ac973f366e1: Event # Event
+    ec0a4ef6-f165-4437-a659-691b30503c4c: 'CTA block' # CTA block
     ec8f8144-4229-4395-adcd-105b11962c8a: Pages # Pages
-    ec897a0c-2ff5-4c93-9b2b-530800ffc3e2: 'Équipe // Team' # Équipe // Team
-    edb579ae-b8c5-4bba-9665-5dce08886786: 'Informations sur l''organisation // Organization Info' # Informations sur l'organisation // Organization Info
-    eded1aaf-90ef-4347-8c64-db5347416f77: Image # Image
-    f00f84ef-1880-4288-97ff-2c2acd5e98a9: embedUrl # embedUrl
-    f5e5d2b1-6f17-41db-875a-b5c7d7832171: 'Types de projets // Project Types' # Types de projets // Project Types
-    f23e6a71-9e92-4184-bdd9-8ff3775fb2ec: 'Emplois // Jobs' # Emplois // Jobs
-    f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Description de partage // Share Description' # Description de partage // Share Description
-    fa4b5528-bfc0-4d23-8ec1-91f66bda6ebe: 'Crédits // Copyrights' # Crédits // Copyrights
-    fbafa02b-3df0-475b-a2c9-78afc19c299f: 'Plateforme // Platform' # Plateforme // Platform
-    fc75545c-a4e6-482c-866c-64e270d6d9a7: 'Adresse // Address' # Adresse // Address
-    fe7be7d2-aed9-4274-91c5-b1fc5432b42e: 'Nom // Name' # Nom // Name
+    edba4e76-f2d9-4352-80bf-e324c2ee7637: Color # Color
+    f0dcc611-5def-4054-af82-7f009a7698a4: 'Grid - Media' # Grid - Media
+    f7dd0879-f402-4072-990c-9981aaae2cc2: 'CTA - Full width' # CTA - Full width
+    f8d9ad5c-7504-4ce3-a645-814f7094c056: 'Site footer' # Site footer
+    f20d3272-0ab0-4656-aa6d-e27e58f20a40: Drawer # Drawer
+    f23e6a71-9e92-4184-bdd9-8ff3775fb2ec: Jobs # Jobs
+    f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Share description' # Share description
+    f2599fa6-87fd-4abf-ae90-7bdafd0e3f31: Links # Links
+    fd8084f3-1ad7-4238-b63b-18f7ac0b8c92: 'Grid card text' # Grid card text
+    ff4e6d75-2bed-40aa-8718-1e77a25a37d7: 'Site footer' # Site footer
 plugins:
   admin-panel-controllers:
     edition: standard
@@ -406,22 +480,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  field-manager:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  neo:
+  hyper:
     edition: standard
     enabled: true
     licenseKey: 
-    schemaVersion: 4.0.0
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
-  redactor-custom-styles:
-    edition: standard
-    enabled: true
     schemaVersion: 1.0.0
   routes-api:
     edition: standard
@@ -431,18 +493,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  vizy:
+    edition: standard
+    enabled: true
+    licenseKey: 
+    schemaVersion: 0.9.0
 system:
   edition: pro
   live: true
   name: $SITE_NAME
   retryDuration: 60
-  schemaVersion: 4.5.3.0
+  schemaVersion: 5.3.0.2
   timeZone: America/Toronto
-users:
-  allowPublicRegistration: false
-  deactivateByDefault: false
-  defaultGroup: ''
-  photoSubpath: user-profile
-  photoVolumeUid: 7c06f121-409c-4ebe-a6ce-aa78ea61ce4d # Assets
-  requireEmailVerification: true
-  validateOnPublicRegistration: false

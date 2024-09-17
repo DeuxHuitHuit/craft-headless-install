@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: dark
+instructions: 'Activate this switch if the module should be on a **black background** with **white text**.'
+name: Dark
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

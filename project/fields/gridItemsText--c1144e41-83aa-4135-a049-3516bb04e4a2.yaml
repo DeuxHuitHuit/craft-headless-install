@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: gridItemsText
+instructions: null
+name: Items
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - fd8084f3-1ad7-4238-b63b-18f7ac0b8c92 # Grid card text
+  includeTableView: false
+  maxEntries: 6
+  minEntries: 2
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

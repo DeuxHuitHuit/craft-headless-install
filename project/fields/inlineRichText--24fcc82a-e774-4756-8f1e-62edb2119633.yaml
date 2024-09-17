@@ -1,27 +1,25 @@
 columnSuffix: dmqgsavw
-contentColumnType: text
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: inlineRichText
 instructions: null
-name: 'Inline Rich Text'
+name: 'Rich text - inline'
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  columnType: text
-  configSelectionMode: choose
+  blockTypeBehaviour: click
+  configSelectionMode: manual
   defaultTransform: ''
-  manualConfig: ''
-  purifierConfig: null
-  purifyHtml: true
-  redactorConfig: Inline.json
-  removeEmptyTags: false
-  removeInlineStyles: false
-  removeNbsp: false
-  showHtmlButtonForNonAdmins: false
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  editorMode: richText
+  initialRows: 2
+  manualConfig: "{\r\n    \"buttons\": [\"italic\", \"bold\", \"link\", \"html\"],\r\n\"plugins\": [\"force-hard-break\"]\r\n}\r\n"
+  maxBlocks: null
+  minBlocks: null
+  pasteAsPlainText: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
+  trimEmptyParagraphs: true
+  vizyConfig: ''
 translationKeyFormat: null
-translationMethod: site
-type: craft\redactor\Field
+translationMethod: language
+type: verbb\vizy\fields\VizyField

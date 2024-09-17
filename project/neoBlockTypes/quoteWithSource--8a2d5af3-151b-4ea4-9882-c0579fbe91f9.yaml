@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b
 fieldLayouts:
   179a4b62-cbf9-418d-a5a0-30a54672fd76:
     tabs:
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
             instructions: null
             label: 'Citation / Quote'
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef # Auteur.e (Source) // Author (Source)
+            fieldUid: 549419b9-9d24-42ba-8fb5-861e3c5330ef
             instructions: null
             label: null
             required: false
@@ -48,6 +48,7 @@ group: null
 groupChildBlockTypes: true
 handle: quoteWithSource
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

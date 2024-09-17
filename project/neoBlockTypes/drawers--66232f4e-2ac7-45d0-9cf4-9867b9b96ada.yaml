@@ -3,7 +3,7 @@ childBlocks:
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b
 fieldLayouts:
   f5689e91-706d-4ffd-a84b-9a160846cf9f:
     tabs:
@@ -20,7 +20,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f
             instructions: null
             label: null
             required: false
@@ -37,6 +37,7 @@ group: null
 groupChildBlockTypes: true
 handle: drawers
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

@@ -1,0 +1,585 @@
+columnSuffix: null
+handle: articleRichText
+instructions: 'H2 titles (*Heading 2* format option) are used to generate the table of contents.'
+name: Article
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  blockTypeBehaviour: click
+  configSelectionMode: manual
+  defaultTransform: ''
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  editorMode: combined
+  fieldData:
+    -
+      __assoc__:
+        -
+          - id
+          - group-ZN8Dwv7UBN
+        -
+          - name
+          - 'Content blocks'
+        -
+          - blockTypes
+          -
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-VsdfZShYwN
+                1:
+                  - name
+                  - Superquote
+                2:
+                  - handle
+                  - superquote
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - quote-left
+                      -
+                        - value
+                        - quote-left-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - acb64839-1c3c-49a1-9002-4b43cdf71ef3
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - ed25e94e-f8cc-4a65-9882-6c4ae3dca29c
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, quote]
+                                      2: [label, Quote]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:26:11+00:00']
+                                      11: [uid, 6eaf5ff2-b144-45f6-9d6a-339cf0edba8f]
+                                      14: [fieldUid, 4dabd377-5b99-4269-90ab-1129bab3dea0] # Plain text - Multiline
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, authorName]
+                                      2: [label, Author]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 50]
+                                      10: [dateAdded, '2024-09-11T20:14:16+00:00']
+                                      11: [uid, 501393af-1196-4da3-aac0-445e24ceaa6f]
+                                      14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, role]
+                                      2: [label, 'Author role']
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 50]
+                                      10: [dateAdded, '2024-09-11T20:14:16+00:00']
+                                      11: [uid, 746b80de-f2d6-4894-86ef-64b51ffe8420]
+                                      14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-QPIW4wUNuj
+                1:
+                  - name
+                  - Accordion
+                2:
+                  - handle
+                  - accordion
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - chevron-down
+                      -
+                        - value
+                        - chevron-down-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 247d02d0-882e-41ef-9205-89e500f00595
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - 36ec8383-f815-41b8-9ab4-e087cd895045
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:14:16+00:00']
+                                      11: [uid, 72b39d5f-d57b-4bb0-bb57-e6e452090f37]
+                                      14: [fieldUid, 3221aacd-9b06-4daa-a21c-d632a438983d] # Prose drawers
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-39HGa8FlI1
+                1:
+                  - name
+                  - Callout
+                2:
+                  - handle
+                  - callout
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - 'Bahá''í'
+                      -
+                        - value
+                        - bahai-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 846dd554-b414-48a7-a313-838132f92f14
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - 32c8d24f-0ea0-4b87-b19e-58a8e1cc3cb9
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:17:35+00:00']
+                                      11: [uid, f9db4085-6a17-4b79-ac15-fab518d4920d]
+                                      14: [fieldUid, edba4e76-f2d9-4352-80bf-e324c2ee7637] # Color
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, calloutText]
+                                      2: [label, Text]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:28:26+00:00']
+                                      11: [uid, a429f6e4-26df-44bf-8fe0-1e03c2e7e238]
+                                      14: [fieldUid, 4dabd377-5b99-4269-90ab-1129bab3dea0] # Plain text - Multiline
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-2MOdzgk04G
+                1:
+                  - name
+                  - CTA
+                2:
+                  - handle
+                  - cta
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - 'Hand Pointing Right'
+                      -
+                        - value
+                        - hand-point-right-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 1db90248-8892-4a4f-bc8e-04f7af3c2e94
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - 176f9248-ebe0-4ccb-abb7-bfb0f30725a2
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, displayTitle]
+                                      2: [label, Title]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 50]
+                                      10: [dateAdded, '2024-09-11T20:19:46+00:00']
+                                      11: [uid, a9f5a218-cf59-42a6-b92f-81c423c89f15]
+                                      14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, ctaText]
+                                      2: [label, Text]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 50]
+                                      10: [dateAdded, '2024-09-11T20:19:46+00:00']
+                                      11: [uid, a3bf548f-02da-46a8-9c0a-90f7781db0bf]
+                                      14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 50]
+                                      10: [dateAdded, '2024-09-11T20:19:46+00:00']
+                                      11: [uid, 5e817cda-1c89-430d-a76a-bd18d20dd1e7]
+                                      14: [fieldUid, 59d5a6cf-12d1-4545-97b4-16e72fe93b7f] # Link
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 50]
+                                      10: [dateAdded, '2024-09-11T20:19:46+00:00']
+                                      11: [uid, a113632e-7c71-4b8a-95b8-d3710879dc3c]
+                                      14: [fieldUid, 3070e537-2129-43f0-addf-fbae4049f8e1] # Media
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-QEKDSW2kVS
+                1:
+                  - name
+                  - Link
+                2:
+                  - handle
+                  - link
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - 'Alternate External Link'
+                      -
+                        - value
+                        - external-link-alt-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 67755a52-1f92-4067-8ea7-4435b623c213
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - 211c8b7b-cc68-4d85-93e0-4be52e762fda
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:20:32+00:00']
+                                      11: [uid, 6808de3c-91fb-46cf-ae7f-4991c843925c]
+                                      14: [fieldUid, 59d5a6cf-12d1-4545-97b4-16e72fe93b7f] # Link
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-rhfChL7FRM
+                1:
+                  - name
+                  - Stats
+                2:
+                  - handle
+                  - stats
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - Percentage
+                      -
+                        - value
+                        - percentage-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 4815747a-7e96-4928-865b-f05df1bdd602
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - 18810e03-d493-470d-aa57-97eb5b96adba
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:21:54+00:00']
+                                      11: [uid, d32be5a6-f973-4546-8f25-a38170de77f9]
+                                      14: [fieldUid, ea4cbc8b-abf0-41eb-949d-36005d242b30] # Prose stats rows
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-smE8vVGiit
+                1:
+                  - name
+                  - 'Video embed'
+                2:
+                  - handle
+                  - embed
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - YouTube
+                      -
+                        - value
+                        - youtube-brands
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 2a0d1338-37dc-4fbb-a414-74b99c903733
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - 8e64d69d-65e6-42fd-b1d3-798a2d9ebcd4
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:21:54+00:00']
+                                      11: [uid, ca73a55f-38c8-42bd-80c8-8ac726b091ae]
+                                      14: [fieldUid, b851c78b-d4f2-420f-8018-3d24a4cfb7d2] # Embed URL
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, thumbnail]
+                                      2: [label, Thumbnail]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:21:54+00:00']
+                                      11: [uid, 9a074042-137f-45c1-be6d-49060f6c3e3e]
+                                      14: [fieldUid, 3070e537-2129-43f0-addf-fbae4049f8e1] # Media
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, caption]
+                                      2: [label, Caption]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:21:54+00:00']
+                                      11: [uid, ac1cc705-2236-47fc-a551-8fc77745ac2c]
+                                      14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
+            -
+              __assoc__:
+                0:
+                  - id
+                  - type-47gtP8jSHl
+                1:
+                  - name
+                  - Media
+                2:
+                  - handle
+                  - media
+                3:
+                  - icon
+                  -
+                    __assoc__:
+                      -
+                        - label
+                        - 'Photo Video'
+                      -
+                        - value
+                        - photo-video-solid
+                5:
+                  - enabled
+                  - true
+                6:
+                  - layoutUid
+                  - 304ad169-4751-4e35-a30b-f03677fdc912
+                7:
+                  - layoutConfig
+                  -
+                    __assoc__:
+                      -
+                        - tabs
+                        -
+                          -
+                            __assoc__:
+                              0:
+                                - name
+                                - Content
+                              1:
+                                - uid
+                                - d25551d3-e690-4ab8-9275-471f0027a937
+                              4:
+                                - elements
+                                -
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:23:11+00:00']
+                                      11: [uid, 87772a70-25a8-45c8-91c4-9764e730a2e5]
+                                      14: [fieldUid, 3070e537-2129-43f0-addf-fbae4049f8e1] # Media
+                                  -
+                                    __assoc__:
+                                      0: [type, craft\fieldlayoutelements\CustomField]
+                                      1: [handle, caption]
+                                      2: [label, Caption]
+                                      6: [required, false]
+                                      7: [providesThumbs, false]
+                                      8: [includeInCards, false]
+                                      9: [width, 100]
+                                      10: [dateAdded, '2024-09-11T20:23:11+00:00']
+                                      11: [uid, 6f5f558d-c8a0-4976-ad6d-885557bbf7b7]
+                                      14: [fieldUid, 615c8eda-5043-4fdd-a90c-3c77212764e6] # Plain text
+  initialRows: 7
+  manualConfig: "{\r\n    \"buttons\": [\"h2\", \"h3\", \"paragraph\", \"unordered-list\", \"ordered-list\", \"checklist\", \"blockquote\", \"hr\", \"bold\", \"italic\", \"link\", \"highlight\", \"clear-format\"],\r\n\"plugins\": [\"checklist\"]\r\n}"
+  maxBlocks: null
+  minBlocks: null
+  pasteAsPlainText: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  trimEmptyParagraphs: true
+  vizyConfig: ''
+translationKeyFormat: null
+translationMethod: language
+type: verbb\vizy\fields\VizyField

@@ -1,0 +1,162 @@
+color: null
+fieldLayouts:
+  2fb5b60b-e848-4070-8397-20aec4dab2c7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:41:28+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c513249c-4773-435a-9238-999ddd704ad8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-27T12:51:09+00:00'
+            elementCondition: null
+            fieldUid: 0f0e5f88-9336-4032-bfa2-11083f5fa132 # CMS Identifier
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6268c68e-db10-46f3-9ecc-460597f1492d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:44:05+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: surtitle
+            includeInCards: false
+            instructions: null
+            label: Surtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1800193-f5d2-468e-9363-c221994a1f96
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:44:05+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d246c133-c6e0-43ac-a305-457930b06a5d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:44:05+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: description
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8e12057-2eb8-49af-bbd4-ef0829566ed7
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:44:05+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c065bfa1-af9f-4dbb-9eb0-7f1a8a061cdc
+            userCondition: null
+          -
+            dateAdded: '2024-08-19T18:44:05+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: carouselTitle
+            includeInCards: false
+            instructions: null
+            label: 'Carousel Title'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 904da3aa-2416-4ba8-999a-285875132c30
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T18:44:05+00:00'
+            elementCondition: null
+            fieldUid: 3d598329-9100-4395-99d6-00ba71ab632c # Articles
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 461619f5-ba81-471e-9e2f-f8dbe75628bf
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-27T21:52:19+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: "### Reference\r\n\r\n![](/uploads/references/carousel.jpg)"
+            type: craft\fieldlayoutelements\Tip
+            uid: be0a3470-bdaf-4241-8b66-010a31038fc9
+            userCondition: null
+        name: Content
+        uid: d6e3dd40-b404-42de-9857-c46259dd2fbd
+        userCondition: null
+handle: carousel
+hasTitleField: false
+icon: null
+name: Carousel
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{type.name} - {identifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3f07a8e2-b80b-4fe0-aca4-9c505738579d # Narrative
+handle: contentTypes
+maxAuthors: 1
+name: 'Content types'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  af77db16-7383-4e3b-ae49-71b93d94b959: # FR
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'type-de-contenu/{slug}'
+  c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: 'content-type/{slug}'
+structure:
+  maxLevels: null
+  uid: 4b22367c-6f4c-449b-81bf-d984e3415aba
+type: structure

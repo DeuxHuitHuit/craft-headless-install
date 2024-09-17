@@ -1,0 +1,12 @@
+columnSuffix: ubepuvqs
+handle: noindex
+instructions: 'If checked, the page will not be indexed by search engines (Google, Bing, etc.) and won''t show search results.'
+name: 'No index'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

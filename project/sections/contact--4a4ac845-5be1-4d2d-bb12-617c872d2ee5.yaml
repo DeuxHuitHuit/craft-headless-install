@@ -1,7 +1,10 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - d9f3be47-624e-49ae-90d4-79880f18013e # Contact
 handle: contact
-name: 'Nous joindre // Contact'
+maxAuthors: 1
+name: Contact
 previewTargets:
   -
     __assoc__:
@@ -20,7 +23,7 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: nous-joindre
+    uriFormat: contact
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true

@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: termExamples
+instructions: null
+name: 'Term examples'
+searchable: false
+settings:
+  createButtonLabel: 'New example'
+  entryTypes:
+    - 3ff054f5-5ec7-45a1-a9cb-43e7ed4b58fe # Term example
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

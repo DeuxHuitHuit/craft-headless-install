@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: "Image **OU** courte vidéo\r\n\r\nSe référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) et [**vidéos**](/craft/globals/imageAndVideoSpecs?site=fr#tab02--videos) de la section Globals.\r\n\r\nAttention de bien téléverser l'**image** "
 enabled: true
-field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias de la galerie // Gallery Medias
+field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f
 fieldLayouts:
   8b418d55-e05a-4b5e-a9fc-7a2e21a2c908:
     tabs:
@@ -28,6 +28,7 @@ group: null
 groupChildBlockTypes: true
 handle: media
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

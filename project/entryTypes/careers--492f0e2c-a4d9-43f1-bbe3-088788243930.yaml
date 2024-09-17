@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   fc89b914-46e6-47ac-8a0e-dccb9b233084:
     tabs:
@@ -9,16 +10,20 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:21+00:00'
             disabled: false
             elementCondition: null
             id: null
-            instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
-            label: 'Identifiant CMS // CMS Identifier'
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
             max: null
             min: null
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -29,66 +34,145 @@ fieldLayouts:
             uid: 72fb8372-ed25-40df-a08b-8b49a4de483a
             userCondition: null
             warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T18:00:58+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 043eb291-f0d8-4f55-a647-dde01f596c60
+            userCondition: null
+            warning: null
             width: 100
           -
+            dateAdded: '2024-08-20T18:00:58+00:00'
             elementCondition: null
-            heading: 'En-tête // Header'
-            type: craft\fieldlayoutelements\Heading
-            uid: 740801da-0bd7-46ea-b0fa-1b218523ee87
-            userCondition: null
-          -
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 3ce4bb4b-c35c-4ed2-8e79-4771a9ec3392
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: description
+            includeInCards: false
             instructions: null
-            label: null
+            label: Description
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 58568658-d956-4eb6-b942-21773f5295ec
+            uid: a1acb3ff-c859-4d2e-b068-a3031e80402f
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-20T18:00:58+00:00'
             elementCondition: null
-            fieldUid: 9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e # Introduction
+            fieldUid: 0858fc4c-c694-4711-84b9-c1dbe35c2c16 # Illustration
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 53f1643a-bbcf-41dd-ae0c-217b8eb30a31
+            uid: f18c6507-ea16-4bdb-a4d2-1097128251ab
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-27T18:03:44+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
-            uid: 7cac45c3-af67-4e05-9d13-20ca98f4ef8c
+            uid: f2dc1a7a-d75d-4e66-9c21-2f14d7e16c71
             userCondition: null
           -
+            dateAdded: '2024-08-20T18:00:58+00:00'
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
+            handle: modulesBefore
+            includeInCards: false
+            instructions: null
+            label: 'Modules before job posts'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f1fa6214-a076-4ed5-97b8-892ae00944a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-27T18:03:44+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 2b819e90-ccce-446f-82de-00c116f05f7f
+            userCondition: null
+          -
+            dateAdded: '2024-09-04T19:51:54+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: jobsSectionDescription
+            includeInCards: false
+            instructions: null
+            label: 'Jobs section description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 341a489e-7950-4d5d-9942-e1eab0f5e58e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-13T20:02:21+00:00'
             dismissible: false
             elementCondition: null
             style: tip
-            tip: "Les entrées de la section [Emplois](/craft/entries/jobPostings) seront affichées automatiquement de la plus récente à la plus ancienne. Il est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n*The entries from the [Jobs](/craft/entries/jobPostings) section will automatically be displayed latest to oldest. The entries can manually be reordered directly in the section, using drag and drop.*"
+            tip: '[Jobs entries](/craft/entries/jobPostings) are automatically displayed. They can be manually reordered directly in the section, using drag and drop.'
             type: craft\fieldlayoutelements\Tip
             uid: 07aadd8f-79ae-42c1-84b2-28af202d3558
             userCondition: null
-        name: 'Contenu // Content'
+          -
+            dateAdded: '2024-08-27T18:03:44+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c349f3c2-9856-449f-a448-18b677dfc2c5
+            userCondition: null
+          -
+            dateAdded: '2024-08-20T18:00:58+00:00'
+            elementCondition: null
+            fieldUid: 7c46388e-1ad1-466a-a30f-c138c9477b0f # Modules
+            handle: modulesAfter
+            includeInCards: false
+            instructions: null
+            label: 'Modules after job posts'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8b6a10b-3fb4-4c38-b1af-5fe6e1ddeb32
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
         uid: 08d199cf-89c7-4aa7-9faa-701d0da20f5c
         userCondition: null
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-13T20:02:21+00:00'
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: __blank__
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -96,17 +180,17 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Partage (SEO) // Sharing (SEO)'
+        name: SEO
         uid: ccb0d851-bdeb-4af4-8842-d12c9daebefe
         userCondition: null
 handle: careers
-hasTitleField: true
-name: 'Carrières // Careers'
-section: 0982d07a-c328-4033-8695-305319d78835 # Carrières // Careers
+hasTitleField: false
+icon: briefcase
+name: Careers
+showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

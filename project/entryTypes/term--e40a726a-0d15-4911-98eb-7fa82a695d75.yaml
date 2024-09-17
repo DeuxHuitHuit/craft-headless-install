@@ -1,0 +1,153 @@
+color: null
+fieldLayouts:
+  871492ab-f6a7-4ca9-87fb-21e33f107817:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T20:42:59+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1df06a6f-d8b9-43c7-947b-33c8f8a510e6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T20:46:26+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Term
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b83e4bc-7209-4596-b50c-507142a00eb9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-21T21:54:56+00:00'
+            elementCondition: null
+            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
+            handle: shortDescription
+            includeInCards: false
+            instructions: "Displayed in the [\"Word of the week\" section](https://shft.cl/v335op7o1)\r\n"
+            label: 'Short description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70d3b7fc-41df-4559-a959-5eb58dc315e1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T20:46:26+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: quote
+            includeInCards: false
+            instructions: "Omit quotation marks.\r\n"
+            label: Quote
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64ea7e1e-0ae1-4027-b9df-e1a30fca6179
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T20:46:26+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: comment
+            includeInCards: false
+            instructions: null
+            label: Comment
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 938286ba-3a86-437e-9a84-95a5bc08ba21
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T20:46:26+00:00'
+            elementCondition: null
+            fieldUid: 8c650dbb-1723-4615-a787-b3bbcbaf0e65 # Term examples
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 350e8c87-8e82-4f86-936a-1dccad7518e8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 42dba8a6-fd43-4b61-aa1a-e136cae305dd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-27T17:51:16+00:00'
+            elementCondition: null
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b146c43-d680-453c-8dd3-496bef888d80
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: ee36435f-8fe1-4d77-a015-bc19ff0ab36e
+        userCondition: null
+handle: term
+hasTitleField: false
+icon: null
+name: Term
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle} '
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

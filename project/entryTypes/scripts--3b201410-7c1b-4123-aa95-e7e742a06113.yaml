@@ -1,0 +1,115 @@
+color: null
+fieldLayouts:
+  7eab1a53-1256-416c-996f-5530b5ed7e56:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-14T17:44:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 10410944-79ef-49b1-95bd-8a88c03c8955
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T17:47:09+00:00'
+            elementCondition: null
+            heading: 'Custom scripts (analytics, third party software, etc.)'
+            type: craft\fieldlayoutelements\Heading
+            uid: f4f7d413-5545-49a4-ba3a-ede1848ae6a2
+            userCondition: null
+          -
+            dateAdded: '2024-08-14T17:48:01+00:00'
+            dismissible: false
+            elementCondition: null
+            style: warning
+            tip: 'Be careful! Some scripts might break the site.'
+            type: craft\fieldlayoutelements\Tip
+            uid: 51a1c30f-67fd-4a8c-b8a4-1cbd3d302fb9
+            userCondition: null
+          -
+            dateAdded: '2024-08-14T18:06:08+00:00'
+            elementCondition: null
+            fieldUid: 4c508769-fc04-4e88-9cfd-85313caaf2b4 # Script
+            handle: head
+            includeInCards: false
+            instructions: null
+            label: Head
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5ebde842-071b-4bf9-a3e9-2bafbcbf9692
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T18:06:08+00:00'
+            elementCondition: null
+            fieldUid: 4c508769-fc04-4e88-9cfd-85313caaf2b4 # Script
+            handle: bodyStart
+            includeInCards: false
+            instructions: null
+            label: 'Body start'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b5b52e7-1271-4dc5-a850-8432629ca8a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-14T18:06:08+00:00'
+            elementCondition: null
+            fieldUid: 4c508769-fc04-4e88-9cfd-85313caaf2b4 # Script
+            handle: bodyEnd
+            includeInCards: false
+            instructions: null
+            label: 'Body end'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c477d17-5104-474b-a939-626c7edf03ec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8c3821a3-1b87-49bf-90d1-4b79ad6c9fce
+        userCondition: null
+handle: scripts
+hasTitleField: false
+icon: code
+name: Scripts
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

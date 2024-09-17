@@ -1,3 +1,4 @@
+color: null
 fieldLayouts:
   fe197c37-90c6-4a22-8203-3cfb7b81f8f8:
     tabs:
@@ -9,9 +10,12 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-08-13T20:02:20+00:00'
             disabled: false
             elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
             label: 'Identifiant CMS / CMS Identifier'
             max: null
@@ -19,6 +23,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -31,64 +36,77 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-08-19T18:58:46+00:00'
             elementCondition: null
-            heading: 'En-tête // Header'
-            type: craft\fieldlayoutelements\Heading
-            uid: 6e050c7c-56e2-4221-be7b-60fa0a180ac8
-            userCondition: null
-          -
-            elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 4f52ef54-7891-4478-a7cc-8c82fe83fd89
-            userCondition: null
-          -
-            elementCondition: null
-            fieldUid: 9570135e-221e-4a53-bcf3-e704bea37a6f # Titre // Title
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: 'Short description'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cc82104b-2795-429d-b2e4-743e06c1b911
+            uid: a7b482c4-8c63-4a82-b324-d86d8ade6782
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-19T18:58:46+00:00'
             elementCondition: null
-            fieldUid: 9b79dfdb-fb1e-4ceb-a8a4-e261fdf7552e # Introduction
-            instructions: null
-            label: null
+            fieldUid: 374406b8-233f-4e1b-ae1e-f779112eaca6 # Article
+            handle: featuredArticle
+            includeInCards: false
+            instructions: "If there is no featured article, the latest article is displayed.\r\n"
+            label: 'Featured article'
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 522c10eb-9da0-43ea-b2f4-3c8cb6ef6bdc
+            uid: f0b93103-f347-46cf-a35a-1d615e451ac7
             userCondition: null
             warning: null
             width: 50
           -
+            dateAdded: '2024-08-19T18:58:46+00:00'
             elementCondition: null
-            type: craft\fieldlayoutelements\HorizontalRule
-            uid: 02b5adde-cc9f-4df6-b4e9-eba241cb7191
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: newsletterText
+            includeInCards: false
+            instructions: null
+            label: 'Newsletter text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8cf4113f-226b-4743-8807-e6d064589ee4
             userCondition: null
+            warning: null
+            width: 100
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             dismissible: false
             elementCondition: null
             style: tip
-            tip: "Les entrées de la section [Articles](/craft/entries/articles) seront affichées automatiquement de la plus récente à la plus ancienne.   \r\nIl est possible de réordonner manuellement les entrées directement dans la section, avec la fonction «drag and drop».\r\n\r\n---\r\n\r\nThe entries from the [Articles](/craft/entries/articles) section will automatically be displayed latest to oldest.   \r\nThe entries can manually be reordered directly in the section, using drag and drop."
+            tip: '[Articles](/craft/entries/articles) and [blog topics](/craft/entries?site=en&source=custom:c3b3934b-b63e-4662-ae65-9e1f51407c4e) are automatically displayed, ordered by post date.'
             type: craft\fieldlayoutelements\Tip
             uid: 591fe1ed-5ca6-43c7-8899-93541e295eff
             userCondition: null
-        name: 'Contenu // Content'
+        name: Content
         uid: 6083a740-c96e-4972-b65b-5b1a02e80af7
         userCondition: null
       -
         elementCondition: null
         elements:
           -
+            dateAdded: '2024-08-13T20:02:20+00:00'
             elementCondition: null
-            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # Méta-données // Metadatas 
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
             instructions: null
-            label: null
+            label: __blank__
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -96,17 +114,17 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Partage (SEO) // Sharing (SEO)'
+        name: SEO
         uid: 0f859370-b422-48b3-9f6d-cb55f8428ab8
         userCondition: null
 handle: blog
-hasTitleField: true
-name: 'Blogue // Blog'
-section: 6c86c074-7558-42ed-9fbc-8c4fbc736b95 # Blogue // Blog
+hasTitleField: false
+icon: rss
+name: Blog
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none

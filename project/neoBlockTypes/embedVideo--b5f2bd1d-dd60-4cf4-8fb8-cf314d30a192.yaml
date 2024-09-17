@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f # Médias de la galerie // Gallery Medias
+field: 5827b0c5-4c9f-4f9c-9bdb-c27033c2d47f
 fieldLayouts:
   005a5817-c070-43f8-b216-7195304f1a6c:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # URL de la vidéo Embed // Embed Video URL
+            fieldUid: b851c78b-d4f2-420f-8018-3d24a4cfb7d2 # Embed URL
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b # Vignette // Thumbnail
+            fieldUid: e45d3444-dd43-44a0-9878-0fea045f468b
             instructions: null
             label: 'Vignette / Thumbnail'
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3 # Légende // Caption
+            fieldUid: bd75c367-135c-44c8-a186-ef2170ffd6f3
             instructions: null
             label: null
             required: false
@@ -52,6 +52,7 @@ group: null
 groupChildBlockTypes: true
 handle: embedVideo
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

@@ -1,16 +1,20 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: seo
 instructions: null
-name: 'Méta-données // Metadatas '
+name: SEO
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_seo}}'
-  maxBlocks: 1
-  minBlocks: 1
+  createButtonLabel: null
+  entryTypes:
+    - 10a5c368-5d0b-47a4-9978-105511f5e998 # SEO
+  includeTableView: false
+  maxEntries: 1
+  minEntries: 1
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

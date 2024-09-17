@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: proseDrawers
+instructions: null
+name: 'Prose drawers'
+searchable: false
+settings:
+  createButtonLabel: 'New drawer'
+  entryTypes:
+    - 7cd5a1f9-fd58-4b41-a236-424527a88fec # Prose drawer
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

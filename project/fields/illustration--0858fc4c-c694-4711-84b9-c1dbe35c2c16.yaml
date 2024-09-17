@@ -1,0 +1,35 @@
+columnSuffix: null
+handle: illustration
+instructions: "**Image specs**\r\n\r\n* Recommended file types: png, webp (with transparency), jpeg, svg, avif\r\n* Maximum size: 2000 x 4000 pixels (L x H)\r\n* Minimum size: 1920 x 1080 pixels (L x H)\r\n* Recommended weight: between 300 and 600 Ko, depending on the size\r\n* Resolution: 72 or 96 ppi (pixels per inch)\r\n* Color mode: RGB"
+name: Illustration
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: /Illustraions
+  restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  restrictedLocationSubpath: /Illustrations
+  selectionLabel: 'Add an illustration'
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

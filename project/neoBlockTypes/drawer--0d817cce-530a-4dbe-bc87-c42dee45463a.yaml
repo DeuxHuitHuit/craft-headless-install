@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b
 fieldLayouts:
   b698f580-8fb0-4de6-8e96-e29b4c27fc10:
     tabs:
@@ -11,7 +11,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 718b4d78-52f5-4b75-aecb-957dd00236ab # Titre // Title
+            fieldUid: 718b4d78-52f5-4b75-aecb-957dd00236ab
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             width: 50
           -
             elementCondition: null
-            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Texte riche simple // Simple Rich Text
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
             instructions: null
             label: null
             required: false
@@ -40,6 +40,7 @@ group: null
 groupChildBlockTypes: true
 handle: drawer
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

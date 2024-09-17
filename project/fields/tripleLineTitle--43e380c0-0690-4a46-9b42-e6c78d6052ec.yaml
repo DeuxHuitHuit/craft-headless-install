@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: tripleLineTitle
+instructions: null
+name: 'Triple line title'
+searchable: false
+settings:
+  addRowLabel: 'Add a line'
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - Text
+            -
+              - handle
+              - text
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+  defaults:
+    -
+      __assoc__:
+        -
+          - col1
+          - ''
+  maxRows: 3
+  minRows: 3
+  staticRows: false
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Table

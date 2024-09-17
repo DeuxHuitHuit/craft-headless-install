@@ -1,0 +1,15 @@
+headingLevels: false
+js: "return {\r\n  list: {\r\n    properties: {\r\n      styles: false,\r\n    },\r\n  }\r\n}"
+name: Simple
+toolbar:
+  - heading
+  - bulletedList
+  - numberedList
+  - bold
+  - italic
+  - link
+  - removeFormat
+  - findAndReplace
+  - undo
+  - redo
+  - sourceEditing

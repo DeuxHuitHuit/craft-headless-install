@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  e529cc9a-afb7-49c7-9702-b2dbadd0fefd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T15:43:24+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 14e15f47-f643-41f6-939a-93e46ba834a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T15:46:23+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: displayTitle
+            includeInCards: false
+            instructions: null
+            label: Title
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f88551b5-fc0c-47c6-9e1b-516dc9b3d0ff
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T15:46:23+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: subtitle
+            includeInCards: false
+            instructions: null
+            label: Subtitle
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e28040f3-6d3a-4e33-a054-b5dd32ab3ca1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T17:20:06+00:00'
+            elementCondition: null
+            fieldUid: 0858fc4c-c694-4711-84b9-c1dbe35c2c16 # Illustration
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36401081-3e4a-4f28-8669-111134da52a2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-19T15:46:23+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: description
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95601567-93ea-4846-bdeb-d016b916f64e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-06T15:51:25+00:00'
+            elementCondition: null
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9444c551-3050-4172-9e28-d60a062ac9c4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d5539af8-52ab-4a1d-a4ba-f4826fefa9d9
+        userCondition: null
+handle: headerSubmenuCta
+hasTitleField: false
+icon: null
+name: 'Header Submenu Cta'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: language

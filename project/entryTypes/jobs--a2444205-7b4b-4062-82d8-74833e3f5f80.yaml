@@ -1,0 +1,235 @@
+color: null
+fieldLayouts:
+  14c959a7-12d1-4e04-9109-bf41a8024401:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-13T20:02:27+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: "\r\n"
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6fdcfb01-98d6-46b9-adba-bfa8d68302d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 418bcdec-5c81-4241-8a25-5e30b722e63e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-22T15:17:44+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: initials
+            includeInCards: false
+            instructions: null
+            label: Initials
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c408c49-470b-4c9e-86fd-b583fe0ea5f9
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            fieldUid: 5022ae0f-5f8a-4457-a9ec-63cceb30296a # Job type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44b3e24c-b76c-465d-945a-944763ab3ee4
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            heading: 'For translator positions'
+            type: craft\fieldlayoutelements\Heading
+            uid: 98a423fe-6c83-4d20-8ee9-3e7a4e325bb2
+            userCondition: null
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: specialization
+            includeInCards: false
+            instructions: null
+            label: Specialization
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0cf271fd-c5de-48b5-af31-6e4c2938f592
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: translatingFrom
+            includeInCards: false
+            instructions: "Enter a language code, i.e. \"EN\".\r\n"
+            label: 'Translating from'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 652b9719-0ddb-4f2c-a0ad-269e98a30be5
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: translatingTo
+            includeInCards: false
+            instructions: 'Enter a language code, i.e. "EN".'
+            label: 'Translating to'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3aba152-a370-4e48-9311-e0d1154d5e2f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2024-09-05T16:34:58+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a68b2041-ad9f-4f83-949f-91ff0bd94b30
+            userCondition: null
+          -
+            dateAdded: '2024-09-05T16:34:43+00:00'
+            elementCondition: null
+            fieldUid: 7194bc81-7207-43c5-9c4a-eb7937f6bf60 # Additional Information
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a7e1b3b7-b7a7-4976-8d2f-49b87ecd0bb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:06:24+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: c9d6fe20-9fcb-4e52-9a60-a5b538f0db78
+            userCondition: null
+          -
+            dateAdded: '2024-09-05T16:30:42+00:00'
+            elementCondition: null
+            fieldUid: 22947fe1-4c0e-437b-9997-de04319d78e3 # Rich text - Full
+            handle: jobDescription
+            includeInCards: false
+            instructions: null
+            label: 'Job description'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89a1d4d7-2c72-49d6-a9ce-8ec33dfbc110
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:09:41+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: cbc2071e-e476-4f93-ac1c-4e34b396b139
+            userCondition: null
+          -
+            dateAdded: '2024-08-20T18:09:41+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'The application form and other job openings are displayed automatically.'
+            type: craft\fieldlayoutelements\Tip
+            uid: b9f10548-85b4-4791-a2a3-d58a33a62f95
+            userCondition: null
+        name: Content
+        uid: 0cd43616-1a67-427e-a6e0-331b7b8df809
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-08-13T20:02:27+00:00'
+            elementCondition: null
+            fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 150eb59a-c873-4ecc-9a6b-5136d4c6da1e
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 3a09b97a-0094-4988-aabb-280fbcfb79a4
+        userCondition: null
+handle: jobs
+hasTitleField: false
+icon: person-digging
+name: Jobs
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none

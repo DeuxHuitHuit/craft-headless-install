@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: infoCards
+instructions: null
+name: 'Info cards'
+searchable: false
+settings:
+  createButtonLabel: null
+  entryTypes:
+    - 74021407-d899-4659-9833-c6676a5ae2ab # Info card
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

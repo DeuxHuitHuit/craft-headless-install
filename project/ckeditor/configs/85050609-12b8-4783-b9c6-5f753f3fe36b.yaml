@@ -1,0 +1,21 @@
+headingLevels:
+  - 2
+  - 3
+name: Full
+options:
+  list:
+    properties:
+      styles: false
+toolbar:
+  - heading
+  - bulletedList
+  - numberedList
+  - blockQuote
+  - bold
+  - italic
+  - link
+  - removeFormat
+  - findAndReplace
+  - undo
+  - redo
+  - sourceEditing

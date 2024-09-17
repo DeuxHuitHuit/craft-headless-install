@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b
 fieldLayouts:
   28eb11db-866c-444c-bbbe-b6a6868442d8:
     tabs:
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Média // Media
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
             instructions: null
             label: null
             required: false
@@ -36,6 +36,7 @@ group: null
 groupChildBlockTypes: true
 handle: media
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0

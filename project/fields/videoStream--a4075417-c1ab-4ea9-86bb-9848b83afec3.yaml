@@ -1,6 +1,4 @@
 columnSuffix: rnytwmmm
-contentColumnType: text
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: videoStream
 instructions: null
 name: 'Video Stream (pour les Asset Volumes seulement)'

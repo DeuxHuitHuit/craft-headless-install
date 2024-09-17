@@ -1,0 +1,11 @@
+headingLevels: false
+name: Inline
+toolbar:
+  - bold
+  - italic
+  - link
+  - removeFormat
+  - findAndReplace
+  - undo
+  - redo
+  - sourceEditing

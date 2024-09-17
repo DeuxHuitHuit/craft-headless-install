@@ -1,0 +1,168 @@
+columnSuffix: null
+handle: color
+instructions: null
+name: Color
+searchable: false
+settings:
+  default: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Alabaster
+        -
+          - color
+          - '#E5E2DB'
+        -
+          - default
+          - '1'
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Butter
+        -
+          - color
+          - '#F1EEB1'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Limeade
+        -
+          - color
+          - '#D8ECB1'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sage
+        -
+          - color
+          - '#B9D5BE'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Taupe
+        -
+          - color
+          - '#93937B'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Coral
+        -
+          - color
+          - '#EEBABA '
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Lilac
+        -
+          - color
+          - '#D7D1EB'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Sky
+        -
+          - color
+          - '#BCEDF0'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Moth
+        -
+          - color
+          - '#D0CCB9'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Nimbus
+        -
+          - color
+          - '#B7C4CD'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Yellow
+        -
+          - color
+          - '#F6C70E'
+        -
+          - default
+          - ''
+        -
+          - class
+          - ''
+  palette: null
+  setRandom: true
+  useConfigFile: false
+translationKeyFormat: null
+translationMethod: none
+type: percipiolondon\colourswatches\fields\ColourSwatches

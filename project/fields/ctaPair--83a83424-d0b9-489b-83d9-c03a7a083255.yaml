@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: ctaPair
+instructions: 'Use this field to **override** the [default CTAs](/craft/entries/mainCtas/286-main-ctas).'
+name: CTAs
+searchable: false
+settings:
+  createButtonLabel: 'Override CTA pair'
+  entryTypes:
+    - b85d1f47-0899-4399-bce0-683df19cdcd2 # CTA pair
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

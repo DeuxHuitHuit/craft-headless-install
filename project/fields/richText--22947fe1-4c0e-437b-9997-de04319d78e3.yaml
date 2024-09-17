@@ -1,28 +1,25 @@
 columnSuffix: aygkrnor
-contentColumnType: text
-fieldGroup: 506fb257-f530-4cda-b130-1af00a5bda55 # Common
 handle: richText
-instructions: "Tous formatages de texte possibles.\r\n\r\n---\r\n\r\nAll text formatting possible."
-name: 'Texte riche // Rich Text'
+instructions: null
+name: 'Rich text - Full'
 searchable: false
 settings:
   availableTransforms: ''
-  availableVolumes:
-    - 7c06f121-409c-4ebe-a6ce-aa78ea61ce4d # Assets
-  columnType: text
-  configSelectionMode: choose
+  availableVolumes: '*'
+  blockTypeBehaviour: click
+  configSelectionMode: manual
   defaultTransform: ''
-  manualConfig: ''
-  purifierConfig: null
-  purifyHtml: true
-  redactorConfig: null
-  removeEmptyTags: true
-  removeInlineStyles: true
-  removeNbsp: false
-  showHtmlButtonForNonAdmins: false
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  editorMode: richText
+  initialRows: 7
+  manualConfig: "{\r\n  \"buttons\": [\"h2\", \"h3\", \"paragraph\", \"unordered-list\", \"ordered-list\", \"checklist\", \"blockquote\", \"bold\", \"italic\", \"link\"]\r\n}"
+  maxBlocks: null
+  minBlocks: null
+  pasteAsPlainText: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  uiMode: enlarged
+  trimEmptyParagraphs: true
+  vizyConfig: ''
 translationKeyFormat: null
-translationMethod: site
-type: craft\redactor\Field
+translationMethod: language
+type: verbb\vizy\fields\VizyField

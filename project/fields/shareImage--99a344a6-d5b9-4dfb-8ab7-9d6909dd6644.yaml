@@ -1,0 +1,36 @@
+columnSuffix: null
+handle: shareImage
+instructions: "* Required size: **1200 x 630**    \r\n* Recommended weight: between 200 and 400 ko    \r\n* Recommended file formats: webp, jpeg, \r\n* Other accepted file formats: svg, png, avif \r\n* Resolution: between 72 and 96 ppi (pixels per inch)"
+name: 'Share image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: false
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: thumbs
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  restrictedLocationSubpath: null
+  selectionLabel: 'Add a share image'
+  showCardsInGrid: false
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

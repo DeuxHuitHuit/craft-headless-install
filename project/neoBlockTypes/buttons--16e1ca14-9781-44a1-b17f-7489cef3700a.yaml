@@ -2,7 +2,7 @@ childBlocks: null
 conditions: null
 description: ''
 enabled: true
-field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b # Prose éditoriale // Editorial Prose
+field: 4cbb8576-1f85-4aa0-ac8c-638580d36c9b
 fieldLayouts:
   615253dd-d3d5-4966-9370-97bfeb547b2b:
     tabs:
@@ -19,7 +19,7 @@ fieldLayouts:
             userCondition: null
           -
             elementCondition: null
-            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Boutons // Buttons
+            fieldUid: 82932fdc-2730-4352-a49f-21abd4e96f05 # Phones
             instructions: null
             label: null
             required: false
@@ -36,6 +36,7 @@ group: null
 groupChildBlockTypes: true
 handle: buttons
 icon: null
+iconFilename: ''
 ignorePermissions: true
 maxBlocks: 0
 maxChildBlocks: 0
