@@ -1,4 +1,4 @@
-dateModified: 1726602792
+dateModified: 1726603564
 elementSources:
   craft\elements\Asset:
     -
@@ -71,6 +71,7 @@ elementSources:
               - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site configuration
               - ff4e6d75-2bed-40aa-8718-1e77a25a37d7 # Site footer
               - 800d763b-bbca-482a-9345-81b70bf730b2 # Site header
+              - 55239922-65f1-4558-96b1-71848e51a9bc # Cookie Banner
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
@@ -237,7 +238,9 @@ meta:
     4a4ac845-5be1-4d2d-bb12-617c872d2ee5: Contact # Contact
     4c508769-fc04-4e88-9cfd-85313caaf2b4: Script # Script
     4dabd377-5b99-4269-90ab-1129bab3dea0: 'Plain text - Multiline' # Plain text - Multiline
+    5b29e282-f0ce-4929-834a-4953ec2b7dd3: 'Cookie Banner' # Cookie Banner
     6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc: 'Site configuration' # Site configuration
+    6abc4a11-ddf3-44c7-b156-42847f10eae2: 'Enable cookie banner' # Enable cookie banner
     6c86c074-7558-42ed-9fbc-8c4fbc736b95: Blog # Blog
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
     7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
@@ -281,6 +284,7 @@ meta:
     0145468f-d01a-4e00-bdf3-d734c3e52a72: Inline # Inline
     374406b8-233f-4e1b-ae1e-f779112eaca6: Article # Article
     2556508a-1412-450e-8cad-0369ef9cced4: Url # Url
+    55239922-65f1-4558-96b1-71848e51a9bc: 'Cookie Banner' # Cookie Banner
     85050609-12b8-4783-b9c6-5f753f3fe36b: Full # Full
     a0a65bff-fadd-4bb4-ae89-c3f15c01bbbc: Carousel # Carousel
     a03206c2-0f1f-4ac9-affe-b6a82de9bf75: 'Site configuration' # Site configuration

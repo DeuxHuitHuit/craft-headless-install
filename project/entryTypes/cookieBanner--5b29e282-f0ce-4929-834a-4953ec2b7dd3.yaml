@@ -1,0 +1,115 @@
+color: null
+fieldLayouts:
+  facc811a-bc5c-46bf-8f4f-5ff0260457ca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-09-17T20:02:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c9379224-1fa3-4a82-9230-b8496c3d1d10
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-09-17T20:05:19+00:00'
+            elementCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7125a1e-ed52-436a-95fb-a556e3fbf216
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-17T20:05:19+00:00'
+            elementCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Text
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84f4ceef-6491-4f16-a633-3e4dc592e893
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-17T20:05:19+00:00'
+            elementCondition: null
+            fieldUid: 6abc4a11-ddf3-44c7-b156-42847f10eae2 # Enable cookie banner
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c35bb048-8606-4b62-9b23-44374f43a2a5
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-09-17T20:05:19+00:00'
+            elementCondition: null
+            fieldUid: e8a9774e-14c6-4ae6-b673-a9740e5af59b # Plain text - Non-translatable
+            handle: gtmConsentEvent
+            includeInCards: false
+            instructions: null
+            label: 'GTM consent event'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f253520a-d5b3-4250-b951-2285ea39bb6e
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 75c5ff41-2949-4404-a2a3-623ec06c90c1
+        userCondition: null
+handle: cookieBanner
+hasTitleField: false
+icon: cookie-bite
+name: 'Cookie Banner'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: ''
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: ''
+titleTranslationMethod: site
