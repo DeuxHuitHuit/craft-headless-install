@@ -7,8 +7,9 @@ set -e -o pipefail
 
 PROJECT_CODE=$(basename "$(pwd)");
 INSTALLER_PHP_EXEC="ea-php83"
+DEV_SERVER="dev2.288dev.com"
 
-echo "Welcome to Deux Huit Huit's Craft cms v4 installer"
+echo "Welcome to Deux Huit Huit's Craft cms v5 installer"
 echo ""
 echo "We are installing projet $PROJECT_CODE in $(pwd)";
 
@@ -24,15 +25,15 @@ cp web/.htaccess "../$PROJECT_CODE.htaccess"
 echo "Deleting files to make the pwd empty"
 for F in ".htaccess" "web" ".well-known"; do
 	if [[ -f "$F" ]]; then
-		rm -f "./$F"
+		rm -f "./$F";
 	elif [[ -d "$F" ]]; then
-		rm -rf "./$F"
-	fi
-done
+		rm -rf "./$F";
+	fi;
+done;
 
 echo "Install craft"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} ~/composer.phar create-project "craftcms/craft:^4" .
+${INSTALLER_PHP_EXEC} ~/composer.phar create-project "craftcms/craft:^5" .
 
 # Fix broken permissions set by craft
 chmod 755 web
@@ -42,7 +43,7 @@ echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
 
 echo "Set proper php version in composer.json"
-sed -i 's/"php": "8\.0\.2"/"php": "8.3"/g' composer.json
+sed -i 's/"php": "8\.2"/"php": "8.3"/g' composer.json
 
 echo "Restore htaccess infos"
 echo "" >> web/.htaccess
@@ -224,17 +225,13 @@ touch ./modules/.gitkeep
 echo "Delete IIS web.config file"
 rm -f "./web/web.config"
 
-echo "Install cp-field-inspect, redactor, snitch, ..."
-${INSTALLER_PHP_EXEC} ./composer.phar require mmikkel/cp-field-inspect
-${INSTALLER_PHP_EXEC} ./craft plugin/install cp-field-inspect
-${INSTALLER_PHP_EXEC} ./composer.phar require craftcms/redactor
-${INSTALLER_PHP_EXEC} ./craft plugin/install redactor
+echo "Install mvp plugins"
 ${INSTALLER_PHP_EXEC} ./composer.phar require putyourlightson/craft-sendgrid
 ${INSTALLER_PHP_EXEC} ./craft plugin/install sendgrid
-${INSTALLER_PHP_EXEC} ./composer.phar require carlcs/craft-redactorcustomstyles
-${INSTALLER_PHP_EXEC} ./craft plugin/install redactor-custom-styles
-${INSTALLER_PHP_EXEC} ./composer.phar require spicyweb/craft-neo
-${INSTALLER_PHP_EXEC} ./craft plugin/install neo
+${INSTALLER_PHP_EXEC} ./composer.phar require verbb/vizy
+${INSTALLER_PHP_EXEC} ./craft plugin/install vizy
+${INSTALLER_PHP_EXEC} ./composer.phar require verbb/hyper
+${INSTALLER_PHP_EXEC} ./craft plugin/install hyper
 ${INSTALLER_PHP_EXEC} ./composer.phar require dodecastudio/craft-blurhash
 ${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
 ${INSTALLER_PHP_EXEC} ./composer.phar require verbb/field-manager
@@ -254,56 +251,6 @@ ${INSTALLER_PHP_EXEC} ./craft plugin/install webhooks
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
-
-echo "Create default redactor config"
-mkdir -p ./config/redactor
-cat > ./config/redactor/Default.json << REDACTORDEFAULT
-{
-	"buttons": ["html", "formatting", "unorderedlist", "orderedlist", "bold", "italic", "link"],
-	"formatting": [],
-	"formattingAdd": {
-		"heading-2": {
-			"title": "Titre",
-			"api": "module.block.format",
-			"args": {
-				"tag": "h2"
-			}
-		},
-		"heading-3": {
-			"title": "Sous-titre",
-			"api": "module.block.format",
-			"args": {
-				"tag": "h3"
-			}
-		},
-		"paragraph": {
-			"title": "Paragraphe",
-			"api": "module.block.format",
-			"args": {
-				"tag": "p"
-			}
-		},
-		"quote": {
-			"title": "Citation",
-			"api": "module.block.format",
-			"args": {
-				"tag": "blockquote"
-			}
-		}
-	},
-	"linkNewTab": true
-}
-REDACTORDEFAULT
-
-echo "Create inline redactor config"
-cat > ./config/redactor/Inline.json << REDACTORINLINE
-{
-	"buttons": ["html", "bold", "italic", "link"],
-	"formatting": [],
-	"breakline": true,
-	"linkNewTab": true
-}
-REDACTORINLINE
 
 echo "Create custom htmlpurifier config (overwrites default)"
 mkdir -p ./config/htmlpurifier
@@ -361,7 +308,7 @@ echo "# Env setup"
 echo "SITE_NAME=\"$PROJECT_CODE DEV\""
 echo ""
 echo "VERCEL_SITE_URL=http://localhost:3000"
-echo "PRIMARY_SITE_URL=https://$PROJECT_CODE.288dev.com"
+echo "PRIMARY_SITE_URL=https://$PROJECT_CODE.$DEV_SERVER"
 echo ""
 echo "CRAFT_HOME=$(pwd)"
 echo "CRAFT_WEBROOT=\${CRAFT_HOME}/web"
@@ -374,7 +321,7 @@ echo "STREAM_URL=\${PRIMARY_SITE_URL}/stream"
 echo ""
 echo "# Emails"
 echo "SENDGRID_API=\"\""
-echo "EMAIL_FROM=noreply@$PROJECT_CODE.288dev.com"
+echo "EMAIL_FROM=noreply@$PROJECT_CODE.$DEV_SERVER"
 echo ""
 echo "# Cloudflare Stream"
 echo "CF_STREAM_ACCOUNT_ID=\"\""
@@ -551,7 +498,7 @@ cat > download-project.sh << 'BASH'
 
 set -e -o pipefail
 
-HOST="dev@hg2.288dev.com"
+HOST="dev2@mo7.288dev.com"
 PORT="1023"
 PROJECT="$1"
 PHP_EXEC="ea-php83"
@@ -952,4 +899,4 @@ git commit -a -m "Initial commit, on dev server"
 
 echo "We are done 🐔🐔🐔"
 echo "To use deuxhuithuit.co login, configure config/agency-auth.php"
-echo "Please login at https://$PROJECT_CODE.288dev.com/craft"
+echo "Please login at https://$PROJECT_CODE.$DEV_SERVER/craft"

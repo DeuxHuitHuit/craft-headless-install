@@ -2,7 +2,7 @@
 
 set -e -o pipefail
 
-HOST="dev@hg2.288dev.com"
+HOST="dev2@mo7.288dev.com"
 PORT="1023"
 PROJECT="$1"
 PHP_EXEC="ea-php83"
