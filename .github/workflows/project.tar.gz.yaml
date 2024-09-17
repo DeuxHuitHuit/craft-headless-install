@@ -21,5 +21,5 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@master
         with:
-          commit_message: New projet tarball
+          commit_message: (chore) New projet tarball
           file_pattern: project.tar.gz
