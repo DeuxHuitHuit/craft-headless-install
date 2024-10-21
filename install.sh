@@ -734,6 +734,10 @@ jobs:
         if: matrix.enabled
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.${{ matrix.target }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
+      - name: Upload fonts
+        if: matrix.enabled
+        run: '[ -d "./web/fonts" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/fonts ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web/ || true'
+
       - name: Upload composer files
         if: matrix.enabled
         run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
