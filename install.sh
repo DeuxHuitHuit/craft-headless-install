@@ -677,6 +677,10 @@ jobs:
           # CMS PROD
           - target: prod
             enabled: ${{ github.ref_name == 'main' }}
+            host: SSH_HOST
+            username: SSH_USERNAME
+            port: SSH_PORT
+            known_hosts: SSH_KNOWN_HOSTS
             path: ''
     steps:
       - uses: actions/checkout@master
@@ -691,80 +695,80 @@ jobs:
 
       - name: ssh setup
         if: matrix.enabled
-        run: echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+        run: echo "${{ secrets[matrix.known_hosts] }}" > ~/.ssh/known_hosts
 
       - name: Set CRAFT_HOME
         if: matrix.enabled
-        run: echo "CRAFT_HOME=/home/${{ secrets.SSH_USERNAME }}${{ matrix.path }}" >> $GITHUB_OUTPUT;
+        run: echo "CRAFT_HOME=/home/${{ secrets[matrix.username] }}${{ matrix.path }}" >> $GITHUB_OUTPUT;
         id: path
 
       - name: Remote setup
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- setup ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
+        run: ssh -p ${{ secrets[matrix.port] }} ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }} 'bash -s -- setup ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Backup
         if: matrix.enabled && vars.SETUP_DONE  == '1'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- backup ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
+        run: ssh -p ${{ secrets[matrix.port] }} ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }} 'bash -s -- backup ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Upload config
         if: matrix.enabled
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./config ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./config ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload modules
         if: matrix.enabled
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./modules ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./modules ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload migrations
         if: matrix.enabled
-        run: '[ -d "./migrations" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./migrations ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
+        run: '[ -d "./migrations" ] && rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./migrations ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
 
       - name: Upload Rebrand
         if: matrix.enabled
-        run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/rebrand ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
+        run: '[ -d "./storage/rebrand" ] && rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./storage/rebrand ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload Restore
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./storage/restore ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
+        run: '[ -d "./storage/restore" ] && rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./storage/restore ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/storage/ || true'
 
       - name: Upload .htaccess.${{ matrix.target }}
         if: matrix.enabled
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/.htaccess.${{ matrix.target }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./web/.htaccess.${{ matrix.target }} ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/web/
 
       - name: Upload .env.${{ matrix.target }}
         if: matrix.enabled
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./.env.${{ matrix.target }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./.env.${{ matrix.target }} ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload fonts
         if: matrix.enabled
-        run: '[ -d "./web/fonts" ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/fonts ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web/ || true'
+        run: '[ -d "./web/fonts" ] && rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./web/fonts ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/web/ || true'
 
       - name: Upload composer files
         if: matrix.enabled
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./composer.* ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./composer.* ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload craft cli
         if: matrix.enabled
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./craft ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./craft ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload service file
         if: matrix.enabled
-        run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./*.service ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
+        run: '[ -f ./*.service ] && rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./*.service ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/ || true'
 
       - name: Upload bootstrap.php
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./bootstrap.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./bootstrap.php ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/
 
       - name: Upload index.php
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: rsync -Phavz -e "ssh -p ${{ secrets.SSH_PORT }}" ./web/index.php ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ steps.path.outputs.CRAFT_HOME }}/web
+        run: rsync -Phavz -e "ssh -p ${{ secrets[matrix.port] }}" ./web/index.php ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }}:${{ steps.path.outputs.CRAFT_HOME }}/web
 
       - name: First install
         if: matrix.enabled && vars.SETUP_DONE == '0'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- install ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
+        run: ssh -p ${{ secrets[matrix.port] }} ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }} 'bash -s -- install ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Install and apply
         if: matrix.enabled && vars.SETUP_DONE == '1'
-        run: ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} 'bash -s -- apply ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
+        run: ssh -p ${{ secrets[matrix.port] }} ${{ secrets[matrix.username] }}@${{ secrets[matrix.host] }} 'bash -s -- apply ${{ github.run_id }} ${{ steps.path.outputs.CRAFT_HOME }} ${{ matrix.target }}' < deploy.sh
 
       - name: Postdeploy failure notification
         uses: rtCamp/action-slack-notify@master
@@ -852,11 +856,8 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         if: success() && steps.pr.outputs.pull-request-number != ''
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: CMS
-          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: "Le PR pour le sync du CMS est prêt !"
           SLACK_MESSAGE: |
             Vous devez maintenant faire le code review!
@@ -866,11 +867,8 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         if: failure() || steps.pr.outputs.pull-request-number == ''
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
           SLACK_COLOR: ${{ job.status }}
           SLACK_USERNAME: CMS
-          SLACK_ICON: ${{ secrets.SLACK_ICON }}
           SLACK_TITLE: "Pas de diff!"
           SLACK_MESSAGE: |
             Il n'y a pas de différence entre le CMS et le projet.
