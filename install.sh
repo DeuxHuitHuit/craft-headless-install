@@ -593,6 +593,12 @@ if [ "$CMD" = "backup" ]; then
 
 elif [ "$CMD" = "setup" ]; then
 
+    echo "Make sure we are NOT overwriting a previously done setup"
+    if [ -f "./.setup_done" ]; then
+        echo "🛑✋ ABORTING: Setup seems to already exists";
+        exit 66;
+    fi
+
     echo "Make sure required folder exists"
     mkdir -p ./config
     mkdir -p ./config/project
@@ -645,6 +651,10 @@ elif [ "$CMD" = "install" ]; then
 
     echo "Make sure craft runs"
     "${PHP_EXEC}" ./craft
+
+    echo "Mark setup as done"
+    echo "done: $GITHUB_RUN_ID" > ./.setup_done
+    chmod 444 ./.setup_done || true
 
     echo "gg;wp 👍"
 
