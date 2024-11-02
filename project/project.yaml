@@ -1,4 +1,4 @@
-dateModified: 1726603564
+dateModified: 1730567673
 elementSources:
   craft\elements\Asset:
     -
@@ -350,6 +350,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.4.3
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  fonts-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   hyper:
     edition: standard
     enabled: true
