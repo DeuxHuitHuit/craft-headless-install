@@ -13,6 +13,21 @@ echo "Welcome to Deux Huit Huit's Craft cms v5 installer"
 echo ""
 echo "We are installing projet $PROJECT_CODE in $(pwd)";
 
+## Check if the project is already installed
+if [[ -f "craft" ]]; then
+	echo "Craft executable already exists, aborting."
+	exit;
+elif [[ -d "vendor" ]]; then
+	echo "Vendor directory already exists, aborting."
+	exit;
+elif [[ -d "config" ]]; then
+	echo "Config directory already exists, aborting."
+	exit;
+elif [[ -f "composer.json" ]]; then
+	echo "composer.json file already exists, aborting."
+	exit;
+fi;
+
 read -r -p 'Continue? [Y/n] ';
 if [[ "$REPLY" != "Y" ]]; then
 	echo "Abort."
