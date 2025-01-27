@@ -28,6 +28,14 @@ elif [[ -f "composer.json" ]]; then
 	exit;
 fi;
 
+if [[ ! -f "$CRAFT_INSTALL_VERSION_FILE" ]]; then
+	echo "$CRAFT_INSTALL_VERSION_FILE file not found, aborting."
+	exit;
+fi;
+
+CRAFT_VERSION=$(jq -r '.require["craftcms/cms"]' < "$CRAFT_INSTALL_VERSION_FILE")
+echo "Found Craft version $CRAFT_VERSION as the reference version."
+
 read -r -p 'Continue? [Y/n] ';
 if [[ "$REPLY" != "Y" ]]; then
 	echo "Abort."
@@ -48,7 +56,7 @@ done;
 
 echo "Install craft"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} -d max_execution_time=-1 ~/composer.phar create-project "craftcms/craft:^5" .
+${INSTALLER_PHP_EXEC} -d max_execution_time=-1 ~/composer.phar create-project "craftcms/craft:$CRAFT_VERSION" .
 
 # Fix broken permissions set by craft
 chmod 755 web
