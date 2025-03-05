@@ -54,9 +54,25 @@ for F in ".htaccess" "web" ".well-known"; do
 	fi;
 done;
 
-echo "Install craft"
+echo "Install craft project"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} -d max_execution_time=-1 ~/composer.phar create-project "craftcms/cms:$CRAFT_VERSION" .
+${INSTALLER_PHP_EXEC} ~/composer.phar create-project --no-install --no-scripts "craftcms/craft:^5.1" .
+
+# Create env file
+cp .env.example.dev .env
+
+# Create proper composer.json
+mv -f composer.json.default composer.json
+
+echo "Set proper php version in composer.json"
+sed -i 's/"php": "8\.2"/"php": "8.3"/g' composer.json
+
+echo "Install craft"
+# Require custom craft version
+${INSTALLER_PHP_EXEC} ~/composer.phar require "craftcms/cms:$CRAFT_VERSION"
+
+# Install craft
+${INSTALLER_PHP_EXEC} -d max_execution_time=-1 ./craft install
 
 # Fix broken permissions set by craft
 chmod 755 web
@@ -64,9 +80,6 @@ chmod 644 web/index.php web/.htaccess
 
 echo "Download latest phar version of composer"
 wget https://getcomposer.org/download/latest-2.x/composer.phar
-
-echo "Set proper php version in composer.json"
-sed -i 's/"php": "8\.2"/"php": "8.3"/g' composer.json
 
 echo "Restore htaccess infos"
 echo "" >> web/.htaccess
