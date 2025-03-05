@@ -56,7 +56,7 @@ done;
 
 echo "Install craft"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} -d max_execution_time=-1 ~/composer.phar create-project "craftcms/craft:$CRAFT_VERSION" .
+${INSTALLER_PHP_EXEC} -d max_execution_time=-1 ~/composer.phar create-project "craftcms/cms:$CRAFT_VERSION" .
 
 # Fix broken permissions set by craft
 chmod 755 web
