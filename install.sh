@@ -654,6 +654,9 @@ elif [ "$CMD" = "apply" ]; then
 
     echo "Install composer deps"
     "${PHP_EXEC}" composer.phar install --no-scripts --no-dev --prefer-dist --no-progress
+    
+    echo "Request for a restart of PHP-FPM"
+    touch "./restart-${PHP_EXEC}-php-fpm"
 
     echo "Apply changes and run migrations"
     "${PHP_EXEC}" ./craft up
