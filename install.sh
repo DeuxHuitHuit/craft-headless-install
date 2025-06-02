@@ -6,7 +6,7 @@
 set -e -o pipefail
 
 PROJECT_CODE=$(basename "$(pwd)");
-INSTALLER_PHP_EXEC="ea-php83"
+INSTALLER_PHP_EXEC="ea-php84"
 DEV_SERVER="dev2.288dev.com"
 
 echo "Welcome to Deux Huit Huit's Craft cms v5 installer"
@@ -65,7 +65,7 @@ cp .env.example.dev .env
 mv -f composer.json.default composer.json
 
 echo "Set proper php version in composer.json"
-sed -i 's/"php": "8\.2"/"php": "8.3"/g' composer.json
+sed -i 's/"php": "8\.2"/"php": "8.4"/g' composer.json
 
 echo "Install craft"
 # Require custom craft version
@@ -539,7 +539,7 @@ set -e -o pipefail
 HOST="dev2@mo7.288dev.com"
 PORT="1023"
 PROJECT="$1"
-PHP_EXEC="ea-php83"
+PHP_EXEC="ea-php84"
 
 if [[ -z "$PROJECT" ]]; then
 	echo "ERROR! Please specify a project name.";
@@ -599,7 +599,7 @@ cat > deploy.sh << 'BASH'
 
 set -e -o pipefail
 
-PHP_EXEC="ea-php83"
+PHP_EXEC="ea-php84"
 CMD="$1"
 GITHUB_RUN_ID="$2"
 CRAFT_HOME="${3:-HOME}"
@@ -858,7 +858,7 @@ jobs:
             - name: Setup PHP
               uses: shivammathur/setup-php@master
               with:
-                php-version: '8.3'
+                php-version: '8.4'
                 coverage: none
                 tools: composer
 

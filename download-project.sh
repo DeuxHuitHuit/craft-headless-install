@@ -5,7 +5,7 @@ set -e -o pipefail
 HOST="dev2@mo7.288dev.com"
 PORT="1023"
 PROJECT="$1"
-PHP_EXEC="ea-php83"
+PHP_EXEC="ea-php84"
 
 if [[ -z "$PROJECT" ]]; then
 	echo "ERROR! Please specify a project name.";
