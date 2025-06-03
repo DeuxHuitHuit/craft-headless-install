@@ -62,7 +62,7 @@ for F in ".htaccess" "web" ".well-known"; do
 done;
 
 if [[ -f "./error_log" ]]; then
-	echo "Found error_log, deleting it"
+	echo "Found error_log, deleting it";
 	rm -f "./error_log";
 fi;
 
