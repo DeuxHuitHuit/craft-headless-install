@@ -68,7 +68,7 @@ fi;
 
 echo "Install craft project"
 # Use composer from home dir for the first time
-${INSTALLER_PHP_EXEC} ~/composer.phar create-project --no-install --no-scripts "craftcms/craft:^5.1" .
+${INSTALLER_PHP_EXEC} ~/composer.phar create-project --no-install --no-scripts "craftcms/craft:^5.4" .
 
 # Create env file
 cp .env.example.dev .env
