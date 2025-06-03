@@ -42,8 +42,15 @@ if [[ "$REPLY" != "Y" ]]; then
 	exit;
 fi;
 
-echo "Backup web/.htaccess"
-cp web/.htaccess "../$PROJECT_CODE.htaccess"
+if [[ -f "web/.htaccess" ]]; then
+	echo "Backup web/.htaccess"
+	cp web/.htaccess "../$PROJECT_CODE.htaccess"
+fi;
+
+if [[ ! -f "../$PROJECT_CODE.htaccess" ]]; then
+	echo "Project .htaccess file not found, aborting."
+	exit 1;
+fi;
 
 echo "Deleting files to make the pwd empty"
 for F in ".htaccess" "web" ".well-known"; do
@@ -53,6 +60,11 @@ for F in ".htaccess" "web" ".well-known"; do
 		rm -rf "./$F";
 	fi;
 done;
+
+if [[ -f "error_log" ]]; then
+	echo "Found error_log, deleting it"
+	rm -f "error_log";
+fi;
 
 echo "Install craft project"
 # Use composer from home dir for the first time
