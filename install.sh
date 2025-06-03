@@ -42,9 +42,9 @@ if [[ "$REPLY" != "Y" ]]; then
 	exit;
 fi;
 
-if [[ -f "web/.htaccess" ]]; then
+if [[ -f "./web/.htaccess" ]]; then
 	echo "Backup web/.htaccess"
-	cp web/.htaccess "../$PROJECT_CODE.htaccess"
+	cp "./web/.htaccess" "../$PROJECT_CODE.htaccess"
 fi;
 
 if [[ ! -f "../$PROJECT_CODE.htaccess" ]]; then
@@ -61,9 +61,9 @@ for F in ".htaccess" "web" ".well-known"; do
 	fi;
 done;
 
-if [[ -f "error_log" ]]; then
+if [[ -f "./error_log" ]]; then
 	echo "Found error_log, deleting it"
-	rm -f "error_log";
+	rm -f "./error_log";
 fi;
 
 echo "Install craft project"
