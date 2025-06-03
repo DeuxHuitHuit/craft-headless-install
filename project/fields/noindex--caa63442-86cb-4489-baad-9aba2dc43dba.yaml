@@ -1,6 +1,6 @@
 columnSuffix: ubepuvqs
 handle: noindex
-instructions: 'If checked, the page will not be indexed by search engines (Google, Bing, etc.) and won''t show search results.'
+instructions: "If checked, the page will not be indexed by search engines (Google, Bing, etc.) and won't show search results."
 name: 'No index'
 searchable: false
 settings:

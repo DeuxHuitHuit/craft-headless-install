@@ -176,7 +176,7 @@ settings:
                     __assoc__:
                       -
                         - label
-                        - 'Bahá''í'
+                        - "Bahá'í"
                       -
                         - value
                         - bahai-solid

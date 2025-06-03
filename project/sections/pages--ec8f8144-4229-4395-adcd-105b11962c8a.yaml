@@ -24,12 +24,12 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: '{{ parent and parent.uri != ''__home__'' ? parent.uri }}/{{ slug }}'
+    uriFormat: "{{ parent and parent.uri != '__home__' ? parent.uri }}/{{ slug }}"
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: '{{ parent and parent.uri != ''__home__'' ? parent.uri }}/{{ slug }}'
+    uriFormat: "{{ parent and parent.uri != '__home__' ? parent.uri }}/{{ slug }}"
 structure:
   maxLevels: null
   uid: cf5f5ca3-0616-4427-acc1-91a7f90e7a0e
