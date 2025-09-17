@@ -695,7 +695,7 @@ elif [ "$CMD" = "install" ]; then
     "${PHP_EXEC}" composer.phar install --no-scripts --no-dev --prefer-dist --no-progress
 
     echo "Try to backup db in case there is a previous one"
-    "${PHP_EXEC}" ./craft db/backup --silent-exit-on-exception=1
+    "${PHP_EXEC}" ./craft db/backup --silent-exit-on-exception=1 || true
 
     echo "Restore db"
     "${PHP_EXEC}" ./craft db/restore ./storage/restore/*.sql
