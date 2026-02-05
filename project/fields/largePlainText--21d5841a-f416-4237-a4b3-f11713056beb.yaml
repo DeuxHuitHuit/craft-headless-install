@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: largePlainText
+instructions: null
+name: 'Large Plain Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  initialRows: 8
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

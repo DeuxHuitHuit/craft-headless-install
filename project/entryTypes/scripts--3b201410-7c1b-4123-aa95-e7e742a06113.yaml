@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -56,10 +54,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4c508769-fc04-4e88-9cfd-85313caaf2b4 # Script
             handle: head
-            includeInCards: false
             instructions: null
             label: Head
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,10 +68,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4c508769-fc04-4e88-9cfd-85313caaf2b4 # Script
             handle: bodyStart
-            includeInCards: false
             instructions: null
             label: 'Body start'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -88,10 +82,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4c508769-fc04-4e88-9cfd-85313caaf2b4 # Script
             handle: bodyEnd
-            includeInCards: false
             instructions: null
             label: 'Body end'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

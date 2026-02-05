@@ -14,7 +14,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: "Champ obligatoire. L'identifiant est le nom donné à l'entrée dans le CMS. Il est utilisé à des fins de gestion du contenu uniquement. Cette valeur n'est pas visible et n'a aucune incidence sur le site.\r\n\r\n*Required field. The \"identifier\" is the entry's name in the CMS. It's only visible in the CMS and used for content management and organization purposes only.*"
             label: 'Identifiant CMS / CMS Identifier'
@@ -23,7 +22,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -40,10 +38,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -56,10 +52,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
             handle: thumbnail
-            includeInCards: false
             instructions: null
             label: Thumbnail
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,10 +66,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 7d6d33a6-5d21-417b-a4e7-def3b8a03c8f # Topics
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -94,10 +86,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 923cdc41-2e7b-4d9a-898b-4bf76d14bcc7 # Read time
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -110,10 +100,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
             handle: intro
-            includeInCards: false
             instructions: null
             label: Intro
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -126,10 +114,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: eb06fbb5-a0f2-44b3-88e4-f1355300f911 # Rich Text - Article
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -148,10 +134,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
             handle: null
-            includeInCards: false
             instructions: null
             label: __blank__
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

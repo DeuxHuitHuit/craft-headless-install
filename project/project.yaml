@@ -1,4 +1,4 @@
-dateModified: 1753883456
+dateModified: 1770322875
 elementSources:
   craft\elements\Asset:
     -
@@ -66,17 +66,18 @@ elementSources:
             operator: in
             uid: 427bf5cd-a59b-490b-b909-59f7aeeef7a6
             values:
+              - 55239922-65f1-4558-96b1-71848e51a9bc # Cookie Banner
               - 9477a487-01b6-4a09-bb9b-4e4fdc45d8c6 # Media specs
               - 3bf78167-9a80-4012-b67c-faf5e0984c25 # Scripts
               - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site configuration
               - ff4e6d75-2bed-40aa-8718-1e77a25a37d7 # Site footer
               - 800d763b-bbca-482a-9345-81b70bf730b2 # Site header
-              - 55239922-65f1-4558-96b1-71848e51a9bc # Cookie Banner
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
         - title
         - asc
+      defaultViewMode: ''
       key: 'custom:1363d8c9-0624-4681-802c-6d73aeb2c5bc'
       label: Globals
       tableAttributes: '-'
@@ -94,11 +95,13 @@ elementSources:
               - 0982d07a-c328-4033-8695-305319d78835 # Careers
               - 4a4ac845-5be1-4d2d-bb12-617c872d2ee5 # Contact
               - da1b5819-b168-4dd9-aa35-505a833ee367 # Homepage
+              - 9afc3380-7801-4624-bd2d-8dc42e9c2bce # llms.txt
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
         - title
         - asc
+      defaultViewMode: ''
       key: 'custom:eef88424-12ea-4adc-a32f-6d6df4466116'
       label: Singles
       tableAttributes: '-'
@@ -130,6 +133,7 @@ elementSources:
       type: native
     -
       heading: Content
+      key: 'heading:eb2e216a-41c1-4bdb-ab6a-1cd80bb96f37'
       type: heading
     -
       defaultSort:
@@ -157,6 +161,7 @@ elementSources:
       type: native
     -
       heading: Categories
+      key: 'heading:8ed4b5d3-d258-404f-9cae-910a47e44ac5'
       type: heading
     -
       defaultSort:
@@ -173,6 +178,7 @@ elementSources:
       type: native
     -
       heading: Components
+      key: 'heading:8f4e3a25-bdd3-49ae-81e6-114994897fbf'
       type: heading
     -
       defaultSort:
@@ -247,6 +253,7 @@ meta:
     7d6d33a6-5d21-417b-a4e7-def3b8a03c8f: Topics # Topics
     7f423144-c38b-4ed4-916e-132f44e9e1d6: 'Blog topic' # Blog topic
     8a2d5af3-151b-4ea4-9882-c0579fbe91f9: 'Citation avec source // Quote with source' # Citation avec source // Quote with source
+    9afc3380-7801-4624-bd2d-8dc42e9c2bce: llms.txt # llms.txt
     9de68a16-72b4-4696-afea-63d53c5a01bc: Partners # Partners
     9e18815d-4be1-43b2-9287-19eef168429b: Invert # Invert
     9ec6fdb3-b8d0-4641-96b9-16c9875584fa: Text # Text
@@ -254,6 +261,7 @@ meta:
     16e1ca14-9781-44a1-b17f-7489cef3700a: 'Boutons // Buttons' # Boutons // Buttons
     19f03eed-fb4d-447e-966d-258f5e5add92: ' Legal' #  Legal
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
+    21d5841a-f416-4237-a4b3-f11713056beb: 'Large Plain Text' # Large Plain Text
     24fcc82a-e774-4756-8f1e-62edb2119633: 'Rich text - Inline' # Rich text - Inline
     39fc315f-bb9e-46f7-877a-dcdd711c1aed: 'Media spec' # Media spec
     46e9d2cf-9ffa-4d70-b132-f32d2c4c4c58: Embed # Embed
@@ -278,6 +286,7 @@ meta:
     3221aacd-9b06-4daa-a21c-d632a438983d: 'Prose drawers' # Prose drawers
     4093afd2-c348-4b4b-9137-0e07daa80e57: Text-Media # Text-Media
     8534cb8d-ec47-4d88-a55d-3e22d08c402b: Logo # Logo
+    9306a89d-6f52-485c-abc4-a1c2bfd8572c: llms.txt # llms.txt
     9477a487-01b6-4a09-bb9b-4e4fdc45d8c6: 'Media specs' # Media specs
     22947fe1-4c0e-437b-9997-de04319d78e3: 'Rich text - Full' # Rich text - Full
     66232f4e-2ac7-45d0-9cf4-9867b9b96ada: 'Tiroirs // Drawers' # Tiroirs // Drawers
@@ -381,5 +390,5 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: 60
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.9.0.8
   timeZone: America/Toronto

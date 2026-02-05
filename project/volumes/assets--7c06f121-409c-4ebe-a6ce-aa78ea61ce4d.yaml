@@ -15,7 +15,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: 'Titre / Title'
@@ -24,7 +23,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -44,13 +42,11 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             instructions: null
             label: null
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: true
             required: false
@@ -67,10 +63,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
             handle: credits
-            includeInCards: false
             instructions: null
             label: Credits
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

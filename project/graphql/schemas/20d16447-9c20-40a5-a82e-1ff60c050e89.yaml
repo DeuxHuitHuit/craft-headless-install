@@ -11,6 +11,7 @@ scope:
   - 'sections.4a4ac845-5be1-4d2d-bb12-617c872d2ee5:read' # Contact
   - 'sections.55239922-65f1-4558-96b1-71848e51a9bc:read' # Cookie Banner
   - 'sections.da1b5819-b168-4dd9-aa35-505a833ee367:read' # Homepage
+  - 'sections.9afc3380-7801-4624-bd2d-8dc42e9c2bce:read' # llms.txt
   - 'sections.9477a487-01b6-4a09-bb9b-4e4fdc45d8c6:read' # Media specs
   - 'sections.3bf78167-9a80-4012-b67c-faf5e0984c25:read' # Scripts
   - 'sections.6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc:read' # Site configuration
@@ -27,3 +28,5 @@ scope:
   - 'nestedentryfields.e0fec26e-937b-4d32-b433-211242db4d9e:read' # SEO
   - 'volumes.7c06f121-409c-4ebe-a6ce-aa78ea61ce4d:read' # Assets
   - 'volumes.3c0c2fcb-c361-472f-80d1-6bb4e36bcab6:read' # Stream
+  - 'directive:parseRefs'
+  - 'directive:transform'
