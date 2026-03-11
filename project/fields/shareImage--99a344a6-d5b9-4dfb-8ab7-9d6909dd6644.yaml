@@ -10,7 +10,8 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
-  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:8949504a-858a-4c6c-aa89-e486aed71a49' # Images
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: 1
@@ -22,15 +23,16 @@ settings:
   restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   restrictedLocationSubpath: null
   selectionLabel: 'Add a share image'
-  showCardsInGrid: false
-  showSiteMenu: false
+  showSearchInput: true
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
     - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+    - 'volume:8949504a-858a-4c6c-aa89-e486aed71a49' # Images
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: large
+  viewMode: thumbs
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

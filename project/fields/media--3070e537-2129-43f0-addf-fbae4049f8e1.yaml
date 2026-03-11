@@ -11,6 +11,7 @@ settings:
     - image
     - video
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
@@ -23,14 +24,17 @@ settings:
   restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   restrictedLocationSubpath: null
   selectionLabel: 'Add a media'
-  showCardsInGrid: false
-  showSiteMenu: false
+  showSearchInput: true
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+    - 'volume:3c0c2fcb-c361-472f-80d1-6bb4e36bcab6' # Stream
+    - 'volume:8949504a-858a-4c6c-aa89-e486aed71a49' # Images
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: large
+  viewMode: thumbs
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Assets

@@ -1,18 +1,8 @@
-dateModified: 1770322875
+dateModified: 1773261485
 elementSources:
   craft\elements\Asset:
     -
-      defaultSort:
-        - dateCreated
-        - desc
-      disabled: false
-      key: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
-      tableAttributes:
-        - filename
-        - size
-        - alt
-        - link
-        - dateUpdated
+      key: 'volume:8949504a-858a-4c6c-aa89-e486aed71a49' # Images
       type: native
     -
       defaultSort:
@@ -31,6 +21,20 @@ elementSources:
       defaultSort:
         - dateCreated
         - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+      tableAttributes:
+        - filename
+        - size
+        - alt
+        - link
+        - dateUpdated
+      type: native
+    -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: true
       key: temp
       tableAttributes:
@@ -39,9 +43,6 @@ elementSources:
         - dateModified
         - uploader
         - link
-      type: native
-    -
-      key: 'volume:7b21edba-fb22-4729-8c3b-ada8d7692fb7'
       type: native
   craft\elements\Entry:
     -
@@ -211,9 +212,8 @@ email:
   replyToEmail: null
   template: ''
   transportSettings:
-    apiKey: $SENDGRID_API
-    categories: ''
-  transportType: putyourlightson\sendgrid\mail\SendgridAdapter
+    apiKey: $RESEND_API_KEY
+  transportType: superbig\resend\Adapter
 fs:
   assets:
     hasUrls: true
@@ -222,6 +222,9 @@ fs:
       path: $ASSETS_FILE_SYSTEM_PATH
     type: craft\fs\Local
     url: $UPLOADS_URL
+  images:
+    name: Images
+    type: deuxhuithuit\cfimages\fs\CloudflareImagesFs
   stream:
     hasUrls: false
     name: Stream
@@ -293,6 +296,7 @@ meta:
     0145468f-d01a-4e00-bdf3-d734c3e52a72: Inline # Inline
     374406b8-233f-4e1b-ae1e-f779112eaca6: Article # Article
     2556508a-1412-450e-8cad-0369ef9cced4: Url # Url
+    8949504a-858a-4c6c-aa89-e486aed71a49: Images # Images
     55239922-65f1-4558-96b1-71848e51a9bc: 'Cookie Banner' # Cookie Banner
     85050609-12b8-4783-b9c6-5f753f3fe36b: Full # Full
     a0a65bff-fadd-4bb4-ae89-c3f15c01bbbc: Carousel # Carousel
@@ -345,6 +349,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  cloudflare-images:
+    edition: standard
+    enabled: true
+    licenseKey: 
+    schemaVersion: 1.0.0
+    settings:
+      accountHash: $CF_IMAGE_ACCOUNT_HASH
+      accountId: $CF_STREAM_ACCOUNT_ID
+      apiToken: $CF_STREAM_API_TOKEN
   cloudflare-stream:
     edition: standard
     enabled: true
@@ -371,6 +384,10 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 
+    schemaVersion: 1.0.0
+  resend:
+    edition: standard
+    enabled: true
     schemaVersion: 1.0.0
   routes-api:
     edition: standard
