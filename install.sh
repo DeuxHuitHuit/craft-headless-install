@@ -288,6 +288,8 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require craftpulse/craft-colour-swatches
 ${INSTALLER_PHP_EXEC} ./craft plugin/install colour-swatches
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
+${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-cloudflare-images
+${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-images
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./craft plugin/install admin-panel-controllers
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-agency-auth
