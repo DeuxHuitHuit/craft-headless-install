@@ -300,6 +300,8 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-fonts-api
 ${INSTALLER_PHP_EXEC} ./craft plugin/install fonts-api
 ${INSTALLER_PHP_EXEC} ./composer.phar require craftcms/webhooks
 ${INSTALLER_PHP_EXEC} ./craft plugin/install webhooks
+${INSTALLER_PHP_EXEC} ./composer.phar require superbig/craft-resend
+${INSTALLER_PHP_EXEC} ./craft plugin/install resend
 
 echo "Install dev packages"
 ${INSTALLER_PHP_EXEC} ./composer.phar require friendsofphp/php-cs-fixer --dev
