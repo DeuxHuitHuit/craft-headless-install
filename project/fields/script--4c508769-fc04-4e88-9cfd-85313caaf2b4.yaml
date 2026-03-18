@@ -12,5 +12,5 @@ settings:
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: siteGroup
 type: craft\fields\PlainText
