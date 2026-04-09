@@ -1,13 +1,18 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   f28abbfd-65f9-4e4b-9a96-7015dd1913a3:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
             dateAdded: '2024-08-14T17:53:08+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
             handle: orgName
             instructions: null
@@ -21,7 +26,9 @@ fieldLayouts:
             width: 50
           -
             dateAdded: '2024-08-14T18:11:30+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e8a9774e-14c6-4ae6-b673-a9740e5af59b # Plain text - Non-translatable
             handle: xHandle
             instructions: 'Include the @'
@@ -35,7 +42,9 @@ fieldLayouts:
             width: 50
           -
             dateAdded: '2024-12-10T17:13:08+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f24c97e8-b8f5-4799-bb8f-c062c6196c51 # Share description
             handle: null
             instructions: null
@@ -49,7 +58,9 @@ fieldLayouts:
             width: 50
           -
             dateAdded: '2024-08-20T19:29:23+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 99a344a6-d5b9-4dfb-8ab7-9d6909dd6644 # Share image
             handle: null
             instructions: null
@@ -64,14 +75,16 @@ fieldLayouts:
         name: Organization
         uid: 063b0f87-7ffd-48bc-8316-26b543008489
         userCondition: null
+    thumbFieldKey: null
 handle: config
 hasTitleField: false
 icon: gear
-name: 'Site configuration'
+name: 'Site Configuration'
 showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: 'Site configuration'
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

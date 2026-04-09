@@ -1,4 +1,4 @@
-dateModified: 1773871360
+dateModified: 1775752070
 elementSources:
   craft\elements\Asset:
     -
@@ -70,9 +70,9 @@ elementSources:
               - 55239922-65f1-4558-96b1-71848e51a9bc # Cookie Banner
               - 9477a487-01b6-4a09-bb9b-4e4fdc45d8c6 # Media specs
               - 3bf78167-9a80-4012-b67c-faf5e0984c25 # Scripts
-              - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site configuration
-              - ff4e6d75-2bed-40aa-8718-1e77a25a37d7 # Site footer
-              - 800d763b-bbca-482a-9345-81b70bf730b2 # Site header
+              - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site Configuration
+              - ff4e6d75-2bed-40aa-8718-1e77a25a37d7 # Site Footer
+              - 800d763b-bbca-482a-9345-81b70bf730b2 # Site Header
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
@@ -248,7 +248,7 @@ meta:
     4c508769-fc04-4e88-9cfd-85313caaf2b4: Script # Script
     4dabd377-5b99-4269-90ab-1129bab3dea0: 'Plain text - Multiline' # Plain text - Multiline
     5b29e282-f0ce-4929-834a-4953ec2b7dd3: 'Cookie Banner' # Cookie Banner
-    6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc: 'Site configuration' # Site configuration
+    6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc: 'Site Configuration' # Site Configuration
     6abc4a11-ddf3-44c7-b156-42847f10eae2: 'Enable cookie banner' # Enable cookie banner
     6c86c074-7558-42ed-9fbc-8c4fbc736b95: Blog # Blog
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
@@ -282,7 +282,7 @@ meta:
     615c8eda-5043-4fdd-a90c-3c77212764e6: 'Plain text' # Plain text
     0630a2e9-2fbf-476c-b8e4-8586a57d1366: Article # Article
     663c4e72-de2b-4558-9123-f2db43c01252: Article # Article
-    800d763b-bbca-482a-9345-81b70bf730b2: 'Site header' # Site header
+    800d763b-bbca-482a-9345-81b70bf730b2: 'Site Header' # Site Header
     923cdc41-2e7b-4d9a-898b-4bf76d14bcc7: 'Read time' # Read time
     0982d07a-c328-4033-8695-305319d78835: Careers # Careers
     3070e537-2129-43f0-addf-fbae4049f8e1: Media # Media
@@ -300,7 +300,7 @@ meta:
     55239922-65f1-4558-96b1-71848e51a9bc: 'Cookie Banner' # Cookie Banner
     85050609-12b8-4783-b9c6-5f753f3fe36b: Full # Full
     a0a65bff-fadd-4bb4-ae89-c3f15c01bbbc: Carousel # Carousel
-    a03206c2-0f1f-4ac9-affe-b6a82de9bf75: 'Site configuration' # Site configuration
+    a03206c2-0f1f-4ac9-affe-b6a82de9bf75: 'Site Configuration' # Site Configuration
     a2444205-7b4b-4062-82d8-74833e3f5f80: Job # Job
     a4075417-c1ab-4ea9-86bb-9848b83afec3: 'Video Stream (pour les Asset Volumes seulement)' # Video Stream (pour les Asset Volumes seulement)
     af0b5372-3e37-4dbd-afcc-c9aa66cea831: "Appel à l'action // Call to Action" # Appel à l'action // Call to Action
@@ -311,7 +311,7 @@ meta:
     b40c3a12-3bed-46f5-97c6-941c7a839154: 'Vidéo Embed // Embed Video' # Vidéo Embed // Embed Video
     b56dc3db-a457-4448-9fec-dd6a5a543696: Image # Image
     b851c78b-d4f2-420f-8018-3d24a4cfb7d2: 'Embed URL' # Embed URL
-    bdc09e8f-fc0f-420e-b3f0-af6980757e6b: 'Site header' # Site header
+    bdc09e8f-fc0f-420e-b3f0-af6980757e6b: 'Site Header' # Site Header
     c2b278b1-d1f1-4dc9-91f2-716fddb29525: Articles # Articles
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
     c26c7142-c8a9-4cac-b0ea-c84428d04864: 'Blog topics' # Blog topics
@@ -330,12 +330,12 @@ meta:
     e60013a8-ce72-424b-9582-971b0ca73b09: Partners # Partners
     eb06fbb5-a0f2-44b3-88e4-f1355300f911: 'Rich Text - Article' # Rich Text - Article
     ec8f8144-4229-4395-adcd-105b11962c8a: Pages # Pages
-    f8d9ad5c-7504-4ce3-a645-814f7094c056: 'Site footer' # Site footer
+    f8d9ad5c-7504-4ce3-a645-814f7094c056: 'Site Footer' # Site Footer
     f20d3272-0ab0-4656-aa6d-e27e58f20a40: Drawer # Drawer
     f23e6a71-9e92-4184-bdd9-8ff3775fb2ec: Jobs # Jobs
     f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Share description' # Share description
     f2599fa6-87fd-4abf-ae90-7bdafd0e3f31: Links # Links
-    ff4e6d75-2bed-40aa-8718-1e77a25a37d7: 'Site footer' # Site footer
+    ff4e6d75-2bed-40aa-8718-1e77a25a37d7: 'Site Footer' # Site Footer
 plugins:
   admin-panel-controllers:
     edition: standard

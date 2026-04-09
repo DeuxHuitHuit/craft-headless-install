@@ -1,12 +1,15 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 handle: header
 hasTitleField: false
 icon: bars
-name: 'Site header'
+name: 'Site Header'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: ''
-titleTranslationMethod: site
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

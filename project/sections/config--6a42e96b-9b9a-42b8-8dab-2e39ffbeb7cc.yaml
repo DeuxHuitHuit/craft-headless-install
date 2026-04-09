@@ -1,10 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - a03206c2-0f1f-4ac9-affe-b6a82de9bf75 # Site configuration
+  -
+    uid: a03206c2-0f1f-4ac9-affe-b6a82de9bf75 # Site Configuration
 handle: config
 maxAuthors: 1
-name: 'Site configuration'
+name: 'Site Configuration'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR

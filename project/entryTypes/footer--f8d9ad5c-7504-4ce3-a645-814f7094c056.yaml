@@ -1,49 +1,25 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   ff396321-1553-4a9f-90bc-f60d539012bb:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
-        elements:
-          -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-08-19T16:03:25+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f3f29f57-f9b2-4371-82a4-ebfd6a0730af
-            userCondition: null
-            warning: null
-            width: 100
         name: Content
         uid: db280247-e304-453e-aaca-6d41b88e1062
         userCondition: null
+    thumbFieldKey: null
 handle: footer
 hasTitleField: false
 icon: trademark
-name: 'Site footer'
+name: 'Site Footer'
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: 'Site footer  '
-titleTranslationKeyFormat: ''
-titleTranslationMethod: site
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

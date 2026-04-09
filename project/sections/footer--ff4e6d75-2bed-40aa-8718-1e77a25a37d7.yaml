@@ -1,22 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - f8d9ad5c-7504-4ce3-a645-814f7094c056 # Site footer
+  -
+    uid: f8d9ad5c-7504-4ce3-a645-814f7094c056 # Site Footer
 handle: footer
 maxAuthors: 1
-name: 'Site footer'
+name: 'Site Footer'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - refresh
-        - '1'
-      -
-        - urlFormat
-        - '{url}'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR
