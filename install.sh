@@ -96,7 +96,6 @@ wget \
     --waitretry=30 \
     --timeout=30 \
     --retry-connrefused \
-    --retry-on-host-error \
     --retry-on-http-error=429,500,502,503,504 \
     -O composer.phar \
     https://getcomposer.org/download/latest-2.x/composer.phar \
@@ -964,7 +963,6 @@ wget \
     --waitretry=30 \
     --timeout=30 \
     --retry-connrefused \
-    --retry-on-host-error \
     --retry-on-http-error=429,500,502,503,504 \
     -O project.tar.gz \
     https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz \
