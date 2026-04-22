@@ -91,7 +91,16 @@ chmod 755 web
 chmod 644 web/index.php web/.htaccess
 
 echo "Download latest phar version of composer"
-wget https://getcomposer.org/download/latest-2.x/composer.phar
+wget \
+    --tries=10 \
+    --waitretry=30 \
+    --timeout=30 \
+    --retry-connrefused \
+    --retry-on-host-error \
+    --retry-on-http-error=429,500,502,503,504 \
+    -O composer.phar \
+    https://getcomposer.org/download/latest-2.x/composer.phar \
+    || { echo "ERROR: failed to download composer.phar" >&2; exit 1; }
 
 echo "Restore htaccess infos"
 echo "" >> web/.htaccess
@@ -950,7 +959,16 @@ YAML
 
 echo "Install project files"
 rm -rf config/project
-wget https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz
+wget \
+    --tries=10 \
+    --waitretry=30 \
+    --timeout=30 \
+    --retry-connrefused \
+    --retry-on-host-error \
+    --retry-on-http-error=429,500,502,503,504 \
+    -O project.tar.gz \
+    https://github.com/DeuxHuitHuit/craft-headless-install/raw/main/project.tar.gz \
+    || { echo "ERROR: failed to download project.tar.gz" >&2; exit 1; }
 tar -xvf project.tar.gz -C config/
 rm -f project.tar.gz
 sed "s/__PROJECT__/${PROJECT_CODE}/g" config/project/project.yaml > config/project/project.yaml.tmp
