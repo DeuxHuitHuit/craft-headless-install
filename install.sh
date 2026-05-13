@@ -686,7 +686,7 @@ elif [ "$CMD" = "apply" ]; then
     touch "./restart-${PHP_EXEC}-php-fpm"
 
     echo "Apply changes and run migrations"
-    "${PHP_EXEC}" ./craft up
+    "${PHP_EXEC}" ./craft up --interactive=0 --no-backup=1
 
     echo "Clear temp files"
     "${PHP_EXEC}" ./craft clear-caches/temp-files
