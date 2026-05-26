@@ -5,6 +5,7 @@ entryTypes:
     uid: 9306a89d-6f52-485c-abc4-a1c2bfd8572c # llms.txt
 handle: llmsTxt
 maxAuthors: 1
+minAuthors: 1
 name: llms.txt
 propagationMethod: all
 siteSettings:

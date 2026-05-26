@@ -13,7 +13,7 @@ settings:
   showCardsInGrid: false
   showSiteMenu: false
   sources:
-    - 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' #  Modules
+    - 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

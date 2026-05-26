@@ -5,6 +5,7 @@ entryTypes:
     uid: f8d9ad5c-7504-4ce3-a645-814f7094c056 # Site Footer
 handle: footer
 maxAuthors: 1
+minAuthors: 1
 name: 'Site Footer'
 previewTargets:
   -

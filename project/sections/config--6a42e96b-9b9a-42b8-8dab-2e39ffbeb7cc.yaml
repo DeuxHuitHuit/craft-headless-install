@@ -5,6 +5,7 @@ entryTypes:
     uid: a03206c2-0f1f-4ac9-affe-b6a82de9bf75 # Site Configuration
 handle: config
 maxAuthors: 1
+minAuthors: 1
 name: 'Site Configuration'
 propagationMethod: all
 siteSettings:

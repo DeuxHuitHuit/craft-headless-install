@@ -1,9 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 3b201410-7c1b-4123-aa95-e7e742a06113 # Scripts
+  -
+    uid: 3b201410-7c1b-4123-aa95-e7e742a06113 # Scripts
 handle: scripts
 maxAuthors: 1
+minAuthors: 1
 name: Scripts
 propagationMethod: all
 siteSettings:

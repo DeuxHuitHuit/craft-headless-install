@@ -17,7 +17,7 @@ scope:
   - 'sections.6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc:read' # Site Configuration
   - 'sections.ff4e6d75-2bed-40aa-8718-1e77a25a37d7:read' # Site Footer
   - 'sections.800d763b-bbca-482a-9345-81b70bf730b2:read' # Site Header
-  - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' #  Modules
+  - 'sections.414b45c8-d274-4c58-b6e8-f0ce31130d34:read' # Modules
   - 'sections.c2b278b1-d1f1-4dc9-91f2-716fddb29525:read' # Articles
   - 'sections.c26c7142-c8a9-4cac-b0ea-c84428d04864:read' # Blog topics
   - 'sections.f23e6a71-9e92-4184-bdd9-8ff3775fb2ec:read' # Jobs

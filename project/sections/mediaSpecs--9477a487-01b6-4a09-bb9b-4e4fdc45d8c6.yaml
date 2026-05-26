@@ -1,9 +1,11 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 39fc315f-bb9e-46f7-877a-dcdd711c1aed # Media spec
+  -
+    uid: 39fc315f-bb9e-46f7-877a-dcdd711c1aed # Media spec
 handle: mediaSpecs
 maxAuthors: 1
+minAuthors: 1
 name: 'Media specs'
 propagationMethod: all
 siteSettings:

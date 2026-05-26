@@ -5,6 +5,7 @@ entryTypes:
     uid: bdc09e8f-fc0f-420e-b3f0-af6980757e6b # Site Header
 handle: header
 maxAuthors: 1
+minAuthors: 1
 name: 'Site Header'
 previewTargets:
   -

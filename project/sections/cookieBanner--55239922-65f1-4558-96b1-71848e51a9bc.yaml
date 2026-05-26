@@ -1,22 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 5b29e282-f0ce-4929-834a-4953ec2b7dd3 # Cookie Banner
+  -
+    uid: 5b29e282-f0ce-4929-834a-4953ec2b7dd3 # Cookie Banner
 handle: cookieBanner
 maxAuthors: 1
+minAuthors: 1
 name: 'Cookie Banner'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR

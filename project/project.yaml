@@ -1,4 +1,4 @@
-dateModified: 1775752070
+dateModified: 1779806112
 elementSources:
   craft\elements\Asset:
     -
@@ -186,7 +186,7 @@ elementSources:
         - postDate
         - desc
       disabled: false
-      key: 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' #  Modules
+      key: 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
       tableAttributes:
         - postDate
         - expiryDate
@@ -277,7 +277,7 @@ meta:
     99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Share image' # Share image
     148fb449-e797-4b40-a8f8-d45d858683dd: 'Texte // Text' # Texte // Text
     247fed59-90e6-4b37-ac0c-a42cfa306a81: 'Média // Media' # Média // Media
-    414b45c8-d274-4c58-b6e8-f0ce31130d34: ' Modules' #  Modules
+    414b45c8-d274-4c58-b6e8-f0ce31130d34: Modules # Modules
     492f0e2c-a4d9-43f1-bbe3-088788243930: Careers # Careers
     615c8eda-5043-4fdd-a90c-3c77212764e6: 'Plain text' # Plain text
     0630a2e9-2fbf-476c-b8e4-8586a57d1366: Article # Article
@@ -407,5 +407,5 @@ system:
   live: true
   name: $SITE_NAME
   retryDuration: 60
-  schemaVersion: 5.9.0.8
+  schemaVersion: 5.10.0.0
   timeZone: America/Toronto
