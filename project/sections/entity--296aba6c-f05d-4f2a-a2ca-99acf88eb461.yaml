@@ -2,31 +2,29 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 3f07a8e2-b80b-4fe0-aca4-9c505738579d # Narrative
-  -
-    uid: 19f03eed-fb4d-447e-966d-258f5e5add92 # Legal
-handle: pages
+    uid: d9387931-7b06-4e87-96f9-dc1cb929c777 # Entity Template (TO DUPLICATE)
+handle: entity
 maxAuthors: 1
 minAuthors: 1
-name: Pages
+name: Entity
 previewTargets:
   -
-    label: Preview
+    label: 'Primary entry page'
     refresh: '1'
     urlFormat: '{url}'
-propagationMethod: all
+propagationMethod: siteGroup
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: "{{ parent and parent.uri != '__home__' ? parent.uri }}/{{ slug }}"
+    uriFormat: 'entity/{slug}'
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: "{{ parent and parent.uri != '__home__' ? parent.uri }}/{{ slug }}"
+    uriFormat: 'entity/{slug}'
 structure:
   maxLevels: null
-  uid: cf5f5ca3-0616-4427-acc1-91a7f90e7a0e
+  uid: 6d294282-774b-4c59-86b1-6d8a055b30fc
 type: structure

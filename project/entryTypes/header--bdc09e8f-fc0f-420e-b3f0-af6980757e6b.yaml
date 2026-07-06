@@ -1,6 +1,113 @@
 allowLineBreaksInTitles: false
 color: null
 description: null
+fieldLayouts:
+  cde403fc-2e78-4e6a-89d5-cc69489dc23a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T14:26:12+00:00'
+            elementCondition: null
+            heading: 'Main Menu'
+            type: craft\fieldlayoutelements\Heading
+            uid: 6b431525-f090-4387-b705-6656e6bfc7ac
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T14:26:12+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: eda143ef-0311-4ef5-bf40-338187249ee7
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T14:25:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
+            handle: basicMenu
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b0c5ac3c-19c6-4af8-9ee6-67214307ce3a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:28:14+00:00'
+            elementCondition: null
+            heading: 'Featured Links'
+            type: craft\fieldlayoutelements\Heading
+            uid: dc68b5bf-a66f-45b9-81f8-377cfd5443c2
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T14:28:14+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: fd435041-8205-4cd9-8547-f7b344a8658f
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T14:28:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: featuredLink1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83b743c9-cb46-4b01-bf79-a53ceb8bfdb4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:28:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: featuredLink2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2cc3351d-4c77-42a5-85a4-a0171300b2f9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:28:14+00:00'
+            elementCondition: null
+            heading: 'Mega Menu'
+            type: craft\fieldlayoutelements\Heading
+            uid: 067d9e79-9fb2-4c60-b447-f02c42cdfbfa
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T14:28:14+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a00f8435-ed97-4448-88e5-ec58991b8e96
+            userCondition: null
+          -
+            content: "Ajouter les champs matrix pour créer des méga menus.\r\n"
+            dateAdded: '2026-06-11T14:29:53+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: 623ae29c-8102-449c-9590-60b76a58ac2f
+            userCondition: null
+            width: 100
+        name: Content
+        uid: 887c3b61-5c33-4df9-b7a5-1965b6982d6f
+        userCondition: null
+    thumbFieldKey: null
 handle: header
 hasTitleField: false
 icon: bars
@@ -12,4 +119,4 @@ slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-uiLabelFormat: '{title}'
+uiLabelFormat: '{section.name|raw}'

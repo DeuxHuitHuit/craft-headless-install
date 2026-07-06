@@ -4,9 +4,26 @@ instructions: null
 name: Url
 searchable: false
 settings:
+  fullGraphqlData: false
   maxLength: 255
+  showLabelField: false
+  typeSettings:
+    __assoc__:
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - '1'
+            -
+              - allowAnchors
+              - '1'
+            -
+              - allowCustomSchemes
+              - '1'
   types:
     - url
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\Link

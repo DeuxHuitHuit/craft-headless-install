@@ -1,0 +1,31 @@
+columnSuffix: null
+handle: proseRichText
+instructions: null
+name: 'Prose Rich Text'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  blockTypeBehaviour: click
+  configSelectionMode: manual
+  defaultTransform: ''
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+  editorMode: richText
+  initialRows: 4
+  linkSettings:
+    - text
+    - newWindow
+    - site
+    - title
+    - classes
+  manualConfig: "{\r\n  \"buttons\": [\r\n    \"formatting\",\r\n    \"bold\",\r\n    \"italic\",\r\n    \"link\",\r\n    \"ordered-list\",\r\n    \"unordered-list\"\r\n  ],\r\n  \"formatting\": [\r\n\t{\r\n\t\t\"title\": \"overline - h2\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"2\", \"class\": \"_overline\"},\r\n\t\t\"editorStyle\": \"._overline {font-size: 12px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"overline - h3\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"3\", \"class\": \"_overline\"},\r\n\t\t\"editorStyle\": \"._overline {font-size: 12px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"heading - h2\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"2\", \"class\": \"_heading\"},\r\n\t\t\"editorStyle\": \"._heading {font-size: 18px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"heading - h3\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"3\", \"class\": \"_heading\"},\r\n\t\t\"editorStyle\": \"._heading {font-size: 18px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"display - h2\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"2\", \"class\": \"_display\"},\r\n\t\t\"editorStyle\": \"._display {font-size: 20px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"display - h3\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"3\", \"class\": \"_display\"},\r\n\t\t\"editorStyle\": \"._display {font-size: 20px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"title - h2\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"2\", \"class\": \"_title\"},\r\n\t\t\"editorStyle\": \"._title {font-size: 14px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"title - h3\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"3\", \"class\": \"_title\"},\r\n\t\t\"editorStyle\": \"._title {font-size: 14px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"title - h4\",\r\n\t\t\"type\": \"heading\",\r\n\t\t\"attrs\": {\"level\": \"4\", \"class\": \"_title\"},\r\n\t\t\"editorStyle\": \"._title {font-size: 14px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"body\",\r\n\t\t\"type\": \"paragraph\",\r\n\t\t\"attrs\": {\"class\": \"_body\"},\r\n\t\t\"editorStyle\": \"._body {font-size: 14px;}\"\r\n\t},\r\n\t{\r\n\t\t\"title\": \"blockquote\",\r\n\t\t\"type\": \"paragraph\",\r\n\t\t\"attrs\": {\"class\": \"_blockquote\"},\r\n\t\t\"editorStyle\": \"._blockquote {font-size: 22px;}\"\r\n\t}\r\n  ]\r\n}"
+  maxBlocks: null
+  minBlocks: null
+  pasteAsPlainText: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  trimEmptyParagraphs: true
+  vizyConfig: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\vizy\fields\VizyField

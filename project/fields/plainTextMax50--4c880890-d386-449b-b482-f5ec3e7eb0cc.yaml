@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: plainTextMax50
+instructions: null
+name: 'Plain Text Max 50'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 50
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

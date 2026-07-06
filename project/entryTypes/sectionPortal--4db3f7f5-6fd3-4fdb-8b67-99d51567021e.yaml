@@ -1,0 +1,409 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  e9c282cf-ada6-4e49-af05-bc3c8d3330ac:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-10T18:44:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f3a05ffb-9c2b-42b9-8d92-d8879b8a0920 # CMS Identifier
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8a7bd4c-5afe-4ccb-8195-667a077c3c66
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:39:49+00:00'
+            elementCondition: null
+            heading: Layout
+            type: craft\fieldlayoutelements\Heading
+            uid: bead6b10-538b-4031-8298-05e2c9d9ad23
+            userCondition: null
+          -
+            dateAdded: '2026-06-10T18:19:14+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b2c368fd-40e4-46fd-b371-adbd22a4d9f1
+            userCondition: null
+          -
+            dateAdded: '2026-06-10T18:19:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 26874920-94f9-44d4-b4c0-05317c70df07
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2026-06-10T20:14:45+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 627424cd-b120-49aa-a4a6-ee32eb662878
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            content: "#### Reference Layout Row 4\r\n\r\n![](/uploads/references/reference_module-portal_4row.jpg)"
+            dateAdded: '2026-06-10T20:14:45+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: aea62f3a-911d-44ce-ba8c-63f502532b2a
+                  values:
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: ae4a18b2-6669-4370-8976-4d19ada3f818
+            userCondition: null
+            width: 50
+          -
+            content: "#### Reference Layout 2-1-1  \r\n\r\n1st Column: 2 Cards  \r\n2nd Column: 1 Card  \r\n3rd Column: 1 Card  \r\n\r\n![](/uploads/references/reference_module-portal_2-1-1.jpg)"
+            dateAdded: '2026-06-10T20:18:57+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: c04cfad4-f333-4afb-befb-8764731736bc
+                  values:
+                    - '211'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: ec3380fb-af3a-4086-89aa-9acea63bb1a2
+            userCondition: null
+            width: 50
+          -
+            content: "#### Reference Layout 2-1-2  \r\n\r\n1st Column: 2 Cards  \r\n2nd Column: 1 Card  \r\n3rd Column: 2 Cards  \r\n\r\n![](/uploads/references/reference_module-portal-2-1-2.jpg)"
+            dateAdded: '2026-06-10T20:18:57+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 5a3db5d5-ab49-4f71-ac4c-a2c16d5cca6f
+                  values:
+                    - '212'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: 9a667ef6-e58b-4d2f-9744-fc512bb3713f
+            userCondition: null
+            width: 50
+          -
+            content: "#### Reference Layout 1-1-Row 4\r\n\r\n1st Column: 1 Card  \r\n2nd Column: 1 Card  \r\n4 Card Row\r\n\r\n![](/uploads/references/reference_module-portal_1-1-4row.jpg)"
+            dateAdded: '2026-06-10T20:18:57+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 3f2534e8-ebbd-41fa-8e5f-45c328cc185d
+                  values:
+                    - 11Row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: 0e260861-aed8-4215-b969-52977be33603
+            userCondition: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T15:04:03+00:00'
+            elementCondition: null
+            heading: Navigation
+            type: craft\fieldlayoutelements\Heading
+            uid: e74a86c5-f72c-459d-8deb-3f039d226a94
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T15:04:03+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: f2eadbd0-5965-4544-91e0-ff322269eef5
+            userCondition: null
+          -
+            dateAdded: '2026-06-11T15:04:03+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a4a4cae6-9a97-4aa0-a0db-0514ab6b6b7f
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'General Settings'
+        uid: d82569fe-a001-47a8-aec6-68ba766a66dc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T14:50:39+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 5e40d6fa-8b84-4b2c-aed3-33543634d891
+                  values:
+                    - '212'
+                    - '211'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 7fdd549e-f159-4b31-b8f6-78aed9679ddf # 1st Column
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2c3b721-cd68-48b0-a6ac-d2b892561de4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:50:39+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 4c2e1451-9c27-4552-af3f-0acae5b2a01c
+                  values:
+                    - 11Row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 5e44fecf-179b-400f-87ba-08249afc8fde # Column Max 1
+            handle: firstColumnMax1
+            instructions: null
+            label: '1st Column'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcda76b1-b706-437c-9eb4-a3d4fc91fd99
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:59:18+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: a46db40e-4f6d-4d5f-8d35-0f56732e3710
+                  values:
+                    - '212'
+                    - '211'
+                    - 11Row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 6ee08519-c7cb-4875-be10-2b9a3d4b4af3 # 2nd Column
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c599477e-3833-4342-a13d-06f9fc822059
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:59:18+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 2ce2d1a4-5cda-4a9a-b3db-39f9e450cbe0
+                  values:
+                    - '211'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 13d15ec4-3c6d-4f1b-927d-b13a56be8f83 # 3rd Column Max 1
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5e49135f-67dd-4118-aa36-89585ba6bce7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:59:18+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: f276dff9-1f57-46f9-bf9d-e78162378a4c
+                  values:
+                    - '212'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 1719cf78-bc7c-4d9b-ab2e-abb20d96c160 # Column Max 2
+            handle: thirdColumnMax2
+            instructions: null
+            label: '3rd Column'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ab061064-0ac9-460d-a636-312c58551f6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:59:18+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: bf77f268-7cbc-4a94-acb5-cf975ee35bf5
+                  values:
+                    - 11Row4
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: f30cec62-346a-4c4f-b43b-82baec283766 # Row 4
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21dcbdfe-43d4-4e74-858a-995877126f58
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1e831a24-41c4-47c5-838d-d3bcb071dc34
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            content: "The anchor label is used as the part of the page's url leading to the section within the same page.\r\nIf the page's url used in a link or a button, the anchor label should always be preceded by the **#** symbol and placed next to the page's slug like this: /en/page-slug**#anchor-label**"
+            dateAdded: '2026-06-10T18:51:24+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: d2d8b8be-51ce-4fc3-bca2-471f7e0f06aa
+            userCondition: null
+            width: 50
+          -
+            dateAdded: '2026-06-10T18:44:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: anchorLabel
+            instructions: null
+            label: 'Anchor Label'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2fd305a-f564-4a00-8e35-517d55f66e8f
+            userCondition: null
+            warning: null
+            width: 50
+        name: Anchor
+        uid: 5c6186d5-d68b-4afb-b5ec-af9e74e5ffdb
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionPortal
+hasTitleField: false
+icon: null
+name: Portal
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{type.name} - {cmsSectionIdentifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{type.name} - {cmsSectionIdentifier}'

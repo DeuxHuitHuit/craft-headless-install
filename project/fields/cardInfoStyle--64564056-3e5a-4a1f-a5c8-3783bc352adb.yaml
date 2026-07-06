@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: cardInfoStyle
+instructions: null
+name: 'Card Style'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'With media'
+        -
+          - value
+          - withMedia
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'No media'
+        -
+          - value
+          - noMedia
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: siteGroup
+type: craft\fields\Dropdown

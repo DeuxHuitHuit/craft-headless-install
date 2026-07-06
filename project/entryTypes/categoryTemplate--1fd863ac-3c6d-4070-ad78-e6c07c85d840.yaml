@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  10946efd-d51d-4df8-ad8d-159f2ff14686:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T13:48:25+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: 'Category Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1bfc9fc-1055-4f35-a4a8-c618464675e7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c5219a5c-ad2f-421f-999d-b21162756e1a
+        userCondition: null
+    thumbFieldKey: null
+handle: categoryTemplate
+hasTitleField: false
+icon: null
+name: 'Category Template'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{displayTitle}'

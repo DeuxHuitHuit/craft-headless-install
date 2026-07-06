@@ -1,0 +1,146 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  031722f2-bd37-4b6d-bcf3-56db1f3ff431:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T15:22:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 64564056-3e5a-4a1f-a5c8-3783bc352adb # Card Style
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb288cc1-fbb3-46f0-9deb-a1745b6b7c34
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 64564056-3e5a-4a1f-a5c8-3783bc352adb # Card Style
+                  layoutElementUid: eb288cc1-fbb3-46f0-9deb-a1745b6b7c34
+                  operator: in
+                  uid: 66833e86-1031-4979-a7a6-30927a4de373
+                  values:
+                    - withMedia
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2cde2b88-8cea-4cf9-9831-04740e4ba327
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T15:22:14+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 64564056-3e5a-4a1f-a5c8-3783bc352adb # Card Style
+                  layoutElementUid: eb288cc1-fbb3-46f0-9deb-a1745b6b7c34
+                  operator: in
+                  uid: f6f098e5-a12b-4e08-8f59-825bbb043b58
+                  values:
+                    - withMedia
+              elementType: craft\elements\Entry
+              fieldContext: global
+            elementEditCondition: null
+            fieldUid: 4dabd377-5b99-4269-90ab-1129bab3dea0 # Plain text - Multiline
+            handle: null
+            instructions: null
+            label: 'Overlay Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b26960c-7adf-4b4e-ad5b-aa6f16c7814b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 306ddbfb-dcd3-4d9f-8587-9526e59a7c9e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: null
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a2fce3b-be09-4969-90fd-87f33f1d6439
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b899cc47-9cd0-4c33-b8ff-80a1082d4a02
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a8f180c1-13ee-4a20-8604-1c16c5fdcbb9
+        userCondition: null
+    thumbFieldKey: null
+handle: cardInfo
+hasTitleField: false
+icon: null
+name: 'Card Info'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{displayTitle}'

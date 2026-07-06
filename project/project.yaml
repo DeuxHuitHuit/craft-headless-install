@@ -1,4 +1,4 @@
-dateModified: 1779806112
+dateModified: 1783370438
 elementSources:
   craft\elements\Asset:
     -
@@ -47,41 +47,76 @@ elementSources:
   craft\elements\Entry:
     -
       defaultSort:
-        - postDate
-        - desc
-      disabled: true
-      key: '*'
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:296aba6c-f05d-4f2a-a2ca-99acf88eb461' # Entity
+      page: Entities
       tableAttributes:
-        - section
-        - postDate
-        - expiryDate
+        - status
+        - slug
         - link
-        - 'fieldInstance:f0b93103-f347-46cf-a35a-1d615e451ac7'
+        - dateUpdated
+        - revisionCreator
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:c2b278b1-d1f1-4dc9-91f2-716fddb29525' # Articles
+      page: Entities
+      tableAttributes:
+        - status
+        - postDate
+        - slug
+        - link
+        - dateUpdated
+        - revisionCreator
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Jobs
+      page: Entities
+      tableAttributes:
+        - status
+        - slug
+        - link
+        - dateUpdated
+        - revisionCreator
       type: native
     -
       condition:
         class: craft\elements\conditions\entries\EntryCondition
         conditionRules:
           -
-            class: craft\elements\conditions\entries\SectionConditionRule
+            class: craft\elements\conditions\entries\TypeConditionRule
             operator: in
-            uid: 427bf5cd-a59b-490b-b909-59f7aeeef7a6
+            uid: e680f8e7-7423-4e43-8ffd-7f7f17e98290
             values:
-              - 55239922-65f1-4558-96b1-71848e51a9bc # Cookie Banner
-              - 9477a487-01b6-4a09-bb9b-4e4fdc45d8c6 # Media specs
-              - 3bf78167-9a80-4012-b67c-faf5e0984c25 # Scripts
-              - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site Configuration
-              - ff4e6d75-2bed-40aa-8718-1e77a25a37d7 # Site Footer
-              - 800d763b-bbca-482a-9345-81b70bf730b2 # Site Header
+              - 3f07a8e2-b80b-4fe0-aca4-9c505738579d # Narrative
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
-        - title
+        - id
         - asc
       defaultViewMode: ''
-      key: 'custom:1363d8c9-0624-4681-802c-6d73aeb2c5bc'
-      label: Globals
-      tableAttributes: '-'
+      key: 'custom:abf16438-f8a6-4c31-b08e-5197ccc99c53'
+      label: Narrative
+      page: 'Page Templates'
+      tableAttributes:
+        - status
+        - slug
+        - section
+        - link
+        - dateUpdated
+        - revisionCreator
       type: custom
     -
       condition:
@@ -93,10 +128,7 @@ elementSources:
             uid: 38c6dc4c-a415-4e43-8298-6c8aa55610bb
             values:
               - 6c86c074-7558-42ed-9fbc-8c4fbc736b95 # Blog
-              - 0982d07a-c328-4033-8695-305319d78835 # Careers
-              - 4a4ac845-5be1-4d2d-bb12-617c872d2ee5 # Contact
               - da1b5819-b168-4dd9-aa35-505a833ee367 # Homepage
-              - 9afc3380-7801-4624-bd2d-8dc42e9c2bce # llms.txt
         elementType: craft\elements\Entry
         fieldContext: global
       defaultSort:
@@ -104,72 +136,61 @@ elementSources:
         - asc
       defaultViewMode: ''
       key: 'custom:eef88424-12ea-4adc-a32f-6d6df4466116'
-      label: Singles
+      label: 'Portals & Listings'
+      page: 'Page Templates'
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\TypeConditionRule
+            operator: in
+            uid: cf52409e-1459-41d8-8ea8-f8c720159e18
+            values:
+              - 492f0e2c-a4d9-43f1-bbe3-088788243930 # Careers
+              - d9f3be47-624e-49ae-90d4-79880f18013e # Contact
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:03430a09-df5f-4d0c-8492-ec158df23d2e'
+      label: Custom
+      page: 'Page Templates'
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\TypeConditionRule
+            operator: in
+            uid: 085dbc93-8961-4b46-9003-42ecdce1e37d
+            values:
+              - 19f03eed-fb4d-447e-966d-258f5e5add92 # Legal
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:44560e3d-5de4-45a1-ba7d-47bfcc411520'
+      label: Legal
+      page: 'Page Templates'
       tableAttributes: '-'
       type: custom
     -
       defaultSort:
-        - title
-        - asc
-      disabled: true
-      key: singles
-      tableAttributes:
-        - slug
-        - link
-        - revisionCreator
-        - dateUpdated
-      type: native
-    -
-      defaultSort:
         - structure
         - asc
+      defaultViewMode: ''
       disabled: false
-      key: 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
-      tableAttributes:
-        - slug
-        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modules
-        - link
-        - dateUpdated
-        - revisionCreator
-      type: native
-    -
-      heading: Content
-      key: 'heading:eb2e216a-41c1-4bdb-ab6a-1cd80bb96f37'
-      type: heading
-    -
-      defaultSort:
-        - title
-        - asc
-      disabled: false
-      key: 'section:c2b278b1-d1f1-4dc9-91f2-716fddb29525' # Articles
-      tableAttributes:
-        - slug
-        - link
-        - dateUpdated
-        - revisionCreator
-      type: native
-    -
-      defaultSort:
-        - structure
-        - asc
-      disabled: false
-      key: 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Jobs
-      tableAttributes:
-        - slug
-        - link
-        - dateUpdated
-        - revisionCreator
-      type: native
-    -
-      heading: Categories
-      key: 'heading:8ed4b5d3-d258-404f-9cae-910a47e44ac5'
-      type: heading
-    -
-      defaultSort:
-        - postDate
-        - desc
-      disabled: false
-      key: 'section:c26c7142-c8a9-4cac-b0ea-c84428d04864' # Blog topics
+      key: 'section:e2c6e332-3285-4c43-b941-747e7c3fdee1' # Categories
+      page: Categories
       tableAttributes:
         - status
         - postDate
@@ -178,15 +199,94 @@ elementSources:
         - link
       type: native
     -
-      heading: Components
-      key: 'heading:8f4e3a25-bdd3-49ae-81e6-114994897fbf'
-      type: heading
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: true
+      key: 'section:c26c7142-c8a9-4cac-b0ea-c84428d04864' # Blog topics
+      page: Categories
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: 427bf5cd-a59b-490b-b909-59f7aeeef7a6
+            values:
+              - 55239922-65f1-4558-96b1-71848e51a9bc # Cookie Banner
+              - 6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc # Site Configuration
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      key: 'custom:1363d8c9-0624-4681-802c-6d73aeb2c5bc'
+      label: Globals
+      page: 'General Settings'
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\TypeConditionRule
+            operator: in
+            uid: 31259174-8f64-4830-9117-80c3baff6f1e
+            values:
+              - bdc09e8f-fc0f-420e-b3f0-af6980757e6b # Site Header
+              - f8d9ad5c-7504-4ce3-a645-814f7094c056 # Site Footer
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:b97f496f-0e32-42f4-826b-facb39c05422'
+      label: Navigation
+      page: 'General Settings'
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\TypeConditionRule
+            operator: in
+            uid: 6709afbb-38b4-4e71-9da7-b38d2c601385
+            values:
+              - 3b201410-7c1b-4123-aa95-e7e742a06113 # Scripts
+              - 9306a89d-6f52-485c-abc4-a1c2bfd8572c # llms.txt
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:bd92cf72-e4a6-45df-8c7c-6b3c44b56f24'
+      label: Advanced
+      page: 'General Settings'
+      tableAttributes: '-'
+      type: custom
     -
       defaultSort:
         - postDate
         - desc
+      defaultViewMode: ''
       disabled: false
       key: 'section:414b45c8-d274-4c58-b6e8-f0ce31130d34' # Modules
+      page: Components
       tableAttributes:
         - postDate
         - expiryDate
@@ -197,8 +297,10 @@ elementSources:
       defaultSort:
         - postDate
         - desc
+      defaultViewMode: ''
       disabled: false
-      key: 'section:46ed0eb4-8c01-447c-9087-62ca99521b71' # Partners
+      key: 'section:72b998c8-05a2-411d-9d15-438cdb85738c' # Sections
+      page: Components
       tableAttributes:
         - status
         - postDate
@@ -206,6 +308,84 @@ elementSources:
         - authors
         - link
       type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: true
+      key: 'section:46ed0eb4-8c01-447c-9087-62ca99521b71' # Partners
+      page: Components
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      page: Entries
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+        - 'fieldInstance:f0b93103-f347-46cf-a35a-1d615e451ac7'
+      type: native
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: singles
+      page: Entries
+      tableAttributes:
+        - slug
+        - link
+        - revisionCreator
+        - dateUpdated
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:ec8f8144-4229-4395-adcd-105b11962c8a' # Pages
+      page: Entries
+      tableAttributes:
+        - slug
+        - 'field:7c46388e-1ad1-466a-a30f-c138c9477b0f' # Modules
+        - link
+        - dateUpdated
+        - revisionCreator
+      type: native
+    -
+      heading: UNUSED
+      key: 'heading:dd1d5d4f-9b6a-4945-9270-d78eae2a914b'
+      page: Entries
+      type: heading
+elementSourcesPages:
+  craft\elements\Entry:
+    Categories:
+      icon: folder-open
+    Components:
+      icon: block-brick
+    Entities:
+      icon: rectangle-vertical-history
+    Entries:
+      icon: list-tree
+    'General Settings':
+      icon: wrench
+    'Page Templates':
+      icon: files
 email:
   fromEmail: $EMAIL_FROM
   fromName: $SITE_NAME
@@ -235,8 +415,12 @@ fs:
 meta:
   __names__:
     0d817cce-530a-4dbe-bc87-c42dee45463a: 'Tiroir // Drawer' # Tiroir // Drawer
+    0d5920ab-6b3b-43a9-8bd4-f1709481eec9: Medias # Medias
     0f0e5f88-9336-4032-bfa2-11083f5fa132: 'CMS Identifier' # CMS Identifier
     1b87bba6-669b-4114-b597-210e967e2891: Legal # Legal
+    1fd863ac-3c6d-4070-ad78-e6c07c85d840: 'Category Template' # Category Template
+    2ab2b374-a864-4938-a85d-396ab19fc46c: 'Section Template (TO DUPLICATE)' # Section Template (TO DUPLICATE)
+    2eedf5a1-732f-4361-accb-b8f4b39571e7: 'Card Entry' # Card Entry
     2f4cc73e-1fcb-41c0-a892-a938426d92cf: Images # Images
     3b201410-7c1b-4123-aa95-e7e742a06113: Scripts # Scripts
     3bf78167-9a80-4012-b67c-faf5e0984c25: Scripts # Scripts
@@ -246,23 +430,34 @@ meta:
     3f07a8e2-b80b-4fe0-aca4-9c505738579d: Narrative # Narrative
     4a4ac845-5be1-4d2d-bb12-617c872d2ee5: Contact # Contact
     4c508769-fc04-4e88-9cfd-85313caaf2b4: Script # Script
+    4c880890-d386-449b-b482-f5ec3e7eb0cc: 'Plain Text Max 50' # Plain Text Max 50
     4dabd377-5b99-4269-90ab-1129bab3dea0: 'Plain text - Multiline' # Plain text - Multiline
+    4db3f7f5-6fd3-4fdb-8b67-99d51567021e: Portal # Portal
+    4deb2b88-37dd-4e09-941e-775ae479eaea: 'Card Style' # Card Style
     5b29e282-f0ce-4929-834a-4953ec2b7dd3: 'Cookie Banner' # Cookie Banner
+    5e44fecf-179b-400f-87ba-08249afc8fde: 'Column Max 1' # Column Max 1
     6a42e96b-9b9a-42b8-8dab-2e39ffbeb7cc: 'Site Configuration' # Site Configuration
     6abc4a11-ddf3-44c7-b156-42847f10eae2: 'Enable cookie banner' # Enable cookie banner
+    6bc40ff1-958d-465f-97f0-d700fcad01f2: 'Card Editorial Featured' # Card Editorial Featured
     6c86c074-7558-42ed-9fbc-8c4fbc736b95: Blog # Blog
+    6ee08519-c7cb-4875-be10-2b9a3d4b4af3: '2nd Column' # 2nd Column
     7c06f121-409c-4ebe-a6ce-aa78ea61ce4d: Assets # Assets
     7c46388e-1ad1-466a-a30f-c138c9477b0f: Modules # Modules
     7d6d33a6-5d21-417b-a4e7-def3b8a03c8f: Topics # Topics
     7f423144-c38b-4ed4-916e-132f44e9e1d6: 'Blog topic' # Blog topic
+    7fdd549e-f159-4b31-b8f6-78aed9679ddf: '1st Column' # 1st Column
     8a2d5af3-151b-4ea4-9882-c0579fbe91f9: 'Citation avec source // Quote with source' # Citation avec source // Quote with source
     9afc3380-7801-4624-bd2d-8dc42e9c2bce: llms.txt # llms.txt
+    9c3dce00-b950-4903-b9bd-7b64f7d1028a: 'Card Snapshot' # Card Snapshot
+    9d017e7b-4ec6-4f90-ae18-16ce3617cf18: 'CMS Identifier' # CMS Identifier
     9de68a16-72b4-4696-afea-63d53c5a01bc: Partners # Partners
     9e18815d-4be1-43b2-9287-19eef168429b: Invert # Invert
     9ec6fdb3-b8d0-4641-96b9-16c9875584fa: Text # Text
     10a5c368-5d0b-47a4-9978-105511f5e998: SEO # SEO
+    11b85a06-8aee-4283-8b6a-b543f00f4aee: 'Page Template (TO DUPLICATE)' # Page Template (TO DUPLICATE)
+    13d15ec4-3c6d-4f1b-927d-b13a56be8f83: '3rd Column Max 1' # 3rd Column Max 1
     16e1ca14-9781-44a1-b17f-7489cef3700a: 'Boutons // Buttons' # Boutons // Buttons
-    19f03eed-fb4d-447e-966d-258f5e5add92: ' Legal' #  Legal
+    19f03eed-fb4d-447e-966d-258f5e5add92: ' Legal' # Legal
     20d16447-9c20-40a5-a82e-1ff60c050e89: 'Public Schema' # Public Schema
     21d5841a-f416-4237-a4b3-f11713056beb: 'Large Plain Text' # Large Plain Text
     24fcc82a-e774-4756-8f1e-62edb2119633: 'Rich text - Inline' # Rich text - Inline
@@ -270,27 +465,35 @@ meta:
     46e9d2cf-9ffa-4d70-b132-f32d2c4c4c58: Embed # Embed
     46ed0eb4-8c01-447c-9087-62ca99521b71: Partners # Partners
     59d5a6cf-12d1-4545-97b4-16e72fe93b7f: Link # Link
-    63a8cb64-067e-4061-adfa-2d615a0d9e63: 'CTA ' # CTA 
+    63a8cb64-067e-4061-adfa-2d615a0d9e63: 'CTA ' # CTA
+    72b998c8-05a2-411d-9d15-438cdb85738c: Sections # Sections
     80faeb96-cf17-464b-aae2-cbf334c38969: 'Rich text - Simple' # Rich text - Simple
     89a0d307-caf6-4065-836e-f59cea4d6bf7: Simple # Simple
+    90eddf06-9837-4f7e-b4b4-9fb96eb4d872: 'Portal Layout' # Portal Layout
+    94ab17b5-79b5-47bb-86bd-a1d72f15c7ba: 'Card Basic Template (TO DUPLICATE)' # Card Basic Template (TO DUPLICATE)
     095f6b18-db1d-40dc-9362-d2a489860e4b: Accordion # Accordion
     99a344a6-d5b9-4dfb-8ab7-9d6909dd6644: 'Share image' # Share image
+    99ba1ba3-244f-416b-8beb-9afc90bdd5a6: Entry # Entry
     148fb449-e797-4b40-a8f8-d45d858683dd: 'Texte // Text' # Texte // Text
     247fed59-90e6-4b37-ac0c-a42cfa306a81: 'Média // Media' # Média // Media
+    296aba6c-f05d-4f2a-a2ca-99acf88eb461: Entity # Entity
     414b45c8-d274-4c58-b6e8-f0ce31130d34: Modules # Modules
     492f0e2c-a4d9-43f1-bbe3-088788243930: Careers # Careers
     615c8eda-5043-4fdd-a90c-3c77212764e6: 'Plain text' # Plain text
     0630a2e9-2fbf-476c-b8e4-8586a57d1366: Article # Article
+    635e8d78-72a2-4018-af42-26299c458614: 'Link Destination' # Link Destination
     663c4e72-de2b-4558-9123-f2db43c01252: Article # Article
     800d763b-bbca-482a-9345-81b70bf730b2: 'Site Header' # Site Header
     923cdc41-2e7b-4d9a-898b-4bf76d14bcc7: 'Read time' # Read time
     0982d07a-c328-4033-8695-305319d78835: Careers # Careers
+    1719cf78-bc7c-4d9b-ab2e-abb20d96c160: 'Column Max 2' # Column Max 2
     3070e537-2129-43f0-addf-fbae4049f8e1: Media # Media
     3221aacd-9b06-4daa-a21c-d632a438983d: 'Prose drawers' # Prose drawers
     4093afd2-c348-4b4b-9137-0e07daa80e57: Text-Media # Text-Media
     8534cb8d-ec47-4d88-a55d-3e22d08c402b: Logo # Logo
     9306a89d-6f52-485c-abc4-a1c2bfd8572c: llms.txt # llms.txt
     9477a487-01b6-4a09-bb9b-4e4fdc45d8c6: 'Media specs' # Media specs
+    13145abd-34df-412f-85cb-57ab6563293a: 'Card Info' # Card Info
     22947fe1-4c0e-437b-9997-de04319d78e3: 'Rich text - Full' # Rich text - Full
     66232f4e-2ac7-45d0-9cf4-9867b9b96ada: 'Tiroirs // Drawers' # Tiroirs // Drawers
     0145468f-d01a-4e00-bdf3-d734c3e52a72: Inline # Inline
@@ -298,9 +501,12 @@ meta:
     2556508a-1412-450e-8cad-0369ef9cced4: Url # Url
     8949504a-858a-4c6c-aa89-e486aed71a49: Images # Images
     55239922-65f1-4558-96b1-71848e51a9bc: 'Cookie Banner' # Cookie Banner
+    64564056-3e5a-4a1f-a5c8-3783bc352adb: 'Card Style' # Card Style
     85050609-12b8-4783-b9c6-5f753f3fe36b: Full # Full
     a0a65bff-fadd-4bb4-ae89-c3f15c01bbbc: Carousel # Carousel
     a03206c2-0f1f-4ac9-affe-b6a82de9bf75: 'Site Configuration' # Site Configuration
+    a8bfe027-ce9e-4da4-bdb8-edc5ec980264: Sections # Sections
+    a528cfff-a56c-4d59-ac3e-85af102444a6: 'Card Editorial Standard' # Card Editorial Standard
     a2444205-7b4b-4062-82d8-74833e3f5f80: Job # Job
     a4075417-c1ab-4ea9-86bb-9848b83afec3: 'Video Stream (pour les Asset Volumes seulement)' # Video Stream (pour les Asset Volumes seulement)
     af0b5372-3e37-4dbd-afcc-c9aa66cea831: "Appel à l'action // Call to Action" # Appel à l'action // Call to Action
@@ -314,15 +520,20 @@ meta:
     bdc09e8f-fc0f-420e-b3f0-af6980757e6b: 'Site Header' # Site Header
     c2b278b1-d1f1-4dc9-91f2-716fddb29525: Articles # Articles
     c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: EN # EN
+    c12c4a99-a6ea-403a-bb8d-8c8135852981: 'Prose Rich Text' # Prose Rich Text
     c26c7142-c8a9-4cac-b0ea-c84428d04864: 'Blog topics' # Blog topics
     caa63442-86cb-4489-baad-9aba2dc43dba: 'No index' # No index
+    cbb97567-3119-4162-8674-4ce5c30452ad: 'Plain Text Max 125' # Plain Text Max 125
     cc5591b6-0516-4dfb-8b70-671168f3b268: Partner # Partner
     d9f3be47-624e-49ae-90d4-79880f18013e: Contact # Contact
     d54d25fa-9fc6-4fb2-96c7-17d51a9e91e9: 'Média // Media' # Média // Media
+    d9387931-7b06-4e87-96f9-dc1cb929c777: 'Entity Template (TO DUPLICATE)' # Entity Template (TO DUPLICATE)
     da1b5819-b168-4dd9-aa35-505a833ee367: Homepage # Homepage
     dbc05352-c8d9-4615-a1c6-79954bf4033b: $SITE_NAME # $SITE_NAME
     dc92bc6c-36c7-4c5d-be20-91a74863ec70: Blog # Blog
+    ddf364da-36c3-4b64-8024-939f298d4aeb: 'Card Editorial Featured Caption' # Card Editorial Featured Caption
     e0fec26e-937b-4d32-b433-211242db4d9e: SEO # SEO
+    e2c6e332-3285-4c43-b941-747e7c3fdee1: Categories # Categories
     e4b3fe13-7dcf-4ebe-8edd-570b3fa7b618: Drawers # Drawers
     e8a9774e-14c6-4ae6-b673-a9740e5af59b: 'Plain text - Non-translatable' # Plain text - Non-translatable
     e20da329-fdd5-4405-92a6-3b6ea49914d1: Download # Download
@@ -330,10 +541,12 @@ meta:
     e60013a8-ce72-424b-9582-971b0ca73b09: Partners # Partners
     eb06fbb5-a0f2-44b3-88e4-f1355300f911: 'Rich Text - Article' # Rich Text - Article
     ec8f8144-4229-4395-adcd-105b11962c8a: Pages # Pages
+    f3a05ffb-9c2b-42b9-8d92-d8879b8a0920: 'CMS Identifier' # CMS Identifier
     f8d9ad5c-7504-4ce3-a645-814f7094c056: 'Site Footer' # Site Footer
     f20d3272-0ab0-4656-aa6d-e27e58f20a40: Drawer # Drawer
     f23e6a71-9e92-4184-bdd9-8ff3775fb2ec: Jobs # Jobs
     f24c97e8-b8f5-4799-bb8f-c062c6196c51: 'Share description' # Share description
+    f30cec62-346a-4c4f-b43b-82baec283766: 'Row 4' # Row 4
     f2599fa6-87fd-4abf-ae90-7bdafd0e3f31: Links # Links
     ff4e6d75-2bed-40aa-8718-1e77a25a37d7: 'Site Footer' # Site Footer
 plugins:
@@ -401,7 +614,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: 
-    schemaVersion: 0.9.0
+    schemaVersion: 0.10.0
 system:
   edition: pro
   live: true

@@ -2,27 +2,43 @@ allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
-  fe197c37-90c6-4a22-8203-3cfb7b81f8f8:
+  58ebee67-8e90-4d63-9d86-3d42368a5af7:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2026-06-11T14:35:45+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9d017e7b-4ec6-4f90-ae18-16ce3617cf18 # CMS Identifier
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a511997e-24c7-474d-8a54-de5fa34b912a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-10T18:39:24+00:00'
             elementCondition: null
             heading: Header
             type: craft\fieldlayoutelements\Heading
-            uid: df010d52-3f75-42c8-9a75-67a6d52a6c06
+            uid: 1480bb97-95b1-4aab-9131-2a4350e9d9d1
             userCondition: null
           -
-            dateAdded: '2026-06-11T14:35:45+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
-            uid: 76f9bd3a-eb78-48ac-80de-d916b21fc9bc
+            uid: 8bd19388-00b1-4c30-ba52-058fb4807004
             userCondition: null
           -
-            dateAdded: '2026-06-11T14:35:45+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -33,12 +49,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3c97b492-68ca-40f8-91ce-afb150247749
+            uid: ac1f10df-366e-43a1-985a-21fdeb80b31e
             userCondition: null
             warning: null
             width: 50
           -
-            dateAdded: '2026-06-11T14:35:45+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
@@ -49,74 +65,74 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d54781c6-693d-4b4d-8392-ae57fa77268e
+            uid: ab9c0219-9fd2-4040-a75c-a425c1d37ab1
             userCondition: null
             warning: null
             width: 50
           -
-            dateAdded: '2026-06-11T14:35:45+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
             elementCondition: null
-            heading: 'Featured Article'
+            heading: 'Editorial Content'
             type: craft\fieldlayoutelements\Heading
-            uid: ee75f373-fd1e-444a-86da-fd60fe3a4c66
+            uid: 43da06ef-b9c2-4ad1-b393-61f2d42b69ea
             userCondition: null
           -
-            dateAdded: '2026-06-11T14:35:45+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
-            uid: 12bceeb4-1944-492a-a97f-a3f90adae185
+            uid: da0968c2-5037-4da6-8af6-d209989c3735
             userCondition: null
           -
-            dateAdded: '2024-08-19T18:58:46+00:00'
+            dateAdded: '2026-06-10T18:39:24+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 374406b8-233f-4e1b-ae1e-f779112eaca6 # Article
-            handle: featuredArticle
-            instructions: "If there is no featured article, the latest article is displayed.\r\n"
-            label: 'Featured article'
+            fieldUid: a8bfe027-ce9e-4da4-bdb8-edc5ec980264 # Sections
+            handle: null
+            instructions: null
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f0b93103-f347-46cf-a35a-1d615e451ac7
+            uid: 906589cd-befc-4df8-b20e-b13ea130269a
             userCondition: null
             warning: null
-            width: 50
+            width: 100
         name: Content
-        uid: 6083a740-c96e-4972-b65b-5b1a02e80af7
+        uid: aa9a68d3-537e-418e-a3a8-5bc5c3c84d8c
         userCondition: null
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-08-13T20:02:20+00:00'
+            dateAdded: '2026-06-10T18:35:39+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
             fieldUid: e0fec26e-937b-4d32-b433-211242db4d9e # SEO
             handle: null
             instructions: null
-            label: __blank__
+            label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 997f79a1-3f55-4bda-8a26-e978eb266137
+            uid: 22b4065b-02a1-4ef2-8851-90c3e30dd131
             userCondition: null
             warning: null
             width: 100
         name: SEO
-        uid: 0f859370-b422-48b3-9f6d-cb55f8428ab8
+        uid: dd53db0c-5a72-466f-929a-0650b5e3d9a1
         userCondition: null
     thumbFieldKey: null
-handle: blog
+handle: pageTemplate
 hasTitleField: false
-icon: rss
-name: Blog
+icon: null
+name: 'Page Template (TO DUPLICATE)'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{section.name|raw}'
+titleFormat: '{cmsEntityIdentifier}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: none
-uiLabelFormat: '{section.name|raw}'
+titleTranslationMethod: site
+uiLabelFormat: '{cmsEntityIdentifier}'

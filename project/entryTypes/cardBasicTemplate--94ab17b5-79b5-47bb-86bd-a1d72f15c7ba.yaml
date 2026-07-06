@@ -1,0 +1,90 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  b364393d-1284-45a4-be71-4d1a82370d74:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 506a3d48-17e0-4a79-936b-6ff76984aea2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: null
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5910c85a-d1bc-45fd-96b5-13c4e8f60b77
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7a64496-8d1c-4e76-9f9e-15d07cce5ac3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c78016ed-23cd-4476-a77d-403753105399
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: ad7a9b6e-7ed5-4b69-9e63-981cec8fe772
+        userCondition: null
+    thumbFieldKey: null
+handle: cardBasicTemplate
+hasTitleField: false
+icon: null
+name: 'Card Basic Template (TO DUPLICATE)'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{displayTitle}'

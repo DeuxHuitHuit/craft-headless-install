@@ -1,0 +1,95 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  6b5b8e8d-f6e2-4b9e-9221-bce509cb1ae5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-10T18:44:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f3a05ffb-9c2b-42b9-8d92-d8879b8a0920 # CMS Identifier
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2d78c60-8f37-4fdd-8a36-b25e1a2ef7d7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-06-10T18:19:14+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 49d9bbb1-bfa0-428e-ab94-553781b91118
+            userCondition: null
+          -
+            dateAdded: '2026-06-10T18:19:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eabd0950-d58a-44dc-9396-b1f6b461be6c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 44bf0939-b7a5-47f4-9669-2fe82f3ad752
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            content: "The anchor label is used as the part of the page's url leading to the section within the same page.\r\nIf the page's url used in a link or a button, the anchor label should always be preceded by the **#** symbol and placed next to the page's slug like this: /en/page-slug**#anchor-label**"
+            dateAdded: '2026-06-10T18:51:24+00:00'
+            displayInPane: true
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: 5a1ec3fd-8b8b-43c4-a734-4f4041a9bb15
+            userCondition: null
+            width: 50
+          -
+            dateAdded: '2026-06-10T18:44:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: anchorLabel
+            instructions: null
+            label: 'Anchor Label'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2106664-8f16-4184-8510-daa0d74a15e2
+            userCondition: null
+            warning: null
+            width: 50
+        name: Anchor
+        uid: bc9d4d01-19d7-48b7-a9fe-b03bded00d0b
+        userCondition: null
+    thumbFieldKey: null
+handle: sectionTemplate
+hasTitleField: false
+icon: null
+name: 'Section Template (TO DUPLICATE)'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{type.name} - {cmsSectionIdentifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{type.name} - {cmsSectionIdentifier}'

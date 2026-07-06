@@ -1,17 +1,18 @@
 columnSuffix: null
-handle: images
-instructions: "Se référer aux spécifications [**images**](/craft/globals/imageAndVideoSpecs?site=fr) de la section Globals.\r\n\r\nAttention de bien téléverser les **images** dans la section [\"**Assets**\"](/craft/assets?site=fr&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) des Assets (Ressources).\r\n\r\n---\r\n\r\n*Refer to the [**image**](/craft/globals/imageAndVideoSpecs?site=fr) spec sheets in the Globals section.*\r\n\r\nMake sure to upload the **images** in the Assets' [\"**Assets**\"](/craft/assets?site=fr&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) section."
-name: Images
+handle: medias
+instructions: "### Images **OR** short videos\r\n\r\nFor **images**, please upload the files in the [\"**Images**\"](/craft/assets?site=en&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) section.\r\n\r\nFor **videos**, please upload the files in the [\"**Stream**\"](/craft/assets?site=en&source=volume%3A3c0c2fcb-c361-472f-80d1-6bb4e36bcab6) section."
+name: Medias
 searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: false
+  allowUploads: true
   allowedKinds:
     - image
+    - video
   branchLimit: null
   defaultPlacement: end
-  defaultUploadLocationSource: 'volume:8949504a-858a-4c6c-aa89-e486aed71a49' # Images
+  defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
@@ -22,17 +23,18 @@ settings:
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   restrictedLocationSubpath: null
-  selectionLabel: 'Add images'
+  selectionLabel: 'Add medias'
   showSearchInput: true
-  showSiteMenu: true
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
     - 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
+    - 'volume:3c0c2fcb-c361-472f-80d1-6bb4e36bcab6' # Stream
     - 'volume:8949504a-858a-4c6c-aa89-e486aed71a49' # Images
   targetSiteId: null
   validateRelatedElements: false
   viewMode: thumbs
 translationKeyFormat: null
-translationMethod: none
+translationMethod: siteGroup
 type: craft\fields\Assets

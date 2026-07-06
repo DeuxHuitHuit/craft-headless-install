@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: row4
+instructions: null
+name: 'Row 4'
+searchable: false
+settings:
+  createButtonLabel: 'Add a card'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 9c3dce00-b950-4903-b9bd-7b64f7d1028a # Card Snapshot
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: 4
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: siteGroup
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

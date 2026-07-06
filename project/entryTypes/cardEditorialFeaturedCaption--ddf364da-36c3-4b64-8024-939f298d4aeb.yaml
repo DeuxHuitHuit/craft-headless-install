@@ -1,0 +1,93 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  167b3606-b526-4fc8-b56a-80fc843d65b2:
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:95c2889b-64df-4a37-b581-84c3134ea34c'
+      - 'layoutElement:8f08774d-f008-4e65-9e15-e7477502a745'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T19:18:28+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4c880890-d386-449b-b482-f5ec3e7eb0cc # Plain Text Max 50
+            handle: badgeText
+            instructions: null
+            label: 'Badge Text'
+            required: false
+            tip: 'Short surtitle or tag'
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95c2889b-64df-4a37-b581-84c3134ea34c
+            userCondition: null
+            warning: '**MAXIMUM 50 CHARACTERS**'
+            width: 50
+          -
+            dateAdded: '2026-06-11T19:18:28+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cbb97567-3119-4162-8674-4ce5c30452ad # Plain Text Max 125
+            handle: displayTitle
+            instructions: null
+            label: Title
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a6eb9e1-6689-4d89-86f3-7ab131ff6213
+            userCondition: null
+            warning: '**MAXIMUM 125 CHARACTERS**'
+            width: 50
+          -
+            dateAdded: '2026-06-11T18:49:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51c9492a-cc1e-494d-a1ec-d10665d10db1
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T19:20:50+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 635e8d78-72a2-4018-af42-26299c458614 # Link Destination
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8f08774d-f008-4e65-9e15-e7477502a745
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: bd9503c9-3062-4bec-bcc1-0ed05bc5e37a
+        userCondition: null
+    thumbFieldKey: 'layoutElement:51c9492a-cc1e-494d-a1ec-d10665d10db1'
+handle: cardEditorialFeaturedCaption
+hasTitleField: false
+icon: null
+name: 'Card Editorial Featured Caption'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{displayTitle}'

@@ -1,0 +1,62 @@
+columnSuffix: null
+handle: cardSnapshotStyle
+instructions: null
+name: 'Card Style'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Overlay Center'
+        -
+          - value
+          - overlayCenter
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Overlay Bottom'
+        -
+          - value
+          - 'overlay Bottom'
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Flat White'
+        -
+          - value
+          - flatWhite
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: siteGroup
+type: craft\fields\Dropdown

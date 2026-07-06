@@ -2,6 +2,11 @@ altTranslationKeyFormat: null
 altTranslationMethod: site
 fieldLayouts:
   2641d65c-dbba-4caa-911e-bfe7bd448e8f:
+    cardThumbAlignment: start
+    cardView:
+      - size
+      - dateCreated
+      - location
     tabs:
       -
         elementCondition: null
@@ -17,7 +22,7 @@ fieldLayouts:
             id: null
             inputType: null
             instructions: null
-            label: 'Titre / Title'
+            label: Title
             max: null
             min: null
             name: null
@@ -33,7 +38,7 @@ fieldLayouts:
             uid: 22fab569-29b6-474c-acb6-4ebfc0557015
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
             attribute: alt
             class: null
@@ -59,12 +64,30 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            dateAdded: '2024-08-13T20:28:39+00:00'
+            dateAdded: '2026-06-08T14:54:15+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: captions
+            instructions: null
+            label: Captions
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8125d5f9-8f3c-432e-a5c9-f52673b79cf3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-08-13T20:28:39+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
             fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
             handle: credits
             instructions: null
-            label: Credits
+            label: '[DEPRECATED] Credits'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -75,6 +98,7 @@ fieldLayouts:
         name: Content
         uid: aa6ffcf1-04a4-479d-88c8-e69659d999db
         userCondition: null
+    thumbFieldKey: null
 fs: assets
 handle: assets
 name: Assets

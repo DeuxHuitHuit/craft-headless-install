@@ -2,31 +2,29 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 3f07a8e2-b80b-4fe0-aca4-9c505738579d # Narrative
-  -
-    uid: 19f03eed-fb4d-447e-966d-258f5e5add92 # Legal
-handle: pages
+    uid: 1fd863ac-3c6d-4070-ad78-e6c07c85d840 # Category Template
+handle: categories
 maxAuthors: 1
 minAuthors: 1
-name: Pages
+name: Categories
 previewTargets:
   -
-    label: Preview
+    label: 'Primary entry page'
     refresh: '1'
     urlFormat: '{url}'
-propagationMethod: all
+propagationMethod: siteGroup
 siteSettings:
   af77db16-7383-4e3b-ae49-71b93d94b959: # FR
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: "{{ parent and parent.uri != '__home__' ? parent.uri }}/{{ slug }}"
+    uriFormat: 'categories/{slug}'
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: "{{ parent and parent.uri != '__home__' ? parent.uri }}/{{ slug }}"
+    uriFormat: 'categories/{slug}'
 structure:
   maxLevels: null
-  uid: cf5f5ca3-0616-4427-acc1-91a7f90e7a0e
+  uid: 3efb85be-e9c4-49b5-a5b1-9f826a82ffa8
 type: structure

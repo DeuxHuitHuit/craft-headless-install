@@ -2,6 +2,7 @@ altTranslationKeyFormat: null
 altTranslationMethod: site
 fieldLayouts:
   56eb2417-7d56-4b5e-b05c-b98689f5c44d:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -33,10 +34,52 @@ fieldLayouts:
             uid: 0f9c4967-1f09-49f3-bcdc-efc8d93dca46
             userCondition: null
             warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2026-06-08T14:59:57+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 318b17e4-04a7-4569-9ab6-dc78be3db0e5
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-08T14:59:57+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: captions
+            instructions: null
+            label: Captions
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9b06f46-569b-4793-a306-705ec5b1ece9
+            userCondition: null
+            warning: null
             width: 50
           -
             dateAdded: '2024-08-13T20:02:20+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a4075417-c1ab-4ea9-86bb-9848b83afec3 # Video Stream (pour les Asset Volumes seulement)
             handle: null
             instructions: null
@@ -51,12 +94,13 @@ fieldLayouts:
         name: Content
         uid: 5e1ce82a-8a95-4d3f-aaf8-4a9b0eefc1ed
         userCondition: null
+    thumbFieldKey: null
 fs: stream
 handle: stream
 name: Stream
 sortOrder: 2
 subpath: ''
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
 transformFs: ''
 transformSubpath: ''

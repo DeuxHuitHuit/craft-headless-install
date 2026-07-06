@@ -1,9 +1,9 @@
 baseUrl: '@host/fr'
-enabled: '1'
+enabled: true
 handle: fr
 hasUrls: true
 language: fr
 name: FR
-primary: false
+primary: true
 siteGroup: dbc05352-c8d9-4615-a1c6-79954bf4033b # $SITE_NAME
 sortOrder: 2

@@ -5,14 +5,20 @@ name: 'Rich text - Inline'
 searchable: false
 settings:
   availableTransforms: ''
-  availableVolumes: '*'
+  availableVolumes: ''
   blockTypeBehaviour: click
   configSelectionMode: manual
   defaultTransform: ''
   defaultUploadLocationSource: 'volume:7c06f121-409c-4ebe-a6ce-aa78ea61ce4d' # Assets
   editorMode: richText
   initialRows: 2
-  manualConfig: "{\r\n    \"buttons\": [\"italic\", \"bold\", \"link\", \"html\"],\r\n\"plugins\": [\"force-hard-break\"]\r\n}\r\n"
+  linkSettings:
+    - text
+    - newWindow
+    - site
+    - title
+    - classes
+  manualConfig: "{\r\n    \"buttons\": [\"italic\", \"bold\", \"link\"],\r\n\"plugins\": [\"force-hard-break\"]\r\n}\r\n"
   maxBlocks: null
   minBlocks: null
   pasteAsPlainText: false
@@ -21,5 +27,5 @@ settings:
   trimEmptyParagraphs: true
   vizyConfig: ''
 translationKeyFormat: null
-translationMethod: language
+translationMethod: site
 type: verbb\vizy\fields\VizyField

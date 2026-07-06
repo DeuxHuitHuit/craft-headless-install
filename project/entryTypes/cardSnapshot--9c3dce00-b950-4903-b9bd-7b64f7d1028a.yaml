@@ -1,0 +1,162 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  2208a7f9-daf5-4852-b090-7572a0bac296:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-06-11T15:37:15+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4deb2b88-37dd-4e09-941e-775ae479eaea # Card Style
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a28e54fe-412e-4dd9-914c-c1ae49f6da43
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            content: ''
+            dateAdded: '2026-06-11T18:12:05+00:00'
+            displayInPane: false
+            elementCondition: null
+            type: craft\fieldlayoutelements\Markdown
+            uid: f0c30fd4-3dea-4723-8b78-3dc321eb4a1a
+            userCondition: null
+            width: 25
+          -
+            content: "#### Reference Overlay Center\r\n\r\n![](/uploads/references/cardSnapshot_overlay-center_reference.jpg)"
+            dateAdded: '2026-06-11T15:37:15+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 4deb2b88-37dd-4e09-941e-775ae479eaea # Card Style
+                  layoutElementUid: a28e54fe-412e-4dd9-914c-c1ae49f6da43
+                  operator: in
+                  uid: 26fdc21c-5ba2-404d-be2a-8c35bcb5162e
+                  values:
+                    - overlayCenter
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: 56d62968-8f09-4580-99c4-4674d80cf740
+            userCondition: null
+            width: 25
+          -
+            content: "#### Reference Overlay Bottom\r\n\r\n![](/uploads/references/cardSnapshot_overlay-bottom_reference.jpg)"
+            dateAdded: '2026-06-11T15:40:32+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 4deb2b88-37dd-4e09-941e-775ae479eaea # Card Style
+                  layoutElementUid: a28e54fe-412e-4dd9-914c-c1ae49f6da43
+                  operator: in
+                  uid: 1a1bfdb7-0fe1-4709-a717-e296e0334765
+                  values:
+                    - 'overlay Bottom'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: d981c111-bc45-4830-b74a-77234b994f71
+            userCondition: null
+            width: 25
+          -
+            content: "#### Reference Flat White\r\n\r\n![](/uploads/references/cardSnapshot_flat-white_reference.jpg)"
+            dateAdded: '2026-06-11T15:40:32+00:00'
+            displayInPane: false
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 4deb2b88-37dd-4e09-941e-775ae479eaea # Card Style
+                  layoutElementUid: a28e54fe-412e-4dd9-914c-c1ae49f6da43
+                  operator: in
+                  uid: 6f9ddfa5-72a7-4497-ad19-ffbb15c5b6b0
+                  values:
+                    - flatWhite
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\Markdown
+            uid: 55e65743-ca24-47dc-aadb-25850a38a5a0
+            userCondition: null
+            width: 25
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e570d57d-c64c-4fe6-ac5b-1644a15c6806
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T14:43:53+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: null
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b32dade7-9aab-46ef-867a-b15568d6c2e5
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-11T15:37:15+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 635e8d78-72a2-4018-af42-26299c458614 # Link Destination
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9de8d184-452d-478f-aa9f-1069d2409b71
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: fd624142-e866-4fa9-8477-3dbddb69a66e
+        userCondition: null
+    thumbFieldKey: null
+handle: cardSnapshot
+hasTitleField: false
+icon: null
+name: 'Card Snapshot'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{displayTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{displayTitle}'

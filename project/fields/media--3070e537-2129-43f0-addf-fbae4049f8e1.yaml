@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: media
-instructions: "### Image **OR** short video\r\n\r\n**Image specs**\r\n\r\n* Recommended file types: jpeg, webp, png, svg, avif\r\n* Maximum size: 2000 x 4000 pixels (L x H)\r\n* Minimum size: 1920 x 1080 pixels (L x H)\r\n* Recommended weight: between 300 and 600 Ko, depending on the size\r\n* Resolution: 72 or 96 ppi (pixels per inch)\r\n* Color mode: RGB\r\n\r\nMake sure to upload the **image** in the Assets [\"**Assets**\"](/craft/assets?site=en&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) section.\r\n\r\n**Video specs**\r\n\r\n* Recommended file types: webm, mp4, mov\r\n* Poids recommandé: between 10 and 100 Mo\r\n* Resolution: 4K, 1080p (1920 x 1080) and more\r\n\r\nMake sure to upload the **video** in the Assets' [\"**Stream**\"](/craft/assets?site=en&source=volume%3A3c0c2fcb-c361-472f-80d1-6bb4e36bcab6) section." # Stream # Assets
+instructions: "### Image **OR** short video\r\n\r\nFor **images**, please upload the files in the [\"**Images**\"](/craft/assets?site=en&source=volume%3A7c06f121-409c-4ebe-a6ce-aa78ea61ce4d) section.\r\n\r\nFor **videos**, please upload the files in the [\"**Stream**\"](/craft/assets?site=en&source=volume%3A3c0c2fcb-c361-472f-80d1-6bb4e36bcab6) section."
 name: Media
 searchable: false
 settings:
@@ -36,5 +36,5 @@ settings:
   validateRelatedElements: false
   viewMode: thumbs
 translationKeyFormat: null
-translationMethod: none
+translationMethod: siteGroup
 type: craft\fields\Assets

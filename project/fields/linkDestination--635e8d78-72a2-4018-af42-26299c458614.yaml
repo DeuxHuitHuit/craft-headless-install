@@ -1,0 +1,72 @@
+columnSuffix: null
+handle: linkDestination
+instructions: null
+name: 'Link Destination'
+searchable: false
+settings:
+  fullGraphqlData: false
+  maxLength: 500
+  showLabelField: false
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              -
+                - 'section:296aba6c-f05d-4f2a-a2ca-99acf88eb461' # Entity
+                - 'section:c2b278b1-d1f1-4dc9-91f2-716fddb29525' # Articles
+                - 'section:f23e6a71-9e92-4184-bdd9-8ff3775fb2ec' # Jobs
+                - 'custom:abf16438-f8a6-4c31-b08e-5197ccc99c53'
+                - 'custom:eef88424-12ea-4adc-a32f-6d6df4466116'
+                - 'custom:03430a09-df5f-4d0c-8492-ec158df23d2e'
+                - 'custom:44560e3d-5de4-45a1-ba7d-47bfcc411520'
+                - 'section:e2c6e332-3285-4c43-b941-747e7c3fdee1' # Categories
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - '1'
+            -
+              - allowAnchors
+              - '1'
+            -
+              - allowCustomSchemes
+              - '1'
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - allowedKinds
+              -
+                - image
+                - video
+            -
+              - showUnpermittedVolumes
+              - ''
+            -
+              - showUnpermittedFiles
+              - ''
+  types:
+    - entry
+    - url
+    - asset
+    - email
+    - tel
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Link

@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: sections
+instructions: null
+name: Sections
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Add a section'
+  showSearchInput: false
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:72b998c8-05a2-411d-9d15-438cdb85738c' # Sections
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: siteGroup
+type: craft\fields\Entries

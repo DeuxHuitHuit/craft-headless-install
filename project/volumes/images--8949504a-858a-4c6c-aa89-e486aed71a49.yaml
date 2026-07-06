@@ -1,8 +1,12 @@
 altTranslationKeyFormat: null
-altTranslationMethod: none
+altTranslationMethod: site
 fieldLayouts:
   fb00e844-c58b-4bba-b131-6d00334d3922:
-    cardThumbAlignment: end
+    cardThumbAlignment: start
+    cardView:
+      - size
+      - dateCreated
+      - location
     tabs:
       -
         elementCondition: null
@@ -35,6 +39,46 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2026-06-08T14:55:42+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: f21a34e0-38ab-4f88-9a09-1753f2641523
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-06-08T14:55:42+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: captions
+            instructions: null
+            label: Captions
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a7c73a45-4946-4f09-bace-179d9f3761a1
+            userCondition: null
+            warning: null
+            width: 50
         name: Content
         uid: d61310f5-3ac7-4edf-a8f1-d7bd3ce0d9e5
         userCondition: null
@@ -45,6 +89,6 @@ name: Images
 sortOrder: 3
 subpath: ''
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none
 transformFs: ''
 transformSubpath: ''
