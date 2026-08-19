@@ -292,8 +292,6 @@ ${INSTALLER_PHP_EXEC} ./composer.phar require dodecastudio/craft-blurhash
 ${INSTALLER_PHP_EXEC} ./craft plugin/install blur-hash
 ${INSTALLER_PHP_EXEC} ./composer.phar require mmikkel/cp-field-inspect
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cp-field-inspect
-${INSTALLER_PHP_EXEC} ./composer.phar require craftpulse/craft-colour-swatches
-${INSTALLER_PHP_EXEC} ./craft plugin/install colour-swatches
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./craft plugin/install cloudflare-stream
 ${INSTALLER_PHP_EXEC} ./composer.phar require deuxhuithuit/craft-cloudflare-images
