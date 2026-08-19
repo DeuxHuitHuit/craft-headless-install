@@ -23,7 +23,23 @@ fieldLayouts:
             uid: a2d78c60-8f37-4fdd-8a36-b25e1a2ef7d7
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2026-06-10T18:44:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: anchorLabel
+            instructions: null
+            label: 'Anchor Label'
+            required: false
+            tip: "The anchor label is used as the part of the page's url that leads to the section within the page."
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2106664-8f16-4184-8510-daa0d74a15e2
+            userCondition: null
+            warning: null
+            width: 50
           -
             dateAdded: '2026-06-10T18:19:14+00:00'
             elementCondition: null
@@ -49,37 +65,6 @@ fieldLayouts:
         name: Content
         uid: 44bf0939-b7a5-47f4-9669-2fe82f3ad752
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            content: "The anchor label is used as the part of the page's url leading to the section within the same page.\r\nIf the page's url used in a link or a button, the anchor label should always be preceded by the **#** symbol and placed next to the page's slug like this: /en/page-slug**#anchor-label**"
-            dateAdded: '2026-06-10T18:51:24+00:00'
-            displayInPane: true
-            elementCondition: null
-            type: craft\fieldlayoutelements\Markdown
-            uid: 5a1ec3fd-8b8b-43c4-a734-4f4041a9bb15
-            userCondition: null
-            width: 50
-          -
-            dateAdded: '2026-06-10T18:44:52+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: anchorLabel
-            instructions: null
-            label: 'Anchor Label'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c2106664-8f16-4184-8510-daa0d74a15e2
-            userCondition: null
-            warning: null
-            width: 50
-        name: Anchor
-        uid: bc9d4d01-19d7-48b7-a9fe-b03bded00d0b
-        userCondition: null
     thumbFieldKey: null
 handle: sectionTemplate
 hasTitleField: false
@@ -89,7 +74,7 @@ showSlugField: false
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{type.name} - {cmsSectionIdentifier}'
+titleFormat: 'Section - {type.name} - {cmsSectionIdentifier}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-uiLabelFormat: '{type.name} - {cmsSectionIdentifier}'
+uiLabelFormat: 'Section - {type.name} - {cmsSectionIdentifier}'

@@ -12,6 +12,22 @@ settings:
       __assoc__:
         -
           - uid
+          - ddf364da-36c3-4b64-8024-939f298d4aeb # Card Editorial Featured Caption
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - a528cfff-a56c-4d59-ac3e-85af102444a6 # Card Editorial Standard
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 9c3dce00-b950-4903-b9bd-7b64f7d1028a # Card Snapshot
         -
           - group
@@ -19,11 +35,11 @@ settings:
   includeTableView: false
   maxEntries: 1
   minEntries: null
-  pageSize: null
+  pageSize: 50
   propagationKeyFormat: null
   propagationMethod: siteGroup
   showCardsInGrid: false
-  viewMode: blocks
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

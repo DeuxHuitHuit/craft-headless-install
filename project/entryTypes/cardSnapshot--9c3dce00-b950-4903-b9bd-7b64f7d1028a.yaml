@@ -3,11 +3,30 @@ color: null
 description: null
 fieldLayouts:
   2208a7f9-daf5-4852-b090-7572a0bac296:
-    cardThumbAlignment: end
+    cardThumbAlignment: start
+    cardView:
+      - 'layoutElement:a28e54fe-412e-4dd9-914c-c1ae49f6da43'
+      - 'layoutElement:9de8d184-452d-478f-aa9f-1069d2409b71'
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            dateAdded: '2026-07-14T13:06:57+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4c880890-d386-449b-b482-f5ec3e7eb0cc # Plain Text Max 50
+            handle: badge
+            instructions: null
+            label: Badge
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95afedba-ad95-405d-a1db-d930bbeb1974
+            userCondition: null
+            warning: '**MAXIMUM 50 CHARACTERS**'
+            width: 25
           -
             dateAdded: '2026-06-11T15:37:15+00:00'
             editCondition: null
@@ -23,16 +42,7 @@ fieldLayouts:
             uid: a28e54fe-412e-4dd9-914c-c1ae49f6da43
             userCondition: null
             warning: null
-            width: 25
-          -
-            content: ''
-            dateAdded: '2026-06-11T18:12:05+00:00'
-            displayInPane: false
-            elementCondition: null
-            type: craft\fieldlayoutelements\Markdown
-            uid: f0c30fd4-3dea-4723-8b78-3dc321eb4a1a
-            userCondition: null
-            width: 25
+            width: 50
           -
             content: "#### Reference Overlay Center\r\n\r\n![](/uploads/references/cardSnapshot_overlay-center_reference.jpg)"
             dateAdded: '2026-06-11T15:37:15+00:00'
@@ -126,7 +136,7 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             uid: b32dade7-9aab-46ef-867a-b15568d6c2e5
             userCondition: null
-            warning: null
+            warning: '**TRY TO KEEP THE TEXT UNDER 100 CHARACTERS**'
             width: 50
           -
             dateAdded: '2026-06-11T15:37:15+00:00'
@@ -147,7 +157,7 @@ fieldLayouts:
         name: Content
         uid: fd624142-e866-4fa9-8477-3dbddb69a66e
         userCondition: null
-    thumbFieldKey: null
+    thumbFieldKey: 'layoutElement:e570d57d-c64c-4fe6-ac5b-1644a15c6806'
 handle: cardSnapshot
 hasTitleField: false
 icon: null
@@ -156,7 +166,7 @@ showSlugField: false
 showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: '{displayTitle}'
+titleFormat: '{badge}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-uiLabelFormat: '{displayTitle}'
+uiLabelFormat: '{badge}'

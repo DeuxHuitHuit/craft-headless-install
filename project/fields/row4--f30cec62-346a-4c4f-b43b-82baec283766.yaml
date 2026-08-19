@@ -19,11 +19,11 @@ settings:
   includeTableView: false
   maxEntries: 4
   minEntries: null
-  pageSize: null
+  pageSize: 50
   propagationKeyFormat: null
   propagationMethod: siteGroup
-  showCardsInGrid: false
-  viewMode: blocks
+  showCardsInGrid: true
+  viewMode: cards-grid
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

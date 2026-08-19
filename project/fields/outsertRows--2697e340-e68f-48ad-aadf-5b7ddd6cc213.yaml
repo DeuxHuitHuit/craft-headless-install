@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: outsertRows
+instructions: null
+name: 'Outsert Rows'
+searchable: false
+settings:
+  createButtonLabel: 'Add a row'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - c9a1344c-f376-4ee8-9069-5990080c3ad4 # Outsert Row
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: siteGroup
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

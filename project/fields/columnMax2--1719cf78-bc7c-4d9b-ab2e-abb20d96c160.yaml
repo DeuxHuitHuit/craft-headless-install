@@ -12,6 +12,14 @@ settings:
       __assoc__:
         -
           - uid
+          - a528cfff-a56c-4d59-ac3e-85af102444a6 # Card Editorial Standard
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 9c3dce00-b950-4903-b9bd-7b64f7d1028a # Card Snapshot
         -
           - group

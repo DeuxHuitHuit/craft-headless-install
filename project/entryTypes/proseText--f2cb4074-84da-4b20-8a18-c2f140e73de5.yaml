@@ -1,0 +1,74 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  8c3231d1-34ff-49a2-94b4-71cd540b282c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-07-14T15:32:30+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c12c4a99-a6ea-403a-bb8d-8c8135852981 # Prose Rich Text
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11e2bc3e-cfe3-4544-a4d6-298d19465307
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-08-11T14:42:14+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 80faeb96-cf17-464b-aae2-cbf334c38969 # Rich text - Simple
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82c80ec7-ccfd-477c-955b-3b05a01ff02e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-07-14T15:32:30+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7ccf272a-b18a-4266-be5c-151b1aff0f60 # Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c3ed937-65b8-483e-8de1-533419ec8153
+            userCondition: null
+            warning: '**MAXIMUM 3 LINKS**'
+            width: 100
+        name: Content
+        uid: 7b488b2e-8c4e-46ca-81b9-8d2576cd60e0
+        userCondition: null
+    thumbFieldKey: null
+handle: proseText
+hasTitleField: false
+icon: null
+name: 'Prose Text'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

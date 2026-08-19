@@ -17,11 +17,11 @@ fieldLayouts:
             elementCondition: null
             elementEditCondition: null
             fieldUid: 4c880890-d386-449b-b482-f5ec3e7eb0cc # Plain Text Max 50
-            handle: badgeText
+            handle: badge
             instructions: null
             label: 'Badge Text'
             required: false
-            tip: 'Short surtitle or tag'
+            tip: 'Short text or tag'
             type: craft\fieldlayoutelements\CustomField
             uid: b51d4567-d072-4c50-912d-281687eb14d0
             userCondition: null

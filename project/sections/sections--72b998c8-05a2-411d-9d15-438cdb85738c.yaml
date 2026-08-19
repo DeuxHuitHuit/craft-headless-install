@@ -5,6 +5,8 @@ entryTypes:
     uid: 2ab2b374-a864-4938-a85d-396ab19fc46c # Section Template (TO DUPLICATE)
   -
     uid: 4db3f7f5-6fd3-4fdb-8b67-99d51567021e # Portal
+  -
+    uid: b3d1cf52-ce7a-4fbe-8579-fc575ce10dc7 # Outsert
 handle: sections
 maxAuthors: 1
 minAuthors: 1

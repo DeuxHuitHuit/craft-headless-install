@@ -1,0 +1,96 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  9906a54c-8632-432f-92e9-b34e9b4a5618:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-07-14T15:49:19+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f3a05ffb-9c2b-42b9-8d92-d8879b8a0920 # CMS Identifier
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 224c6459-ac39-461f-9384-1870aa9c679d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-07-14T15:49:19+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: anchorLabel
+            instructions: null
+            label: 'Anchor Label'
+            required: false
+            tip: "The anchor label is used as the part of the page's url that leads to the section within the page."
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30e4aa5b-1af4-446f-9587-53ce570adaf0
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-07-14T15:49:19+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 5a11dbf4-92d6-4d08-a9a6-4b524745fb3b
+            userCondition: null
+          -
+            dateAdded: '2026-07-14T15:52:10+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06c5b59c-424c-48f0-b080-932acda61805
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-07-14T15:49:19+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2697e340-e68f-48ad-aadf-5b7ddd6cc213 # Outsert Rows
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b072de5-2015-4174-bab1-f8cf46d03b9a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 488afe7d-63bc-4409-811c-633faa48f5bb
+        userCondition: null
+    thumbFieldKey: null
+handle: outsert
+hasTitleField: false
+icon: null
+name: Outsert
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Section - {type.name} - {cmsSectionIdentifier}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: 'Section - {type.name} - {cmsSectionIdentifier}'

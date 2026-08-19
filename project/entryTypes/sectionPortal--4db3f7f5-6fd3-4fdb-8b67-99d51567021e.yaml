@@ -23,7 +23,23 @@ fieldLayouts:
             uid: c8a7bd4c-5afe-4ccb-8195-667a077c3c66
             userCondition: null
             warning: null
-            width: 100
+            width: 50
+          -
+            dateAdded: '2026-06-10T18:44:52+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
+            handle: anchorLabel
+            instructions: null
+            label: 'Anchor Label'
+            required: false
+            tip: "The anchor label is used as the part of the page's url that leads to the section within the page."
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2fd305a-f564-4a00-8e35-517d55f66e8f
+            userCondition: null
+            warning: null
+            width: 50
           -
             dateAdded: '2026-06-11T14:39:49+00:00'
             elementCondition: null
@@ -52,7 +68,7 @@ fieldLayouts:
             uid: 26874920-94f9-44d4-b4c0-05317c70df07
             userCondition: null
             warning: null
-            width: 25
+            width: 100
           -
             dateAdded: '2026-06-10T20:14:45+00:00'
             editCondition: null
@@ -68,7 +84,7 @@ fieldLayouts:
             uid: 627424cd-b120-49aa-a4a6-ee32eb662878
             userCondition: null
             warning: null
-            width: 25
+            width: 50
           -
             content: "#### Reference Layout Row 4\r\n\r\n![](/uploads/references/reference_module-portal_4row.jpg)"
             dateAdded: '2026-06-10T20:14:45+00:00'
@@ -155,21 +171,66 @@ fieldLayouts:
             width: 50
           -
             dateAdded: '2026-06-11T15:04:03+00:00'
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 4c999690-ba0f-4206-b100-a59c8573b235
+                  values:
+                    - '212'
+                    - '211'
+                    - 11Row4
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
             heading: Navigation
             type: craft\fieldlayoutelements\Heading
             uid: e74a86c5-f72c-459d-8deb-3f039d226a94
             userCondition: null
           -
             dateAdded: '2026-06-11T15:04:03+00:00'
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: cf1a962f-87af-4025-9118-0cb477304627
+                  values:
+                    - '212'
+                    - '211'
+                    - 11Row4
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
             type: craft\fieldlayoutelements\HorizontalRule
             uid: f2eadbd0-5965-4544-91e0-ff322269eef5
             userCondition: null
           -
             dateAdded: '2026-06-11T15:04:03+00:00'
             editCondition: null
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 0cb64823-94d9-4476-8c8d-804c2c791267
+                  values:
+                    - '212'
+                    - '211'
+                    - 11Row4
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
             elementEditCondition: null
             fieldUid: f2599fa6-87fd-4abf-ae90-7bdafd0e3f31 # Links
             handle: null
@@ -182,12 +243,49 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'General Settings'
-        uid: d82569fe-a001-47a8-aec6-68ba766a66dc
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
+          -
+            dateAdded: '2026-07-14T14:10:56+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: bdc3fe04-bd46-4549-b86c-f29ef710f3c9
+                  values:
+                    - '212'
+                    - '211'
+                    - 11Row4
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            heading: Content
+            type: craft\fieldlayoutelements\Heading
+            uid: 0e72a931-6e61-484d-b912-083191a15395
+            userCondition: null
+          -
+            dateAdded: '2026-07-14T14:10:56+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 90eddf06-9837-4f7e-b4b4-9fb96eb4d872 # Portal Layout
+                  layoutElementUid: 627424cd-b120-49aa-a4a6-ee32eb662878
+                  operator: in
+                  uid: 7de82d52-6202-4b71-a130-752a5a11cd9d
+                  values:
+                    - '212'
+                    - '211'
+                    - 11Row4
+                    - row4
+              elementType: craft\elements\Entry
+              fieldContext: global
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: bc9b475d-8ce3-4d66-9ffc-d29b7769709a
+            userCondition: null
           -
             dateAdded: '2026-06-11T14:50:39+00:00'
             editCondition: null
@@ -216,7 +314,7 @@ fieldLayouts:
             uid: c2c3b721-cd68-48b0-a6ac-d2b892561de4
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             dateAdded: '2026-06-11T14:50:39+00:00'
             editCondition: null
@@ -244,7 +342,7 @@ fieldLayouts:
             uid: fcda76b1-b706-437c-9eb4-a3d4fc91fd99
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2026-06-11T14:59:18+00:00'
             editCondition: null
@@ -274,7 +372,7 @@ fieldLayouts:
             uid: c599477e-3833-4342-a13d-06f9fc822059
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2026-06-11T14:59:18+00:00'
             editCondition: null
@@ -292,17 +390,17 @@ fieldLayouts:
               elementType: craft\elements\Entry
               fieldContext: global
             elementEditCondition: null
-            fieldUid: 13d15ec4-3c6d-4f1b-927d-b13a56be8f83 # 3rd Column Max 1
+            fieldUid: 13d15ec4-3c6d-4f1b-927d-b13a56be8f83 # 3rd Column
             handle: null
             instructions: null
-            label: null
+            label: '3rd Column'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 5e49135f-67dd-4118-aa36-89585ba6bce7
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             dateAdded: '2026-06-11T14:59:18+00:00'
             editCondition: null
@@ -330,7 +428,7 @@ fieldLayouts:
             uid: ab061064-0ac9-460d-a636-312c58551f6b
             userCondition: null
             warning: null
-            width: 100
+            width: 25
           -
             dateAdded: '2026-06-11T14:59:18+00:00'
             editCondition: null
@@ -360,39 +458,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 1e831a24-41c4-47c5-838d-d3bcb071dc34
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            content: "The anchor label is used as the part of the page's url leading to the section within the same page.\r\nIf the page's url used in a link or a button, the anchor label should always be preceded by the **#** symbol and placed next to the page's slug like this: /en/page-slug**#anchor-label**"
-            dateAdded: '2026-06-10T18:51:24+00:00'
-            displayInPane: true
-            elementCondition: null
-            type: craft\fieldlayoutelements\Markdown
-            uid: d2d8b8be-51ce-4fc3-bca2-471f7e0f06aa
-            userCondition: null
-            width: 50
-          -
-            dateAdded: '2026-06-10T18:44:52+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 615c8eda-5043-4fdd-a90c-3c77212764e6 # Plain text
-            handle: anchorLabel
-            instructions: null
-            label: 'Anchor Label'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c2fd305a-f564-4a00-8e35-517d55f66e8f
-            userCondition: null
-            warning: null
-            width: 50
-        name: Anchor
-        uid: 5c6186d5-d68b-4afb-b5ec-af9e74e5ffdb
+        name: 'General Settings'
+        uid: d82569fe-a001-47a8-aec6-68ba766a66dc
         userCondition: null
     thumbFieldKey: null
 handle: sectionPortal
@@ -406,4 +473,4 @@ slugTranslationMethod: site
 titleFormat: '{type.name} - {cmsSectionIdentifier}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: none
-uiLabelFormat: '{type.name} - {cmsSectionIdentifier}'
+uiLabelFormat: 'Section - {type.name} - {cmsSectionIdentifier}'

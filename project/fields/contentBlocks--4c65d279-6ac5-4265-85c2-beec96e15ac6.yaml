@@ -1,0 +1,69 @@
+columnSuffix: null
+handle: contentBlocks
+instructions: null
+name: 'Content Blocks'
+searchable: false
+settings:
+  createButtonLabel: 'Add a content block'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - f2cb4074-84da-4b20-8a18-c2f140e73de5 # Prose Text
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - f099efb7-8cf8-4866-90bd-9018091f8d45 # Text List
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - d898360e-1d0c-442e-b523-a7b691c446d9 # Media
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 46e9d2cf-9ffa-4d70-b132-f32d2c4c4c58 # Embed
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - c7fea5ee-768f-4e22-84a8-fa3c38859137 # Quote
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 21e3f322-8f77-4e26-a6ff-9899c7de6dc8 # Links
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: siteGroup
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

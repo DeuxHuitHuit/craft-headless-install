@@ -1,0 +1,109 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  379cc79a-8fdd-4cd5-b151-7bd0da55bada:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:57c6e60a-f82f-4dd4-994d-5b0ae0cd8485'
+      - 'layoutElement:8c0e1a0c-4cf1-4190-90e2-9cc2ed74112b'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-07-14T14:21:06+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4c880890-d386-449b-b482-f5ec3e7eb0cc # Plain Text Max 50
+            handle: badge
+            instructions: null
+            label: Badge
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fb48ab2-399c-4a74-982c-9a0e3ea67694
+            userCondition: null
+            warning: '**MAXIMUM 50 CHARACTERS**'
+            width: 100
+          -
+            dateAdded: '2026-07-14T14:21:06+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3070e537-2129-43f0-addf-fbae4049f8e1 # Media
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ea91775d-816c-49e4-973b-7199a9a6b378
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-07-14T14:21:06+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 3ce9ecc2-8c9b-4d1f-962c-eca70eee7033 # Title
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 57c6e60a-f82f-4dd4-994d-5b0ae0cd8485
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-07-14T14:21:06+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: null
+            instructions: null
+            label: Text
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13a56992-52e1-43d8-85b7-7392cd3d7783
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-07-14T14:45:09+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 59d5a6cf-12d1-4545-97b4-16e72fe93b7f # Link
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c0e1a0c-4cf1-4190-90e2-9cc2ed74112b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4dcc315d-9f25-4303-b3ea-8b52fe446804
+        userCondition: null
+    thumbFieldKey: 'layoutElement:ea91775d-816c-49e4-973b-7199a9a6b378'
+handle: cardInline
+hasTitleField: false
+icon: null
+name: 'Card Inline'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{badge}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{badge}'

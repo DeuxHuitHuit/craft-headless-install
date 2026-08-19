@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: textList
+instructions: null
+name: 'Text List'
+searchable: false
+settings:
+  createButtonLabel: 'Add a text item'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 46af9279-1483-4b8a-8f5b-abd73ee8ed99 # Text List Item
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: siteGroup
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

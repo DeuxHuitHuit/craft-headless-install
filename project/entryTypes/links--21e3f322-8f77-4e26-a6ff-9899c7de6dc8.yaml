@@ -1,0 +1,42 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  9f038536-73ce-42cf-ac43-5130702e505f:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-07-14T15:32:54+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7ccf272a-b18a-4266-be5c-151b1aff0f60 # Links
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e3728f7-1f93-40af-87ff-970ceb219424
+            userCondition: null
+            warning: '**MAXIMUM 3 LINKS**'
+            width: 100
+        name: Content
+        uid: 5ed781ba-39e0-4fb9-9926-50384dba32c0
+        userCondition: null
+    thumbFieldKey: null
+handle: links
+hasTitleField: false
+icon: null
+name: Links
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

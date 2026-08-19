@@ -1,0 +1,74 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  ce301cb8-0331-45e8-a79e-fbeb9b1222be:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-07-14T15:36:25+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 24fcc82a-e774-4756-8f1e-62edb2119633 # Rich text - Inline
+            handle: quote
+            instructions: null
+            label: Quote
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27d177cc-969d-482d-9b25-fe1eb54785cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-07-14T15:36:25+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4c880890-d386-449b-b482-f5ec3e7eb0cc # Plain Text Max 50
+            handle: source
+            instructions: null
+            label: Source
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89704aeb-cfc9-46c6-9f49-42df240d9012
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-07-14T15:36:25+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cbb97567-3119-4162-8674-4ce5c30452ad # Plain Text Max 125
+            handle: sourceRole
+            instructions: null
+            label: 'Source Title or Role'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29b6edef-b8d4-4f30-b5d7-1d230f03d9ac
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 6ab1a57e-dbfc-4102-8a94-4bdaca909fc8
+        userCondition: null
+    thumbFieldKey: null
+handle: quote
+hasTitleField: false
+icon: null
+name: Quote
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

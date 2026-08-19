@@ -1,13 +1,21 @@
 columnSuffix: null
 handle: thirdColumnMax1
 instructions: null
-name: '3rd Column Max 1'
+name: '3rd Column'
 searchable: false
 settings:
   createButtonLabel: 'Add a card'
   defaultIndexViewMode: cards
   enableVersioning: false
   entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - a528cfff-a56c-4d59-ac3e-85af102444a6 # Card Editorial Standard
+        -
+          - group
+          - General
     -
       __assoc__:
         -
@@ -19,11 +27,11 @@ settings:
   includeTableView: false
   maxEntries: 1
   minEntries: null
-  pageSize: null
+  pageSize: 50
   propagationKeyFormat: null
   propagationMethod: siteGroup
   showCardsInGrid: false
-  viewMode: blocks
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

@@ -12,18 +12,18 @@ settings:
       __assoc__:
         -
           - uid
-          - 9c3dce00-b950-4903-b9bd-7b64f7d1028a # Card Snapshot
+          - d60f7c4f-aab0-4563-bf07-c4f78cb458fc # Card Inline
         -
           - group
           - General
   includeTableView: false
   maxEntries: 1
   minEntries: null
-  pageSize: null
+  pageSize: 50
   propagationKeyFormat: null
   propagationMethod: siteGroup
   showCardsInGrid: false
-  viewMode: blocks
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

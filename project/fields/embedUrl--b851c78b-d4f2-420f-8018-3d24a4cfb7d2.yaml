@@ -1,10 +1,12 @@
 columnSuffix: kuqgmesg
 handle: embedUrl
-instructions: "* URL of the video to be embedded on the page.   \r\n* The video can be hosted on YouTube **OR** Vimeo.\r\n* The video won't play automatically; the user has to press the \"Play\" button.   \r\n* The thumbnail is displayed first. If there's no thumbnail, the one provided by the platform hosting the video will be displayed instead."
+instructions: 'YouTube **OR** Vimeo.'
 name: 'Embed URL'
 searchable: false
 settings:
+  fullGraphqlData: false
   maxLength: 500
+  showLabelField: false
   typeSettings:
     __assoc__:
       -
@@ -17,8 +19,11 @@ settings:
             -
               - allowAnchors
               - ''
+            -
+              - allowCustomSchemes
+              - ''
   types:
     - url
 translationKeyFormat: null
-translationMethod: site
+translationMethod: siteGroup
 type: craft\fields\Link
