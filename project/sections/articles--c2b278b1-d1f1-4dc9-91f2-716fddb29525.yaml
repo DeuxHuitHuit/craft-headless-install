@@ -18,10 +18,10 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: 'blogue/{slug}'
+    uriFormat: 'replace-me/{slug}'
   c5bc89a7-34ff-4d1e-b2ed-9be8d9e044da: # EN
     enabledByDefault: true
     hasUrls: true
     template: null
-    uriFormat: 'blog/{slug}'
+    uriFormat: 'replace-me/{slug}'
 type: channel
