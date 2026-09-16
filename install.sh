@@ -137,6 +137,9 @@ Options +SymLinksIfOwnerMatch -Indexes
     Header always set vary "Accept-Encoding, Origin, Range"
 </IfModule>
 
+# Force Apache to pass down Authorization header
+CGIPassAuth On
+
 ### CRAFT CMS
 HTACCESS
 
